@@ -15,7 +15,7 @@ addons:
 matrix:
   include:
     - os: linux
-      jdk: oraclejdk8
+      jdk: oraclejdk9
       addons: &llvm40
         apt:
           sources:
