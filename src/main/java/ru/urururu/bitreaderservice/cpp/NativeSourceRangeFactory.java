@@ -3,8 +3,7 @@ package ru.urururu.bitreaderservice.cpp;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
-import ru.urururu.sanity.api.SourceRangeFactory;
-import ru.urururu.sanity.api.cfg.SourceRange;
+import ru.urururu.bitreaderservice.dto.SourceRefDto;
 import ru.urururu.sanity.cpp.llvm.SWIGTYPE_p_LLVMOpaqueModule;
 import ru.urururu.sanity.cpp.llvm.SWIGTYPE_p_LLVMOpaqueValue;
 import ru.urururu.sanity.cpp.llvm.bitreader;
@@ -15,7 +14,7 @@ import java.io.File;
  * @author <a href="mailto:dmitriy.g.matveev@gmail.com">Dmitry Matveev</a>
  */
 @Component
-public class NativeSourceRangeFactory extends SourceRangeFactory<SWIGTYPE_p_LLVMOpaqueValue> implements ParserListener {
+public class NativeSourceRangeFactory implements ParserListener {
     private static final Logger LOGGER = LoggerFactory.getLogger(NativeSourceRangeFactory.class);
 
     private static final int DW_TAG_file_type = 786473;
@@ -24,7 +23,7 @@ public class NativeSourceRangeFactory extends SourceRangeFactory<SWIGTYPE_p_LLVM
     private Long debugVersion;
     private Byte versionByte;
 
-    public SourceRange getSourceRange(SWIGTYPE_p_LLVMOpaqueValue instruction) {
+    public SourceRefDto getSourceRange(SWIGTYPE_p_LLVMOpaqueValue instruction) {
         int line = bitreader.SAGetInstructionDebugLocLine(instruction);
         if (versionByte == 3) {
             if (line != -1) {
@@ -54,6 +53,15 @@ public class NativeSourceRangeFactory extends SourceRangeFactory<SWIGTYPE_p_LLVM
         }
 
         return null;
+    }
+
+    protected SourceRefDto getSourceRange(String filename, int line) {
+        File file = new File(filename);
+        if (!file.exists()) {
+            return null;
+        }
+
+        return new SourceRefDto(file, line);
     }
 
     private SWIGTYPE_p_LLVMOpaqueValue getPair(SWIGTYPE_p_LLVMOpaqueValue node) {
