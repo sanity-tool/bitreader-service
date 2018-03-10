@@ -21,7 +21,6 @@ import java.io.IOException;
 import java.nio.charset.Charset;
 import java.nio.file.*;
 import java.util.List;
-import java.util.Set;
 import java.util.logging.Logger;
 
 /**
@@ -61,6 +60,10 @@ abstract class TestHelper {
 
     private void fillWithTests(TestSuite suite, File file) {
         File[] files = file.listFiles();
+
+        if (files == null) {
+            return;
+        }
 
         for (final File f : files) {
             if (matches(f)) {
