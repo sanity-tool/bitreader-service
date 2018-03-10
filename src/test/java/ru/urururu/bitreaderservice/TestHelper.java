@@ -48,6 +48,8 @@ abstract class TestHelper {
     }
 
     void fillWithTests(TestSuite suite, String path) {
+        LOGGER.info("Languages: " + toolFactory.getLanguages());
+
         File root = new File(BASE, path);
         fillWithTests(suite, root);
 
