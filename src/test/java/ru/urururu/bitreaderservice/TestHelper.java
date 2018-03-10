@@ -21,6 +21,7 @@ import java.io.IOException;
 import java.nio.charset.Charset;
 import java.nio.file.*;
 import java.util.List;
+import java.util.Set;
 import java.util.logging.Logger;
 
 /**
@@ -129,7 +130,10 @@ abstract class TestHelper {
         if (StringUtils.isNotEmpty(LANG)) {
             return language.toString().equals(LANG);
         }
-        return toolFactory.getLanguages().contains(language);
+        Set<Language> languages = toolFactory.getLanguages();
+        boolean result = languages.contains(language);
+        LOGGER.info(languages + ".contains " + language + " == " + result);
+        return result;
     }
 
     public abstract void runTest(String unit, Path pathToExpected) throws Exception;
