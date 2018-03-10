@@ -76,7 +76,7 @@ public class Parser {
                     int resultCode = process.waitFor();
 
                     if (resultCode == 0) {
-                        return bytecodeParser.parse(objFile.getFile());
+                        return bytecodeParser.parse(Files.readAllBytes(objFile.getFile().toPath()));
                     } else {
                         String error = new String(Files.readAllBytes(Paths.get(errFile.getAbsolutePath())));
                         throw new ParseException(resultCode, error);

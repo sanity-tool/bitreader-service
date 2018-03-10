@@ -12,6 +12,9 @@ addons:
       - swig
       - ccache
 
+services:
+  - docker
+
 matrix:
   include:
     - os: linux
@@ -33,6 +36,14 @@ matrix:
       - CLANG_BIN=clang-4.0
 
 language: java
+
+script: ./mvnw install dockerfile:build
+
+deploy:
+  provider: script
+  script: ./mvnw dockerfile:push
+  on:
+    branch: docker
 
 cache:
   directories:

@@ -5,6 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
@@ -30,9 +31,9 @@ public class BitreaderServiceApplication {
 	@Autowired
 	NativeBytecodeParser parser;
 
-	@RequestMapping(value = "/parse")
-	public ModuleDto parse(byte[] bitcode) throws IOException {
-		return parser.parse(File.createTempFile(null, null));
+	@RequestMapping(value = "/parse", consumes = "application/octet-stream")
+	public ModuleDto parse(@RequestBody byte[] bitcode) throws IOException {
+		return parser.parse(bitcode);
 	}
 
 	@Bean
