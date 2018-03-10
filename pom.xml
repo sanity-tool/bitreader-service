@@ -131,6 +131,9 @@
 						<argument>-v</argument>
 						<argument>generate.sh</argument>
 					</arguments>
+					<environmentVariables>
+						<DLL_NAME>${native.dllname}</DLL_NAME>
+					</environmentVariables>
 				</configuration>
 			</plugin>
 			<plugin>
@@ -189,11 +192,37 @@
 					<buildArgs>
 						<JAR_FILE>target/${project.build.finalName}.jar</JAR_FILE>
 						<SHARED>target/native/shared</SHARED>
+						<DLL_NAME>${native.dllname}</DLL_NAME>
 					</buildArgs>
 				</configuration>
 			</plugin>
 		</plugins>
 	</build>
 
+	<profiles>
+		<profile>
+			<id>platform-unix</id>
+			<activation>
+				<os>
+					<family>unix</family>
+				</os>
+			</activation>
+			<properties>
+				<native.dllname>libirreader.so</native.dllname>
+			</properties>
+		</profile>
+
+		<profile>
+			<id>platform-mac</id>
+			<activation>
+				<os>
+					<family>mac</family>
+				</os>
+			</activation>
+			<properties>
+				<native.dllname>libirreader.jnilib</native.dllname>
+			</properties>
+		</profile>
+	</profiles>
 
 </project>
