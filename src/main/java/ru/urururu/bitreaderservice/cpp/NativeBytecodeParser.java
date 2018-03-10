@@ -92,7 +92,7 @@ public class NativeBytecodeParser {
                     operands.add(toValue(ctx, bitreader.LLVMGetOperand(nativeInstruction, i)));
                 }
 
-                return new InstructionDto(bitreader.LLVMGetInstructionOpcode(nativeInstruction).toString());
+                return new InstructionDto(bitreader.LLVMGetInstructionOpcode(nativeInstruction, operands).toString());
         }
     }
 
