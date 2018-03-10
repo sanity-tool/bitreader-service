@@ -46,7 +46,12 @@ abstract class TestHelper {
     }
 
     void fillWithTests(TestSuite suite, String path) {
-        fillWithTests(suite, new File(BASE, path));
+        File root = new File(BASE, path);
+        fillWithTests(suite, root);
+
+        if (suite.countTestCases() == 0) {
+            throw new IllegalStateException("No files in " + root);
+        }
     }
 
     private void fillWithTests(TestSuite suite, File file) {

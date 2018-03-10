@@ -6,12 +6,10 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import ru.urururu.bitreaderservice.ParseException;
-import ru.urururu.bitreaderservice.cpp.NativeBytecodeParser;
 import ru.urururu.bitreaderservice.dto.ModuleDto;
 import ru.urururu.bitreaderservice.cpp.tools.Tool;
 import ru.urururu.bitreaderservice.cpp.tools.ToolFactory;
 import ru.urururu.bitreaderservice.utils.FileWrapper;
-import ru.urururu.bitreaderservice.utils.TempFileWrapper;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -30,11 +28,7 @@ public class Parser {
     private ToolFactory tools;
 
     @Autowired
-    NativeBytecodeParser bytecodeParser;
-
-    public ModuleDto parse(String filename) throws Exception {
-        return parse(filename, TempFileWrapper::new, false);
-    }
+    private NativeBytecodeParser bytecodeParser;
 
     public ModuleDto parse(String filename, BiFunction<String, String, FileWrapper> fileWrapperFactory, boolean produceDebug) throws Exception {
         LOGGER.info("filename = {}", filename);
