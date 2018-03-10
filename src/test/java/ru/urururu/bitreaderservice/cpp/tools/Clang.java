@@ -1,4 +1,4 @@
-package ru.urururu.bitreaderservice.tools;
+package ru.urururu.bitreaderservice.cpp.tools;
 
 import org.apache.commons.lang3.SystemUtils;
 

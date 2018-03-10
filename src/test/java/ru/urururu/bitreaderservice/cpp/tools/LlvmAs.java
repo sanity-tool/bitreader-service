@@ -1,24 +1,23 @@
-package ru.urururu.bitreaderservice.tools;
+package ru.urururu.bitreaderservice.cpp.tools;
 
-import java.io.File;
 import java.util.EnumSet;
 import java.util.Set;
 
 /**
  * @author <a href="mailto:dmitriy.g.matveev@gmail.com">Dmitry Matveev</a>
  */
-public class Swift extends Tool {
-    Swift(String executable, String version) {
+class LlvmAs extends Tool {
+    LlvmAs(String executable, String version) {
         super(executable, version);
     }
 
     @Override
     Set<Language> getLanguages() {
-        return EnumSet.of(Language.Swift);
+        return EnumSet.of(Language.IR);
     }
 
     @Override
     public String[] createParameters(String filename, String objFile) {
-        return new String[]{executable, "-emit-bc", "-g", "-o", objFile, "-module-name", new File(filename).getName(), filename};
+        return new String[]{executable, "-o=" + objFile, filename};
     }
 }

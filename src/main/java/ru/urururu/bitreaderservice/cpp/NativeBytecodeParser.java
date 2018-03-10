@@ -6,6 +6,8 @@ import ru.urururu.bitreaderservice.dto.*;
 import ru.urururu.sanity.cpp.llvm.*;
 
 import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
 import java.util.*;
 
 /**
@@ -17,8 +19,8 @@ public class NativeBytecodeParser {
     private
     List<ParserListener> parserListeners;
 
-    public ModuleDto parse(File file) {
-        SWIGTYPE_p_LLVMOpaqueModule m = bitreader.parse(file.getAbsolutePath());
+    public ModuleDto parse(File file) throws IOException {
+        SWIGTYPE_p_LLVMOpaqueModule m = bitreader.parse(Files.readAllBytes(file.toPath()));
 
         if (m == null) {
             return null;

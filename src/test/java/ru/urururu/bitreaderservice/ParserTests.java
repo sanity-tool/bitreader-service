@@ -3,6 +3,7 @@ package ru.urururu.bitreaderservice;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import junit.framework.TestSuite;
+import ru.urururu.bitreaderservice.cpp.Parser;
 import ru.urururu.bitreaderservice.dto.ModuleDto;
 
 import java.io.ByteArrayOutputStream;

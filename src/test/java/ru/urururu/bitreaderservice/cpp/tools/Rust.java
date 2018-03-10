@@ -1,4 +1,4 @@
-package ru.urururu.bitreaderservice.tools;
+package ru.urururu.bitreaderservice.cpp.tools;
 
 import java.util.EnumSet;
 import java.util.List;

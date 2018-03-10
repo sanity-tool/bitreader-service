@@ -10,10 +10,9 @@ import org.apache.commons.io.FilenameUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.springframework.context.support.AbstractApplicationContext;
-import ru.urururu.bitreaderservice.tools.Language;
-import ru.urururu.bitreaderservice.tools.Tool;
-import ru.urururu.bitreaderservice.tools.ToolFactory;
+import ru.urururu.bitreaderservice.cpp.tools.Language;
+import ru.urururu.bitreaderservice.cpp.tools.Tool;
+import ru.urururu.bitreaderservice.cpp.tools.ToolFactory;
 import ru.urururu.bitreaderservice.utils.FileWrapper;
 import ru.urururu.bitreaderservice.utils.TempFileWrapper;
 
@@ -27,9 +26,9 @@ import java.util.List;
  * @author <a href="mailto:dmitriy.g.matveev@gmail.com">Dmitry Matveev</a>
  */
 abstract class TestHelper {
-    static ApplicationContext context = new AnnotationConfigApplicationContext("ru.urururu");
+    static ApplicationContext context = new AnnotationConfigApplicationContext("ru.urururu.bitreaderservice.cpp");
 
-    static final String BASE = System.getProperty("TEST_RESOURCES_ROOT");
+    private static final String BASE = System.getProperty("TEST_RESOURCES_ROOT");
     private static Path TESTS_PATH = Paths.get(BASE);
     private static String FAILURES_DIR = System.getProperty("TEST_FAILURES_ROOT");
     private static String DEBUG_DIR = System.getProperty("TEST_DEBUG_ROOT");
@@ -99,7 +98,7 @@ abstract class TestHelper {
         return Paths.get(testFile.getAbsolutePath() + ".expected.json");
     }
 
-    protected boolean matches(File file) {
+    private boolean matches(File file) {
         return isSupportedByExtension(file);
     }
 
@@ -109,10 +108,6 @@ abstract class TestHelper {
 
     private boolean isExtensionSupported(String extension) {
         return isLanguageSupported(Language.getByExtension(extension));
-    }
-
-    boolean isDirectorySupported(File file) {
-        return file.isDirectory() && isLanguageSupported(languageDirs.getKey(file.getName()));
     }
 
     private boolean isLanguageSupported(Language language) {
@@ -127,7 +122,7 @@ abstract class TestHelper {
 
     public abstract void runTest(String unit, Path pathToExpected) throws Exception;
 
-    void check(Path pathToExpected, String actual) throws IOException, InterruptedException {
+    void check(Path pathToExpected, String actual) throws IOException {
         try {
             byte[] bytes = Files.readAllBytes(pathToExpected);
             String expected = new String(bytes, Charset.defaultCharset());
@@ -176,15 +171,5 @@ abstract class TestHelper {
         }
 
         return new TempFileWrapper(prefix, suffix);
-    }
-
-    Language getDirectoryLanguage(File directory) {
-        Language result = languageDirs.getKey(directory.getName());
-
-        if (result == null) {
-            throw new IllegalArgumentException("Can't find language for " + directory);
-        }
-
-        return result;
     }
 }

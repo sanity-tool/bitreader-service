@@ -1,5 +1,7 @@
 %module bitreader
 
+%apply (char *STRING, size_t LENGTH) { (const char data[], size_t len) }
+
 %{
 #include "llvm-c/Core.h"
 #include "llvm-c/Support.h"
@@ -8,7 +10,12 @@
 int SAGetInstructionDebugLocLine(LLVMValueRef instruction);
 unsigned SAGetDebugMetadataVersionFromModule(LLVMModuleRef module);
 
-LLVMModuleRef parse(const char *path) {
+typedef struct {
+        char*         buff;
+        int           len;
+} workit_t;
+
+LLVMModuleRef parse(const char data[], size_t len) {
     LLVMModuleRef m;
     LLVMMemoryBufferRef membuf;
     char *errmsg;
@@ -19,7 +26,7 @@ LLVMModuleRef parse(const char *path) {
 
     LLVMParseCommandLineOptions(argc, argv, "llvm .bc reader library");
 
-    if (LLVMCreateMemoryBufferWithContentsOfFile(path, &membuf, &errmsg)) {
+    if (!(membuf = LLVMCreateMemoryBufferWithMemoryRange(data, len, "membuf", 1))) {
         return 0;
     }
     if (LLVMParseIRInContext(ctx, membuf, &m, &errmsg)) {
@@ -81,8 +88,9 @@ require:
 LLVMTypeRef getType(LLVMTypeRef *types, int i);
 LLVMValueRef getValue(LLVMValueRef *values, int i);
 
-LLVMModuleRef parse(const char *path);
+LLVMModuleRef parse(const char data[], size_t len);
 const char *getMDString(LLVMValueRef valueRef);
+
 const char* GetDataArrayString(LLVMValueRef Val);
 LLVMRealPredicate GetFCmpPredicate(LLVMValueRef Inst);
 double GetConstantFPDoubleValue(LLVMValueRef ConstantVal);
