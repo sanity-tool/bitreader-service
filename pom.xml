@@ -151,7 +151,7 @@
 				<artifactId>maven-surefire-plugin</artifactId>
 				<configuration>
 					<systemPropertyVariables>
-						<LANG>${env.LANG}</LANG>
+						<TESTED_LANG>${env.TESTED_LANG}</TESTED_LANG>
 						<TEST_FAILURES_ROOT>${basedir}/target/failures</TEST_FAILURES_ROOT>
 						<TEST_DEBUG_ROOT>${basedir}/target/debug</TEST_DEBUG_ROOT>
 						<TEST_RESOURCES_ROOT>${build.testSourceDirectory}/../resources</TEST_RESOURCES_ROOT>

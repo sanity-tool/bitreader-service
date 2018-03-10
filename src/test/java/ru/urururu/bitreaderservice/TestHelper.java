@@ -35,7 +35,7 @@ abstract class TestHelper {
     private static String FAILURES_DIR = System.getProperty("TEST_FAILURES_ROOT");
     private static String DEBUG_DIR = System.getProperty("TEST_DEBUG_ROOT");
     private static final BidiMap<Language, String> languageDirs = new DualHashBidiMap<>();
-    private static final String LANG = System.getProperty("LANG");
+    private static final String LANG = System.getProperty("TESTED_LANG");
     private static final Logger LOGGER = Logger.getLogger(TestHelper.class.getSimpleName());
 
     private static ToolFactory toolFactory;
@@ -61,10 +61,6 @@ abstract class TestHelper {
 
     private void fillWithTests(TestSuite suite, File file) {
         File[] files = file.listFiles();
-
-        if (files == null) {
-            throw new IllegalStateException("No files in " + file.getAbsolutePath());
-        }
 
         for (final File f : files) {
             if (matches(f)) {
@@ -113,27 +109,24 @@ abstract class TestHelper {
     }
 
     private boolean isSupportedByExtension(File file) {
-        LOGGER.info("isSupportedByExtension: " + file.getName());
+        LOGGER.fine("isSupportedByExtension: " + file.getName());
         return isExtensionSupported(FilenameUtils.getExtension(file.getName()));
     }
 
     private boolean isExtensionSupported(String extension) {
-        LOGGER.info("isExtensionSupported: " + extension);
+        LOGGER.fine("isExtensionSupported: " + extension);
         return isLanguageSupported(Language.getByExtension(extension));
     }
 
     private boolean isLanguageSupported(Language language) {
-        LOGGER.info("isLanguageSupported: " + language);
+        LOGGER.fine("isLanguageSupported: " + language);
         if (language == null) {
             return false;
         }
         if (StringUtils.isNotEmpty(LANG)) {
             return language.toString().equals(LANG);
         }
-        Set<Language> languages = toolFactory.getLanguages();
-        boolean result = languages.contains(language);
-        LOGGER.info(languages + ".contains " + language + " == " + result);
-        return result;
+        return toolFactory.getLanguages().contains(language);
     }
 
     public abstract void runTest(String unit, Path pathToExpected) throws Exception;
