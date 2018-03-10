@@ -21,6 +21,7 @@ import java.io.IOException;
 import java.nio.charset.Charset;
 import java.nio.file.*;
 import java.util.List;
+import java.util.logging.Logger;
 
 /**
  * @author <a href="mailto:dmitriy.g.matveev@gmail.com">Dmitry Matveev</a>
@@ -34,6 +35,7 @@ abstract class TestHelper {
     private static String DEBUG_DIR = System.getProperty("TEST_DEBUG_ROOT");
     private static final BidiMap<Language, String> languageDirs = new DualHashBidiMap<>();
     private static final String LANG = System.getProperty("LANG");
+    private static final Logger LOGGER = Logger.getLogger(TestHelper.class.getSimpleName());
 
     private static ToolFactory toolFactory;
 
@@ -108,14 +110,17 @@ abstract class TestHelper {
     }
 
     private boolean isSupportedByExtension(File file) {
+        LOGGER.info("isSupportedByExtension: " + file.getName());
         return isExtensionSupported(FilenameUtils.getExtension(file.getName()));
     }
 
     private boolean isExtensionSupported(String extension) {
+        LOGGER.info("isExtensionSupported: " + extension);
         return isLanguageSupported(Language.getByExtension(extension));
     }
 
     private boolean isLanguageSupported(Language language) {
+        LOGGER.info("isLanguageSupported: " + language);
         if (language == null) {
             return false;
         }
