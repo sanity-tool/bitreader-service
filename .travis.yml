@@ -41,7 +41,7 @@ script: ./mvnw install dockerfile:build
 
 deploy:
   provider: script
-  script: ./mvnw dockerfile:push
+  script: docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PASSWORD"; ./mvnw dockerfile:push
   on:
     branch: docker
 
