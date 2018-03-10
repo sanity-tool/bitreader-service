@@ -50,7 +50,7 @@ abstract class TestHelper {
         fillWithTests(suite, root);
 
         if (suite.countTestCases() == 0) {
-            throw new IllegalStateException("No files in " + root);
+            throw new IllegalStateException("No files in " + root.getAbsolutePath());
         }
     }
 
@@ -58,7 +58,7 @@ abstract class TestHelper {
         File[] files = file.listFiles();
 
         if (files == null) {
-            throw new IllegalStateException("No files in " + file);
+            throw new IllegalStateException("No files in " + file.getAbsolutePath());
         }
 
         for (final File f : files) {
