@@ -28,6 +28,10 @@ public class ParserTests extends TestHelper {
 
         ModuleDto testResult = parser.parse(unit, (prefix, suffix) -> getDebugPath(unit, prefix, suffix), true);
 
+        if (testResult == null) {
+            throw new IllegalStateException(unit);
+        }
+
         ByteArrayOutputStream baos = new ByteArrayOutputStream();
         final PrintStream ps = new PrintStream(baos);
 
