@@ -6,6 +6,8 @@ import ru.urururu.bitreaderservice.dto.*;
 import ru.urururu.sanity.cpp.llvm.*;
 
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.util.*;
 
 /**
@@ -14,11 +16,17 @@ import java.util.*;
 @Component
 public class NativeBytecodeParser {
     @Autowired
-    private
-    List<ParserListener> parserListeners;
+    private List<ParserListener> parserListeners;
 
     public ModuleDto parse(byte[] bitcode) {
-        SWIGTYPE_p_LLVMOpaqueModule m = bitreader.parse(bitcode);
+        Path tempFile = null;
+        try {
+            tempFile = Files.createTempFile("sanity", ".bc");
+            Files.write(tempFile, bitcode);
+        } catch (IOException e) {
+            throw new IllegalStateException(e);
+        }
+        SWIGTYPE_p_LLVMOpaqueModule m = bitreader.parse(tempFile.toFile().getAbsolutePath());
 
         if (m == null) {
             return null;

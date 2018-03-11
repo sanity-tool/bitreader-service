@@ -16,7 +16,7 @@ typedef struct {
         int           len;
 } workit_t;
 
-LLVMModuleRef parse(const char data[], size_t len) {
+LLVMModuleRef parse(const char *path) {
     LLVMModuleRef m;
     LLVMMemoryBufferRef membuf;
     char *errmsg;
@@ -27,8 +27,8 @@ LLVMModuleRef parse(const char data[], size_t len) {
 
     LLVMParseCommandLineOptions(argc, argv, "llvm .bc reader library");
 
-    if (!(membuf = LLVMCreateMemoryBufferWithMemoryRange(data, len, "membuf", 0))) {
-        fprintf(stderr, "LLVMCreateMemoryBufferWithMemoryRange returned 0\n");
+    if (LLVMCreateMemoryBufferWithContentsOfFile(path, &membuf, &errmsg)) {
+        fprintf(stderr, "LLVMCreateMemoryBufferWithContentsOfFile returned 0\n");
         return 0;
     }
     if (LLVMParseIRInContext(ctx, membuf, &m, &errmsg)) {
@@ -91,7 +91,7 @@ require:
 LLVMTypeRef getType(LLVMTypeRef *types, int i);
 LLVMValueRef getValue(LLVMValueRef *values, int i);
 
-LLVMModuleRef parse(const char data[], size_t len);
+LLVMModuleRef parse(const char *path);
 const char *getMDString(LLVMValueRef valueRef);
 
 const char* GetDataArrayString(LLVMValueRef Val);
