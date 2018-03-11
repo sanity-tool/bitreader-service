@@ -32,7 +32,7 @@ matrix:
             - llvm-4.0-dev
             - llvm-4.0-runtime
       env:
-      - LANGS="C Cpp IR"
+      - TESTED_LANGS="C Cpp IR"
       - CLANG_BIN=clang-4.0
 
 language: java

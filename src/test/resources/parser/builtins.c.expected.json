@@ -1,0 +1,98 @@
+{
+  "functions" : [ {
+    "blocks" : [ {
+      "instructions" : [ {
+        "kind" : "LLVMLoad",
+        "operands" : [ {
+          "kind" : "LLVMGlobalVariableValueKind"
+        } ]
+      }, {
+        "kind" : "LLVMLoad",
+        "operands" : [ {
+          "kind" : "LLVMGlobalVariableValueKind"
+        } ]
+      }, {
+        "kind" : "LLVMFRem",
+        "operands" : [ {
+          "kind" : "LLVMInstructionValueKind"
+        }, {
+          "kind" : "LLVMInstructionValueKind"
+        } ]
+      }, {
+        "kind" : "LLVMStore",
+        "operands" : [ {
+          "kind" : "LLVMInstructionValueKind"
+        }, {
+          "kind" : "LLVMGlobalVariableValueKind"
+        } ]
+      }, {
+        "kind" : "LLVMLoad",
+        "operands" : [ {
+          "kind" : "LLVMGlobalVariableValueKind"
+        } ]
+      }, {
+        "kind" : "LLVMFPExt",
+        "operands" : [ {
+          "kind" : "LLVMInstructionValueKind"
+        } ]
+      }, {
+        "kind" : "LLVMLoad",
+        "operands" : [ {
+          "kind" : "LLVMGlobalVariableValueKind"
+        } ]
+      }, {
+        "kind" : "LLVMFPExt",
+        "operands" : [ {
+          "kind" : "LLVMInstructionValueKind"
+        } ]
+      }, {
+        "kind" : "LLVMFRem",
+        "operands" : [ {
+          "kind" : "LLVMInstructionValueKind"
+        }, {
+          "kind" : "LLVMInstructionValueKind"
+        } ]
+      }, {
+        "kind" : "LLVMFPTrunc",
+        "operands" : [ {
+          "kind" : "LLVMInstructionValueKind"
+        } ]
+      }, {
+        "kind" : "LLVMStore",
+        "operands" : [ {
+          "kind" : "LLVMInstructionValueKind"
+        }, {
+          "kind" : "LLVMGlobalVariableValueKind"
+        } ]
+      }, {
+        "kind" : "LLVMLoad",
+        "operands" : [ {
+          "kind" : "LLVMGlobalVariableValueKind"
+        } ]
+      }, {
+        "kind" : "LLVMLoad",
+        "operands" : [ {
+          "kind" : "LLVMGlobalVariableValueKind"
+        } ]
+      }, {
+        "kind" : "LLVMFRem",
+        "operands" : [ {
+          "kind" : "LLVMInstructionValueKind"
+        }, {
+          "kind" : "LLVMInstructionValueKind"
+        } ]
+      }, {
+        "kind" : "LLVMStore",
+        "operands" : [ {
+          "kind" : "LLVMInstructionValueKind"
+        }, {
+          "kind" : "LLVMGlobalVariableValueKind"
+        } ]
+      }, {
+        "kind" : "LLVMRet",
+        "operands" : [ ]
+      } ]
+    } ],
+    "entryBlockIndex" : 0
+  } ]
+}

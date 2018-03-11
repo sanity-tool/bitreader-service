@@ -6,6 +6,7 @@
 #include "llvm-c/Core.h"
 #include "llvm-c/Support.h"
 #include "llvm-c/IRReader.h"
+#include <stdio.h>
 
 int SAGetInstructionDebugLocLine(LLVMValueRef instruction);
 unsigned SAGetDebugMetadataVersionFromModule(LLVMModuleRef module);
@@ -27,9 +28,11 @@ LLVMModuleRef parse(const char data[], size_t len) {
     LLVMParseCommandLineOptions(argc, argv, "llvm .bc reader library");
 
     if (!(membuf = LLVMCreateMemoryBufferWithMemoryRange(data, len, "membuf", 0))) {
+        fprintf(stderr, "LLVMCreateMemoryBufferWithMemoryRange returned 0\n");
         return 0;
     }
     if (LLVMParseIRInContext(ctx, membuf, &m, &errmsg)) {
+        fprintf(stderr, "LLVMParseIRInContext: %s\n", errmsg);
         return 0;
     }
     return m;

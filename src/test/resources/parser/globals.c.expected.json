@@ -1,0 +1,33 @@
+{
+  "functions" : [ {
+    "blocks" : [ {
+      "instructions" : [ {
+        "kind" : "LLVMStore",
+        "operands" : [ {
+          "kind" : "LLVMConstantIntValueKind"
+        }, {
+          "kind" : "LLVMGlobalVariableValueKind"
+        } ]
+      }, {
+        "kind" : "LLVMRet",
+        "operands" : [ ]
+      } ]
+    } ],
+    "entryBlockIndex" : 0
+  }, {
+    "blocks" : [ {
+      "instructions" : [ {
+        "kind" : "LLVMStore",
+        "operands" : [ {
+          "kind" : "LLVMConstantPointerNullValueKind"
+        }, {
+          "kind" : "LLVMGlobalVariableValueKind"
+        } ]
+      }, {
+        "kind" : "LLVMRet",
+        "operands" : [ ]
+      } ]
+    } ],
+    "entryBlockIndex" : 0
+  } ]
+}

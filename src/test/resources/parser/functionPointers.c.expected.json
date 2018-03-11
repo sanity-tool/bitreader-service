@@ -1,0 +1,43 @@
+{
+  "functions" : [ {
+    "blocks" : [ {
+      "instructions" : [ {
+        "kind" : "LLVMStore",
+        "operands" : [ {
+          "kind" : "LLVMFunctionValueKind"
+        }, {
+          "kind" : "LLVMGlobalVariableValueKind"
+        } ]
+      }, {
+        "kind" : "LLVMStore",
+        "operands" : [ {
+          "kind" : "LLVMFunctionValueKind"
+        }, {
+          "kind" : "LLVMGlobalVariableValueKind"
+        } ]
+      }, {
+        "kind" : "LLVMRet",
+        "operands" : [ ]
+      } ]
+    } ],
+    "entryBlockIndex" : 0
+  }, {
+    "blocks" : [ {
+      "instructions" : [ {
+        "kind" : "LLVMLoad",
+        "operands" : [ {
+          "kind" : "LLVMGlobalVariableValueKind"
+        } ]
+      }, {
+        "kind" : "LLVMCall",
+        "operands" : [ {
+          "kind" : "LLVMInstructionValueKind"
+        } ]
+      }, {
+        "kind" : "LLVMRet",
+        "operands" : [ ]
+      } ]
+    } ],
+    "entryBlockIndex" : 0
+  } ]
+}

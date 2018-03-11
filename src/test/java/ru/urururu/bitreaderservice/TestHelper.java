@@ -21,6 +21,7 @@ import java.io.IOException;
 import java.nio.charset.Charset;
 import java.nio.file.*;
 import java.util.List;
+import java.util.logging.Logger;
 
 /**
  * @author <a href="mailto:dmitriy.g.matveev@gmail.com">Dmitry Matveev</a>
@@ -33,7 +34,9 @@ abstract class TestHelper {
     private static String FAILURES_DIR = System.getProperty("TEST_FAILURES_ROOT");
     private static String DEBUG_DIR = System.getProperty("TEST_DEBUG_ROOT");
     private static final BidiMap<Language, String> languageDirs = new DualHashBidiMap<>();
-    private static final String LANG = System.getProperty("LANG");
+    private static final String LANG = System.getProperty("TESTED_LANG");
+    private static final String FILTER = StringUtils.defaultString(System.getenv("TEST_FILTER"), "");
+    private static final Logger LOGGER = Logger.getLogger(TestHelper.class.getSimpleName());
 
     private static ToolFactory toolFactory;
 
@@ -46,14 +49,21 @@ abstract class TestHelper {
     }
 
     void fillWithTests(TestSuite suite, String path) {
-        fillWithTests(suite, new File(BASE, path));
+        LOGGER.info("Languages: " + toolFactory.getLanguages());
+
+        File root = new File(BASE, path);
+        fillWithTests(suite, root);
+
+        if (suite.countTestCases() == 0) {
+            throw new IllegalStateException("No files in " + root.getAbsolutePath());
+        }
     }
 
     private void fillWithTests(TestSuite suite, File file) {
         File[] files = file.listFiles();
 
         if (files == null) {
-            throw new IllegalStateException("No files in " + file);
+            return;
         }
 
         for (final File f : files) {
@@ -99,18 +109,21 @@ abstract class TestHelper {
     }
 
     private boolean matches(File file) {
-        return isSupportedByExtension(file);
+        return file.getName().contains(FILTER) && isSupportedByExtension(file);
     }
 
     private boolean isSupportedByExtension(File file) {
+        LOGGER.fine("isSupportedByExtension: " + file.getName());
         return isExtensionSupported(FilenameUtils.getExtension(file.getName()));
     }
 
     private boolean isExtensionSupported(String extension) {
+        LOGGER.fine("isExtensionSupported: " + extension);
         return isLanguageSupported(Language.getByExtension(extension));
     }
 
     private boolean isLanguageSupported(Language language) {
+        LOGGER.fine("isLanguageSupported: " + language);
         if (language == null) {
             return false;
         }

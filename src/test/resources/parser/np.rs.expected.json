@@ -1,0 +1,359 @@
+{
+  "functions" : [ {
+    "blocks" : [ {
+      "instructions" : [ {
+        "kind" : "LLVMAlloca",
+        "operands" : [ {
+          "kind" : "LLVMConstantIntValueKind"
+        } ]
+      }, {
+        "kind" : "LLVMBr",
+        "operands" : [ {
+          "kind" : "LLVMBasicBlockValueKind"
+        } ]
+      } ]
+    }, {
+      "instructions" : [ {
+        "kind" : "LLVMLoad",
+        "operands" : [ {
+          "kind" : "LLVMInstructionValueKind"
+        } ]
+      }, {
+        "kind" : "LLVMBr",
+        "operands" : [ {
+          "kind" : "LLVMBasicBlockValueKind"
+        } ]
+      } ]
+    }, {
+      "instructions" : [ {
+        "kind" : "LLVMRet",
+        "operands" : [ {
+          "kind" : "LLVMInstructionValueKind"
+        } ]
+      } ]
+    } ],
+    "entryBlockIndex" : 0
+  }, {
+    "blocks" : [ {
+      "instructions" : [ {
+        "kind" : "LLVMBr",
+        "operands" : [ {
+          "kind" : "LLVMBasicBlockValueKind"
+        } ]
+      } ]
+    }, {
+      "instructions" : [ {
+        "kind" : "LLVMRet",
+        "operands" : [ {
+          "kind" : "LLVMConstantPointerNullValueKind"
+        } ]
+      } ]
+    } ],
+    "entryBlockIndex" : 0
+  }, {
+    "blocks" : [ {
+      "instructions" : [ {
+        "kind" : "LLVMAlloca",
+        "operands" : [ {
+          "kind" : "LLVMConstantIntValueKind"
+        } ]
+      }, {
+        "kind" : "LLVMAlloca",
+        "operands" : [ {
+          "kind" : "LLVMConstantIntValueKind"
+        } ]
+      }, {
+        "kind" : "LLVMAlloca",
+        "operands" : [ {
+          "kind" : "LLVMConstantIntValueKind"
+        } ]
+      }, {
+        "kind" : "LLVMAlloca",
+        "operands" : [ {
+          "kind" : "LLVMConstantIntValueKind"
+        } ]
+      }, {
+        "kind" : "LLVMAlloca",
+        "operands" : [ {
+          "kind" : "LLVMConstantIntValueKind"
+        } ]
+      }, {
+        "kind" : "LLVMStore",
+        "operands" : [ {
+          "kind" : "LLVMArgumentValueKind"
+        }, {
+          "kind" : "LLVMInstructionValueKind"
+        } ]
+      }, {
+        "kind" : "LLVMCall",
+        "operands" : [ {
+          "kind" : "LLVMMetadataAsValueValueKind"
+        }, {
+          "kind" : "LLVMMetadataAsValueValueKind"
+        }, {
+          "kind" : "LLVMMetadataAsValueValueKind"
+        }, {
+          "kind" : "LLVMFunctionValueKind"
+        } ]
+      }, {
+        "kind" : "LLVMCall",
+        "operands" : [ {
+          "kind" : "LLVMMetadataAsValueValueKind"
+        }, {
+          "kind" : "LLVMMetadataAsValueValueKind"
+        }, {
+          "kind" : "LLVMMetadataAsValueValueKind"
+        }, {
+          "kind" : "LLVMFunctionValueKind"
+        } ]
+      }, {
+        "kind" : "LLVMCall",
+        "operands" : [ {
+          "kind" : "LLVMMetadataAsValueValueKind"
+        }, {
+          "kind" : "LLVMMetadataAsValueValueKind"
+        }, {
+          "kind" : "LLVMMetadataAsValueValueKind"
+        }, {
+          "kind" : "LLVMFunctionValueKind"
+        } ]
+      }, {
+        "kind" : "LLVMBr",
+        "operands" : [ {
+          "kind" : "LLVMBasicBlockValueKind"
+        } ]
+      } ]
+    }, {
+      "instructions" : [ {
+        "kind" : "LLVMStore",
+        "operands" : [ {
+          "kind" : "LLVMConstantIntValueKind"
+        }, {
+          "kind" : "LLVMInstructionValueKind"
+        } ]
+      }, {
+        "kind" : "LLVMLoad",
+        "operands" : [ {
+          "kind" : "LLVMInstructionValueKind"
+        } ]
+      }, {
+        "kind" : "LLVMStore",
+        "operands" : [ {
+          "kind" : "LLVMInstructionValueKind"
+        }, {
+          "kind" : "LLVMInstructionValueKind"
+        } ]
+      }, {
+        "kind" : "LLVMStore",
+        "operands" : [ {
+          "kind" : "LLVMConstantIntValueKind"
+        }, {
+          "kind" : "LLVMInstructionValueKind"
+        } ]
+      }, {
+        "kind" : "LLVMCall",
+        "operands" : [ {
+          "kind" : "LLVMFunctionValueKind"
+        } ]
+      }, {
+        "kind" : "LLVMStore",
+        "operands" : [ {
+          "kind" : "LLVMInstructionValueKind"
+        }, {
+          "kind" : "LLVMInstructionValueKind"
+        } ]
+      }, {
+        "kind" : "LLVMBr",
+        "operands" : [ {
+          "kind" : "LLVMBasicBlockValueKind"
+        } ]
+      } ]
+    }, {
+      "instructions" : [ {
+        "kind" : "LLVMLoad",
+        "operands" : [ {
+          "kind" : "LLVMInstructionValueKind"
+        } ]
+      }, {
+        "kind" : "LLVMBitCast",
+        "operands" : [ {
+          "kind" : "LLVMInstructionValueKind"
+        } ]
+      }, {
+        "kind" : "LLVMBitCast",
+        "operands" : [ {
+          "kind" : "LLVMInstructionValueKind"
+        } ]
+      }, {
+        "kind" : "LLVMCall",
+        "operands" : [ {
+          "kind" : "LLVMInstructionValueKind"
+        }, {
+          "kind" : "LLVMInstructionValueKind"
+        }, {
+          "kind" : "LLVMConstantIntValueKind"
+        }, {
+          "kind" : "LLVMConstantIntValueKind"
+        }, {
+          "kind" : "LLVMConstantIntValueKind"
+        }, {
+          "kind" : "LLVMFunctionValueKind"
+        } ]
+      }, {
+        "kind" : "LLVMBr",
+        "operands" : [ {
+          "kind" : "LLVMBasicBlockValueKind"
+        } ]
+      } ]
+    }, {
+      "instructions" : [ {
+        "kind" : "LLVMLoad",
+        "operands" : [ {
+          "kind" : "LLVMInstructionValueKind"
+        } ]
+      }, {
+        "kind" : "LLVMResume",
+        "operands" : [ {
+          "kind" : "LLVMInstructionValueKind"
+        } ]
+      } ]
+    }, {
+      "instructions" : [ {
+        "kind" : "LLVMStore",
+        "operands" : [ {
+          "kind" : "LLVMConstantIntValueKind"
+        }, {
+          "kind" : "LLVMInstructionValueKind"
+        } ]
+      }, {
+        "kind" : "LLVMLoad",
+        "operands" : [ {
+          "kind" : "LLVMInstructionValueKind"
+        } ]
+      }, {
+        "kind" : "LLVMRet",
+        "operands" : [ {
+          "kind" : "LLVMInstructionValueKind"
+        } ]
+      } ]
+    }, {
+      "instructions" : [ {
+        "kind" : "LLVMStore",
+        "operands" : [ {
+          "kind" : "LLVMConstantIntValueKind"
+        }, {
+          "kind" : "LLVMInstructionValueKind"
+        } ]
+      }, {
+        "kind" : "LLVMBr",
+        "operands" : [ {
+          "kind" : "LLVMBasicBlockValueKind"
+        } ]
+      } ]
+    }, {
+      "instructions" : [ {
+        "kind" : "LLVMLoad",
+        "operands" : [ {
+          "kind" : "LLVMInstructionValueKind"
+        } ]
+      }, {
+        "kind" : "LLVMTrunc",
+        "operands" : [ {
+          "kind" : "LLVMInstructionValueKind"
+        } ]
+      }, {
+        "kind" : "LLVMBr",
+        "operands" : [ {
+          "kind" : "LLVMInstructionValueKind"
+        }, {
+          "kind" : "LLVMBasicBlockValueKind"
+        }, {
+          "kind" : "LLVMBasicBlockValueKind"
+        } ]
+      } ]
+    } ],
+    "entryBlockIndex" : 0
+  }, {
+    "blocks" : [ {
+      "instructions" : [ {
+        "kind" : "LLVMRet",
+        "operands" : [ ]
+      } ]
+    } ],
+    "entryBlockIndex" : 0
+  }, {
+    "blocks" : [ {
+      "instructions" : [ {
+        "kind" : "LLVMAlloca",
+        "operands" : [ {
+          "kind" : "LLVMConstantIntValueKind"
+        } ]
+      }, {
+        "kind" : "LLVMAlloca",
+        "operands" : [ {
+          "kind" : "LLVMConstantIntValueKind"
+        } ]
+      }, {
+        "kind" : "LLVMCall",
+        "operands" : [ {
+          "kind" : "LLVMMetadataAsValueValueKind"
+        }, {
+          "kind" : "LLVMMetadataAsValueValueKind"
+        }, {
+          "kind" : "LLVMMetadataAsValueValueKind"
+        }, {
+          "kind" : "LLVMFunctionValueKind"
+        } ]
+      }, {
+        "kind" : "LLVMBr",
+        "operands" : [ {
+          "kind" : "LLVMBasicBlockValueKind"
+        } ]
+      } ]
+    }, {
+      "instructions" : [ {
+        "kind" : "LLVMCall",
+        "operands" : [ {
+          "kind" : "LLVMFunctionValueKind"
+        } ]
+      }, {
+        "kind" : "LLVMStore",
+        "operands" : [ {
+          "kind" : "LLVMInstructionValueKind"
+        }, {
+          "kind" : "LLVMInstructionValueKind"
+        } ]
+      }, {
+        "kind" : "LLVMBr",
+        "operands" : [ {
+          "kind" : "LLVMBasicBlockValueKind"
+        } ]
+      } ]
+    }, {
+      "instructions" : [ {
+        "kind" : "LLVMLoad",
+        "operands" : [ {
+          "kind" : "LLVMInstructionValueKind"
+        } ]
+      }, {
+        "kind" : "LLVMCall",
+        "operands" : [ {
+          "kind" : "LLVMInstructionValueKind"
+        }, {
+          "kind" : "LLVMFunctionValueKind"
+        } ]
+      }, {
+        "kind" : "LLVMBr",
+        "operands" : [ {
+          "kind" : "LLVMBasicBlockValueKind"
+        } ]
+      } ]
+    }, {
+      "instructions" : [ {
+        "kind" : "LLVMRet",
+        "operands" : [ ]
+      } ]
+    } ],
+    "entryBlockIndex" : 0
+  } ]
+}
