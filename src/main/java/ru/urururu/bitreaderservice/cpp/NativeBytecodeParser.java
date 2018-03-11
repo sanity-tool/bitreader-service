@@ -14,8 +14,9 @@ import java.util.*;
 @Component
 public class NativeBytecodeParser {
     @Autowired
-    private
-    List<ParserListener> parserListeners;
+    private List<ParserListener> parserListeners;
+    @Autowired
+    private NativeTypeParser typeParser;
 
     public ModuleDto parse(byte[] bitcode) {
         SWIGTYPE_p_LLVMOpaqueModule m = bitreader.parse(bitcode);
@@ -34,15 +35,15 @@ public class NativeBytecodeParser {
     }
 
     private ModuleDto toModule(SWIGTYPE_p_LLVMOpaqueModule nativeModule) {
-        ParseContext ctx = new ModuleParseContext();
+        ModuleParseContext ctx = new ModuleParseContext();
 
-        List<FunctionDto> functions = new ArrayList<>();
+        Map<Integer, FunctionDto> functions = new LinkedHashMap<>();
 
         SWIGTYPE_p_LLVMOpaqueValue nativeFunction = bitreader.LLVMGetFirstFunction(nativeModule);
         while (nativeFunction != null) {
             try {
                 if (bitreader.LLVMGetFirstBasicBlock(nativeFunction) != null) {
-                    functions.add(toFunction(ctx, nativeFunction));
+                    functions.put(ctx.getGlobalValueId(nativeFunction), toFunction(ctx, nativeFunction));
                 } else {
                     // todo store some info?
                 }
@@ -53,7 +54,7 @@ public class NativeBytecodeParser {
             nativeFunction = bitreader.LLVMGetNextFunction(nativeFunction);
         }
 
-        return new ModuleDto(functions);
+        return new ModuleDto(functions.values(), ctx.getTypes());
     }
 
     private FunctionDto toFunction(ParseContext ctx, SWIGTYPE_p_LLVMOpaqueValue nativeFunction) {
@@ -96,7 +97,7 @@ public class NativeBytecodeParser {
         }
     }
 
-    private ValueDto toValue(ParseContext ctx, SWIGTYPE_p_LLVMOpaqueValue nativeValue) {
+    private static ValueDto toValue(ParseContext ctx, SWIGTYPE_p_LLVMOpaqueValue nativeValue) {
         return new ValueDto(bitreader.LLVMGetValueKind(nativeValue).toString());
     }
 
@@ -112,7 +113,36 @@ public class NativeBytecodeParser {
         return -1;
     }
 
-    static class ModuleParseContext implements ParseContext {
-        Map<SWIGTYPE_p_LLVMOpaqueType, TypeDto> types = new LinkedHashMap<>();
+    class ModuleParseContext implements ParseContext {
+        List<ValueDto> globalValues = new ArrayList<>();
+        Map<SWIGTYPE_p_LLVMOpaqueValue, Integer> globalValueIds = new HashMap<>();
+        Map<Integer, TypeDto> types = new TreeMap<>();
+        Map<SWIGTYPE_p_LLVMOpaqueType, Integer> typeIds = new HashMap<>();
+
+        @Override
+        public int getGlobalValueId(SWIGTYPE_p_LLVMOpaqueValue value) {
+            return globalValueIds.computeIfAbsent(value, v -> {
+                globalValues.add(toValue(this, v));
+                return globalValues.size() - 1;
+            });
+        }
+
+        @Override
+        public int getTypeId(SWIGTYPE_p_LLVMOpaqueType type) {
+            Integer id = typeIds.get(type);
+            if (id != null) {
+                return id;
+            }
+
+            id = typeIds.size();
+            typeIds.put(type, id); // storing id first to handle circular references (linked list node types, etc)
+            types.put(id, typeParser.parse(this, type));
+
+            return id;
+        }
+
+        public Collection<TypeDto> getTypes() {
+            return types.values();
+        }
     }
 }

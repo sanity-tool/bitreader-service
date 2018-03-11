@@ -3,7 +3,7 @@ package ru.urururu.bitreaderservice.dto;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
-import java.util.List;
+import java.util.Collection;
 
 /**
  * @author <a href="mailto:dmitriy.g.matveev@gmail.com">Dmitry Matveev</a>
@@ -11,5 +11,6 @@ import java.util.List;
 @Data
 @AllArgsConstructor
 public class ModuleDto {
-    private List<FunctionDto> functions;
+    private Collection<FunctionDto> functions;
+    private Collection<TypeDto> types;
 }
