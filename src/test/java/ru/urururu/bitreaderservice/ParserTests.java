@@ -1,5 +1,6 @@
 package ru.urururu.bitreaderservice;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import junit.framework.TestSuite;
@@ -36,8 +37,9 @@ public class ParserTests extends TestHelper {
         final PrintStream ps = new PrintStream(baos);
 
         ObjectMapper mapper = new ObjectMapper();
-        mapper.configure(SerializationFeature.WRITE_EMPTY_JSON_ARRAYS, false);
         mapper.enable(SerializationFeature.INDENT_OUTPUT);
+        mapper.setSerializationInclusion(JsonInclude.Include.NON_NULL);
+        mapper.setSerializationInclusion(JsonInclude.Include.NON_EMPTY);
 
         mapper.writeValue(ps, testResult);
 

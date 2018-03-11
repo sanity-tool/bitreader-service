@@ -4,94 +4,145 @@
       "instructions" : [ {
         "kind" : "LLVMLoad",
         "operands" : [ {
-          "kind" : "LLVMGlobalVariableValueKind"
+          "kind" : "LLVMGlobalVariableValueKind",
+          "name" : "F0",
+          "typeId" : 3
         } ]
       }, {
         "kind" : "LLVMLoad",
         "operands" : [ {
-          "kind" : "LLVMGlobalVariableValueKind"
+          "kind" : "LLVMGlobalVariableValueKind",
+          "name" : "F1",
+          "typeId" : 3
         } ]
       }, {
         "kind" : "LLVMFRem",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind"
+          "kind" : "LLVMInstructionValueKind",
+          "typeId" : 4
         }, {
-          "kind" : "LLVMInstructionValueKind"
+          "kind" : "LLVMInstructionValueKind",
+          "typeId" : 4
         } ]
       }, {
         "kind" : "LLVMStore",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind"
+          "kind" : "LLVMInstructionValueKind",
+          "typeId" : 4
         }, {
-          "kind" : "LLVMGlobalVariableValueKind"
+          "kind" : "LLVMGlobalVariableValueKind",
+          "name" : "FR",
+          "typeId" : 3
         } ]
       }, {
         "kind" : "LLVMLoad",
         "operands" : [ {
-          "kind" : "LLVMGlobalVariableValueKind"
+          "kind" : "LLVMGlobalVariableValueKind",
+          "name" : "D0",
+          "typeId" : 3
         } ]
       }, {
         "kind" : "LLVMFPExt",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind"
+          "kind" : "LLVMInstructionValueKind",
+          "typeId" : 4
         } ]
       }, {
         "kind" : "LLVMLoad",
         "operands" : [ {
-          "kind" : "LLVMGlobalVariableValueKind"
+          "kind" : "LLVMGlobalVariableValueKind",
+          "name" : "D1",
+          "typeId" : 3
         } ]
       }, {
         "kind" : "LLVMFPExt",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind"
+          "kind" : "LLVMInstructionValueKind",
+          "typeId" : 4
         } ]
       }, {
         "kind" : "LLVMFRem",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind"
+          "kind" : "LLVMInstructionValueKind",
+          "typeId" : 5
         }, {
-          "kind" : "LLVMInstructionValueKind"
+          "kind" : "LLVMInstructionValueKind",
+          "typeId" : 5
         } ]
       }, {
         "kind" : "LLVMFPTrunc",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind"
+          "kind" : "LLVMInstructionValueKind",
+          "typeId" : 5
         } ]
       }, {
         "kind" : "LLVMStore",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind"
+          "kind" : "LLVMInstructionValueKind",
+          "typeId" : 4
         }, {
-          "kind" : "LLVMGlobalVariableValueKind"
+          "kind" : "LLVMGlobalVariableValueKind",
+          "name" : "DR",
+          "typeId" : 3
         } ]
       }, {
         "kind" : "LLVMLoad",
         "operands" : [ {
-          "kind" : "LLVMGlobalVariableValueKind"
+          "kind" : "LLVMGlobalVariableValueKind",
+          "name" : "LD0",
+          "typeId" : 6
         } ]
       }, {
         "kind" : "LLVMLoad",
         "operands" : [ {
-          "kind" : "LLVMGlobalVariableValueKind"
+          "kind" : "LLVMGlobalVariableValueKind",
+          "name" : "LD1",
+          "typeId" : 6
         } ]
       }, {
         "kind" : "LLVMFRem",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind"
+          "kind" : "LLVMInstructionValueKind",
+          "typeId" : 7
         }, {
-          "kind" : "LLVMInstructionValueKind"
+          "kind" : "LLVMInstructionValueKind",
+          "typeId" : 7
         } ]
       }, {
         "kind" : "LLVMStore",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind"
+          "kind" : "LLVMInstructionValueKind",
+          "typeId" : 7
         }, {
-          "kind" : "LLVMGlobalVariableValueKind"
+          "kind" : "LLVMGlobalVariableValueKind",
+          "name" : "LDR",
+          "typeId" : 6
         } ]
       }, {
         "kind" : "LLVMRet"
       } ]
     } ],
     "entryBlockIndex" : 0
+  } ],
+  "types" : [ {
+    "kind" : "LLVMPointerTypeKind",
+    "types" : [ 1 ]
+  }, {
+    "kind" : "LLVMFunctionTypeKind",
+    "types" : [ 2 ]
+  }, {
+    "kind" : "LLVMVoidTypeKind"
+  }, {
+    "kind" : "LLVMPointerTypeKind",
+    "types" : [ 4 ]
+  }, {
+    "kind" : "LLVMFloatTypeKind"
+  }, {
+    "kind" : "LLVMDoubleTypeKind"
+  }, {
+    "kind" : "LLVMPointerTypeKind",
+    "types" : [ 7 ]
+  }, {
+    "kind" : "LLVMX86_FP80TypeKind"
   } ]
 }

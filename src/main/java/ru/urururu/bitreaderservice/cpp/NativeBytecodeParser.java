@@ -5,7 +5,6 @@ import org.springframework.stereotype.Component;
 import ru.urururu.bitreaderservice.dto.*;
 import ru.urururu.sanity.cpp.llvm.*;
 
-import java.io.IOException;
 import java.util.*;
 
 /**
@@ -48,7 +47,7 @@ public class NativeBytecodeParser {
                     // todo store some info?
                 }
             } catch (Exception e) {
-                throw new IllegalStateException("Can't parse function: " + bitreader.LLVMGetValueName(nativeFunction));
+                throw new IllegalStateException("Can't parse function: " + bitreader.LLVMGetValueName(nativeFunction), e);
             }
 
             nativeFunction = bitreader.LLVMGetNextFunction(nativeFunction);
@@ -58,6 +57,14 @@ public class NativeBytecodeParser {
     }
 
     private FunctionDto toFunction(ParseContext ctx, SWIGTYPE_p_LLVMOpaqueValue nativeFunction) {
+        List<ValueDto> params = new ArrayList<>();
+        SWIGTYPE_p_LLVMOpaqueValue nativeParam = bitreader.LLVMGetFirstParam(nativeFunction);
+        while (nativeParam != null) {
+            params.add(new ValueDto(bitreader.LLVMGetValueKind(nativeParam).toString(),
+                    bitreader.LLVMGetValueName(nativeParam), ctx.getTypeId(bitreader.LLVMTypeOf(nativeParam))));
+            nativeParam = bitreader.LLVMGetNextParam(nativeParam);
+        }
+
         Map<SWIGTYPE_p_LLVMOpaqueBasicBlock, BlockDto> blocks = new LinkedHashMap<>();
 
         SWIGTYPE_p_LLVMOpaqueBasicBlock nativeBlock = bitreader.LLVMGetFirstBasicBlock(nativeFunction);
@@ -69,7 +76,7 @@ public class NativeBytecodeParser {
 
         BlockDto entryBlock = blocks.get(bitreader.LLVMGetEntryBasicBlock(nativeFunction));
 
-        return new FunctionDto(blocks.values(), instanceIndexOf(blocks.values(), entryBlock));
+        return new FunctionDto(blocks.values(), instanceIndexOf(blocks.values(), entryBlock), params);
     }
 
     private BlockDto toBlock(ParseContext ctx, SWIGTYPE_p_LLVMOpaqueBasicBlock nativeBlock) {
@@ -98,7 +105,8 @@ public class NativeBytecodeParser {
     }
 
     private static ValueDto toValue(ParseContext ctx, SWIGTYPE_p_LLVMOpaqueValue nativeValue) {
-        return new ValueDto(bitreader.LLVMGetValueKind(nativeValue).toString());
+        return new ValueDto(bitreader.LLVMGetValueKind(nativeValue).toString(),
+                bitreader.LLVMGetValueName(nativeValue), ctx.getTypeId(bitreader.LLVMTypeOf(nativeValue)));
     }
 
     private <E> int instanceIndexOf(Collection<E> collection, E item) {

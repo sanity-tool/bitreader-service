@@ -4,30 +4,71 @@
       "instructions" : [ {
         "kind" : "LLVMAlloca",
         "operands" : [ {
-          "kind" : "LLVMConstantIntValueKind"
+          "kind" : "LLVMConstantIntValueKind",
+          "typeId" : 5
         } ]
       }, {
         "kind" : "LLVMStore",
         "operands" : [ {
-          "kind" : "LLVMArgumentValueKind"
+          "kind" : "LLVMArgumentValueKind",
+          "typeId" : 3
         }, {
-          "kind" : "LLVMInstructionValueKind"
+          "kind" : "LLVMInstructionValueKind",
+          "typeId" : 6
         } ]
       }, {
         "kind" : "LLVMCall",
         "operands" : [ {
-          "kind" : "LLVMMetadataAsValueValueKind"
+          "kind" : "LLVMMetadataAsValueValueKind",
+          "typeId" : 7
         }, {
-          "kind" : "LLVMMetadataAsValueValueKind"
+          "kind" : "LLVMMetadataAsValueValueKind",
+          "typeId" : 7
         }, {
-          "kind" : "LLVMMetadataAsValueValueKind"
+          "kind" : "LLVMMetadataAsValueValueKind",
+          "typeId" : 7
         }, {
-          "kind" : "LLVMFunctionValueKind"
+          "kind" : "LLVMFunctionValueKind",
+          "name" : "llvm.dbg.declare",
+          "typeId" : 8
         } ]
       }, {
         "kind" : "LLVMRet"
       } ]
     } ],
-    "entryBlockIndex" : 0
+    "entryBlockIndex" : 0,
+    "params" : [ {
+      "kind" : "LLVMArgumentValueKind",
+      "typeId" : 3
+    } ]
+  } ],
+  "types" : [ {
+    "kind" : "LLVMPointerTypeKind",
+    "types" : [ 1 ]
+  }, {
+    "kind" : "LLVMFunctionTypeKind",
+    "types" : [ 2, 3 ]
+  }, {
+    "kind" : "LLVMVoidTypeKind"
+  }, {
+    "kind" : "LLVMPointerTypeKind",
+    "types" : [ 4 ]
+  }, {
+    "kind" : "LLVMStructTypeKind",
+    "name" : "struct.Struct"
+  }, {
+    "kind" : "LLVMIntegerTypeKind",
+    "len" : 32
+  }, {
+    "kind" : "LLVMPointerTypeKind",
+    "types" : [ 3 ]
+  }, {
+    "kind" : "LLVMMetadataTypeKind"
+  }, {
+    "kind" : "LLVMPointerTypeKind",
+    "types" : [ 9 ]
+  }, {
+    "kind" : "LLVMFunctionTypeKind",
+    "types" : [ 2, 7, 7, 7 ]
   } ]
 }

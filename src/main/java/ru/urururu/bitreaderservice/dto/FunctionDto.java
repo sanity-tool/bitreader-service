@@ -13,4 +13,5 @@ import java.util.Collection;
 public class FunctionDto {
     private final Collection<BlockDto> blocks;
     private final int entryBlockIndex;
+    private final Collection<ValueDto> params;
 }

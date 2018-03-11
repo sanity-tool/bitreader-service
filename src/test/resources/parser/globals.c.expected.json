@@ -4,9 +4,12 @@
       "instructions" : [ {
         "kind" : "LLVMStore",
         "operands" : [ {
-          "kind" : "LLVMConstantIntValueKind"
+          "kind" : "LLVMConstantIntValueKind",
+          "typeId" : 3
         }, {
-          "kind" : "LLVMGlobalVariableValueKind"
+          "kind" : "LLVMGlobalVariableValueKind",
+          "name" : "I",
+          "typeId" : 4
         } ]
       }, {
         "kind" : "LLVMRet"
@@ -18,14 +21,35 @@
       "instructions" : [ {
         "kind" : "LLVMStore",
         "operands" : [ {
-          "kind" : "LLVMConstantPointerNullValueKind"
+          "kind" : "LLVMConstantPointerNullValueKind",
+          "typeId" : 4
         }, {
-          "kind" : "LLVMGlobalVariableValueKind"
+          "kind" : "LLVMGlobalVariableValueKind",
+          "name" : "I_P",
+          "typeId" : 5
         } ]
       }, {
         "kind" : "LLVMRet"
       } ]
     } ],
     "entryBlockIndex" : 0
+  } ],
+  "types" : [ {
+    "kind" : "LLVMPointerTypeKind",
+    "types" : [ 1 ]
+  }, {
+    "kind" : "LLVMFunctionTypeKind",
+    "types" : [ 2 ]
+  }, {
+    "kind" : "LLVMVoidTypeKind"
+  }, {
+    "kind" : "LLVMIntegerTypeKind",
+    "len" : 32
+  }, {
+    "kind" : "LLVMPointerTypeKind",
+    "types" : [ 3 ]
+  }, {
+    "kind" : "LLVMPointerTypeKind",
+    "types" : [ 4 ]
   } ]
 }

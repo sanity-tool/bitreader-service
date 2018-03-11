@@ -9,5 +9,7 @@ import lombok.Data;
 @Data
 @AllArgsConstructor
 public class ValueDto {
-    private String kind;
+    private final String kind;
+    private final String name;
+    private final int typeId;
 }
