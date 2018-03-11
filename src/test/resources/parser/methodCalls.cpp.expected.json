@@ -20,6 +20,8 @@
         }, {
           "kind" : "LLVMMetadataAsValueValueKind"
         }, {
+          "kind" : "LLVMMetadataAsValueValueKind"
+        }, {
           "kind" : "LLVMFunctionValueKind"
         } ]
       }, {
@@ -70,6 +72,8 @@
       }, {
         "kind" : "LLVMCall",
         "operands" : [ {
+          "kind" : "LLVMMetadataAsValueValueKind"
+        }, {
           "kind" : "LLVMMetadataAsValueValueKind"
         }, {
           "kind" : "LLVMMetadataAsValueValueKind"

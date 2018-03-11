@@ -20,6 +20,8 @@
         }, {
           "kind" : "LLVMMetadataAsValueValueKind"
         }, {
+          "kind" : "LLVMMetadataAsValueValueKind"
+        }, {
           "kind" : "LLVMFunctionValueKind"
         } ]
       }, {

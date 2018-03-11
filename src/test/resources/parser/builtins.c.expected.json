@@ -12,13 +12,11 @@
           "kind" : "LLVMGlobalVariableValueKind"
         } ]
       }, {
-        "kind" : "LLVMCall",
+        "kind" : "LLVMFRem",
         "operands" : [ {
           "kind" : "LLVMInstructionValueKind"
         }, {
           "kind" : "LLVMInstructionValueKind"
-        }, {
-          "kind" : "LLVMFunctionValueKind"
         } ]
       }, {
         "kind" : "LLVMStore",
@@ -48,13 +46,11 @@
           "kind" : "LLVMInstructionValueKind"
         } ]
       }, {
-        "kind" : "LLVMCall",
+        "kind" : "LLVMFRem",
         "operands" : [ {
           "kind" : "LLVMInstructionValueKind"
         }, {
           "kind" : "LLVMInstructionValueKind"
-        }, {
-          "kind" : "LLVMFunctionValueKind"
         } ]
       }, {
         "kind" : "LLVMFPTrunc",
@@ -79,13 +75,11 @@
           "kind" : "LLVMGlobalVariableValueKind"
         } ]
       }, {
-        "kind" : "LLVMCall",
+        "kind" : "LLVMFRem",
         "operands" : [ {
           "kind" : "LLVMInstructionValueKind"
         }, {
           "kind" : "LLVMInstructionValueKind"
-        }, {
-          "kind" : "LLVMFunctionValueKind"
         } ]
       }, {
         "kind" : "LLVMStore",
