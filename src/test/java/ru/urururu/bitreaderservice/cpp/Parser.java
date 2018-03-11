@@ -16,6 +16,7 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.Arrays;
 import java.util.function.BiFunction;
+import java.util.function.Function;
 
 /**
  * @author <a href="mailto:dmitriy.g.matveev@gmail.com">Dmitry Matveev</a>
@@ -28,7 +29,7 @@ public class Parser {
     private ToolFactory tools;
 
     @Autowired
-    private NativeBytecodeParser bytecodeParser;
+    private Function<byte[], ModuleDto> moduleReader;
 
     public ModuleDto parse(String filename, BiFunction<String, String, FileWrapper> fileWrapperFactory, boolean produceDebug) throws Exception {
         LOGGER.info("filename = {}", filename);
@@ -70,7 +71,7 @@ public class Parser {
                     int resultCode = process.waitFor();
 
                     if (resultCode == 0) {
-                        return bytecodeParser.parse(Files.readAllBytes(objFile.getFile().toPath()));
+                        return moduleReader.apply(Files.readAllBytes(objFile.getFile().toPath()));
                     } else {
                         String error = new String(Files.readAllBytes(Paths.get(errFile.getAbsolutePath())));
                         throw new ParseException(resultCode, error);

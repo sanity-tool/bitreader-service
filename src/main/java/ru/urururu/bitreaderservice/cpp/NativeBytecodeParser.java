@@ -17,7 +17,7 @@ public class NativeBytecodeParser {
     private
     List<ParserListener> parserListeners;
 
-    public ModuleDto parse(byte[] bitcode) throws IOException {
+    public ModuleDto parse(byte[] bitcode) {
         SWIGTYPE_p_LLVMOpaqueModule m = bitreader.parse(bitcode);
 
         if (m == null) {
