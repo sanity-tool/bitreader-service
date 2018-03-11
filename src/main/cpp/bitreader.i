@@ -26,7 +26,7 @@ LLVMModuleRef parse(const char data[], size_t len) {
 
     LLVMParseCommandLineOptions(argc, argv, "llvm .bc reader library");
 
-    if (!(membuf = LLVMCreateMemoryBufferWithMemoryRange(data, len, "membuf", 1))) {
+    if (!(membuf = LLVMCreateMemoryBufferWithMemoryRange(data, len, "membuf", 0))) {
         return 0;
     }
     if (LLVMParseIRInContext(ctx, membuf, &m, &errmsg)) {

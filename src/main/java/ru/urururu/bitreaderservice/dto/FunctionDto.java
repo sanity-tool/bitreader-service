@@ -11,6 +11,6 @@ import java.util.Collection;
 @Data
 @AllArgsConstructor
 public class FunctionDto {
-    private Collection<BlockDto> blocks;
-    private int entryBlockIndex;
+    private final Collection<BlockDto> blocks;
+    private final int entryBlockIndex;
 }

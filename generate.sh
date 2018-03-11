@@ -12,7 +12,6 @@ case `uname` in
         export LD=g++-4.9
 
         JAVA_INCLUDES="-I$JAVA_HOME/include/ -I$JAVA_HOME/include/linux/"
-        DLL_NAME=libirreader.so
         LDFLAGS="-lpthread -ltermcap"
 
         # todo nice to have
@@ -25,9 +24,6 @@ case `uname` in
         LD=clang++
 
         JAVA_INCLUDES="-I$JAVA_HOME/include/ -I$JAVA_HOME/include/darwin/"
-
-        DLL_NAME=libirreader.jnilib
-
         LDFLAGS="-ltermcap -L/usr/local/opt/libffi/lib"
     ;;
     *)

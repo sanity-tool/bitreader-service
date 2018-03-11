@@ -5,9 +5,7 @@ import org.springframework.stereotype.Component;
 import ru.urururu.bitreaderservice.dto.*;
 import ru.urururu.sanity.cpp.llvm.*;
 
-import java.io.File;
 import java.io.IOException;
-import java.nio.file.Files;
 import java.util.*;
 
 /**
@@ -19,8 +17,8 @@ public class NativeBytecodeParser {
     private
     List<ParserListener> parserListeners;
 
-    public ModuleDto parse(File file) throws IOException {
-        SWIGTYPE_p_LLVMOpaqueModule m = bitreader.parse(Files.readAllBytes(file.toPath()));
+    public ModuleDto parse(byte[] bitcode) throws IOException {
+        SWIGTYPE_p_LLVMOpaqueModule m = bitreader.parse(bitcode);
 
         if (m == null) {
             return null;
@@ -94,7 +92,7 @@ public class NativeBytecodeParser {
                     operands.add(toValue(ctx, bitreader.LLVMGetOperand(nativeInstruction, i)));
                 }
 
-                return new InstructionDto(bitreader.LLVMGetInstructionOpcode(nativeInstruction).toString());
+                return new InstructionDto(bitreader.LLVMGetInstructionOpcode(nativeInstruction).toString(), operands);
         }
     }
 

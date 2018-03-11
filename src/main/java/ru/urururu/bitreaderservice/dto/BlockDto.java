@@ -11,5 +11,5 @@ import java.util.Collection;
 @Data
 @AllArgsConstructor
 public class BlockDto {
-    Collection<InstructionDto> instructions;
+    private final Collection<InstructionDto> instructions;
 }
