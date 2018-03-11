@@ -66,8 +66,7 @@
           "kind" : "LLVMGlobalVariableValueKind"
         } ]
       }, {
-        "kind" : "LLVMRet",
-        "operands" : [ ]
+        "kind" : "LLVMRet"
       } ]
     } ],
     "entryBlockIndex" : 0
@@ -158,8 +157,7 @@
       } ]
     }, {
       "instructions" : [ {
-        "kind" : "LLVMRet",
-        "operands" : [ ]
+        "kind" : "LLVMRet"
       } ]
     } ],
     "entryBlockIndex" : 0
@@ -305,13 +303,11 @@
           "kind" : "LLVMGlobalVariableValueKind"
         } ]
       }, {
-        "kind" : "LLVMRet",
-        "operands" : [ ]
+        "kind" : "LLVMRet"
       } ]
     }, {
       "instructions" : [ {
-        "kind" : "LLVMLandingPad",
-        "operands" : [ ]
+        "kind" : "LLVMLandingPad"
       }, {
         "kind" : "LLVMExtractValue",
         "operands" : [ {
@@ -351,8 +347,7 @@
       } ]
     }, {
       "instructions" : [ {
-        "kind" : "LLVMLandingPad",
-        "operands" : [ ]
+        "kind" : "LLVMLandingPad"
       }, {
         "kind" : "LLVMExtractValue",
         "operands" : [ {
@@ -503,8 +498,7 @@
           "kind" : "LLVMFunctionValueKind"
         } ]
       }, {
-        "kind" : "LLVMUnreachable",
-        "operands" : [ ]
+        "kind" : "LLVMUnreachable"
       } ]
     } ],
     "entryBlockIndex" : 0
@@ -523,8 +517,7 @@
           "kind" : "LLVMFunctionValueKind"
         } ]
       }, {
-        "kind" : "LLVMUnreachable",
-        "operands" : [ ]
+        "kind" : "LLVMUnreachable"
       } ]
     } ],
     "entryBlockIndex" : 0
@@ -725,13 +718,11 @@
       } ]
     }, {
       "instructions" : [ {
-        "kind" : "LLVMRet",
-        "operands" : [ ]
+        "kind" : "LLVMRet"
       } ]
     }, {
       "instructions" : [ {
-        "kind" : "LLVMLandingPad",
-        "operands" : [ ]
+        "kind" : "LLVMLandingPad"
       }, {
         "kind" : "LLVMExtractValue",
         "operands" : [ {
@@ -776,8 +767,7 @@
       } ]
     }, {
       "instructions" : [ {
-        "kind" : "LLVMLandingPad",
-        "operands" : [ ]
+        "kind" : "LLVMLandingPad"
       }, {
         "kind" : "LLVMExtractValue",
         "operands" : [ {
@@ -928,8 +918,7 @@
           "kind" : "LLVMFunctionValueKind"
         } ]
       }, {
-        "kind" : "LLVMUnreachable",
-        "operands" : [ ]
+        "kind" : "LLVMUnreachable"
       } ]
     } ],
     "entryBlockIndex" : 0

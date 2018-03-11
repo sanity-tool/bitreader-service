@@ -65,8 +65,7 @@
           "kind" : "LLVMFunctionValueKind"
         } ]
       }, {
-        "kind" : "LLVMRet",
-        "operands" : [ ]
+        "kind" : "LLVMRet"
       } ]
     } ],
     "entryBlockIndex" : 0
@@ -124,8 +123,7 @@
           "kind" : "LLVMFunctionValueKind"
         } ]
       }, {
-        "kind" : "LLVMRet",
-        "operands" : [ ]
+        "kind" : "LLVMRet"
       } ]
     } ],
     "entryBlockIndex" : 0
@@ -183,8 +181,7 @@
           "kind" : "LLVMFunctionValueKind"
         } ]
       }, {
-        "kind" : "LLVMRet",
-        "operands" : [ ]
+        "kind" : "LLVMRet"
       } ]
     } ],
     "entryBlockIndex" : 0

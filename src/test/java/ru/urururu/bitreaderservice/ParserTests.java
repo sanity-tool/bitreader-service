@@ -36,6 +36,7 @@ public class ParserTests extends TestHelper {
         final PrintStream ps = new PrintStream(baos);
 
         ObjectMapper mapper = new ObjectMapper();
+        mapper.configure(SerializationFeature.WRITE_EMPTY_JSON_ARRAYS, false);
         mapper.enable(SerializationFeature.INDENT_OUTPUT);
 
         mapper.writeValue(ps, testResult);

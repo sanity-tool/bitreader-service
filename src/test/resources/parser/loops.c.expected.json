@@ -70,8 +70,7 @@
       } ]
     }, {
       "instructions" : [ {
-        "kind" : "LLVMRet",
-        "operands" : [ ]
+        "kind" : "LLVMRet"
       } ]
     } ],
     "entryBlockIndex" : 0
@@ -160,8 +159,7 @@
       } ]
     }, {
       "instructions" : [ {
-        "kind" : "LLVMRet",
-        "operands" : [ ]
+        "kind" : "LLVMRet"
       } ]
     } ],
     "entryBlockIndex" : 0
@@ -243,8 +241,7 @@
       } ]
     }, {
       "instructions" : [ {
-        "kind" : "LLVMRet",
-        "operands" : [ ]
+        "kind" : "LLVMRet"
       } ]
     } ],
     "entryBlockIndex" : 0

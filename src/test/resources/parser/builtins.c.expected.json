@@ -89,8 +89,7 @@
           "kind" : "LLVMGlobalVariableValueKind"
         } ]
       }, {
-        "kind" : "LLVMRet",
-        "operands" : [ ]
+        "kind" : "LLVMRet"
       } ]
     } ],
     "entryBlockIndex" : 0
