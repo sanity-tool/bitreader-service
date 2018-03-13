@@ -36,13 +36,13 @@ public class NativeBytecodeParser {
     private ModuleDto toModule(SWIGTYPE_p_LLVMOpaqueModule nativeModule) {
         ModuleParseContext ctx = new ModuleParseContext();
 
-        Map<Integer, FunctionDto> functions = new LinkedHashMap<>();
+        Map<ValueRefDto, FunctionDto> functions = new LinkedHashMap<>();
 
         SWIGTYPE_p_LLVMOpaqueValue nativeFunction = bitreader.LLVMGetFirstFunction(nativeModule);
         while (nativeFunction != null) {
             try {
                 if (bitreader.LLVMGetFirstBasicBlock(nativeFunction) != null) {
-                    functions.put(ctx.getGlobalValueId(nativeFunction), toFunction(ctx, nativeFunction));
+                    functions.put(ctx.getValueRef(nativeFunction), toFunction(ctx, nativeFunction));
                 } else {
                     // todo store some info?
                 }
@@ -76,7 +76,7 @@ public class NativeBytecodeParser {
 
         BlockDto entryBlock = blocks.get(bitreader.LLVMGetEntryBasicBlock(nativeFunction));
 
-        return new FunctionDto(blocks.values(), instanceIndexOf(blocks.values(), entryBlock), params);
+        return new FunctionDto(ctx.getValueRef(nativeFunction), blocks.values(), instanceIndexOf(blocks.values(), entryBlock), params);
     }
 
     private BlockDto toBlock(ParseContext ctx, SWIGTYPE_p_LLVMOpaqueBasicBlock nativeBlock) {
@@ -123,16 +123,21 @@ public class NativeBytecodeParser {
 
     class ModuleParseContext implements ParseContext {
         List<ValueDto> globalValues = new ArrayList<>();
-        Map<SWIGTYPE_p_LLVMOpaqueValue, Integer> globalValueIds = new HashMap<>();
+        Map<SWIGTYPE_p_LLVMOpaqueValue, ValueRefDto> globalValueIds = new HashMap<>();
         Map<Integer, TypeDto> types = new TreeMap<>();
         Map<SWIGTYPE_p_LLVMOpaqueType, Integer> typeIds = new HashMap<>();
 
         @Override
-        public int getGlobalValueId(SWIGTYPE_p_LLVMOpaqueValue value) {
-            return globalValueIds.computeIfAbsent(value, v -> {
-                globalValues.add(toValue(this, v));
-                return globalValues.size() - 1;
-            });
+        public ValueRefDto getValueRef(SWIGTYPE_p_LLVMOpaqueValue value) {
+            LLVMValueKind kind = bitreader.LLVMGetValueKind(value);
+            if (kind == LLVMValueKind.LLVMGlobalVariableValueKind || kind == LLVMValueKind.LLVMFunctionValueKind) {
+                return globalValueIds.computeIfAbsent(value, v -> {
+                    globalValues.add(toValue(this, v));
+                    return new ValueRefDto(ValueRefDto.ValueRefKind.Global, globalValues.size() - 1);
+                });
+            }
+
+            throw new IllegalArgumentException("Unsupported type: " + kind);
         }
 
         @Override

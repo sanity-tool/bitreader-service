@@ -1,5 +1,9 @@
 {
   "functions" : [ {
+    "ref" : {
+      "kind" : "Global",
+      "index" : 0
+    },
     "blocks" : [ {
       "instructions" : [ {
         "kind" : "LLVMStore",
@@ -17,6 +21,10 @@
     } ],
     "entryBlockIndex" : 0
   }, {
+    "ref" : {
+      "kind" : "Global",
+      "index" : 1
+    },
     "blocks" : [ {
       "instructions" : [ {
         "kind" : "LLVMStore",

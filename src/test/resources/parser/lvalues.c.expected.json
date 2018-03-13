@@ -1,5 +1,9 @@
 {
   "functions" : [ {
+    "ref" : {
+      "kind" : "Global",
+      "index" : 0
+    },
     "blocks" : [ {
       "instructions" : [ {
         "kind" : "LLVMAlloca",
@@ -38,6 +42,10 @@
     } ],
     "entryBlockIndex" : 0
   }, {
+    "ref" : {
+      "kind" : "Global",
+      "index" : 1
+    },
     "blocks" : [ {
       "instructions" : [ {
         "kind" : "LLVMStore",
@@ -55,6 +63,10 @@
     } ],
     "entryBlockIndex" : 0
   }, {
+    "ref" : {
+      "kind" : "Global",
+      "index" : 2
+    },
     "blocks" : [ {
       "instructions" : [ {
         "kind" : "LLVMStore",
@@ -80,6 +92,10 @@
     } ],
     "entryBlockIndex" : 0
   }, {
+    "ref" : {
+      "kind" : "Global",
+      "index" : 3
+    },
     "blocks" : [ {
       "instructions" : [ {
         "kind" : "LLVMStore",
@@ -96,6 +112,10 @@
     } ],
     "entryBlockIndex" : 0
   }, {
+    "ref" : {
+      "kind" : "Global",
+      "index" : 4
+    },
     "blocks" : [ {
       "instructions" : [ {
         "kind" : "LLVMLoad",
@@ -153,6 +173,10 @@
     } ],
     "entryBlockIndex" : 0
   }, {
+    "ref" : {
+      "kind" : "Global",
+      "index" : 5
+    },
     "blocks" : [ {
       "instructions" : [ {
         "kind" : "LLVMLoad",
@@ -176,6 +200,10 @@
     } ],
     "entryBlockIndex" : 0
   }, {
+    "ref" : {
+      "kind" : "Global",
+      "index" : 6
+    },
     "blocks" : [ {
       "instructions" : [ {
         "kind" : "LLVMStore",
@@ -192,6 +220,10 @@
     } ],
     "entryBlockIndex" : 0
   }, {
+    "ref" : {
+      "kind" : "Global",
+      "index" : 7
+    },
     "blocks" : [ {
       "instructions" : [ {
         "kind" : "LLVMLoad",

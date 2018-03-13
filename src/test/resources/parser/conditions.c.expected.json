@@ -1,5 +1,9 @@
 {
   "functions" : [ {
+    "ref" : {
+      "kind" : "Global",
+      "index" : 0
+    },
     "blocks" : [ {
       "instructions" : [ {
         "kind" : "LLVMLoad",
@@ -52,6 +56,10 @@
     } ],
     "entryBlockIndex" : 0
   }, {
+    "ref" : {
+      "kind" : "Global",
+      "index" : 1
+    },
     "blocks" : [ {
       "instructions" : [ {
         "kind" : "LLVMLoad",
@@ -119,6 +127,10 @@
     } ],
     "entryBlockIndex" : 0
   }, {
+    "ref" : {
+      "kind" : "Global",
+      "index" : 2
+    },
     "blocks" : [ {
       "instructions" : [ {
         "kind" : "LLVMLoad",

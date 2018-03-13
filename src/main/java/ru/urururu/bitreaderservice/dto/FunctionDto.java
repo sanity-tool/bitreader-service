@@ -11,6 +11,7 @@ import java.util.Collection;
 @Data
 @AllArgsConstructor
 public class FunctionDto {
+    private final ValueRefDto ref;
     private final Collection<BlockDto> blocks;
     private final int entryBlockIndex;
     private final Collection<ValueDto> params;

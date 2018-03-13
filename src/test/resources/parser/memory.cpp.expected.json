@@ -1,5 +1,9 @@
 {
   "functions" : [ {
+    "ref" : {
+      "kind" : "Global",
+      "index" : 0
+    },
     "blocks" : [ {
       "instructions" : [ {
         "kind" : "LLVMCall",
@@ -94,6 +98,10 @@
     } ],
     "entryBlockIndex" : 0
   }, {
+    "ref" : {
+      "kind" : "Global",
+      "index" : 1
+    },
     "blocks" : [ {
       "instructions" : [ {
         "kind" : "LLVMLoad",
@@ -209,6 +217,10 @@
     } ],
     "entryBlockIndex" : 0
   }, {
+    "ref" : {
+      "kind" : "Global",
+      "index" : 2
+    },
     "blocks" : [ {
       "instructions" : [ {
         "kind" : "LLVMAlloca",
@@ -644,6 +656,10 @@
     } ],
     "entryBlockIndex" : 0
   }, {
+    "ref" : {
+      "kind" : "Global",
+      "index" : 3
+    },
     "blocks" : [ {
       "instructions" : [ {
         "kind" : "LLVMCall",
@@ -672,6 +688,10 @@
       "typeId" : 6
     } ]
   }, {
+    "ref" : {
+      "kind" : "Global",
+      "index" : 4
+    },
     "blocks" : [ {
       "instructions" : [ {
         "kind" : "LLVMAlloca",
