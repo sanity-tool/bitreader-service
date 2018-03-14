@@ -18,7 +18,7 @@
           "index" : 0
         }, {
           "kind" : "Instruction",
-          "index" : -1
+          "index" : 0
         } ]
       }, {
         "kind" : "LLVMCall",

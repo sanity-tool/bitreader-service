@@ -15,7 +15,7 @@
         "kind" : "LLVMGetElementPtr",
         "operands" : [ {
           "kind" : "Instruction",
-          "index" : -1
+          "index" : 0
         }, {
           "kind" : "Global",
           "index" : 2
@@ -27,13 +27,13 @@
         "kind" : "LLVMLoad",
         "operands" : [ {
           "kind" : "Instruction",
-          "index" : -1
+          "index" : 1
         } ]
       }, {
         "kind" : "LLVMStore",
         "operands" : [ {
           "kind" : "Instruction",
-          "index" : -1
+          "index" : 2
         }, {
           "kind" : "Global",
           "index" : 1

@@ -108,7 +108,7 @@
           "index" : 0
         }, {
           "kind" : "Instruction",
-          "index" : -1
+          "index" : 4
         } ]
       }, {
         "kind" : "LLVMCall",
@@ -182,7 +182,7 @@
         "kind" : "LLVMStore",
         "operands" : [ {
           "kind" : "Instruction",
-          "index" : -1
+          "index" : 1
         }, {
           "kind" : "Instruction",
           "index" : -1
@@ -206,7 +206,7 @@
         "kind" : "LLVMStore",
         "operands" : [ {
           "kind" : "Instruction",
-          "index" : -1
+          "index" : 4
         }, {
           "kind" : "Instruction",
           "index" : -1
@@ -235,16 +235,16 @@
         "kind" : "LLVMBitCast",
         "operands" : [ {
           "kind" : "Instruction",
-          "index" : -1
+          "index" : 0
         } ]
       }, {
         "kind" : "LLVMCall",
         "operands" : [ {
           "kind" : "Instruction",
-          "index" : -1
+          "index" : 1
         }, {
           "kind" : "Instruction",
-          "index" : -1
+          "index" : 2
         }, {
           "kind" : "Global",
           "index" : 15
@@ -276,7 +276,7 @@
         "kind" : "LLVMResume",
         "operands" : [ {
           "kind" : "Instruction",
-          "index" : -1
+          "index" : 0
         } ]
       } ]
     }, {
@@ -299,7 +299,7 @@
         "kind" : "LLVMRet",
         "operands" : [ {
           "kind" : "Instruction",
-          "index" : -1
+          "index" : 1
         } ]
       } ]
     }, {
@@ -316,7 +316,7 @@
         "kind" : "LLVMBr",
         "operands" : [ {
           "kind" : "Block",
-          "index" : -1
+          "index" : 3
         } ]
       } ]
     }, {
@@ -330,19 +330,19 @@
         "kind" : "LLVMTrunc",
         "operands" : [ {
           "kind" : "Instruction",
-          "index" : -1
+          "index" : 0
         } ]
       }, {
         "kind" : "LLVMBr",
         "operands" : [ {
           "kind" : "Instruction",
-          "index" : -1
+          "index" : 1
         }, {
           "kind" : "Block",
-          "index" : -1
+          "index" : 3
         }, {
           "kind" : "Block",
-          "index" : -1
+          "index" : 5
         } ]
       } ]
     } ],
@@ -417,7 +417,7 @@
         "kind" : "LLVMStore",
         "operands" : [ {
           "kind" : "Instruction",
-          "index" : -1
+          "index" : 0
         }, {
           "kind" : "Instruction",
           "index" : -1
@@ -440,7 +440,7 @@
         "kind" : "LLVMCall",
         "operands" : [ {
           "kind" : "Instruction",
-          "index" : -1
+          "index" : 0
         }, {
           "kind" : "Global",
           "index" : 4

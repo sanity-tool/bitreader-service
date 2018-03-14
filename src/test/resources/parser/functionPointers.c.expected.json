@@ -44,7 +44,7 @@
         "kind" : "LLVMCall",
         "operands" : [ {
           "kind" : "Instruction",
-          "index" : -1
+          "index" : 0
         } ]
       }, {
         "kind" : "LLVMRet"

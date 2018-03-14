@@ -33,7 +33,7 @@
           "index" : 1
         }, {
           "kind" : "Instruction",
-          "index" : -1
+          "index" : 0
         } ]
       }, {
         "kind" : "LLVMRet"
@@ -125,7 +125,7 @@
         "kind" : "LLVMGetElementPtr",
         "operands" : [ {
           "kind" : "Instruction",
-          "index" : -1
+          "index" : 0
         }, {
           "kind" : "Global",
           "index" : 11
@@ -137,7 +137,7 @@
           "index" : 1
         }, {
           "kind" : "Instruction",
-          "index" : -1
+          "index" : 1
         } ]
       }, {
         "kind" : "LLVMLoad",
@@ -149,7 +149,7 @@
         "kind" : "LLVMGetElementPtr",
         "operands" : [ {
           "kind" : "Instruction",
-          "index" : -1
+          "index" : 3
         }, {
           "kind" : "Global",
           "index" : 13
@@ -161,7 +161,7 @@
           "index" : 7
         }, {
           "kind" : "Instruction",
-          "index" : -1
+          "index" : 4
         } ]
       }, {
         "kind" : "LLVMRet"
@@ -187,7 +187,7 @@
           "index" : 1
         }, {
           "kind" : "Instruction",
-          "index" : -1
+          "index" : 0
         } ]
       }, {
         "kind" : "LLVMRet"
@@ -230,7 +230,7 @@
         "kind" : "LLVMGetElementPtr",
         "operands" : [ {
           "kind" : "Instruction",
-          "index" : -1
+          "index" : 0
         }, {
           "kind" : "Global",
           "index" : 16
@@ -245,7 +245,7 @@
           "index" : 1
         }, {
           "kind" : "Instruction",
-          "index" : -1
+          "index" : 1
         } ]
       }, {
         "kind" : "LLVMLoad",
@@ -257,7 +257,7 @@
         "kind" : "LLVMGetElementPtr",
         "operands" : [ {
           "kind" : "Instruction",
-          "index" : -1
+          "index" : 3
         }, {
           "kind" : "Global",
           "index" : 16
@@ -272,7 +272,7 @@
           "index" : 7
         }, {
           "kind" : "Instruction",
-          "index" : -1
+          "index" : 4
         } ]
       }, {
         "kind" : "LLVMRet"

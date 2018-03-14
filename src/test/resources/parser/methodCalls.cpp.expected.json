@@ -18,7 +18,7 @@
           "index" : 0
         }, {
           "kind" : "Instruction",
-          "index" : -1
+          "index" : 0
         } ]
       }, {
         "kind" : "LLVMCall",
@@ -39,13 +39,13 @@
         "kind" : "LLVMLoad",
         "operands" : [ {
           "kind" : "Instruction",
-          "index" : -1
+          "index" : 0
         } ]
       }, {
         "kind" : "LLVMCall",
         "operands" : [ {
           "kind" : "Instruction",
-          "index" : -1
+          "index" : 3
         }, {
           "kind" : "Global",
           "index" : 6
@@ -95,7 +95,7 @@
           "index" : 0
         }, {
           "kind" : "Instruction",
-          "index" : -1
+          "index" : 0
         } ]
       }, {
         "kind" : "LLVMCall",
@@ -116,25 +116,25 @@
         "kind" : "LLVMLoad",
         "operands" : [ {
           "kind" : "Instruction",
-          "index" : -1
+          "index" : 0
         } ]
       }, {
         "kind" : "LLVMBitCast",
         "operands" : [ {
           "kind" : "Instruction",
-          "index" : -1
+          "index" : 3
         } ]
       }, {
         "kind" : "LLVMLoad",
         "operands" : [ {
           "kind" : "Instruction",
-          "index" : -1
+          "index" : 4
         } ]
       }, {
         "kind" : "LLVMGetElementPtr",
         "operands" : [ {
           "kind" : "Instruction",
-          "index" : -1
+          "index" : 5
         }, {
           "kind" : "Global",
           "index" : 12
@@ -143,16 +143,16 @@
         "kind" : "LLVMLoad",
         "operands" : [ {
           "kind" : "Instruction",
-          "index" : -1
+          "index" : 6
         } ]
       }, {
         "kind" : "LLVMCall",
         "operands" : [ {
           "kind" : "Instruction",
-          "index" : -1
+          "index" : 3
         }, {
           "kind" : "Instruction",
-          "index" : -1
+          "index" : 7
         } ]
       }, {
         "kind" : "LLVMRet"

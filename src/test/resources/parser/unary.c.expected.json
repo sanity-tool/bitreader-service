@@ -41,10 +41,10 @@
         "kind" : "LLVMStore",
         "operands" : [ {
           "kind" : "Instruction",
-          "index" : -1
+          "index" : 0
         }, {
           "kind" : "Instruction",
-          "index" : -1
+          "index" : 1
         } ]
       }, {
         "kind" : "LLVMRet"

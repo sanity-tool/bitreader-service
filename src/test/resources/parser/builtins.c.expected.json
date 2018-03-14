@@ -21,16 +21,16 @@
         "kind" : "LLVMFRem",
         "operands" : [ {
           "kind" : "Instruction",
-          "index" : -1
+          "index" : 0
         }, {
           "kind" : "Instruction",
-          "index" : -1
+          "index" : 1
         } ]
       }, {
         "kind" : "LLVMStore",
         "operands" : [ {
           "kind" : "Instruction",
-          "index" : -1
+          "index" : 2
         }, {
           "kind" : "Global",
           "index" : 3
@@ -45,7 +45,7 @@
         "kind" : "LLVMFPExt",
         "operands" : [ {
           "kind" : "Instruction",
-          "index" : -1
+          "index" : 4
         } ]
       }, {
         "kind" : "LLVMLoad",
@@ -57,28 +57,28 @@
         "kind" : "LLVMFPExt",
         "operands" : [ {
           "kind" : "Instruction",
-          "index" : -1
+          "index" : 6
         } ]
       }, {
         "kind" : "LLVMFRem",
         "operands" : [ {
           "kind" : "Instruction",
-          "index" : -1
+          "index" : 5
         }, {
           "kind" : "Instruction",
-          "index" : -1
+          "index" : 7
         } ]
       }, {
         "kind" : "LLVMFPTrunc",
         "operands" : [ {
           "kind" : "Instruction",
-          "index" : -1
+          "index" : 8
         } ]
       }, {
         "kind" : "LLVMStore",
         "operands" : [ {
           "kind" : "Instruction",
-          "index" : -1
+          "index" : 9
         }, {
           "kind" : "Global",
           "index" : 6
@@ -99,16 +99,16 @@
         "kind" : "LLVMFRem",
         "operands" : [ {
           "kind" : "Instruction",
-          "index" : -1
+          "index" : 11
         }, {
           "kind" : "Instruction",
-          "index" : -1
+          "index" : 12
         } ]
       }, {
         "kind" : "LLVMStore",
         "operands" : [ {
           "kind" : "Instruction",
-          "index" : -1
+          "index" : 13
         }, {
           "kind" : "Global",
           "index" : 9
