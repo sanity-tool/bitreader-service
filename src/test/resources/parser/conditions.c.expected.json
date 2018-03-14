@@ -9,7 +9,7 @@
         "kind" : "LLVMLoad",
         "operands" : [ {
           "kind" : "Global",
-          "index" : 1
+          "index" : 2
         } ]
       }, {
         "kind" : "LLVMICmp",
@@ -18,7 +18,7 @@
           "index" : 0
         }, {
           "kind" : "Global",
-          "index" : 2
+          "index" : 1
         } ]
       }, {
         "kind" : "LLVMBr",
@@ -63,7 +63,7 @@
         "kind" : "LLVMLoad",
         "operands" : [ {
           "kind" : "Global",
-          "index" : 1
+          "index" : 2
         } ]
       }, {
         "kind" : "LLVMICmp",
@@ -72,7 +72,7 @@
           "index" : 0
         }, {
           "kind" : "Global",
-          "index" : 2
+          "index" : 1
         } ]
       }, {
         "kind" : "LLVMBr",
@@ -131,7 +131,7 @@
         "kind" : "LLVMLoad",
         "operands" : [ {
           "kind" : "Global",
-          "index" : 1
+          "index" : 2
         } ]
       }, {
         "kind" : "LLVMICmp",
@@ -140,7 +140,7 @@
           "index" : 0
         }, {
           "kind" : "Global",
-          "index" : 2
+          "index" : 1
         } ]
       }, {
         "kind" : "LLVMBr",
@@ -202,13 +202,17 @@
     "name" : "testImplicitIf",
     "typeId" : 0
   }, {
-    "kind" : "LLVMGlobalVariableValueKind",
-    "name" : "I",
-    "typeId" : 3
-  }, {
     "kind" : "LLVMConstantIntValueKind",
     "typeId" : 4,
     "intValue" : 0
+  }, {
+    "kind" : "LLVMGlobalVariableValueKind",
+    "name" : "I",
+    "typeId" : 3,
+    "operands" : [ {
+      "kind" : "Global",
+      "index" : 1
+    } ]
   }, {
     "kind" : "LLVMFunctionValueKind",
     "name" : "foo",

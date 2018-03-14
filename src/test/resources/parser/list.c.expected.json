@@ -9,7 +9,7 @@
         "kind" : "LLVMLoad",
         "operands" : [ {
           "kind" : "Global",
-          "index" : 1
+          "index" : 2
         } ]
       }, {
         "kind" : "LLVMGetElementPtr",
@@ -18,10 +18,10 @@
           "index" : 0
         }, {
           "kind" : "Global",
-          "index" : 2
+          "index" : 3
         }, {
           "kind" : "Global",
-          "index" : 2
+          "index" : 3
         } ]
       }, {
         "kind" : "LLVMLoad",
@@ -36,7 +36,7 @@
           "index" : 2
         }, {
           "kind" : "Global",
-          "index" : 1
+          "index" : 2
         } ]
       }, {
         "kind" : "LLVMRet"
@@ -71,9 +71,16 @@
     "name" : "switchToNext",
     "typeId" : 0
   }, {
+    "kind" : "LLVMConstantPointerNullValueKind",
+    "typeId" : 4
+  }, {
     "kind" : "LLVMGlobalVariableValueKind",
     "name" : "PLIST",
-    "typeId" : 3
+    "typeId" : 3,
+    "operands" : [ {
+      "kind" : "Global",
+      "index" : 1
+    } ]
   }, {
     "kind" : "LLVMConstantIntValueKind",
     "typeId" : 6,

@@ -343,7 +343,11 @@
   }, {
     "kind" : "LLVMGlobalVariableValueKind",
     "name" : "I",
-    "typeId" : 4
+    "typeId" : 4,
+    "operands" : [ {
+      "kind" : "Global",
+      "index" : 1
+    } ]
   }, {
     "kind" : "LLVMConstantIntValueKind",
     "typeId" : 3,

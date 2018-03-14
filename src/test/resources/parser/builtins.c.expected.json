@@ -9,13 +9,13 @@
         "kind" : "LLVMLoad",
         "operands" : [ {
           "kind" : "Global",
-          "index" : 1
+          "index" : 2
         } ]
       }, {
         "kind" : "LLVMLoad",
         "operands" : [ {
           "kind" : "Global",
-          "index" : 2
+          "index" : 3
         } ]
       }, {
         "kind" : "LLVMFRem",
@@ -33,13 +33,13 @@
           "index" : 2
         }, {
           "kind" : "Global",
-          "index" : 3
+          "index" : 4
         } ]
       }, {
         "kind" : "LLVMLoad",
         "operands" : [ {
           "kind" : "Global",
-          "index" : 4
+          "index" : 5
         } ]
       }, {
         "kind" : "LLVMFPExt",
@@ -51,7 +51,7 @@
         "kind" : "LLVMLoad",
         "operands" : [ {
           "kind" : "Global",
-          "index" : 5
+          "index" : 6
         } ]
       }, {
         "kind" : "LLVMFPExt",
@@ -81,19 +81,19 @@
           "index" : 9
         }, {
           "kind" : "Global",
-          "index" : 6
-        } ]
-      }, {
-        "kind" : "LLVMLoad",
-        "operands" : [ {
-          "kind" : "Global",
           "index" : 7
         } ]
       }, {
         "kind" : "LLVMLoad",
         "operands" : [ {
           "kind" : "Global",
-          "index" : 8
+          "index" : 9
+        } ]
+      }, {
+        "kind" : "LLVMLoad",
+        "operands" : [ {
+          "kind" : "Global",
+          "index" : 10
         } ]
       }, {
         "kind" : "LLVMFRem",
@@ -111,7 +111,7 @@
           "index" : 13
         }, {
           "kind" : "Global",
-          "index" : 9
+          "index" : 11
         } ]
       }, {
         "kind" : "LLVMRet"
@@ -143,40 +143,84 @@
     "name" : "testFloatBuiltinOps",
     "typeId" : 0
   }, {
+    "kind" : "LLVMConstantFPValueKind",
+    "typeId" : 4,
+    "fpValue" : 0.0
+  }, {
     "kind" : "LLVMGlobalVariableValueKind",
     "name" : "F0",
-    "typeId" : 3
+    "typeId" : 3,
+    "operands" : [ {
+      "kind" : "Global",
+      "index" : 1
+    } ]
   }, {
     "kind" : "LLVMGlobalVariableValueKind",
     "name" : "F1",
-    "typeId" : 3
+    "typeId" : 3,
+    "operands" : [ {
+      "kind" : "Global",
+      "index" : 1
+    } ]
   }, {
     "kind" : "LLVMGlobalVariableValueKind",
     "name" : "FR",
-    "typeId" : 3
+    "typeId" : 3,
+    "operands" : [ {
+      "kind" : "Global",
+      "index" : 1
+    } ]
   }, {
     "kind" : "LLVMGlobalVariableValueKind",
     "name" : "D0",
-    "typeId" : 3
+    "typeId" : 3,
+    "operands" : [ {
+      "kind" : "Global",
+      "index" : 1
+    } ]
   }, {
     "kind" : "LLVMGlobalVariableValueKind",
     "name" : "D1",
-    "typeId" : 3
+    "typeId" : 3,
+    "operands" : [ {
+      "kind" : "Global",
+      "index" : 1
+    } ]
   }, {
     "kind" : "LLVMGlobalVariableValueKind",
     "name" : "DR",
-    "typeId" : 3
+    "typeId" : 3,
+    "operands" : [ {
+      "kind" : "Global",
+      "index" : 1
+    } ]
+  }, {
+    "kind" : "LLVMConstantFPValueKind",
+    "typeId" : 6,
+    "fpValue" : 0.0
   }, {
     "kind" : "LLVMGlobalVariableValueKind",
     "name" : "LD0",
-    "typeId" : 5
+    "typeId" : 5,
+    "operands" : [ {
+      "kind" : "Global",
+      "index" : 8
+    } ]
   }, {
     "kind" : "LLVMGlobalVariableValueKind",
     "name" : "LD1",
-    "typeId" : 5
+    "typeId" : 5,
+    "operands" : [ {
+      "kind" : "Global",
+      "index" : 8
+    } ]
   }, {
     "kind" : "LLVMGlobalVariableValueKind",
     "name" : "LDR",
-    "typeId" : 5
+    "typeId" : 5,
+    "operands" : [ {
+      "kind" : "Global",
+      "index" : 8
+    } ]
   } ]
 }

@@ -9,7 +9,7 @@
         "kind" : "LLVMLoad",
         "operands" : [ {
           "kind" : "Global",
-          "index" : 1
+          "index" : 2
         } ]
       }, {
         "kind" : "LLVMSwitch",
@@ -21,28 +21,14 @@
           "index" : -1
         }, {
           "kind" : "Global",
-          "index" : 2
-        }, {
-          "kind" : "Block",
-          "index" : -1
-        }, {
-          "kind" : "Global",
           "index" : 3
         }, {
           "kind" : "Block",
           "index" : -1
-        } ]
-      } ]
-    }, {
-      "instructions" : [ {
-        "kind" : "LLVMCall",
-        "operands" : [ {
+        }, {
           "kind" : "Global",
           "index" : 4
-        } ]
-      }, {
-        "kind" : "LLVMBr",
-        "operands" : [ {
+        }, {
           "kind" : "Block",
           "index" : -1
         } ]
@@ -83,52 +69,6 @@
           "index" : 7
         } ]
       }, {
-        "kind" : "LLVMRet"
-      } ]
-    } ],
-    "entryBlockIndex" : 0
-  }, {
-    "ref" : {
-      "kind" : "Global",
-      "index" : 8
-    },
-    "blocks" : [ {
-      "instructions" : [ {
-        "kind" : "LLVMLoad",
-        "operands" : [ {
-          "kind" : "Global",
-          "index" : 1
-        } ]
-      }, {
-        "kind" : "LLVMSwitch",
-        "operands" : [ {
-          "kind" : "Instruction",
-          "index" : 0
-        }, {
-          "kind" : "Block",
-          "index" : -1
-        }, {
-          "kind" : "Global",
-          "index" : 2
-        }, {
-          "kind" : "Block",
-          "index" : -1
-        }, {
-          "kind" : "Global",
-          "index" : 3
-        }, {
-          "kind" : "Block",
-          "index" : -1
-        } ]
-      } ]
-    }, {
-      "instructions" : [ {
-        "kind" : "LLVMCall",
-        "operands" : [ {
-          "kind" : "Global",
-          "index" : 4
-        } ]
-      }, {
         "kind" : "LLVMBr",
         "operands" : [ {
           "kind" : "Block",
@@ -140,21 +80,7 @@
         "kind" : "LLVMCall",
         "operands" : [ {
           "kind" : "Global",
-          "index" : 5
-        } ]
-      }, {
-        "kind" : "LLVMBr",
-        "operands" : [ {
-          "kind" : "Block",
-          "index" : -1
-        } ]
-      } ]
-    }, {
-      "instructions" : [ {
-        "kind" : "LLVMCall",
-        "operands" : [ {
-          "kind" : "Global",
-          "index" : 7
+          "index" : 8
         } ]
       }, {
         "kind" : "LLVMRet"
@@ -171,7 +97,7 @@
         "kind" : "LLVMLoad",
         "operands" : [ {
           "kind" : "Global",
-          "index" : 1
+          "index" : 2
         } ]
       }, {
         "kind" : "LLVMSwitch",
@@ -183,28 +109,14 @@
           "index" : -1
         }, {
           "kind" : "Global",
-          "index" : 2
-        }, {
-          "kind" : "Block",
-          "index" : -1
-        }, {
-          "kind" : "Global",
           "index" : 3
         }, {
           "kind" : "Block",
           "index" : -1
-        } ]
-      } ]
-    }, {
-      "instructions" : [ {
-        "kind" : "LLVMCall",
-        "operands" : [ {
+        }, {
           "kind" : "Global",
           "index" : 4
-        } ]
-      }, {
-        "kind" : "LLVMBr",
-        "operands" : [ {
+        }, {
           "kind" : "Block",
           "index" : -1
         } ]
@@ -228,7 +140,95 @@
         "kind" : "LLVMCall",
         "operands" : [ {
           "kind" : "Global",
-          "index" : 7
+          "index" : 6
+        } ]
+      }, {
+        "kind" : "LLVMBr",
+        "operands" : [ {
+          "kind" : "Block",
+          "index" : -1
+        } ]
+      } ]
+    }, {
+      "instructions" : [ {
+        "kind" : "LLVMCall",
+        "operands" : [ {
+          "kind" : "Global",
+          "index" : 8
+        } ]
+      }, {
+        "kind" : "LLVMRet"
+      } ]
+    } ],
+    "entryBlockIndex" : 0
+  }, {
+    "ref" : {
+      "kind" : "Global",
+      "index" : 10
+    },
+    "blocks" : [ {
+      "instructions" : [ {
+        "kind" : "LLVMLoad",
+        "operands" : [ {
+          "kind" : "Global",
+          "index" : 2
+        } ]
+      }, {
+        "kind" : "LLVMSwitch",
+        "operands" : [ {
+          "kind" : "Instruction",
+          "index" : 0
+        }, {
+          "kind" : "Block",
+          "index" : -1
+        }, {
+          "kind" : "Global",
+          "index" : 3
+        }, {
+          "kind" : "Block",
+          "index" : -1
+        }, {
+          "kind" : "Global",
+          "index" : 4
+        }, {
+          "kind" : "Block",
+          "index" : -1
+        } ]
+      } ]
+    }, {
+      "instructions" : [ {
+        "kind" : "LLVMCall",
+        "operands" : [ {
+          "kind" : "Global",
+          "index" : 5
+        } ]
+      }, {
+        "kind" : "LLVMBr",
+        "operands" : [ {
+          "kind" : "Block",
+          "index" : -1
+        } ]
+      } ]
+    }, {
+      "instructions" : [ {
+        "kind" : "LLVMCall",
+        "operands" : [ {
+          "kind" : "Global",
+          "index" : 6
+        } ]
+      }, {
+        "kind" : "LLVMBr",
+        "operands" : [ {
+          "kind" : "Block",
+          "index" : -1
+        } ]
+      } ]
+    }, {
+      "instructions" : [ {
+        "kind" : "LLVMCall",
+        "operands" : [ {
+          "kind" : "Global",
+          "index" : 8
         } ]
       }, {
         "kind" : "LLVMRet"
@@ -262,9 +262,17 @@
     "name" : "testSwitchWithDefault",
     "typeId" : 0
   }, {
+    "kind" : "LLVMConstantIntValueKind",
+    "typeId" : 4,
+    "intValue" : 0
+  }, {
     "kind" : "LLVMGlobalVariableValueKind",
     "name" : "I",
-    "typeId" : 3
+    "typeId" : 3,
+    "operands" : [ {
+      "kind" : "Global",
+      "index" : 1
+    } ]
   }, {
     "kind" : "LLVMConstantIntValueKind",
     "typeId" : 4,

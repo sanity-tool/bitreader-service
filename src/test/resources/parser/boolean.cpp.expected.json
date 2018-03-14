@@ -9,7 +9,7 @@
         "kind" : "LLVMLoad",
         "operands" : [ {
           "kind" : "Global",
-          "index" : 1
+          "index" : 2
         } ]
       }, {
         "kind" : "LLVMTrunc",
@@ -35,7 +35,7 @@
         "kind" : "LLVMLoad",
         "operands" : [ {
           "kind" : "Global",
-          "index" : 2
+          "index" : 3
         } ]
       }, {
         "kind" : "LLVMTrunc",
@@ -55,7 +55,7 @@
         "kind" : "LLVMPHI",
         "operands" : [ {
           "kind" : "Global",
-          "index" : 3
+          "index" : 4
         }, {
           "kind" : "Instruction",
           "index" : -1
@@ -72,60 +72,60 @@
           "kind" : "Instruction",
           "index" : 1
         }, {
-          "kind" : "Global",
-          "index" : 4
-        } ]
-      }, {
-        "kind" : "LLVMLoad",
-        "operands" : [ {
-          "kind" : "Global",
-          "index" : 1
-        } ]
-      }, {
-        "kind" : "LLVMTrunc",
-        "operands" : [ {
-          "kind" : "Instruction",
-          "index" : 3
-        } ]
-      }, {
-        "kind" : "LLVMBr",
-        "operands" : [ {
-          "kind" : "Instruction",
-          "index" : 4
-        }, {
-          "kind" : "Block",
-          "index" : -1
-        }, {
-          "kind" : "Block",
-          "index" : -1
-        } ]
-      } ]
-    }, {
-      "instructions" : [ {
-        "kind" : "LLVMLoad",
-        "operands" : [ {
-          "kind" : "Global",
-          "index" : 2
-        } ]
-      }, {
-        "kind" : "LLVMTrunc",
-        "operands" : [ {
-          "kind" : "Instruction",
-          "index" : 0
-        } ]
-      }, {
-        "kind" : "LLVMBr",
-        "operands" : [ {
-          "kind" : "Block",
-          "index" : -1
-        } ]
-      } ]
-    }, {
-      "instructions" : [ {
-        "kind" : "LLVMPHI",
-        "operands" : [ {
           "kind" : "Global",
           "index" : 5
+        } ]
+      }, {
+        "kind" : "LLVMLoad",
+        "operands" : [ {
+          "kind" : "Global",
+          "index" : 2
+        } ]
+      }, {
+        "kind" : "LLVMTrunc",
+        "operands" : [ {
+          "kind" : "Instruction",
+          "index" : 3
+        } ]
+      }, {
+        "kind" : "LLVMBr",
+        "operands" : [ {
+          "kind" : "Instruction",
+          "index" : 4
+        }, {
+          "kind" : "Block",
+          "index" : -1
+        }, {
+          "kind" : "Block",
+          "index" : -1
+        } ]
+      } ]
+    }, {
+      "instructions" : [ {
+        "kind" : "LLVMLoad",
+        "operands" : [ {
+          "kind" : "Global",
+          "index" : 3
+        } ]
+      }, {
+        "kind" : "LLVMTrunc",
+        "operands" : [ {
+          "kind" : "Instruction",
+          "index" : 0
+        } ]
+      }, {
+        "kind" : "LLVMBr",
+        "operands" : [ {
+          "kind" : "Block",
+          "index" : -1
+        } ]
+      } ]
+    }, {
+      "instructions" : [ {
+        "kind" : "LLVMPHI",
+        "operands" : [ {
+          "kind" : "Global",
+          "index" : 6
         }, {
           "kind" : "Instruction",
           "index" : -1
@@ -143,7 +143,7 @@
           "index" : 1
         }, {
           "kind" : "Global",
-          "index" : 4
+          "index" : 5
         } ]
       }, {
         "kind" : "LLVMRet"
@@ -174,13 +174,25 @@
     "name" : "_ZL15testBoolLogicalv",
     "typeId" : 0
   }, {
+    "kind" : "LLVMConstantIntValueKind",
+    "typeId" : 4,
+    "intValue" : 0
+  }, {
     "kind" : "LLVMGlobalVariableValueKind",
     "name" : "_ZL2B0",
-    "typeId" : 3
+    "typeId" : 3,
+    "operands" : [ {
+      "kind" : "Global",
+      "index" : 1
+    } ]
   }, {
     "kind" : "LLVMGlobalVariableValueKind",
     "name" : "_ZL2B1",
-    "typeId" : 3
+    "typeId" : 3,
+    "operands" : [ {
+      "kind" : "Global",
+      "index" : 1
+    } ]
   }, {
     "kind" : "LLVMConstantIntValueKind",
     "typeId" : 5,
@@ -188,7 +200,11 @@
   }, {
     "kind" : "LLVMGlobalVariableValueKind",
     "name" : "_ZL2BR",
-    "typeId" : 3
+    "typeId" : 3,
+    "operands" : [ {
+      "kind" : "Global",
+      "index" : 1
+    } ]
   }, {
     "kind" : "LLVMConstantIntValueKind",
     "typeId" : 5,

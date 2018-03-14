@@ -9,10 +9,10 @@
         "kind" : "LLVMStore",
         "operands" : [ {
           "kind" : "Global",
-          "index" : 1
+          "index" : 2
         }, {
           "kind" : "Global",
-          "index" : 2
+          "index" : 4
         } ]
       }, {
         "kind" : "LLVMRet"
@@ -22,20 +22,20 @@
   }, {
     "ref" : {
       "kind" : "Global",
-      "index" : 3
+      "index" : 5
     },
     "blocks" : [ {
       "instructions" : [ {
         "kind" : "LLVMLoad",
         "operands" : [ {
           "kind" : "Global",
-          "index" : 1
+          "index" : 2
         } ]
       }, {
         "kind" : "LLVMLoad",
         "operands" : [ {
           "kind" : "Global",
-          "index" : 2
+          "index" : 4
         } ]
       }, {
         "kind" : "LLVMStore",
@@ -75,13 +75,28 @@
     "name" : "addressOf",
     "typeId" : 0
   }, {
+    "kind" : "LLVMConstantIntValueKind",
+    "typeId" : 4,
+    "intValue" : 0
+  }, {
     "kind" : "LLVMGlobalVariableValueKind",
     "name" : "I",
+    "typeId" : 3,
+    "operands" : [ {
+      "kind" : "Global",
+      "index" : 1
+    } ]
+  }, {
+    "kind" : "LLVMConstantPointerNullValueKind",
     "typeId" : 3
   }, {
     "kind" : "LLVMGlobalVariableValueKind",
     "name" : "I_P",
-    "typeId" : 5
+    "typeId" : 5,
+    "operands" : [ {
+      "kind" : "Global",
+      "index" : 3
+    } ]
   }, {
     "kind" : "LLVMFunctionValueKind",
     "name" : "deref",

@@ -12,7 +12,7 @@
           "index" : 1
         }, {
           "kind" : "Global",
-          "index" : 2
+          "index" : 3
         } ]
       }, {
         "kind" : "LLVMRet"
@@ -22,17 +22,17 @@
   }, {
     "ref" : {
       "kind" : "Global",
-      "index" : 3
+      "index" : 4
     },
     "blocks" : [ {
       "instructions" : [ {
         "kind" : "LLVMStore",
         "operands" : [ {
           "kind" : "Global",
-          "index" : 4
+          "index" : 5
         }, {
           "kind" : "Global",
-          "index" : 5
+          "index" : 6
         } ]
       }, {
         "kind" : "LLVMRet"
@@ -67,9 +67,17 @@
     "typeId" : 3,
     "intValue" : 1
   }, {
+    "kind" : "LLVMConstantIntValueKind",
+    "typeId" : 3,
+    "intValue" : 0
+  }, {
     "kind" : "LLVMGlobalVariableValueKind",
     "name" : "I",
-    "typeId" : 4
+    "typeId" : 4,
+    "operands" : [ {
+      "kind" : "Global",
+      "index" : 2
+    } ]
   }, {
     "kind" : "LLVMFunctionValueKind",
     "name" : "writeToGlobalIntPointer",
@@ -80,6 +88,10 @@
   }, {
     "kind" : "LLVMGlobalVariableValueKind",
     "name" : "I_P",
-    "typeId" : 5
+    "typeId" : 5,
+    "operands" : [ {
+      "kind" : "Global",
+      "index" : 5
+    } ]
   } ]
 }

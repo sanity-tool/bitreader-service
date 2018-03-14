@@ -176,15 +176,24 @@ public class NativeBytecodeParser {
             final ValueDto value;
 
             LLVMValueKind kind = bitreader.LLVMGetValueKind(nativeValue);
-            if (kind == LLVMValueKind.LLVMGlobalVariableValueKind || kind == LLVMValueKind.LLVMFunctionValueKind || kind == LLVMValueKind.LLVMConstantPointerNullValueKind || kind == LLVMValueKind.LLVMUndefValueValueKind) {
+            if (kind == LLVMValueKind.LLVMFunctionValueKind || kind == LLVMValueKind.LLVMConstantPointerNullValueKind || kind == LLVMValueKind.LLVMUndefValueValueKind) {
                 value = toValue(this, nativeValue).build();
+            } else if (kind == LLVMValueKind.LLVMGlobalVariableValueKind) {
+                ValueDto.ValueDtoBuilder builder = toValue(this, nativeValue);
+                SWIGTYPE_p_LLVMOpaqueValue nativeInitializer = bitreader.LLVMGetInitializer(nativeValue);
+
+                if (nativeInitializer != null) {
+                    builder.operands(Collections.singletonList(getValueRef(nativeInitializer)));
+                }
+
+                value = builder.build();
             } else if (kind == LLVMValueKind.LLVMConstantIntValueKind) {
                 value = toValue(this, nativeValue).intValue(bitreader.LLVMConstIntGetSExtValue(nativeValue)).build();
             } else if (kind == LLVMValueKind.LLVMConstantFPValueKind) {
                 value = toValue(this, nativeValue).fpValue(bitreader.GetConstantFPDoubleValue(nativeValue)).build();
             } else if (kind == LLVMValueKind.LLVMConstantExprValueKind) {
                 value = toValue(this, nativeValue).opcode(bitreader.LLVMGetConstOpcode(nativeValue).toString()).operands(getOperands(this, nativeValue)).build(); // todo add expr info
-            } else if (kind == LLVMValueKind.LLVMMetadataAsValueValueKind) {
+            } else if (kind == LLVMValueKind.LLVMMetadataAsValueValueKind || kind == LLVMValueKind.LLVMConstantAggregateZeroValueKind) {
                 // trivial support (not using in clients yet)
                 value = toValue(this, nativeValue).build();
             } else {

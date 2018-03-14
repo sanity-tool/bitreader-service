@@ -27,16 +27,16 @@
           "index" : 1
         }, {
           "kind" : "Global",
-          "index" : 3
+          "index" : 4
         } ]
       }, {
         "kind" : "LLVMCall",
         "operands" : [ {
           "kind" : "Global",
-          "index" : 4
+          "index" : 5
         }, {
           "kind" : "Global",
-          "index" : 5
+          "index" : 6
         } ]
       }, {
         "kind" : "LLVMBitCast",
@@ -51,7 +51,7 @@
           "index" : 4
         }, {
           "kind" : "Global",
-          "index" : 6
+          "index" : 7
         } ]
       }, {
         "kind" : "LLVMCall",
@@ -72,7 +72,7 @@
         "kind" : "LLVMStore",
         "operands" : [ {
           "kind" : "Global",
-          "index" : 7
+          "index" : 8
         }, {
           "kind" : "Instruction",
           "index" : 7
@@ -84,7 +84,7 @@
           "index" : 7
         }, {
           "kind" : "Global",
-          "index" : 8
+          "index" : 9
         } ]
       }, {
         "kind" : "LLVMRet"
@@ -94,14 +94,14 @@
   }, {
     "ref" : {
       "kind" : "Global",
-      "index" : 9
+      "index" : 10
     },
     "blocks" : [ {
       "instructions" : [ {
         "kind" : "LLVMLoad",
         "operands" : [ {
           "kind" : "Global",
-          "index" : 3
+          "index" : 4
         } ]
       }, {
         "kind" : "LLVMICmp",
@@ -110,7 +110,7 @@
           "index" : 0
         }, {
           "kind" : "Global",
-          "index" : 10
+          "index" : 3
         } ]
       }, {
         "kind" : "LLVMBr",
@@ -153,7 +153,7 @@
         "kind" : "LLVMLoad",
         "operands" : [ {
           "kind" : "Global",
-          "index" : 6
+          "index" : 7
         } ]
       }, {
         "kind" : "LLVMICmp",
@@ -162,7 +162,7 @@
           "index" : 0
         }, {
           "kind" : "Global",
-          "index" : 10
+          "index" : 3
         } ]
       }, {
         "kind" : "LLVMBr",
@@ -263,16 +263,16 @@
           "index" : -1
         }, {
           "kind" : "Global",
-          "index" : 17
+          "index" : 18
         } ]
       }, {
         "kind" : "LLVMCall",
         "operands" : [ {
           "kind" : "Global",
-          "index" : 18
+          "index" : 19
         }, {
           "kind" : "Global",
-          "index" : 5
+          "index" : 6
         } ]
       }, {
         "kind" : "LLVMBitCast",
@@ -284,7 +284,7 @@
         "kind" : "LLVMStore",
         "operands" : [ {
           "kind" : "Global",
-          "index" : 19
+          "index" : 20
         }, {
           "kind" : "Instruction",
           "index" : 2
@@ -296,7 +296,7 @@
           "index" : 1
         }, {
           "kind" : "Global",
-          "index" : 20
+          "index" : 21
         } ]
       }, {
         "kind" : "LLVMBitCast",
@@ -311,7 +311,7 @@
           "index" : 5
         }, {
           "kind" : "Global",
-          "index" : 19
+          "index" : 20
         } ]
       }, {
         "kind" : "LLVMBr",
@@ -386,7 +386,7 @@
           "index" : -1
         }, {
           "kind" : "Global",
-          "index" : 21
+          "index" : 22
         } ]
       }, {
         "kind" : "LLVMRet"
@@ -512,7 +512,7 @@
           "index" : 0
         }, {
           "kind" : "Global",
-          "index" : 22
+          "index" : 23
         } ]
       }, {
         "kind" : "LLVMInvoke",
@@ -521,7 +521,7 @@
           "index" : 1
         }, {
           "kind" : "Global",
-          "index" : 23
+          "index" : 24
         }, {
           "kind" : "Block",
           "index" : -1
@@ -587,7 +587,7 @@
         "kind" : "LLVMInsertValue",
         "operands" : [ {
           "kind" : "Global",
-          "index" : 24
+          "index" : 25
         }, {
           "kind" : "Instruction",
           "index" : 0
@@ -613,7 +613,7 @@
         "kind" : "LLVMLandingPad",
         "operands" : [ {
           "kind" : "Global",
-          "index" : 25
+          "index" : 26
         } ]
       }, {
         "kind" : "LLVMExtractValue",
@@ -628,7 +628,7 @@
           "index" : 1
         }, {
           "kind" : "Global",
-          "index" : 26
+          "index" : 27
         } ]
       }, {
         "kind" : "LLVMUnreachable"
@@ -638,7 +638,7 @@
   }, {
     "ref" : {
       "kind" : "Global",
-      "index" : 26
+      "index" : 27
     },
     "blocks" : [ {
       "instructions" : [ {
@@ -648,13 +648,13 @@
           "index" : 0
         }, {
           "kind" : "Global",
-          "index" : 27
+          "index" : 28
         } ]
       }, {
         "kind" : "LLVMCall",
         "operands" : [ {
           "kind" : "Global",
-          "index" : 28
+          "index" : 29
         } ]
       }, {
         "kind" : "LLVMUnreachable"
@@ -668,7 +668,7 @@
   }, {
     "ref" : {
       "kind" : "Global",
-      "index" : 29
+      "index" : 30
     },
     "blocks" : [ {
       "instructions" : [ {
@@ -687,7 +687,7 @@
         "kind" : "LLVMLoad",
         "operands" : [ {
           "kind" : "Global",
-          "index" : 17
+          "index" : 18
         } ]
       }, {
         "kind" : "LLVMICmp",
@@ -696,7 +696,7 @@
           "index" : 2
         }, {
           "kind" : "Global",
-          "index" : 30
+          "index" : 17
         } ]
       }, {
         "kind" : "LLVMBr",
@@ -719,7 +719,7 @@
           "index" : -1
         }, {
           "kind" : "Global",
-          "index" : 23
+          "index" : 24
         }, {
           "kind" : "Block",
           "index" : -1
@@ -756,7 +756,7 @@
         "kind" : "LLVMLoad",
         "operands" : [ {
           "kind" : "Global",
-          "index" : 21
+          "index" : 22
         } ]
       }, {
         "kind" : "LLVMICmp",
@@ -765,7 +765,7 @@
           "index" : 0
         }, {
           "kind" : "Global",
-          "index" : 30
+          "index" : 17
         } ]
       }, {
         "kind" : "LLVMBr",
@@ -856,7 +856,7 @@
           "index" : 0
         }, {
           "kind" : "Global",
-          "index" : 22
+          "index" : 23
         } ]
       }, {
         "kind" : "LLVMInvoke",
@@ -865,7 +865,7 @@
           "index" : 1
         }, {
           "kind" : "Global",
-          "index" : 23
+          "index" : 24
         }, {
           "kind" : "Block",
           "index" : -1
@@ -1045,7 +1045,7 @@
           "index" : 0
         }, {
           "kind" : "Global",
-          "index" : 22
+          "index" : 23
         } ]
       }, {
         "kind" : "LLVMInvoke",
@@ -1054,7 +1054,7 @@
           "index" : 1
         }, {
           "kind" : "Global",
-          "index" : 23
+          "index" : 24
         }, {
           "kind" : "Block",
           "index" : -1
@@ -1120,7 +1120,7 @@
         "kind" : "LLVMInsertValue",
         "operands" : [ {
           "kind" : "Global",
-          "index" : 24
+          "index" : 25
         }, {
           "kind" : "Instruction",
           "index" : 0
@@ -1146,7 +1146,7 @@
         "kind" : "LLVMLandingPad",
         "operands" : [ {
           "kind" : "Global",
-          "index" : 25
+          "index" : 26
         } ]
       }, {
         "kind" : "LLVMExtractValue",
@@ -1161,7 +1161,7 @@
           "index" : 1
         }, {
           "kind" : "Global",
-          "index" : 26
+          "index" : 27
         } ]
       }, {
         "kind" : "LLVMUnreachable"
@@ -1246,9 +1246,16 @@
     "name" : "_Znwm",
     "typeId" : 4
   }, {
+    "kind" : "LLVMConstantPointerNullValueKind",
+    "typeId" : 9
+  }, {
     "kind" : "LLVMGlobalVariableValueKind",
     "name" : "P",
-    "typeId" : 8
+    "typeId" : 8,
+    "operands" : [ {
+      "kind" : "Global",
+      "index" : 3
+    } ]
   }, {
     "kind" : "LLVMConstantIntValueKind",
     "typeId" : 3,
@@ -1260,7 +1267,11 @@
   }, {
     "kind" : "LLVMGlobalVariableValueKind",
     "name" : "P2",
-    "typeId" : 8
+    "typeId" : 8,
+    "operands" : [ {
+      "kind" : "Global",
+      "index" : 3
+    } ]
   }, {
     "kind" : "LLVMConstantIntValueKind",
     "typeId" : 10,
@@ -1268,14 +1279,15 @@
   }, {
     "kind" : "LLVMGlobalVariableValueKind",
     "name" : "P3",
-    "typeId" : 8
+    "typeId" : 8,
+    "operands" : [ {
+      "kind" : "Global",
+      "index" : 3
+    } ]
   }, {
     "kind" : "LLVMFunctionValueKind",
     "name" : "_ZL10testDeletev",
     "typeId" : 0
-  }, {
-    "kind" : "LLVMConstantPointerNullValueKind",
-    "typeId" : 9
   }, {
     "kind" : "LLVMFunctionValueKind",
     "name" : "_ZdlPv",
@@ -1301,9 +1313,16 @@
     "name" : "_ZN3FooC1Ev",
     "typeId" : 13
   }, {
+    "kind" : "LLVMConstantPointerNullValueKind",
+    "typeId" : 15
+  }, {
     "kind" : "LLVMGlobalVariableValueKind",
     "name" : "PSTRUCT",
-    "typeId" : 17
+    "typeId" : 17,
+    "operands" : [ {
+      "kind" : "Global",
+      "index" : 17
+    } ]
   }, {
     "kind" : "LLVMConstantIntValueKind",
     "typeId" : 3,
@@ -1319,7 +1338,11 @@
   }, {
     "kind" : "LLVMGlobalVariableValueKind",
     "name" : "PSTRUCT2",
-    "typeId" : 17
+    "typeId" : 17,
+    "operands" : [ {
+      "kind" : "Global",
+      "index" : 17
+    } ]
   }, {
     "kind" : "LLVMConstantIntValueKind",
     "typeId" : 3,
@@ -1350,9 +1373,6 @@
     "kind" : "LLVMFunctionValueKind",
     "name" : "_ZL16testDeleteStructv",
     "typeId" : 0
-  }, {
-    "kind" : "LLVMConstantPointerNullValueKind",
-    "typeId" : 15
   }, {
     "kind" : "LLVMConstantIntValueKind",
     "typeId" : 3,
