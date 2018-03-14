@@ -36,6 +36,7 @@ abstract class TestHelper {
     private static final BidiMap<Language, String> languageDirs = new DualHashBidiMap<>();
     private static final String LANG = System.getProperty("TESTED_LANG");
     private static final String FILTER = StringUtils.defaultString(System.getenv("TEST_FILTER"), "");
+    private static boolean UPDATE = Boolean.getBoolean("AUTO_UPDATE_ON_DIFF");
     private static final Logger LOGGER = Logger.getLogger(TestHelper.class.getSimpleName());
 
     private static ToolFactory toolFactory;
@@ -142,7 +143,9 @@ abstract class TestHelper {
 
             Assert.assertEquals(expected, actual);
         } catch (ComparisonFailure e) {
-            if (FAILURES_DIR != null) {
+            if (UPDATE) {
+                Files.write(pathToExpected, actual.getBytes());
+            } else if (FAILURES_DIR != null) {
                 Path resultSubPath = TESTS_PATH.relativize(pathToExpected);
                 Path failuresPath = Paths.get(FAILURES_DIR);
 
