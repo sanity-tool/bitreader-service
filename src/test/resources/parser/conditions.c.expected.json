@@ -196,5 +196,34 @@
   }, {
     "kind" : "LLVMFunctionTypeKind",
     "types" : [ 2 ]
+  } ],
+  "globals" : [ {
+    "kind" : "LLVMFunctionValueKind",
+    "name" : "testImplicitIf",
+    "typeId" : 0
+  }, {
+    "kind" : "LLVMGlobalVariableValueKind",
+    "name" : "I",
+    "typeId" : 3
+  }, {
+    "kind" : "LLVMConstantIntValueKind",
+    "typeId" : 4,
+    "intValue" : 0
+  }, {
+    "kind" : "LLVMFunctionValueKind",
+    "name" : "foo",
+    "typeId" : 5
+  }, {
+    "kind" : "LLVMFunctionValueKind",
+    "name" : "testImplicitIfElse",
+    "typeId" : 0
+  }, {
+    "kind" : "LLVMFunctionValueKind",
+    "name" : "bar",
+    "typeId" : 5
+  }, {
+    "kind" : "LLVMFunctionValueKind",
+    "name" : "testExplicitIf",
+    "typeId" : 0
   } ]
 }

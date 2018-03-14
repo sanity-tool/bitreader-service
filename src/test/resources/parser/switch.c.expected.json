@@ -256,5 +256,46 @@
   }, {
     "kind" : "LLVMFunctionTypeKind",
     "types" : [ 4 ]
+  } ],
+  "globals" : [ {
+    "kind" : "LLVMFunctionValueKind",
+    "name" : "testSwitchWithDefault",
+    "typeId" : 0
+  }, {
+    "kind" : "LLVMGlobalVariableValueKind",
+    "name" : "I",
+    "typeId" : 3
+  }, {
+    "kind" : "LLVMConstantIntValueKind",
+    "typeId" : 4,
+    "intValue" : 1
+  }, {
+    "kind" : "LLVMConstantIntValueKind",
+    "typeId" : 4,
+    "intValue" : 2
+  }, {
+    "kind" : "LLVMFunctionValueKind",
+    "name" : "foo1",
+    "typeId" : 5
+  }, {
+    "kind" : "LLVMFunctionValueKind",
+    "name" : "foo2",
+    "typeId" : 5
+  }, {
+    "kind" : "LLVMFunctionValueKind",
+    "name" : "fooDefault",
+    "typeId" : 5
+  }, {
+    "kind" : "LLVMFunctionValueKind",
+    "name" : "fooAfter",
+    "typeId" : 5
+  }, {
+    "kind" : "LLVMFunctionValueKind",
+    "name" : "testSwitchNoDefault",
+    "typeId" : 0
+  }, {
+    "kind" : "LLVMFunctionValueKind",
+    "name" : "testSwitchFallthrough",
+    "typeId" : 0
   } ]
 }

@@ -69,5 +69,22 @@
   }, {
     "kind" : "LLVMPointerTypeKind",
     "types" : [ 3 ]
+  } ],
+  "globals" : [ {
+    "kind" : "LLVMFunctionValueKind",
+    "name" : "addressOf",
+    "typeId" : 0
+  }, {
+    "kind" : "LLVMGlobalVariableValueKind",
+    "name" : "I",
+    "typeId" : 3
+  }, {
+    "kind" : "LLVMGlobalVariableValueKind",
+    "name" : "I_P",
+    "typeId" : 5
+  }, {
+    "kind" : "LLVMFunctionValueKind",
+    "name" : "deref",
+    "typeId" : 0
   } ]
 }

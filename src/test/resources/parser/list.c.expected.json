@@ -65,5 +65,18 @@
   }, {
     "kind" : "LLVMIntegerTypeKind",
     "len" : 32
+  } ],
+  "globals" : [ {
+    "kind" : "LLVMFunctionValueKind",
+    "name" : "switchToNext",
+    "typeId" : 0
+  }, {
+    "kind" : "LLVMGlobalVariableValueKind",
+    "name" : "PLIST",
+    "typeId" : 3
+  }, {
+    "kind" : "LLVMConstantIntValueKind",
+    "typeId" : 6,
+    "intValue" : 0
   } ]
 }

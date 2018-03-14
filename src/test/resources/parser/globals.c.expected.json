@@ -57,5 +57,29 @@
   }, {
     "kind" : "LLVMPointerTypeKind",
     "types" : [ 4 ]
+  } ],
+  "globals" : [ {
+    "kind" : "LLVMFunctionValueKind",
+    "name" : "writeToGlobalInt",
+    "typeId" : 0
+  }, {
+    "kind" : "LLVMConstantIntValueKind",
+    "typeId" : 3,
+    "intValue" : 1
+  }, {
+    "kind" : "LLVMGlobalVariableValueKind",
+    "name" : "I",
+    "typeId" : 4
+  }, {
+    "kind" : "LLVMFunctionValueKind",
+    "name" : "writeToGlobalIntPointer",
+    "typeId" : 0
+  }, {
+    "kind" : "LLVMConstantPointerNullValueKind",
+    "typeId" : 4
+  }, {
+    "kind" : "LLVMGlobalVariableValueKind",
+    "name" : "I_P",
+    "typeId" : 5
   } ]
 }

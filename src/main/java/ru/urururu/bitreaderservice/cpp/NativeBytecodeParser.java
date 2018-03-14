@@ -53,7 +53,7 @@ public class NativeBytecodeParser {
             nativeFunction = bitreader.LLVMGetNextFunction(nativeFunction);
         }
 
-        return new ModuleDto(functions.values(), ctx.getTypes());
+        return new ModuleDto(functions.values(), ctx.getTypes(), ctx.globalValues);
     }
 
     private FunctionDto toFunction(ParseContext ctx, SWIGTYPE_p_LLVMOpaqueValue nativeFunction) {
@@ -164,6 +164,9 @@ public class NativeBytecodeParser {
                 value = toValue(this, nativeValue).intValue(bitreader.LLVMConstIntGetSExtValue(nativeValue)).build();
             } else if (kind == LLVMValueKind.LLVMConstantFPValueKind) {
                 value = toValue(this, nativeValue).fpValue(bitreader.GetConstantFPDoubleValue(nativeValue)).build();
+            } else if (kind == LLVMValueKind.LLVMMetadataAsValueValueKind) {
+                // trivial support (not using in clients yet)
+                value = toValue(this, nativeValue).build();
             } else {
                 throw new IllegalArgumentException("Unsupported type: " + kind);
             }

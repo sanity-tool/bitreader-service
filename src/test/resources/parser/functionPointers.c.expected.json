@@ -69,5 +69,22 @@
   }, {
     "kind" : "LLVMPointerTypeKind",
     "types" : [ 3 ]
+  } ],
+  "globals" : [ {
+    "kind" : "LLVMFunctionValueKind",
+    "name" : "takeAddress",
+    "typeId" : 0
+  }, {
+    "kind" : "LLVMFunctionValueKind",
+    "name" : "function",
+    "typeId" : 3
+  }, {
+    "kind" : "LLVMGlobalVariableValueKind",
+    "name" : "FPTR",
+    "typeId" : 5
+  }, {
+    "kind" : "LLVMFunctionValueKind",
+    "name" : "callFromPointer",
+    "typeId" : 0
   } ]
 }

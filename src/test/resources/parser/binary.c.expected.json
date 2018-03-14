@@ -8757,5 +8757,298 @@
     "types" : [ 17 ]
   }, {
     "kind" : "LLVMX86_FP80TypeKind"
+  } ],
+  "globals" : [ {
+    "kind" : "LLVMFunctionValueKind",
+    "name" : "testChar",
+    "typeId" : 0
+  }, {
+    "kind" : "LLVMGlobalVariableValueKind",
+    "name" : "C0",
+    "typeId" : 3
+  }, {
+    "kind" : "LLVMGlobalVariableValueKind",
+    "name" : "C1",
+    "typeId" : 3
+  }, {
+    "kind" : "LLVMGlobalVariableValueKind",
+    "name" : "CR",
+    "typeId" : 3
+  }, {
+    "kind" : "LLVMFunctionValueKind",
+    "name" : "testCharCmp",
+    "typeId" : 0
+  }, {
+    "kind" : "LLVMFunctionValueKind",
+    "name" : "testCharLogical",
+    "typeId" : 0
+  }, {
+    "kind" : "LLVMConstantIntValueKind",
+    "typeId" : 5,
+    "intValue" : 0
+  }, {
+    "kind" : "LLVMConstantIntValueKind",
+    "typeId" : 6,
+    "intValue" : 0
+  }, {
+    "kind" : "LLVMConstantIntValueKind",
+    "typeId" : 6,
+    "intValue" : -1
+  }, {
+    "kind" : "LLVMFunctionValueKind",
+    "name" : "testUChar",
+    "typeId" : 0
+  }, {
+    "kind" : "LLVMGlobalVariableValueKind",
+    "name" : "UC0",
+    "typeId" : 3
+  }, {
+    "kind" : "LLVMGlobalVariableValueKind",
+    "name" : "UC1",
+    "typeId" : 3
+  }, {
+    "kind" : "LLVMGlobalVariableValueKind",
+    "name" : "UCR",
+    "typeId" : 3
+  }, {
+    "kind" : "LLVMFunctionValueKind",
+    "name" : "testUCharCmp",
+    "typeId" : 0
+  }, {
+    "kind" : "LLVMFunctionValueKind",
+    "name" : "testUCharLogical",
+    "typeId" : 0
+  }, {
+    "kind" : "LLVMFunctionValueKind",
+    "name" : "testShort",
+    "typeId" : 0
+  }, {
+    "kind" : "LLVMGlobalVariableValueKind",
+    "name" : "S0",
+    "typeId" : 7
+  }, {
+    "kind" : "LLVMGlobalVariableValueKind",
+    "name" : "S1",
+    "typeId" : 7
+  }, {
+    "kind" : "LLVMGlobalVariableValueKind",
+    "name" : "SR",
+    "typeId" : 7
+  }, {
+    "kind" : "LLVMFunctionValueKind",
+    "name" : "testShortCmp",
+    "typeId" : 0
+  }, {
+    "kind" : "LLVMFunctionValueKind",
+    "name" : "testShortLogical",
+    "typeId" : 0
+  }, {
+    "kind" : "LLVMFunctionValueKind",
+    "name" : "testUShort",
+    "typeId" : 0
+  }, {
+    "kind" : "LLVMGlobalVariableValueKind",
+    "name" : "US0",
+    "typeId" : 7
+  }, {
+    "kind" : "LLVMGlobalVariableValueKind",
+    "name" : "US1",
+    "typeId" : 7
+  }, {
+    "kind" : "LLVMGlobalVariableValueKind",
+    "name" : "USR",
+    "typeId" : 7
+  }, {
+    "kind" : "LLVMFunctionValueKind",
+    "name" : "testUShortCmp",
+    "typeId" : 0
+  }, {
+    "kind" : "LLVMFunctionValueKind",
+    "name" : "testUShortLogical",
+    "typeId" : 0
+  }, {
+    "kind" : "LLVMFunctionValueKind",
+    "name" : "testInt",
+    "typeId" : 0
+  }, {
+    "kind" : "LLVMGlobalVariableValueKind",
+    "name" : "I0",
+    "typeId" : 9
+  }, {
+    "kind" : "LLVMGlobalVariableValueKind",
+    "name" : "I1",
+    "typeId" : 9
+  }, {
+    "kind" : "LLVMGlobalVariableValueKind",
+    "name" : "IR",
+    "typeId" : 9
+  }, {
+    "kind" : "LLVMFunctionValueKind",
+    "name" : "testIntCmp",
+    "typeId" : 0
+  }, {
+    "kind" : "LLVMFunctionValueKind",
+    "name" : "testIntLogical",
+    "typeId" : 0
+  }, {
+    "kind" : "LLVMFunctionValueKind",
+    "name" : "testUInt",
+    "typeId" : 0
+  }, {
+    "kind" : "LLVMGlobalVariableValueKind",
+    "name" : "UI0",
+    "typeId" : 9
+  }, {
+    "kind" : "LLVMGlobalVariableValueKind",
+    "name" : "UI1",
+    "typeId" : 9
+  }, {
+    "kind" : "LLVMGlobalVariableValueKind",
+    "name" : "UIR",
+    "typeId" : 9
+  }, {
+    "kind" : "LLVMFunctionValueKind",
+    "name" : "testUIntCmp",
+    "typeId" : 0
+  }, {
+    "kind" : "LLVMFunctionValueKind",
+    "name" : "testUIntLogical",
+    "typeId" : 0
+  }, {
+    "kind" : "LLVMFunctionValueKind",
+    "name" : "testLong",
+    "typeId" : 0
+  }, {
+    "kind" : "LLVMGlobalVariableValueKind",
+    "name" : "L0",
+    "typeId" : 10
+  }, {
+    "kind" : "LLVMGlobalVariableValueKind",
+    "name" : "L1",
+    "typeId" : 10
+  }, {
+    "kind" : "LLVMGlobalVariableValueKind",
+    "name" : "LR",
+    "typeId" : 10
+  }, {
+    "kind" : "LLVMFunctionValueKind",
+    "name" : "testLongCmp",
+    "typeId" : 0
+  }, {
+    "kind" : "LLVMFunctionValueKind",
+    "name" : "testLongLogical",
+    "typeId" : 0
+  }, {
+    "kind" : "LLVMConstantIntValueKind",
+    "typeId" : 11,
+    "intValue" : 0
+  }, {
+    "kind" : "LLVMFunctionValueKind",
+    "name" : "testULong",
+    "typeId" : 0
+  }, {
+    "kind" : "LLVMGlobalVariableValueKind",
+    "name" : "UL0",
+    "typeId" : 10
+  }, {
+    "kind" : "LLVMGlobalVariableValueKind",
+    "name" : "UL1",
+    "typeId" : 10
+  }, {
+    "kind" : "LLVMGlobalVariableValueKind",
+    "name" : "ULR",
+    "typeId" : 10
+  }, {
+    "kind" : "LLVMFunctionValueKind",
+    "name" : "testULongCmp",
+    "typeId" : 0
+  }, {
+    "kind" : "LLVMFunctionValueKind",
+    "name" : "testULongLogical",
+    "typeId" : 0
+  }, {
+    "kind" : "LLVMFunctionValueKind",
+    "name" : "testFloat",
+    "typeId" : 0
+  }, {
+    "kind" : "LLVMGlobalVariableValueKind",
+    "name" : "F0",
+    "typeId" : 12
+  }, {
+    "kind" : "LLVMGlobalVariableValueKind",
+    "name" : "F1",
+    "typeId" : 12
+  }, {
+    "kind" : "LLVMGlobalVariableValueKind",
+    "name" : "FR",
+    "typeId" : 12
+  }, {
+    "kind" : "LLVMFunctionValueKind",
+    "name" : "testFloatCmp",
+    "typeId" : 0
+  }, {
+    "kind" : "LLVMFunctionValueKind",
+    "name" : "testFloatLogical",
+    "typeId" : 0
+  }, {
+    "kind" : "LLVMConstantFPValueKind",
+    "typeId" : 13,
+    "fpValue" : 0.0
+  }, {
+    "kind" : "LLVMFunctionValueKind",
+    "name" : "testDouble",
+    "typeId" : 0
+  }, {
+    "kind" : "LLVMGlobalVariableValueKind",
+    "name" : "D0",
+    "typeId" : 14
+  }, {
+    "kind" : "LLVMGlobalVariableValueKind",
+    "name" : "D1",
+    "typeId" : 14
+  }, {
+    "kind" : "LLVMGlobalVariableValueKind",
+    "name" : "DR",
+    "typeId" : 14
+  }, {
+    "kind" : "LLVMFunctionValueKind",
+    "name" : "testDoubleCmp",
+    "typeId" : 0
+  }, {
+    "kind" : "LLVMFunctionValueKind",
+    "name" : "testDoubleLogical",
+    "typeId" : 0
+  }, {
+    "kind" : "LLVMConstantFPValueKind",
+    "typeId" : 15,
+    "fpValue" : 0.0
+  }, {
+    "kind" : "LLVMFunctionValueKind",
+    "name" : "testLongDouble",
+    "typeId" : 0
+  }, {
+    "kind" : "LLVMGlobalVariableValueKind",
+    "name" : "LD0",
+    "typeId" : 16
+  }, {
+    "kind" : "LLVMGlobalVariableValueKind",
+    "name" : "LD1",
+    "typeId" : 16
+  }, {
+    "kind" : "LLVMGlobalVariableValueKind",
+    "name" : "LDR",
+    "typeId" : 16
+  }, {
+    "kind" : "LLVMFunctionValueKind",
+    "name" : "testLongDoubleCmp",
+    "typeId" : 0
+  }, {
+    "kind" : "LLVMFunctionValueKind",
+    "name" : "testLongDoubleLogical",
+    "typeId" : 0
+  }, {
+    "kind" : "LLVMConstantFPValueKind",
+    "typeId" : 17,
+    "fpValue" : 0.0
   } ]
 }

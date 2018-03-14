@@ -168,5 +168,30 @@
   }, {
     "kind" : "LLVMIntegerTypeKind",
     "len" : 1
+  } ],
+  "globals" : [ {
+    "kind" : "LLVMFunctionValueKind",
+    "name" : "_ZL15testBoolLogicalv",
+    "typeId" : 0
+  }, {
+    "kind" : "LLVMGlobalVariableValueKind",
+    "name" : "_ZL2B0",
+    "typeId" : 3
+  }, {
+    "kind" : "LLVMGlobalVariableValueKind",
+    "name" : "_ZL2B1",
+    "typeId" : 3
+  }, {
+    "kind" : "LLVMConstantIntValueKind",
+    "typeId" : 5,
+    "intValue" : 0
+  }, {
+    "kind" : "LLVMGlobalVariableValueKind",
+    "name" : "_ZL2BR",
+    "typeId" : 3
+  }, {
+    "kind" : "LLVMConstantIntValueKind",
+    "typeId" : 5,
+    "intValue" : -1
   } ]
 }

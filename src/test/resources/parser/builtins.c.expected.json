@@ -137,5 +137,46 @@
     "types" : [ 6 ]
   }, {
     "kind" : "LLVMX86_FP80TypeKind"
+  } ],
+  "globals" : [ {
+    "kind" : "LLVMFunctionValueKind",
+    "name" : "testFloatBuiltinOps",
+    "typeId" : 0
+  }, {
+    "kind" : "LLVMGlobalVariableValueKind",
+    "name" : "F0",
+    "typeId" : 3
+  }, {
+    "kind" : "LLVMGlobalVariableValueKind",
+    "name" : "F1",
+    "typeId" : 3
+  }, {
+    "kind" : "LLVMGlobalVariableValueKind",
+    "name" : "FR",
+    "typeId" : 3
+  }, {
+    "kind" : "LLVMGlobalVariableValueKind",
+    "name" : "D0",
+    "typeId" : 3
+  }, {
+    "kind" : "LLVMGlobalVariableValueKind",
+    "name" : "D1",
+    "typeId" : 3
+  }, {
+    "kind" : "LLVMGlobalVariableValueKind",
+    "name" : "DR",
+    "typeId" : 3
+  }, {
+    "kind" : "LLVMGlobalVariableValueKind",
+    "name" : "LD0",
+    "typeId" : 5
+  }, {
+    "kind" : "LLVMGlobalVariableValueKind",
+    "name" : "LD1",
+    "typeId" : 5
+  }, {
+    "kind" : "LLVMGlobalVariableValueKind",
+    "name" : "LDR",
+    "typeId" : 5
   } ]
 }

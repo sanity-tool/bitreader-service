@@ -331,5 +331,38 @@
   }, {
     "kind" : "LLVMFunctionTypeKind",
     "types" : [ 2 ]
+  } ],
+  "globals" : [ {
+    "kind" : "LLVMFunctionValueKind",
+    "name" : "testWhile",
+    "typeId" : 0
+  }, {
+    "kind" : "LLVMConstantIntValueKind",
+    "typeId" : 3,
+    "intValue" : 0
+  }, {
+    "kind" : "LLVMGlobalVariableValueKind",
+    "name" : "I",
+    "typeId" : 4
+  }, {
+    "kind" : "LLVMConstantIntValueKind",
+    "typeId" : 3,
+    "intValue" : 5
+  }, {
+    "kind" : "LLVMFunctionValueKind",
+    "name" : "foo",
+    "typeId" : 5
+  }, {
+    "kind" : "LLVMConstantIntValueKind",
+    "typeId" : 3,
+    "intValue" : 1
+  }, {
+    "kind" : "LLVMFunctionValueKind",
+    "name" : "testDoWhile",
+    "typeId" : 0
+  }, {
+    "kind" : "LLVMFunctionValueKind",
+    "name" : "testFor",
+    "typeId" : 0
   } ]
 }
