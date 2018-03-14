@@ -8,89 +8,83 @@
       "instructions" : [ {
         "kind" : "LLVMCall",
         "operands" : [ {
-          "kind" : "LLVMConstantIntValueKind",
-          "typeId" : 3
+          "kind" : "Global",
+          "index" : 1
         }, {
-          "kind" : "LLVMFunctionValueKind",
-          "name" : "_Znwm",
-          "typeId" : 4
+          "kind" : "Global",
+          "index" : 2
         } ]
       }, {
         "kind" : "LLVMBitCast",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 6
+          "kind" : "Instruction",
+          "index" : -1
         } ]
       }, {
         "kind" : "LLVMStore",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 8
+          "kind" : "Instruction",
+          "index" : -1
         }, {
-          "kind" : "LLVMGlobalVariableValueKind",
-          "name" : "P",
-          "typeId" : 10
+          "kind" : "Global",
+          "index" : 3
         } ]
       }, {
         "kind" : "LLVMCall",
         "operands" : [ {
-          "kind" : "LLVMConstantIntValueKind",
-          "typeId" : 3
+          "kind" : "Global",
+          "index" : 4
         }, {
-          "kind" : "LLVMFunctionValueKind",
-          "name" : "_Znam",
-          "typeId" : 4
+          "kind" : "Global",
+          "index" : 5
         } ]
       }, {
         "kind" : "LLVMBitCast",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 6
+          "kind" : "Instruction",
+          "index" : -1
         } ]
       }, {
         "kind" : "LLVMStore",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 8
+          "kind" : "Instruction",
+          "index" : -1
         }, {
-          "kind" : "LLVMGlobalVariableValueKind",
-          "name" : "P2",
-          "typeId" : 10
+          "kind" : "Global",
+          "index" : 6
         } ]
       }, {
         "kind" : "LLVMCall",
         "operands" : [ {
-          "kind" : "LLVMConstantIntValueKind",
-          "typeId" : 3
+          "kind" : "Global",
+          "index" : 1
         }, {
-          "kind" : "LLVMFunctionValueKind",
-          "name" : "_Znwm",
-          "typeId" : 4
+          "kind" : "Global",
+          "index" : 2
         } ]
       }, {
         "kind" : "LLVMBitCast",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 6
+          "kind" : "Instruction",
+          "index" : -1
         } ]
       }, {
         "kind" : "LLVMStore",
         "operands" : [ {
-          "kind" : "LLVMConstantIntValueKind",
-          "typeId" : 9
+          "kind" : "Global",
+          "index" : 7
         }, {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 8
+          "kind" : "Instruction",
+          "index" : -1
         } ]
       }, {
         "kind" : "LLVMStore",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 8
+          "kind" : "Instruction",
+          "index" : -1
         }, {
-          "kind" : "LLVMGlobalVariableValueKind",
-          "name" : "P3",
-          "typeId" : 10
+          "kind" : "Global",
+          "index" : 8
         } ]
       }, {
         "kind" : "LLVMRet"
@@ -100,114 +94,110 @@
   }, {
     "ref" : {
       "kind" : "Global",
-      "index" : 1
+      "index" : 9
     },
     "blocks" : [ {
       "instructions" : [ {
         "kind" : "LLVMLoad",
         "operands" : [ {
-          "kind" : "LLVMGlobalVariableValueKind",
-          "name" : "P",
-          "typeId" : 10
+          "kind" : "Global",
+          "index" : 3
         } ]
       }, {
         "kind" : "LLVMICmp",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 8
+          "kind" : "Instruction",
+          "index" : -1
         }, {
-          "kind" : "LLVMConstantPointerNullValueKind",
-          "typeId" : 8
+          "kind" : "Global",
+          "index" : 10
         } ]
       }, {
         "kind" : "LLVMBr",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 11
+          "kind" : "Instruction",
+          "index" : -1
         }, {
-          "kind" : "LLVMBasicBlockValueKind",
-          "typeId" : 12
+          "kind" : "Block",
+          "index" : -1
         }, {
-          "kind" : "LLVMBasicBlockValueKind",
-          "typeId" : 12
+          "kind" : "Block",
+          "index" : -1
         } ]
       } ]
     }, {
       "instructions" : [ {
         "kind" : "LLVMBitCast",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 8
+          "kind" : "Instruction",
+          "index" : -1
         } ]
       }, {
         "kind" : "LLVMCall",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 6
+          "kind" : "Instruction",
+          "index" : -1
         }, {
-          "kind" : "LLVMFunctionValueKind",
-          "name" : "_ZdlPv",
-          "typeId" : 13
+          "kind" : "Global",
+          "index" : 11
         } ]
       }, {
         "kind" : "LLVMBr",
         "operands" : [ {
-          "kind" : "LLVMBasicBlockValueKind",
-          "typeId" : 12
+          "kind" : "Block",
+          "index" : -1
         } ]
       } ]
     }, {
       "instructions" : [ {
         "kind" : "LLVMLoad",
         "operands" : [ {
-          "kind" : "LLVMGlobalVariableValueKind",
-          "name" : "P2",
-          "typeId" : 10
+          "kind" : "Global",
+          "index" : 6
         } ]
       }, {
         "kind" : "LLVMICmp",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 8
+          "kind" : "Instruction",
+          "index" : -1
         }, {
-          "kind" : "LLVMConstantPointerNullValueKind",
-          "typeId" : 8
+          "kind" : "Global",
+          "index" : 10
         } ]
       }, {
         "kind" : "LLVMBr",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 11
+          "kind" : "Instruction",
+          "index" : -1
         }, {
-          "kind" : "LLVMBasicBlockValueKind",
-          "typeId" : 12
+          "kind" : "Block",
+          "index" : -1
         }, {
-          "kind" : "LLVMBasicBlockValueKind",
-          "typeId" : 12
+          "kind" : "Block",
+          "index" : -1
         } ]
       } ]
     }, {
       "instructions" : [ {
         "kind" : "LLVMBitCast",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 8
+          "kind" : "Instruction",
+          "index" : -1
         } ]
       }, {
         "kind" : "LLVMCall",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 6
+          "kind" : "Instruction",
+          "index" : -1
         }, {
-          "kind" : "LLVMFunctionValueKind",
-          "name" : "_ZdaPv",
-          "typeId" : 13
+          "kind" : "Global",
+          "index" : 12
         } ]
       }, {
         "kind" : "LLVMBr",
         "operands" : [ {
-          "kind" : "LLVMBasicBlockValueKind",
-          "typeId" : 12
+          "kind" : "Block",
+          "index" : -1
         } ]
       } ]
     }, {
@@ -219,190 +209,184 @@
   }, {
     "ref" : {
       "kind" : "Global",
-      "index" : 2
+      "index" : 13
     },
     "blocks" : [ {
       "instructions" : [ {
         "kind" : "LLVMAlloca",
         "operands" : [ {
-          "kind" : "LLVMConstantIntValueKind",
-          "typeId" : 9
+          "kind" : "Global",
+          "index" : 14
         } ]
       }, {
         "kind" : "LLVMAlloca",
         "operands" : [ {
-          "kind" : "LLVMConstantIntValueKind",
-          "typeId" : 9
+          "kind" : "Global",
+          "index" : 14
         } ]
       }, {
         "kind" : "LLVMCall",
         "operands" : [ {
-          "kind" : "LLVMConstantIntValueKind",
-          "typeId" : 3
+          "kind" : "Global",
+          "index" : 15
         }, {
-          "kind" : "LLVMFunctionValueKind",
-          "name" : "_Znwm",
-          "typeId" : 4
+          "kind" : "Global",
+          "index" : 2
         } ]
       }, {
         "kind" : "LLVMBitCast",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 6
+          "kind" : "Instruction",
+          "index" : -1
         } ]
       }, {
         "kind" : "LLVMInvoke",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 15
+          "kind" : "Instruction",
+          "index" : -1
         }, {
-          "kind" : "LLVMFunctionValueKind",
-          "name" : "_ZN3FooC1Ev",
-          "typeId" : 17
+          "kind" : "Global",
+          "index" : 16
         }, {
-          "kind" : "LLVMBasicBlockValueKind",
-          "typeId" : 12
+          "kind" : "Block",
+          "index" : -1
         }, {
-          "kind" : "LLVMBasicBlockValueKind",
-          "typeId" : 12
+          "kind" : "Block",
+          "index" : -1
         } ]
       } ]
     }, {
       "instructions" : [ {
         "kind" : "LLVMStore",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 15
+          "kind" : "Instruction",
+          "index" : -1
         }, {
-          "kind" : "LLVMGlobalVariableValueKind",
-          "name" : "PSTRUCT",
-          "typeId" : 19
+          "kind" : "Global",
+          "index" : 17
         } ]
       }, {
         "kind" : "LLVMCall",
         "operands" : [ {
-          "kind" : "LLVMConstantIntValueKind",
-          "typeId" : 3
+          "kind" : "Global",
+          "index" : 18
         }, {
-          "kind" : "LLVMFunctionValueKind",
-          "name" : "_Znam",
-          "typeId" : 4
+          "kind" : "Global",
+          "index" : 5
         } ]
       }, {
         "kind" : "LLVMBitCast",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 6
+          "kind" : "Instruction",
+          "index" : -1
         } ]
       }, {
         "kind" : "LLVMStore",
         "operands" : [ {
-          "kind" : "LLVMConstantIntValueKind",
-          "typeId" : 3
+          "kind" : "Global",
+          "index" : 19
         }, {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 20
+          "kind" : "Instruction",
+          "index" : -1
         } ]
       }, {
         "kind" : "LLVMGetElementPtr",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 6
+          "kind" : "Instruction",
+          "index" : -1
         }, {
-          "kind" : "LLVMConstantIntValueKind",
-          "typeId" : 3
+          "kind" : "Global",
+          "index" : 20
         } ]
       }, {
         "kind" : "LLVMBitCast",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 6
+          "kind" : "Instruction",
+          "index" : -1
         } ]
       }, {
         "kind" : "LLVMGetElementPtr",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 15
+          "kind" : "Instruction",
+          "index" : -1
         }, {
-          "kind" : "LLVMConstantIntValueKind",
-          "typeId" : 3
+          "kind" : "Global",
+          "index" : 19
         } ]
       }, {
         "kind" : "LLVMBr",
         "operands" : [ {
-          "kind" : "LLVMBasicBlockValueKind",
-          "typeId" : 12
+          "kind" : "Block",
+          "index" : -1
         } ]
       } ]
     }, {
       "instructions" : [ {
         "kind" : "LLVMPHI",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 15
+          "kind" : "Instruction",
+          "index" : -1
         }, {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 15
+          "kind" : "Instruction",
+          "index" : -1
         } ]
       }, {
         "kind" : "LLVMInvoke",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 15
+          "kind" : "Instruction",
+          "index" : -1
         }, {
-          "kind" : "LLVMFunctionValueKind",
-          "name" : "_ZN3FooC1Ev",
-          "typeId" : 17
+          "kind" : "Global",
+          "index" : 16
         }, {
-          "kind" : "LLVMBasicBlockValueKind",
-          "typeId" : 12
+          "kind" : "Block",
+          "index" : -1
         }, {
-          "kind" : "LLVMBasicBlockValueKind",
-          "typeId" : 12
+          "kind" : "Block",
+          "index" : -1
         } ]
       } ]
     }, {
       "instructions" : [ {
         "kind" : "LLVMGetElementPtr",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 15
+          "kind" : "Instruction",
+          "index" : -1
         }, {
-          "kind" : "LLVMConstantIntValueKind",
-          "typeId" : 3
+          "kind" : "Global",
+          "index" : 15
         } ]
       }, {
         "kind" : "LLVMICmp",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 15
+          "kind" : "Instruction",
+          "index" : -1
         }, {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 15
+          "kind" : "Instruction",
+          "index" : -1
         } ]
       }, {
         "kind" : "LLVMBr",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 11
+          "kind" : "Instruction",
+          "index" : -1
         }, {
-          "kind" : "LLVMBasicBlockValueKind",
-          "typeId" : 12
+          "kind" : "Block",
+          "index" : -1
         }, {
-          "kind" : "LLVMBasicBlockValueKind",
-          "typeId" : 12
+          "kind" : "Block",
+          "index" : -1
         } ]
       } ]
     }, {
       "instructions" : [ {
         "kind" : "LLVMStore",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 15
+          "kind" : "Instruction",
+          "index" : -1
         }, {
-          "kind" : "LLVMGlobalVariableValueKind",
-          "name" : "PSTRUCT2",
-          "typeId" : 19
+          "kind" : "Global",
+          "index" : 21
         } ]
       }, {
         "kind" : "LLVMRet"
@@ -413,48 +397,47 @@
       }, {
         "kind" : "LLVMExtractValue",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 21
+          "kind" : "Instruction",
+          "index" : -1
         } ]
       }, {
         "kind" : "LLVMStore",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 6
+          "kind" : "Instruction",
+          "index" : -1
         }, {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 22
+          "kind" : "Instruction",
+          "index" : -1
         } ]
       }, {
         "kind" : "LLVMExtractValue",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 21
+          "kind" : "Instruction",
+          "index" : -1
         } ]
       }, {
         "kind" : "LLVMStore",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 9
+          "kind" : "Instruction",
+          "index" : -1
         }, {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 8
+          "kind" : "Instruction",
+          "index" : -1
         } ]
       }, {
         "kind" : "LLVMCall",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 6
+          "kind" : "Instruction",
+          "index" : -1
         }, {
-          "kind" : "LLVMFunctionValueKind",
-          "name" : "_ZdlPv",
-          "typeId" : 13
+          "kind" : "Global",
+          "index" : 11
         } ]
       }, {
         "kind" : "LLVMBr",
         "operands" : [ {
-          "kind" : "LLVMBasicBlockValueKind",
-          "typeId" : 12
+          "kind" : "Block",
+          "index" : -1
         } ]
       } ]
     }, {
@@ -463,192 +446,189 @@
       }, {
         "kind" : "LLVMExtractValue",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 21
+          "kind" : "Instruction",
+          "index" : -1
         } ]
       }, {
         "kind" : "LLVMStore",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 6
+          "kind" : "Instruction",
+          "index" : -1
         }, {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 22
+          "kind" : "Instruction",
+          "index" : -1
         } ]
       }, {
         "kind" : "LLVMExtractValue",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 21
+          "kind" : "Instruction",
+          "index" : -1
         } ]
       }, {
         "kind" : "LLVMStore",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 9
+          "kind" : "Instruction",
+          "index" : -1
         }, {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 8
+          "kind" : "Instruction",
+          "index" : -1
         } ]
       }, {
         "kind" : "LLVMICmp",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 15
+          "kind" : "Instruction",
+          "index" : -1
         }, {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 15
+          "kind" : "Instruction",
+          "index" : -1
         } ]
       }, {
         "kind" : "LLVMBr",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 11
+          "kind" : "Instruction",
+          "index" : -1
         }, {
-          "kind" : "LLVMBasicBlockValueKind",
-          "typeId" : 12
+          "kind" : "Block",
+          "index" : -1
         }, {
-          "kind" : "LLVMBasicBlockValueKind",
-          "typeId" : 12
+          "kind" : "Block",
+          "index" : -1
         } ]
       } ]
     }, {
       "instructions" : [ {
         "kind" : "LLVMPHI",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 15
+          "kind" : "Instruction",
+          "index" : -1
         }, {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 15
+          "kind" : "Instruction",
+          "index" : -1
         } ]
       }, {
         "kind" : "LLVMGetElementPtr",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 15
+          "kind" : "Instruction",
+          "index" : -1
         }, {
-          "kind" : "LLVMConstantIntValueKind",
-          "typeId" : 3
+          "kind" : "Global",
+          "index" : 22
         } ]
       }, {
         "kind" : "LLVMInvoke",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 15
+          "kind" : "Instruction",
+          "index" : -1
         }, {
-          "kind" : "LLVMFunctionValueKind",
-          "name" : "_ZN3FooD1Ev",
-          "typeId" : 17
+          "kind" : "Global",
+          "index" : 23
         }, {
-          "kind" : "LLVMBasicBlockValueKind",
-          "typeId" : 12
+          "kind" : "Block",
+          "index" : -1
         }, {
-          "kind" : "LLVMBasicBlockValueKind",
-          "typeId" : 12
+          "kind" : "Block",
+          "index" : -1
         } ]
       } ]
     }, {
       "instructions" : [ {
         "kind" : "LLVMICmp",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 15
+          "kind" : "Instruction",
+          "index" : -1
         }, {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 15
+          "kind" : "Instruction",
+          "index" : -1
         } ]
       }, {
         "kind" : "LLVMBr",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 11
+          "kind" : "Instruction",
+          "index" : -1
         }, {
-          "kind" : "LLVMBasicBlockValueKind",
-          "typeId" : 12
+          "kind" : "Block",
+          "index" : -1
         }, {
-          "kind" : "LLVMBasicBlockValueKind",
-          "typeId" : 12
+          "kind" : "Block",
+          "index" : -1
         } ]
       } ]
     }, {
       "instructions" : [ {
         "kind" : "LLVMCall",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 6
+          "kind" : "Instruction",
+          "index" : -1
         }, {
-          "kind" : "LLVMFunctionValueKind",
-          "name" : "_ZdaPv",
-          "typeId" : 13
+          "kind" : "Global",
+          "index" : 12
         } ]
       }, {
         "kind" : "LLVMBr",
         "operands" : [ {
-          "kind" : "LLVMBasicBlockValueKind",
-          "typeId" : 12
+          "kind" : "Block",
+          "index" : -1
         } ]
       } ]
     }, {
       "instructions" : [ {
         "kind" : "LLVMLoad",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 22
+          "kind" : "Instruction",
+          "index" : -1
         } ]
       }, {
         "kind" : "LLVMLoad",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 8
+          "kind" : "Instruction",
+          "index" : -1
         } ]
       }, {
         "kind" : "LLVMInsertValue",
         "operands" : [ {
-          "kind" : "LLVMUndefValueValueKind",
-          "typeId" : 21
+          "kind" : "Global",
+          "index" : 24
         }, {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 6
+          "kind" : "Instruction",
+          "index" : -1
         } ]
       }, {
         "kind" : "LLVMInsertValue",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 21
+          "kind" : "Instruction",
+          "index" : -1
         }, {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 9
+          "kind" : "Instruction",
+          "index" : -1
         } ]
       }, {
         "kind" : "LLVMResume",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 21
+          "kind" : "Instruction",
+          "index" : -1
         } ]
       } ]
     }, {
       "instructions" : [ {
         "kind" : "LLVMLandingPad",
         "operands" : [ {
-          "kind" : "LLVMConstantPointerNullValueKind",
-          "typeId" : 6
+          "kind" : "Global",
+          "index" : 25
         } ]
       }, {
         "kind" : "LLVMExtractValue",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 21
+          "kind" : "Instruction",
+          "index" : -1
         } ]
       }, {
         "kind" : "LLVMCall",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 6
+          "kind" : "Instruction",
+          "index" : -1
         }, {
-          "kind" : "LLVMFunctionValueKind",
-          "name" : "__clang_call_terminate",
-          "typeId" : 13
+          "kind" : "Global",
+          "index" : 26
         } ]
       }, {
         "kind" : "LLVMUnreachable"
@@ -658,25 +638,23 @@
   }, {
     "ref" : {
       "kind" : "Global",
-      "index" : 3
+      "index" : 26
     },
     "blocks" : [ {
       "instructions" : [ {
         "kind" : "LLVMCall",
         "operands" : [ {
-          "kind" : "LLVMArgumentValueKind",
-          "typeId" : 6
+          "kind" : "Argument",
+          "index" : 0
         }, {
-          "kind" : "LLVMFunctionValueKind",
-          "name" : "__cxa_begin_catch",
-          "typeId" : 23
+          "kind" : "Global",
+          "index" : 27
         } ]
       }, {
         "kind" : "LLVMCall",
         "operands" : [ {
-          "kind" : "LLVMFunctionValueKind",
-          "name" : "_ZSt9terminatev",
-          "typeId" : 0
+          "kind" : "Global",
+          "index" : 28
         } ]
       }, {
         "kind" : "LLVMUnreachable"
@@ -690,256 +668,250 @@
   }, {
     "ref" : {
       "kind" : "Global",
-      "index" : 4
+      "index" : 29
     },
     "blocks" : [ {
       "instructions" : [ {
         "kind" : "LLVMAlloca",
         "operands" : [ {
-          "kind" : "LLVMConstantIntValueKind",
-          "typeId" : 9
+          "kind" : "Global",
+          "index" : 14
         } ]
       }, {
         "kind" : "LLVMAlloca",
         "operands" : [ {
-          "kind" : "LLVMConstantIntValueKind",
-          "typeId" : 9
+          "kind" : "Global",
+          "index" : 14
         } ]
       }, {
         "kind" : "LLVMLoad",
         "operands" : [ {
-          "kind" : "LLVMGlobalVariableValueKind",
-          "name" : "PSTRUCT",
-          "typeId" : 19
+          "kind" : "Global",
+          "index" : 17
         } ]
       }, {
         "kind" : "LLVMICmp",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 15
+          "kind" : "Instruction",
+          "index" : -1
         }, {
-          "kind" : "LLVMConstantPointerNullValueKind",
-          "typeId" : 15
+          "kind" : "Global",
+          "index" : 30
         } ]
       }, {
         "kind" : "LLVMBr",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 11
+          "kind" : "Instruction",
+          "index" : -1
         }, {
-          "kind" : "LLVMBasicBlockValueKind",
-          "typeId" : 12
+          "kind" : "Block",
+          "index" : -1
         }, {
-          "kind" : "LLVMBasicBlockValueKind",
-          "typeId" : 12
+          "kind" : "Block",
+          "index" : -1
         } ]
       } ]
     }, {
       "instructions" : [ {
         "kind" : "LLVMInvoke",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 15
+          "kind" : "Instruction",
+          "index" : -1
         }, {
-          "kind" : "LLVMFunctionValueKind",
-          "name" : "_ZN3FooD1Ev",
-          "typeId" : 17
+          "kind" : "Global",
+          "index" : 23
         }, {
-          "kind" : "LLVMBasicBlockValueKind",
-          "typeId" : 12
+          "kind" : "Block",
+          "index" : -1
         }, {
-          "kind" : "LLVMBasicBlockValueKind",
-          "typeId" : 12
+          "kind" : "Block",
+          "index" : -1
         } ]
       } ]
     }, {
       "instructions" : [ {
         "kind" : "LLVMBitCast",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 15
+          "kind" : "Instruction",
+          "index" : -1
         } ]
       }, {
         "kind" : "LLVMCall",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 6
+          "kind" : "Instruction",
+          "index" : -1
         }, {
-          "kind" : "LLVMFunctionValueKind",
-          "name" : "_ZdlPv",
-          "typeId" : 13
+          "kind" : "Global",
+          "index" : 11
         } ]
       }, {
         "kind" : "LLVMBr",
         "operands" : [ {
-          "kind" : "LLVMBasicBlockValueKind",
-          "typeId" : 12
+          "kind" : "Block",
+          "index" : -1
         } ]
       } ]
     }, {
       "instructions" : [ {
         "kind" : "LLVMLoad",
         "operands" : [ {
-          "kind" : "LLVMGlobalVariableValueKind",
-          "name" : "PSTRUCT2",
-          "typeId" : 19
+          "kind" : "Global",
+          "index" : 21
         } ]
       }, {
         "kind" : "LLVMICmp",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 15
+          "kind" : "Instruction",
+          "index" : -1
         }, {
-          "kind" : "LLVMConstantPointerNullValueKind",
-          "typeId" : 15
+          "kind" : "Global",
+          "index" : 30
         } ]
       }, {
         "kind" : "LLVMBr",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 11
+          "kind" : "Instruction",
+          "index" : -1
         }, {
-          "kind" : "LLVMBasicBlockValueKind",
-          "typeId" : 12
+          "kind" : "Block",
+          "index" : -1
         }, {
-          "kind" : "LLVMBasicBlockValueKind",
-          "typeId" : 12
+          "kind" : "Block",
+          "index" : -1
         } ]
       } ]
     }, {
       "instructions" : [ {
         "kind" : "LLVMBitCast",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 15
+          "kind" : "Instruction",
+          "index" : -1
         } ]
       }, {
         "kind" : "LLVMGetElementPtr",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 6
+          "kind" : "Instruction",
+          "index" : -1
         }, {
-          "kind" : "LLVMConstantIntValueKind",
-          "typeId" : 3
+          "kind" : "Global",
+          "index" : 31
         } ]
       }, {
         "kind" : "LLVMBitCast",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 6
+          "kind" : "Instruction",
+          "index" : -1
         } ]
       }, {
         "kind" : "LLVMLoad",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 20
+          "kind" : "Instruction",
+          "index" : -1
         } ]
       }, {
         "kind" : "LLVMGetElementPtr",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 15
+          "kind" : "Instruction",
+          "index" : -1
         }, {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 3
+          "kind" : "Instruction",
+          "index" : -1
         } ]
       }, {
         "kind" : "LLVMICmp",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 15
+          "kind" : "Instruction",
+          "index" : -1
         }, {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 15
+          "kind" : "Instruction",
+          "index" : -1
         } ]
       }, {
         "kind" : "LLVMBr",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 11
+          "kind" : "Instruction",
+          "index" : -1
         }, {
-          "kind" : "LLVMBasicBlockValueKind",
-          "typeId" : 12
+          "kind" : "Block",
+          "index" : -1
         }, {
-          "kind" : "LLVMBasicBlockValueKind",
-          "typeId" : 12
+          "kind" : "Block",
+          "index" : -1
         } ]
       } ]
     }, {
       "instructions" : [ {
         "kind" : "LLVMPHI",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 15
+          "kind" : "Instruction",
+          "index" : -1
         }, {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 15
+          "kind" : "Instruction",
+          "index" : -1
         } ]
       }, {
         "kind" : "LLVMGetElementPtr",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 15
+          "kind" : "Instruction",
+          "index" : -1
         }, {
-          "kind" : "LLVMConstantIntValueKind",
-          "typeId" : 3
+          "kind" : "Global",
+          "index" : 22
         } ]
       }, {
         "kind" : "LLVMInvoke",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 15
+          "kind" : "Instruction",
+          "index" : -1
         }, {
-          "kind" : "LLVMFunctionValueKind",
-          "name" : "_ZN3FooD1Ev",
-          "typeId" : 17
+          "kind" : "Global",
+          "index" : 23
         }, {
-          "kind" : "LLVMBasicBlockValueKind",
-          "typeId" : 12
+          "kind" : "Block",
+          "index" : -1
         }, {
-          "kind" : "LLVMBasicBlockValueKind",
-          "typeId" : 12
+          "kind" : "Block",
+          "index" : -1
         } ]
       } ]
     }, {
       "instructions" : [ {
         "kind" : "LLVMICmp",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 15
+          "kind" : "Instruction",
+          "index" : -1
         }, {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 15
+          "kind" : "Instruction",
+          "index" : -1
         } ]
       }, {
         "kind" : "LLVMBr",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 11
+          "kind" : "Instruction",
+          "index" : -1
         }, {
-          "kind" : "LLVMBasicBlockValueKind",
-          "typeId" : 12
+          "kind" : "Block",
+          "index" : -1
         }, {
-          "kind" : "LLVMBasicBlockValueKind",
-          "typeId" : 12
+          "kind" : "Block",
+          "index" : -1
         } ]
       } ]
     }, {
       "instructions" : [ {
         "kind" : "LLVMCall",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 6
+          "kind" : "Instruction",
+          "index" : -1
         }, {
-          "kind" : "LLVMFunctionValueKind",
-          "name" : "_ZdaPv",
-          "typeId" : 13
+          "kind" : "Global",
+          "index" : 12
         } ]
       }, {
         "kind" : "LLVMBr",
         "operands" : [ {
-          "kind" : "LLVMBasicBlockValueKind",
-          "typeId" : 12
+          "kind" : "Block",
+          "index" : -1
         } ]
       } ]
     }, {
@@ -952,54 +924,53 @@
       }, {
         "kind" : "LLVMExtractValue",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 21
+          "kind" : "Instruction",
+          "index" : -1
         } ]
       }, {
         "kind" : "LLVMStore",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 6
+          "kind" : "Instruction",
+          "index" : -1
         }, {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 22
+          "kind" : "Instruction",
+          "index" : -1
         } ]
       }, {
         "kind" : "LLVMExtractValue",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 21
+          "kind" : "Instruction",
+          "index" : -1
         } ]
       }, {
         "kind" : "LLVMStore",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 9
+          "kind" : "Instruction",
+          "index" : -1
         }, {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 8
+          "kind" : "Instruction",
+          "index" : -1
         } ]
       }, {
         "kind" : "LLVMBitCast",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 15
+          "kind" : "Instruction",
+          "index" : -1
         } ]
       }, {
         "kind" : "LLVMCall",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 6
+          "kind" : "Instruction",
+          "index" : -1
         }, {
-          "kind" : "LLVMFunctionValueKind",
-          "name" : "_ZdlPv",
-          "typeId" : 13
+          "kind" : "Global",
+          "index" : 11
         } ]
       }, {
         "kind" : "LLVMBr",
         "operands" : [ {
-          "kind" : "LLVMBasicBlockValueKind",
-          "typeId" : 12
+          "kind" : "Block",
+          "index" : -1
         } ]
       } ]
     }, {
@@ -1008,192 +979,189 @@
       }, {
         "kind" : "LLVMExtractValue",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 21
+          "kind" : "Instruction",
+          "index" : -1
         } ]
       }, {
         "kind" : "LLVMStore",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 6
+          "kind" : "Instruction",
+          "index" : -1
         }, {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 22
+          "kind" : "Instruction",
+          "index" : -1
         } ]
       }, {
         "kind" : "LLVMExtractValue",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 21
+          "kind" : "Instruction",
+          "index" : -1
         } ]
       }, {
         "kind" : "LLVMStore",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 9
+          "kind" : "Instruction",
+          "index" : -1
         }, {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 8
+          "kind" : "Instruction",
+          "index" : -1
         } ]
       }, {
         "kind" : "LLVMICmp",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 15
+          "kind" : "Instruction",
+          "index" : -1
         }, {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 15
+          "kind" : "Instruction",
+          "index" : -1
         } ]
       }, {
         "kind" : "LLVMBr",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 11
+          "kind" : "Instruction",
+          "index" : -1
         }, {
-          "kind" : "LLVMBasicBlockValueKind",
-          "typeId" : 12
+          "kind" : "Block",
+          "index" : -1
         }, {
-          "kind" : "LLVMBasicBlockValueKind",
-          "typeId" : 12
+          "kind" : "Block",
+          "index" : -1
         } ]
       } ]
     }, {
       "instructions" : [ {
         "kind" : "LLVMPHI",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 15
+          "kind" : "Instruction",
+          "index" : -1
         }, {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 15
+          "kind" : "Instruction",
+          "index" : -1
         } ]
       }, {
         "kind" : "LLVMGetElementPtr",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 15
+          "kind" : "Instruction",
+          "index" : -1
         }, {
-          "kind" : "LLVMConstantIntValueKind",
-          "typeId" : 3
+          "kind" : "Global",
+          "index" : 22
         } ]
       }, {
         "kind" : "LLVMInvoke",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 15
+          "kind" : "Instruction",
+          "index" : -1
         }, {
-          "kind" : "LLVMFunctionValueKind",
-          "name" : "_ZN3FooD1Ev",
-          "typeId" : 17
+          "kind" : "Global",
+          "index" : 23
         }, {
-          "kind" : "LLVMBasicBlockValueKind",
-          "typeId" : 12
+          "kind" : "Block",
+          "index" : -1
         }, {
-          "kind" : "LLVMBasicBlockValueKind",
-          "typeId" : 12
+          "kind" : "Block",
+          "index" : -1
         } ]
       } ]
     }, {
       "instructions" : [ {
         "kind" : "LLVMICmp",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 15
+          "kind" : "Instruction",
+          "index" : -1
         }, {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 15
+          "kind" : "Instruction",
+          "index" : -1
         } ]
       }, {
         "kind" : "LLVMBr",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 11
+          "kind" : "Instruction",
+          "index" : -1
         }, {
-          "kind" : "LLVMBasicBlockValueKind",
-          "typeId" : 12
+          "kind" : "Block",
+          "index" : -1
         }, {
-          "kind" : "LLVMBasicBlockValueKind",
-          "typeId" : 12
+          "kind" : "Block",
+          "index" : -1
         } ]
       } ]
     }, {
       "instructions" : [ {
         "kind" : "LLVMCall",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 6
+          "kind" : "Instruction",
+          "index" : -1
         }, {
-          "kind" : "LLVMFunctionValueKind",
-          "name" : "_ZdaPv",
-          "typeId" : 13
+          "kind" : "Global",
+          "index" : 12
         } ]
       }, {
         "kind" : "LLVMBr",
         "operands" : [ {
-          "kind" : "LLVMBasicBlockValueKind",
-          "typeId" : 12
+          "kind" : "Block",
+          "index" : -1
         } ]
       } ]
     }, {
       "instructions" : [ {
         "kind" : "LLVMLoad",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 22
+          "kind" : "Instruction",
+          "index" : -1
         } ]
       }, {
         "kind" : "LLVMLoad",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 8
+          "kind" : "Instruction",
+          "index" : -1
         } ]
       }, {
         "kind" : "LLVMInsertValue",
         "operands" : [ {
-          "kind" : "LLVMUndefValueValueKind",
-          "typeId" : 21
+          "kind" : "Global",
+          "index" : 24
         }, {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 6
+          "kind" : "Instruction",
+          "index" : -1
         } ]
       }, {
         "kind" : "LLVMInsertValue",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 21
+          "kind" : "Instruction",
+          "index" : -1
         }, {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 9
+          "kind" : "Instruction",
+          "index" : -1
         } ]
       }, {
         "kind" : "LLVMResume",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 21
+          "kind" : "Instruction",
+          "index" : -1
         } ]
       } ]
     }, {
       "instructions" : [ {
         "kind" : "LLVMLandingPad",
         "operands" : [ {
-          "kind" : "LLVMConstantPointerNullValueKind",
-          "typeId" : 6
+          "kind" : "Global",
+          "index" : 25
         } ]
       }, {
         "kind" : "LLVMExtractValue",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 21
+          "kind" : "Instruction",
+          "index" : -1
         } ]
       }, {
         "kind" : "LLVMCall",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 6
+          "kind" : "Instruction",
+          "index" : -1
         }, {
-          "kind" : "LLVMFunctionValueKind",
-          "name" : "__clang_call_terminate",
-          "typeId" : 13
+          "kind" : "Global",
+          "index" : 26
         } ]
       }, {
         "kind" : "LLVMUnreachable"
@@ -1228,22 +1196,23 @@
     "kind" : "LLVMPointerTypeKind",
     "types" : [ 9 ]
   }, {
+    "kind" : "LLVMPointerTypeKind",
+    "types" : [ 10 ]
+  }, {
     "kind" : "LLVMIntegerTypeKind",
     "len" : 32
   }, {
     "kind" : "LLVMPointerTypeKind",
-    "types" : [ 8 ]
+    "types" : [ 12 ]
   }, {
-    "kind" : "LLVMIntegerTypeKind",
-    "len" : 1
-  }, {
-    "kind" : "LLVMLabelTypeKind"
+    "kind" : "LLVMFunctionTypeKind",
+    "types" : [ 2, 6 ]
   }, {
     "kind" : "LLVMPointerTypeKind",
     "types" : [ 14 ]
   }, {
     "kind" : "LLVMFunctionTypeKind",
-    "types" : [ 2, 6 ]
+    "types" : [ 2, 15 ]
   }, {
     "kind" : "LLVMPointerTypeKind",
     "types" : [ 16 ]
@@ -1253,27 +1222,140 @@
     "types" : [ 7 ]
   }, {
     "kind" : "LLVMPointerTypeKind",
-    "types" : [ 18 ]
-  }, {
-    "kind" : "LLVMFunctionTypeKind",
-    "types" : [ 2, 15 ]
-  }, {
-    "kind" : "LLVMPointerTypeKind",
     "types" : [ 15 ]
   }, {
-    "kind" : "LLVMPointerTypeKind",
-    "types" : [ 3 ]
-  }, {
     "kind" : "LLVMStructTypeKind",
-    "types" : [ 6, 9 ]
+    "types" : [ 6, 10 ]
   }, {
     "kind" : "LLVMPointerTypeKind",
-    "types" : [ 6 ]
-  }, {
-    "kind" : "LLVMPointerTypeKind",
-    "types" : [ 24 ]
+    "types" : [ 20 ]
   }, {
     "kind" : "LLVMFunctionTypeKind",
     "types" : [ 6, 6 ]
+  } ],
+  "globals" : [ {
+    "kind" : "LLVMFunctionValueKind",
+    "name" : "_ZL7testNewv",
+    "typeId" : 0
+  }, {
+    "kind" : "LLVMConstantIntValueKind",
+    "typeId" : 3,
+    "intValue" : 4
+  }, {
+    "kind" : "LLVMFunctionValueKind",
+    "name" : "_Znwm",
+    "typeId" : 4
+  }, {
+    "kind" : "LLVMGlobalVariableValueKind",
+    "name" : "P",
+    "typeId" : 8
+  }, {
+    "kind" : "LLVMConstantIntValueKind",
+    "typeId" : 3,
+    "intValue" : 20
+  }, {
+    "kind" : "LLVMFunctionValueKind",
+    "name" : "_Znam",
+    "typeId" : 4
+  }, {
+    "kind" : "LLVMGlobalVariableValueKind",
+    "name" : "P2",
+    "typeId" : 8
+  }, {
+    "kind" : "LLVMConstantIntValueKind",
+    "typeId" : 10,
+    "intValue" : 5
+  }, {
+    "kind" : "LLVMGlobalVariableValueKind",
+    "name" : "P3",
+    "typeId" : 8
+  }, {
+    "kind" : "LLVMFunctionValueKind",
+    "name" : "_ZL10testDeletev",
+    "typeId" : 0
+  }, {
+    "kind" : "LLVMConstantPointerNullValueKind",
+    "typeId" : 9
+  }, {
+    "kind" : "LLVMFunctionValueKind",
+    "name" : "_ZdlPv",
+    "typeId" : 11
+  }, {
+    "kind" : "LLVMFunctionValueKind",
+    "name" : "_ZdaPv",
+    "typeId" : 11
+  }, {
+    "kind" : "LLVMFunctionValueKind",
+    "name" : "_ZL13testNewStructv",
+    "typeId" : 0
+  }, {
+    "kind" : "LLVMConstantIntValueKind",
+    "typeId" : 10,
+    "intValue" : 1
+  }, {
+    "kind" : "LLVMConstantIntValueKind",
+    "typeId" : 3,
+    "intValue" : 1
+  }, {
+    "kind" : "LLVMFunctionValueKind",
+    "name" : "_ZN3FooC1Ev",
+    "typeId" : 13
+  }, {
+    "kind" : "LLVMGlobalVariableValueKind",
+    "name" : "PSTRUCT",
+    "typeId" : 17
+  }, {
+    "kind" : "LLVMConstantIntValueKind",
+    "typeId" : 3,
+    "intValue" : 13
+  }, {
+    "kind" : "LLVMConstantIntValueKind",
+    "typeId" : 3,
+    "intValue" : 5
+  }, {
+    "kind" : "LLVMConstantIntValueKind",
+    "typeId" : 3,
+    "intValue" : 8
+  }, {
+    "kind" : "LLVMGlobalVariableValueKind",
+    "name" : "PSTRUCT2",
+    "typeId" : 17
+  }, {
+    "kind" : "LLVMConstantIntValueKind",
+    "typeId" : 3,
+    "intValue" : -1
+  }, {
+    "kind" : "LLVMFunctionValueKind",
+    "name" : "_ZN3FooD1Ev",
+    "typeId" : 13
+  }, {
+    "kind" : "LLVMUndefValueValueKind",
+    "typeId" : 18
+  }, {
+    "kind" : "LLVMConstantPointerNullValueKind",
+    "typeId" : 6
+  }, {
+    "kind" : "LLVMFunctionValueKind",
+    "name" : "__clang_call_terminate",
+    "typeId" : 11
+  }, {
+    "kind" : "LLVMFunctionValueKind",
+    "name" : "__cxa_begin_catch",
+    "typeId" : 19
+  }, {
+    "kind" : "LLVMFunctionValueKind",
+    "name" : "_ZSt9terminatev",
+    "typeId" : 0
+  }, {
+    "kind" : "LLVMFunctionValueKind",
+    "name" : "_ZL16testDeleteStructv",
+    "typeId" : 0
+  }, {
+    "kind" : "LLVMConstantPointerNullValueKind",
+    "typeId" : 15
+  }, {
+    "kind" : "LLVMConstantIntValueKind",
+    "typeId" : 3,
+    "intValue" : -8
   } ]
 }

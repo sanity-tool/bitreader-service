@@ -158,12 +158,14 @@ public class NativeBytecodeParser {
             final ValueDto value;
 
             LLVMValueKind kind = bitreader.LLVMGetValueKind(nativeValue);
-            if (kind == LLVMValueKind.LLVMGlobalVariableValueKind || kind == LLVMValueKind.LLVMFunctionValueKind || kind == LLVMValueKind.LLVMConstantPointerNullValueKind) {
+            if (kind == LLVMValueKind.LLVMGlobalVariableValueKind || kind == LLVMValueKind.LLVMFunctionValueKind || kind == LLVMValueKind.LLVMConstantPointerNullValueKind || kind == LLVMValueKind.LLVMUndefValueValueKind) {
                 value = toValue(this, nativeValue).build();
             } else if (kind == LLVMValueKind.LLVMConstantIntValueKind) {
                 value = toValue(this, nativeValue).intValue(bitreader.LLVMConstIntGetSExtValue(nativeValue)).build();
             } else if (kind == LLVMValueKind.LLVMConstantFPValueKind) {
                 value = toValue(this, nativeValue).fpValue(bitreader.GetConstantFPDoubleValue(nativeValue)).build();
+            } else if (kind == LLVMValueKind.LLVMConstantExprValueKind) {
+                value = toValue(this, nativeValue).build(); // todo add expr info
             } else if (kind == LLVMValueKind.LLVMMetadataAsValueValueKind) {
                 // trivial support (not using in clients yet)
                 value = toValue(this, nativeValue).build();

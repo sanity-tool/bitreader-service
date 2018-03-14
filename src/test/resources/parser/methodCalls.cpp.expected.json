@@ -8,49 +8,47 @@
       "instructions" : [ {
         "kind" : "LLVMAlloca",
         "operands" : [ {
-          "kind" : "LLVMConstantIntValueKind",
-          "typeId" : 8
+          "kind" : "Global",
+          "index" : 1
         } ]
       }, {
         "kind" : "LLVMStore",
         "operands" : [ {
-          "kind" : "LLVMArgumentValueKind",
-          "typeId" : 3
+          "kind" : "Argument",
+          "index" : 0
         }, {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 9
+          "kind" : "Instruction",
+          "index" : -1
         } ]
       }, {
         "kind" : "LLVMCall",
         "operands" : [ {
-          "kind" : "LLVMMetadataAsValueValueKind",
-          "typeId" : 10
+          "kind" : "Global",
+          "index" : 2
         }, {
-          "kind" : "LLVMMetadataAsValueValueKind",
-          "typeId" : 10
+          "kind" : "Global",
+          "index" : 3
         }, {
-          "kind" : "LLVMMetadataAsValueValueKind",
-          "typeId" : 10
+          "kind" : "Global",
+          "index" : 4
         }, {
-          "kind" : "LLVMFunctionValueKind",
-          "name" : "llvm.dbg.declare",
-          "typeId" : 11
+          "kind" : "Global",
+          "index" : 5
         } ]
       }, {
         "kind" : "LLVMLoad",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 9
+          "kind" : "Instruction",
+          "index" : -1
         } ]
       }, {
         "kind" : "LLVMCall",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 3
+          "kind" : "Instruction",
+          "index" : -1
         }, {
-          "kind" : "LLVMFunctionValueKind",
-          "name" : "_ZN3Foo14instanceMethodEv",
-          "typeId" : 0
+          "kind" : "Global",
+          "index" : 6
         } ]
       }, {
         "kind" : "LLVMRet"
@@ -64,15 +62,14 @@
   }, {
     "ref" : {
       "kind" : "Global",
-      "index" : 1
+      "index" : 7
     },
     "blocks" : [ {
       "instructions" : [ {
         "kind" : "LLVMCall",
         "operands" : [ {
-          "kind" : "LLVMFunctionValueKind",
-          "name" : "_ZN3Foo12staticMethodEv",
-          "typeId" : 13
+          "kind" : "Global",
+          "index" : 8
         } ]
       }, {
         "kind" : "LLVMRet"
@@ -82,81 +79,80 @@
   }, {
     "ref" : {
       "kind" : "Global",
-      "index" : 2
+      "index" : 9
     },
     "blocks" : [ {
       "instructions" : [ {
         "kind" : "LLVMAlloca",
         "operands" : [ {
-          "kind" : "LLVMConstantIntValueKind",
-          "typeId" : 8
+          "kind" : "Global",
+          "index" : 1
         } ]
       }, {
         "kind" : "LLVMStore",
         "operands" : [ {
-          "kind" : "LLVMArgumentValueKind",
-          "typeId" : 3
+          "kind" : "Argument",
+          "index" : 0
         }, {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 9
+          "kind" : "Instruction",
+          "index" : -1
         } ]
       }, {
         "kind" : "LLVMCall",
         "operands" : [ {
-          "kind" : "LLVMMetadataAsValueValueKind",
-          "typeId" : 10
+          "kind" : "Global",
+          "index" : 10
         }, {
-          "kind" : "LLVMMetadataAsValueValueKind",
-          "typeId" : 10
+          "kind" : "Global",
+          "index" : 11
         }, {
-          "kind" : "LLVMMetadataAsValueValueKind",
-          "typeId" : 10
+          "kind" : "Global",
+          "index" : 4
         }, {
-          "kind" : "LLVMFunctionValueKind",
-          "name" : "llvm.dbg.declare",
-          "typeId" : 11
+          "kind" : "Global",
+          "index" : 5
         } ]
       }, {
         "kind" : "LLVMLoad",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 9
+          "kind" : "Instruction",
+          "index" : -1
         } ]
       }, {
         "kind" : "LLVMBitCast",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 3
+          "kind" : "Instruction",
+          "index" : -1
         } ]
       }, {
         "kind" : "LLVMLoad",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 15
+          "kind" : "Instruction",
+          "index" : -1
         } ]
       }, {
         "kind" : "LLVMGetElementPtr",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 16
+          "kind" : "Instruction",
+          "index" : -1
         }, {
-          "kind" : "LLVMConstantIntValueKind",
-          "typeId" : 17
+          "kind" : "Global",
+          "index" : 12
         } ]
       }, {
         "kind" : "LLVMLoad",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 16
+          "kind" : "Instruction",
+          "index" : -1
         } ]
       }, {
         "kind" : "LLVMCall",
         "operands" : [ {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 3
+          "kind" : "Instruction",
+          "index" : -1
         }, {
-          "kind" : "LLVMInstructionValueKind",
-          "typeId" : 0
+          "kind" : "Instruction",
+          "index" : -1
         } ]
       }, {
         "kind" : "LLVMRet"
@@ -170,18 +166,17 @@
   }, {
     "ref" : {
       "kind" : "Global",
-      "index" : 3
+      "index" : 13
     },
     "blocks" : [ {
       "instructions" : [ {
         "kind" : "LLVMCall",
         "operands" : [ {
-          "kind" : "LLVMConstantExprValueKind",
-          "typeId" : 3
+          "kind" : "Global",
+          "index" : 14
         }, {
-          "kind" : "LLVMFunctionValueKind",
-          "name" : "_Z18abstractMethodCallP3Foo",
-          "typeId" : 0
+          "kind" : "Global",
+          "index" : 9
         } ]
       }, {
         "kind" : "LLVMRet"
@@ -217,30 +212,76 @@
     "kind" : "LLVMIntegerTypeKind",
     "len" : 32
   }, {
-    "kind" : "LLVMPointerTypeKind",
-    "types" : [ 3 ]
-  }, {
     "kind" : "LLVMMetadataTypeKind"
   }, {
     "kind" : "LLVMPointerTypeKind",
-    "types" : [ 12 ]
+    "types" : [ 11 ]
   }, {
     "kind" : "LLVMFunctionTypeKind",
-    "types" : [ 2, 10, 10, 10 ]
+    "types" : [ 2, 9, 9, 9 ]
   }, {
     "kind" : "LLVMPointerTypeKind",
-    "types" : [ 14 ]
+    "types" : [ 13 ]
   }, {
     "kind" : "LLVMFunctionTypeKind",
     "types" : [ 2 ]
   }, {
-    "kind" : "LLVMPointerTypeKind",
-    "types" : [ 16 ]
-  }, {
-    "kind" : "LLVMPointerTypeKind",
-    "types" : [ 0 ]
-  }, {
     "kind" : "LLVMIntegerTypeKind",
     "len" : 64
+  } ],
+  "globals" : [ {
+    "kind" : "LLVMFunctionValueKind",
+    "name" : "_Z18instanceMethodCallP3Foo",
+    "typeId" : 0
+  }, {
+    "kind" : "LLVMConstantIntValueKind",
+    "typeId" : 8,
+    "intValue" : 1
+  }, {
+    "kind" : "LLVMMetadataAsValueValueKind",
+    "typeId" : 9
+  }, {
+    "kind" : "LLVMMetadataAsValueValueKind",
+    "typeId" : 9
+  }, {
+    "kind" : "LLVMMetadataAsValueValueKind",
+    "typeId" : 9
+  }, {
+    "kind" : "LLVMFunctionValueKind",
+    "name" : "llvm.dbg.declare",
+    "typeId" : 10
+  }, {
+    "kind" : "LLVMFunctionValueKind",
+    "name" : "_ZN3Foo14instanceMethodEv",
+    "typeId" : 0
+  }, {
+    "kind" : "LLVMFunctionValueKind",
+    "name" : "_Z16staticMethodCallv",
+    "typeId" : 12
+  }, {
+    "kind" : "LLVMFunctionValueKind",
+    "name" : "_ZN3Foo12staticMethodEv",
+    "typeId" : 12
+  }, {
+    "kind" : "LLVMFunctionValueKind",
+    "name" : "_Z18abstractMethodCallP3Foo",
+    "typeId" : 0
+  }, {
+    "kind" : "LLVMMetadataAsValueValueKind",
+    "typeId" : 9
+  }, {
+    "kind" : "LLVMMetadataAsValueValueKind",
+    "typeId" : 9
+  }, {
+    "kind" : "LLVMConstantIntValueKind",
+    "typeId" : 14,
+    "intValue" : 0
+  }, {
+    "kind" : "LLVMFunctionValueKind",
+    "name" : "_Z7testBarv",
+    "typeId" : 12
+  }, {
+    "kind" : "LLVMConstantExprValueKind",
+    "typeId" : 3
   } ]
 }
