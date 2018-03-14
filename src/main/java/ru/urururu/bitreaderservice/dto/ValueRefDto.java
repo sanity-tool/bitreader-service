@@ -14,6 +14,7 @@ public class ValueRefDto {
 
     public enum ValueRefKind {
         Global,
+        Argument,
         Block,
         Instruction,
         Const,

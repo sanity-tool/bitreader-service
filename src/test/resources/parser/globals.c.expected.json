@@ -8,12 +8,11 @@
       "instructions" : [ {
         "kind" : "LLVMStore",
         "operands" : [ {
-          "kind" : "LLVMConstantIntValueKind",
-          "typeId" : 3
+          "kind" : "Global",
+          "index" : 1
         }, {
-          "kind" : "LLVMGlobalVariableValueKind",
-          "name" : "I",
-          "typeId" : 4
+          "kind" : "Global",
+          "index" : 2
         } ]
       }, {
         "kind" : "LLVMRet"
@@ -23,18 +22,17 @@
   }, {
     "ref" : {
       "kind" : "Global",
-      "index" : 1
+      "index" : 3
     },
     "blocks" : [ {
       "instructions" : [ {
         "kind" : "LLVMStore",
         "operands" : [ {
-          "kind" : "LLVMConstantPointerNullValueKind",
-          "typeId" : 4
+          "kind" : "Global",
+          "index" : 4
         }, {
-          "kind" : "LLVMGlobalVariableValueKind",
-          "name" : "I_P",
-          "typeId" : 5
+          "kind" : "Global",
+          "index" : 5
         } ]
       }, {
         "kind" : "LLVMRet"

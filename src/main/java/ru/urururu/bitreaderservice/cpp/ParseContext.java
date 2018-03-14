@@ -8,7 +8,7 @@ import ru.urururu.sanity.cpp.llvm.SWIGTYPE_p_LLVMOpaqueValue;
  * @author <a href="mailto:dmitriy.g.matveev@gmail.com">Dmitry Matveev</a>
  */
 public interface ParseContext {
-    ValueRefDto getValueRef(SWIGTYPE_p_LLVMOpaqueValue value);
+    ValueRefDto getValueRef(SWIGTYPE_p_LLVMOpaqueValue nativeValue);
 
-    int getTypeId(SWIGTYPE_p_LLVMOpaqueType value);
+    int getTypeId(SWIGTYPE_p_LLVMOpaqueType nativeType);
 }

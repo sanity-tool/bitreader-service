@@ -1,15 +1,17 @@
 package ru.urururu.bitreaderservice.dto;
 
-import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 
 /**
  * @author <a href="mailto:dmitriy.g.matveev@gmail.com">Dmitry Matveev</a>
  */
 @Data
-@AllArgsConstructor
+@Builder
 public class ValueDto {
-    private final String kind;
-    private final String name;
-    private final int typeId;
+    private String kind;
+    private String name;
+    private int typeId;
+    private Long intValue;
+    private Double fpValue;
 }

@@ -12,5 +12,5 @@ import java.util.List;
 @AllArgsConstructor
 public class InstructionDto {
     private final String kind;
-    private final List<ValueDto> operands;
+    private final List<ValueRefDto> operands;
 }

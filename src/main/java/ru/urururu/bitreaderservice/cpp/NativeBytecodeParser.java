@@ -57,19 +57,37 @@ public class NativeBytecodeParser {
     }
 
     private FunctionDto toFunction(ParseContext ctx, SWIGTYPE_p_LLVMOpaqueValue nativeFunction) {
+        List<SWIGTYPE_p_LLVMOpaqueValue> nativeParams = new ArrayList<>();
         List<ValueDto> params = new ArrayList<>();
         SWIGTYPE_p_LLVMOpaqueValue nativeParam = bitreader.LLVMGetFirstParam(nativeFunction);
         while (nativeParam != null) {
-            params.add(new ValueDto(bitreader.LLVMGetValueKind(nativeParam).toString(),
-                    bitreader.LLVMGetValueName(nativeParam), ctx.getTypeId(bitreader.LLVMTypeOf(nativeParam))));
+            nativeParams.add(nativeParam);
+            params.add(toValue(ctx, nativeParam).build());
             nativeParam = bitreader.LLVMGetNextParam(nativeParam);
         }
 
         Map<SWIGTYPE_p_LLVMOpaqueBasicBlock, BlockDto> blocks = new LinkedHashMap<>();
 
         SWIGTYPE_p_LLVMOpaqueBasicBlock nativeBlock = bitreader.LLVMGetFirstBasicBlock(nativeFunction);
+
+        ParseContext functionCtx = new ParseContextDecorator(ctx) {
+            @Override
+            public ValueRefDto getValueRef(SWIGTYPE_p_LLVMOpaqueValue nativeValue) {
+                LLVMValueKind kind = bitreader.LLVMGetValueKind(nativeValue);
+                if (kind == LLVMValueKind.LLVMArgumentValueKind) {
+                    return new ValueRefDto(ValueRefDto.ValueRefKind.Argument, nativeParams.indexOf(nativeValue));
+                } else if (kind == LLVMValueKind.LLVMBasicBlockValueKind) {
+                    return new ValueRefDto(ValueRefDto.ValueRefKind.Block, -1);
+                } else if (kind == LLVMValueKind.LLVMInstructionValueKind) {
+                    return new ValueRefDto(ValueRefDto.ValueRefKind.Instruction, -1);
+                } else {
+                    return super.getValueRef(nativeValue);
+                }
+            }
+        };
+
         while (nativeBlock != null) {
-            blocks.put(nativeBlock, toBlock(ctx, nativeBlock));
+            blocks.put(nativeBlock, toBlock(functionCtx, nativeBlock));
 
             nativeBlock = bitreader.LLVMGetNextBasicBlock(nativeBlock);
         }
@@ -95,18 +113,20 @@ public class NativeBytecodeParser {
         switch (bitreader.LLVMGetInstructionOpcode(nativeInstruction).toString()) {
             default:
                 int numOperands = bitreader.LLVMGetNumOperands(nativeInstruction);
-                List<ValueDto> operands = new ArrayList<>();
+                List<ValueRefDto> operands = new ArrayList<>();
                 for (int i = 0; i < numOperands; i++) {
-                    operands.add(toValue(ctx, bitreader.LLVMGetOperand(nativeInstruction, i)));
+                    operands.add(ctx.getValueRef(bitreader.LLVMGetOperand(nativeInstruction, i)));
                 }
 
                 return new InstructionDto(bitreader.LLVMGetInstructionOpcode(nativeInstruction).toString(), operands);
         }
     }
 
-    private static ValueDto toValue(ParseContext ctx, SWIGTYPE_p_LLVMOpaqueValue nativeValue) {
-        return new ValueDto(bitreader.LLVMGetValueKind(nativeValue).toString(),
-                bitreader.LLVMGetValueName(nativeValue), ctx.getTypeId(bitreader.LLVMTypeOf(nativeValue)));
+    private static ValueDto.ValueDtoBuilder toValue(ParseContext ctx, SWIGTYPE_p_LLVMOpaqueValue nativeValue) {
+        return ValueDto.builder()
+                .kind(bitreader.LLVMGetValueKind(nativeValue).toString())
+                .name(bitreader.LLVMGetValueName(nativeValue))
+                .typeId(ctx.getTypeId(bitreader.LLVMTypeOf(nativeValue)));
     }
 
     private <E> int instanceIndexOf(Collection<E> collection, E item) {
@@ -128,16 +148,31 @@ public class NativeBytecodeParser {
         Map<SWIGTYPE_p_LLVMOpaqueType, Integer> typeIds = new HashMap<>();
 
         @Override
-        public ValueRefDto getValueRef(SWIGTYPE_p_LLVMOpaqueValue value) {
-            LLVMValueKind kind = bitreader.LLVMGetValueKind(value);
-            if (kind == LLVMValueKind.LLVMGlobalVariableValueKind || kind == LLVMValueKind.LLVMFunctionValueKind) {
-                return globalValueIds.computeIfAbsent(value, v -> {
-                    globalValues.add(toValue(this, v));
-                    return new ValueRefDto(ValueRefDto.ValueRefKind.Global, globalValues.size() - 1);
-                });
+        public ValueRefDto getValueRef(SWIGTYPE_p_LLVMOpaqueValue nativeValue) {
+            ValueRefDto valueRef = globalValueIds.get(nativeValue);
+
+            if (valueRef != null) {
+                return valueRef;
             }
 
-            throw new IllegalArgumentException("Unsupported type: " + kind);
+            final ValueDto value;
+
+            LLVMValueKind kind = bitreader.LLVMGetValueKind(nativeValue);
+            if (kind == LLVMValueKind.LLVMGlobalVariableValueKind || kind == LLVMValueKind.LLVMFunctionValueKind || kind == LLVMValueKind.LLVMConstantPointerNullValueKind) {
+                value = toValue(this, nativeValue).build();
+            } else if (kind == LLVMValueKind.LLVMConstantIntValueKind) {
+                value = toValue(this, nativeValue).intValue(bitreader.LLVMConstIntGetSExtValue(nativeValue)).build();
+            } else if (kind == LLVMValueKind.LLVMConstantFPValueKind) {
+                value = toValue(this, nativeValue).fpValue(bitreader.GetConstantFPDoubleValue(nativeValue)).build();
+            } else {
+                throw new IllegalArgumentException("Unsupported type: " + kind);
+            }
+
+            valueRef = new ValueRefDto(ValueRefDto.ValueRefKind.Global, globalValues.size());
+            globalValues.add(value);
+            globalValueIds.put(nativeValue, valueRef);
+
+            return valueRef;
         }
 
         @Override
