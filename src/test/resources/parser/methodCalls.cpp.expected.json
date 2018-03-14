@@ -173,7 +173,7 @@
         "kind" : "LLVMCall",
         "operands" : [ {
           "kind" : "Global",
-          "index" : 14
+          "index" : 16
         }, {
           "kind" : "Global",
           "index" : 9
@@ -228,6 +228,13 @@
   }, {
     "kind" : "LLVMIntegerTypeKind",
     "len" : 64
+  }, {
+    "kind" : "LLVMPointerTypeKind",
+    "types" : [ 16 ]
+  }, {
+    "kind" : "LLVMStructTypeKind",
+    "name" : "struct.Bar",
+    "types" : [ 4 ]
   } ],
   "globals" : [ {
     "kind" : "LLVMFunctionValueKind",
@@ -281,7 +288,26 @@
     "name" : "_Z7testBarv",
     "typeId" : 12
   }, {
+    "kind" : "LLVMGlobalVariableValueKind",
+    "name" : "bar",
+    "typeId" : 15
+  }, {
+    "kind" : "LLVMConstantIntValueKind",
+    "typeId" : 8,
+    "intValue" : 0
+  }, {
     "kind" : "LLVMConstantExprValueKind",
-    "typeId" : 3
+    "typeId" : 3,
+    "opcode" : "LLVMGetElementPtr",
+    "operands" : [ {
+      "kind" : "Global",
+      "index" : 14
+    }, {
+      "kind" : "Global",
+      "index" : 15
+    }, {
+      "kind" : "Global",
+      "index" : 15
+    } ]
   } ]
 }

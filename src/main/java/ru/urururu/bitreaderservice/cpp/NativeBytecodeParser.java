@@ -110,16 +110,19 @@ public class NativeBytecodeParser {
     }
 
     private InstructionDto toInstruction(ParseContext ctx, SWIGTYPE_p_LLVMOpaqueValue nativeInstruction) {
-        switch (bitreader.LLVMGetInstructionOpcode(nativeInstruction).toString()) {
-            default:
-                int numOperands = bitreader.LLVMGetNumOperands(nativeInstruction);
-                List<ValueRefDto> operands = new ArrayList<>();
-                for (int i = 0; i < numOperands; i++) {
-                    operands.add(ctx.getValueRef(bitreader.LLVMGetOperand(nativeInstruction, i)));
-                }
+        return new InstructionDto(
+                bitreader.LLVMGetInstructionOpcode(nativeInstruction).toString(),
+                getOperands(ctx, nativeInstruction)
+        );
+    }
 
-                return new InstructionDto(bitreader.LLVMGetInstructionOpcode(nativeInstruction).toString(), operands);
+    private List<ValueRefDto> getOperands(ParseContext ctx, SWIGTYPE_p_LLVMOpaqueValue nativeValue) {
+        int numOperands = bitreader.LLVMGetNumOperands(nativeValue);
+        List<ValueRefDto> operands = new ArrayList<>();
+        for (int i = 0; i < numOperands; i++) {
+            operands.add(ctx.getValueRef(bitreader.LLVMGetOperand(nativeValue, i)));
         }
+        return operands;
     }
 
     private static ValueDto.ValueDtoBuilder toValue(ParseContext ctx, SWIGTYPE_p_LLVMOpaqueValue nativeValue) {
@@ -165,7 +168,7 @@ public class NativeBytecodeParser {
             } else if (kind == LLVMValueKind.LLVMConstantFPValueKind) {
                 value = toValue(this, nativeValue).fpValue(bitreader.GetConstantFPDoubleValue(nativeValue)).build();
             } else if (kind == LLVMValueKind.LLVMConstantExprValueKind) {
-                value = toValue(this, nativeValue).build(); // todo add expr info
+                value = toValue(this, nativeValue).opcode(bitreader.LLVMGetConstOpcode(nativeValue).toString()).operands(getOperands(this, nativeValue)).build(); // todo add expr info
             } else if (kind == LLVMValueKind.LLVMMetadataAsValueValueKind) {
                 // trivial support (not using in clients yet)
                 value = toValue(this, nativeValue).build();
