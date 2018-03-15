@@ -4,14 +4,14 @@ set -e
 
 if [ "$TRAVIS_BRANCH" = "ci" ] && [ "$TRAVIS_PULL_REQUEST" = "false" ]; then
     # run normal analysis
-    ./mvnw \
-        install dockerfile:build sonar:sonar \
-		-Dsonar.host.url=$SONAR_HOST_URL \
-		-Dsonar.login=$SONAR_TOKEN
+    ./mvnw sonar:sonar \
+    	-Dsonar.organization=sanity-tool \
+	-Dsonar.host.url=$SONAR_HOST_URL \
+	-Dsonar.login=$SONAR_TOKEN
 elif [ "$TRAVIS_PULL_REQUEST" != "false" ] && [ -n "${GITHUB_TOKEN-}" ]; then
     # run PR analysis
-	./mvnw \
-	    install dockerfile:build sonar:sonar \
+	./mvnw sonar:sonar \
+		-Dsonar.organization=sanity-tool \
 		-Dsonar.host.url=$SONAR_HOST_URL \
 		-Dsonar.login=$SONAR_TOKEN \
 		-Dsonar.analysis.mode=preview \
