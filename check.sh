@@ -2,7 +2,7 @@
 # Exit on failure
 set -e
 
-if [ "$TRAVIS_BRANCH" = "ci" ] && [ "$TRAVIS_PULL_REQUEST" = "false" ]; then
+if [ "$TRAVIS_BRANCH" = "master" ] && [ "$TRAVIS_PULL_REQUEST" = "false" ]; then
     # run normal analysis
     ./mvnw sonar:sonar \
     	-Dsonar.organization=sanity-tool \
