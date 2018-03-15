@@ -39,6 +39,10 @@ language: java
 
 script: ./mvnw install dockerfile:build
 
+after_success:
+  - bash check.sh
+  - bash <(curl -s https://codecov.io/bash)
+
 deploy:
   provider: script
   script: docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PASSWORD"; ./mvnw dockerfile:push
