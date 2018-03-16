@@ -327,34 +327,34 @@
     } ]
   } ],
   "sourceRefs" : [ {
-    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/methodCalls.cpp",
+    "file" : "parser/methodCalls.cpp",
     "line" : 7
   }, {
-    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/methodCalls.cpp",
+    "file" : "parser/methodCalls.cpp",
     "line" : 8
   }, {
-    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/methodCalls.cpp",
+    "file" : "parser/methodCalls.cpp",
     "line" : 9
   }, {
-    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/methodCalls.cpp",
+    "file" : "parser/methodCalls.cpp",
     "line" : 12
   }, {
-    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/methodCalls.cpp",
+    "file" : "parser/methodCalls.cpp",
     "line" : 13
   }, {
-    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/methodCalls.cpp",
+    "file" : "parser/methodCalls.cpp",
     "line" : 15
   }, {
-    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/methodCalls.cpp",
+    "file" : "parser/methodCalls.cpp",
     "line" : 16
   }, {
-    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/methodCalls.cpp",
+    "file" : "parser/methodCalls.cpp",
     "line" : 17
   }, {
-    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/methodCalls.cpp",
+    "file" : "parser/methodCalls.cpp",
     "line" : 25
   }, {
-    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/methodCalls.cpp",
+    "file" : "parser/methodCalls.cpp",
     "line" : 26
   } ]
 }

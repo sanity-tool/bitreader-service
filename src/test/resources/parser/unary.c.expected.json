@@ -109,16 +109,16 @@
     "typeId" : 0
   } ],
   "sourceRefs" : [ {
-    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/unary.c",
+    "file" : "parser/unary.c",
     "line" : 4
   }, {
-    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/unary.c",
+    "file" : "parser/unary.c",
     "line" : 5
   }, {
-    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/unary.c",
+    "file" : "parser/unary.c",
     "line" : 8
   }, {
-    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/unary.c",
+    "file" : "parser/unary.c",
     "line" : 9
   } ]
 }

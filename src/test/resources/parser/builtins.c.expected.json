@@ -240,16 +240,16 @@
     } ]
   } ],
   "sourceRefs" : [ {
-    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/builtins.c",
+    "file" : "parser/builtins.c",
     "line" : 6
   }, {
-    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/builtins.c",
+    "file" : "parser/builtins.c",
     "line" : 7
   }, {
-    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/builtins.c",
+    "file" : "parser/builtins.c",
     "line" : 8
   }, {
-    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/builtins.c",
+    "file" : "parser/builtins.c",
     "line" : 9
   } ]
 }

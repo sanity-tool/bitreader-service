@@ -92,10 +92,10 @@
     "intValue" : 0
   } ],
   "sourceRefs" : [ {
-    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/list.c",
+    "file" : "parser/list.c",
     "line" : 6
   }, {
-    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/list.c",
+    "file" : "parser/list.c",
     "line" : 7
   } ]
 }

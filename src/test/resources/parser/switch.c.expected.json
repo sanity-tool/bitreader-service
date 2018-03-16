@@ -333,70 +333,70 @@
     "typeId" : 0
   } ],
   "sourceRefs" : [ {
-    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/switch.c",
+    "file" : "parser/switch.c",
     "line" : 4
   }, {
-    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/switch.c",
+    "file" : "parser/switch.c",
     "line" : 6
   }, {
-    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/switch.c",
+    "file" : "parser/switch.c",
     "line" : 7
   }, {
-    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/switch.c",
+    "file" : "parser/switch.c",
     "line" : 9
   }, {
-    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/switch.c",
+    "file" : "parser/switch.c",
     "line" : 10
   }, {
-    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/switch.c",
+    "file" : "parser/switch.c",
     "line" : 12
   }, {
-    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/switch.c",
+    "file" : "parser/switch.c",
     "line" : 13
   }, {
-    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/switch.c",
+    "file" : "parser/switch.c",
     "line" : 14
   }, {
-    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/switch.c",
+    "file" : "parser/switch.c",
     "line" : 15
   }, {
-    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/switch.c",
+    "file" : "parser/switch.c",
     "line" : 18
   }, {
-    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/switch.c",
+    "file" : "parser/switch.c",
     "line" : 20
   }, {
-    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/switch.c",
+    "file" : "parser/switch.c",
     "line" : 21
   }, {
-    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/switch.c",
+    "file" : "parser/switch.c",
     "line" : 23
   }, {
-    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/switch.c",
+    "file" : "parser/switch.c",
     "line" : 24
   }, {
-    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/switch.c",
+    "file" : "parser/switch.c",
     "line" : 26
   }, {
-    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/switch.c",
+    "file" : "parser/switch.c",
     "line" : 27
   }, {
-    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/switch.c",
+    "file" : "parser/switch.c",
     "line" : 30
   }, {
-    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/switch.c",
+    "file" : "parser/switch.c",
     "line" : 32
   }, {
-    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/switch.c",
+    "file" : "parser/switch.c",
     "line" : 34
   }, {
-    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/switch.c",
+    "file" : "parser/switch.c",
     "line" : 35
   }, {
-    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/switch.c",
+    "file" : "parser/switch.c",
     "line" : 36
   }, {
-    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/switch.c",
+    "file" : "parser/switch.c",
     "line" : 37
   } ]
 }

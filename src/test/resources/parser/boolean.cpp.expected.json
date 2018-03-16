@@ -227,13 +227,13 @@
     "intValue" : -1
   } ],
   "sourceRefs" : [ {
-    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/boolean.cpp",
+    "file" : "parser/boolean.cpp",
     "line" : 4
   }, {
-    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/boolean.cpp",
+    "file" : "parser/boolean.cpp",
     "line" : 5
   }, {
-    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/boolean.cpp",
+    "file" : "parser/boolean.cpp",
     "line" : 6
   } ]
 }

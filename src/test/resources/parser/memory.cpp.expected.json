@@ -1507,43 +1507,43 @@
     "intValue" : -8
   } ],
   "sourceRefs" : [ {
-    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/memory.cpp",
+    "file" : "parser/memory.cpp",
     "line" : 4
   }, {
-    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/memory.cpp",
+    "file" : "parser/memory.cpp",
     "line" : 5
   }, {
-    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/memory.cpp",
+    "file" : "parser/memory.cpp",
     "line" : 6
   }, {
-    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/memory.cpp",
+    "file" : "parser/memory.cpp",
     "line" : 7
   }, {
-    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/memory.cpp",
+    "file" : "parser/memory.cpp",
     "line" : 10
   }, {
-    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/memory.cpp",
+    "file" : "parser/memory.cpp",
     "line" : 11
   }, {
-    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/memory.cpp",
+    "file" : "parser/memory.cpp",
     "line" : 12
   }, {
-    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/memory.cpp",
+    "file" : "parser/memory.cpp",
     "line" : 20
   }, {
-    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/memory.cpp",
+    "file" : "parser/memory.cpp",
     "line" : 21
   }, {
-    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/memory.cpp",
+    "file" : "parser/memory.cpp",
     "line" : 22
   }, {
-    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/memory.cpp",
+    "file" : "parser/memory.cpp",
     "line" : 25
   }, {
-    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/memory.cpp",
+    "file" : "parser/memory.cpp",
     "line" : 26
   }, {
-    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/memory.cpp",
+    "file" : "parser/memory.cpp",
     "line" : 27
   } ]
 }

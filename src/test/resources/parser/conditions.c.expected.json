@@ -250,43 +250,43 @@
     "typeId" : 0
   } ],
   "sourceRefs" : [ {
-    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/conditions.c",
+    "file" : "parser/conditions.c",
     "line" : 7
   }, {
-    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/conditions.c",
+    "file" : "parser/conditions.c",
     "line" : 8
   }, {
-    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/conditions.c",
+    "file" : "parser/conditions.c",
     "line" : 9
   }, {
-    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/conditions.c",
+    "file" : "parser/conditions.c",
     "line" : 10
   }, {
-    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/conditions.c",
+    "file" : "parser/conditions.c",
     "line" : 13
   }, {
-    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/conditions.c",
+    "file" : "parser/conditions.c",
     "line" : 14
   }, {
-    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/conditions.c",
+    "file" : "parser/conditions.c",
     "line" : 15
   }, {
-    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/conditions.c",
+    "file" : "parser/conditions.c",
     "line" : 16
   }, {
-    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/conditions.c",
+    "file" : "parser/conditions.c",
     "line" : 18
   }, {
-    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/conditions.c",
+    "file" : "parser/conditions.c",
     "line" : 21
   }, {
-    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/conditions.c",
+    "file" : "parser/conditions.c",
     "line" : 22
   }, {
-    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/conditions.c",
+    "file" : "parser/conditions.c",
     "line" : 23
   }, {
-    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/conditions.c",
+    "file" : "parser/conditions.c",
     "line" : 24
   } ]
 }

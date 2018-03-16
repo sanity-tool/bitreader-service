@@ -617,13 +617,13 @@
     "typeId" : 8
   } ],
   "sourceRefs" : [ {
-    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/np.rs",
+    "file" : "parser/np.rs",
     "line" : 4
   }, {
-    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/np.rs",
+    "file" : "parser/np.rs",
     "line" : 5
   }, {
-    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/np.rs",
+    "file" : "parser/np.rs",
     "line" : 6
   } ]
 }

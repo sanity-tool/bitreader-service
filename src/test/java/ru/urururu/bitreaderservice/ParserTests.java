@@ -50,7 +50,8 @@ public class ParserTests extends TestHelper {
         simpleModule.addSerializer(File.class, new JsonSerializer<File>() {
             @Override
             public void serialize(File value, JsonGenerator gen, SerializerProvider serializers) throws IOException {
-                gen.writeString(value.toPath().relativize(TestHelper.TESTS_PATH).toString());
+                Path relative = TestHelper.TESTS_PATH.relativize(value.toPath());
+                gen.writeString(relative.toString());
             }
         });
         mapper.registerModule(simpleModule);

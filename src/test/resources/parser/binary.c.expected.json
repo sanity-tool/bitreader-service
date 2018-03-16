@@ -10344,37 +10344,37 @@
     "typeId" : 0
   } ],
   "sourceRefs" : [ {
-    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/binary.c",
+    "file" : "parser/binary.c",
     "line" : 32
   }, {
-    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/binary.c",
+    "file" : "parser/binary.c",
     "line" : 33
   }, {
-    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/binary.c",
+    "file" : "parser/binary.c",
     "line" : 34
   }, {
-    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/binary.c",
+    "file" : "parser/binary.c",
     "line" : 35
   }, {
-    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/binary.c",
+    "file" : "parser/binary.c",
     "line" : 36
   }, {
-    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/binary.c",
+    "file" : "parser/binary.c",
     "line" : 37
   }, {
-    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/binary.c",
+    "file" : "parser/binary.c",
     "line" : 38
   }, {
-    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/binary.c",
+    "file" : "parser/binary.c",
     "line" : 39
   }, {
-    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/binary.c",
+    "file" : "parser/binary.c",
     "line" : 66
   }, {
-    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/binary.c",
+    "file" : "parser/binary.c",
     "line" : 67
   }, {
-    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/binary.c",
+    "file" : "parser/binary.c",
     "line" : 68
   } ]
 }

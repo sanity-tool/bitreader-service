@@ -96,10 +96,10 @@
     "typeId" : 7
   } ],
   "sourceRefs" : [ {
-    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/incomplete.c",
+    "file" : "parser/incomplete.c",
     "line" : 3
   }, {
-    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/incomplete.c",
+    "file" : "parser/incomplete.c",
     "line" : 4
   } ]
 }
