@@ -46,15 +46,15 @@ public class ParserTests extends TestHelper {
         mapper.enable(SerializationFeature.INDENT_OUTPUT);
         mapper.setSerializationInclusion(JsonInclude.Include.NON_NULL);
         mapper.setSerializationInclusion(JsonInclude.Include.NON_EMPTY);
-        SimpleModule simpleModule = new SimpleModule("fileSerialization");
-        simpleModule.addSerializer(File.class, new JsonSerializer<File>() {
+        SimpleModule relativeFilesModule = new SimpleModule("fileSerialization");
+        relativeFilesModule.addSerializer(File.class, new JsonSerializer<File>() {
             @Override
             public void serialize(File value, JsonGenerator gen, SerializerProvider serializers) throws IOException {
                 Path relative = TestHelper.TESTS_PATH.relativize(value.toPath());
                 gen.writeString(relative.toString());
             }
         });
-        mapper.registerModule(simpleModule);
+        mapper.registerModule(relativeFilesModule);
 
         mapper.writeValue(ps, testResult);
 
