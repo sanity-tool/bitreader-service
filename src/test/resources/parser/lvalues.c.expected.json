@@ -25,7 +25,8 @@
         }, {
           "kind" : "Global",
           "index" : 5
-        } ]
+        } ],
+        "sourceRef" : 0
       }, {
         "kind" : "LLVMStore",
         "operands" : [ {
@@ -34,9 +35,11 @@
         }, {
           "kind" : "Instruction",
           "index" : 0
-        } ]
+        } ],
+        "sourceRef" : 0
       }, {
-        "kind" : "LLVMRet"
+        "kind" : "LLVMRet",
+        "sourceRef" : 1
       } ]
     } ],
     "entryBlockIndex" : 0
@@ -54,9 +57,11 @@
         }, {
           "kind" : "Global",
           "index" : 8
-        } ]
+        } ],
+        "sourceRef" : 2
       }, {
-        "kind" : "LLVMRet"
+        "kind" : "LLVMRet",
+        "sourceRef" : 3
       } ]
     } ],
     "entryBlockIndex" : 0
@@ -74,7 +79,8 @@
         }, {
           "kind" : "Global",
           "index" : 13
-        } ]
+        } ],
+        "sourceRef" : 4
       }, {
         "kind" : "LLVMStore",
         "operands" : [ {
@@ -83,9 +89,11 @@
         }, {
           "kind" : "Global",
           "index" : 15
-        } ]
+        } ],
+        "sourceRef" : 5
       }, {
-        "kind" : "LLVMRet"
+        "kind" : "LLVMRet",
+        "sourceRef" : 6
       } ]
     } ],
     "entryBlockIndex" : 0
@@ -103,9 +111,11 @@
         }, {
           "kind" : "Global",
           "index" : 18
-        } ]
+        } ],
+        "sourceRef" : 7
       }, {
-        "kind" : "LLVMRet"
+        "kind" : "LLVMRet",
+        "sourceRef" : 8
       } ]
     } ],
     "entryBlockIndex" : 0
@@ -120,7 +130,8 @@
         "operands" : [ {
           "kind" : "Global",
           "index" : 21
-        } ]
+        } ],
+        "sourceRef" : 9
       }, {
         "kind" : "LLVMGetElementPtr",
         "operands" : [ {
@@ -129,7 +140,8 @@
         }, {
           "kind" : "Global",
           "index" : 12
-        } ]
+        } ],
+        "sourceRef" : 9
       }, {
         "kind" : "LLVMStore",
         "operands" : [ {
@@ -138,13 +150,15 @@
         }, {
           "kind" : "Instruction",
           "index" : 1
-        } ]
+        } ],
+        "sourceRef" : 9
       }, {
         "kind" : "LLVMLoad",
         "operands" : [ {
           "kind" : "Global",
           "index" : 21
-        } ]
+        } ],
+        "sourceRef" : 10
       }, {
         "kind" : "LLVMGetElementPtr",
         "operands" : [ {
@@ -153,7 +167,8 @@
         }, {
           "kind" : "Global",
           "index" : 14
-        } ]
+        } ],
+        "sourceRef" : 10
       }, {
         "kind" : "LLVMStore",
         "operands" : [ {
@@ -162,9 +177,11 @@
         }, {
           "kind" : "Instruction",
           "index" : 4
-        } ]
+        } ],
+        "sourceRef" : 10
       }, {
-        "kind" : "LLVMRet"
+        "kind" : "LLVMRet",
+        "sourceRef" : 11
       } ]
     } ],
     "entryBlockIndex" : 0
@@ -179,7 +196,8 @@
         "operands" : [ {
           "kind" : "Global",
           "index" : 21
-        } ]
+        } ],
+        "sourceRef" : 12
       }, {
         "kind" : "LLVMStore",
         "operands" : [ {
@@ -188,9 +206,11 @@
         }, {
           "kind" : "Instruction",
           "index" : 0
-        } ]
+        } ],
+        "sourceRef" : 12
       }, {
-        "kind" : "LLVMRet"
+        "kind" : "LLVMRet",
+        "sourceRef" : 13
       } ]
     } ],
     "entryBlockIndex" : 0
@@ -208,9 +228,11 @@
         }, {
           "kind" : "Global",
           "index" : 26
-        } ]
+        } ],
+        "sourceRef" : 14
       }, {
-        "kind" : "LLVMRet"
+        "kind" : "LLVMRet",
+        "sourceRef" : 15
       } ]
     } ],
     "entryBlockIndex" : 0
@@ -225,7 +247,8 @@
         "operands" : [ {
           "kind" : "Global",
           "index" : 29
-        } ]
+        } ],
+        "sourceRef" : 16
       }, {
         "kind" : "LLVMGetElementPtr",
         "operands" : [ {
@@ -237,7 +260,8 @@
         }, {
           "kind" : "Global",
           "index" : 17
-        } ]
+        } ],
+        "sourceRef" : 16
       }, {
         "kind" : "LLVMStore",
         "operands" : [ {
@@ -246,13 +270,15 @@
         }, {
           "kind" : "Instruction",
           "index" : 1
-        } ]
+        } ],
+        "sourceRef" : 16
       }, {
         "kind" : "LLVMLoad",
         "operands" : [ {
           "kind" : "Global",
           "index" : 29
-        } ]
+        } ],
+        "sourceRef" : 17
       }, {
         "kind" : "LLVMGetElementPtr",
         "operands" : [ {
@@ -264,7 +290,8 @@
         }, {
           "kind" : "Global",
           "index" : 17
-        } ]
+        } ],
+        "sourceRef" : 17
       }, {
         "kind" : "LLVMStore",
         "operands" : [ {
@@ -273,9 +300,11 @@
         }, {
           "kind" : "Instruction",
           "index" : 4
-        } ]
+        } ],
+        "sourceRef" : 17
       }, {
-        "kind" : "LLVMRet"
+        "kind" : "LLVMRet",
+        "sourceRef" : 18
       } ]
     } ],
     "entryBlockIndex" : 0
@@ -499,5 +528,63 @@
       "kind" : "Global",
       "index" : 28
     } ]
+  } ],
+  "sourceRefs" : [ {
+    "file" : "parser/lvalues.c",
+    "line" : 2
+  }, {
+    "file" : "parser/lvalues.c",
+    "line" : 3
+  }, {
+    "file" : "parser/lvalues.c",
+    "line" : 7
+  }, {
+    "file" : "parser/lvalues.c",
+    "line" : 8
+  }, {
+    "file" : "parser/lvalues.c",
+    "line" : 13
+  }, {
+    "file" : "parser/lvalues.c",
+    "line" : 14
+  }, {
+    "file" : "parser/lvalues.c",
+    "line" : 15
+  }, {
+    "file" : "parser/lvalues.c",
+    "line" : 18
+  }, {
+    "file" : "parser/lvalues.c",
+    "line" : 19
+  }, {
+    "file" : "parser/lvalues.c",
+    "line" : 24
+  }, {
+    "file" : "parser/lvalues.c",
+    "line" : 25
+  }, {
+    "file" : "parser/lvalues.c",
+    "line" : 26
+  }, {
+    "file" : "parser/lvalues.c",
+    "line" : 29
+  }, {
+    "file" : "parser/lvalues.c",
+    "line" : 30
+  }, {
+    "file" : "parser/lvalues.c",
+    "line" : 37
+  }, {
+    "file" : "parser/lvalues.c",
+    "line" : 38
+  }, {
+    "file" : "parser/lvalues.c",
+    "line" : 41
+  }, {
+    "file" : "parser/lvalues.c",
+    "line" : 42
+  }, {
+    "file" : "parser/lvalues.c",
+    "line" : 43
   } ]
 }

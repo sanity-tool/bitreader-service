@@ -16,6 +16,8 @@ public class NativeBytecodeParser {
     private List<ParserListener> parserListeners;
     @Autowired
     private NativeTypeParser typeParser;
+    @Autowired
+    private NativeSourceRangeFactory sourceRangeFactory;
 
     public ModuleDto parse(byte[] bitcode) {
         SWIGTYPE_p_LLVMOpaqueModule m = bitreader.parse(bitcode);
@@ -53,7 +55,7 @@ public class NativeBytecodeParser {
             nativeFunction = bitreader.LLVMGetNextFunction(nativeFunction);
         }
 
-        return new ModuleDto(functions.values(), ctx.getTypes(), ctx.globalValues);
+        return new ModuleDto(functions.values(), ctx.getTypes(), ctx.globalValues, ctx.sourceRefs.keySet());
     }
 
     private FunctionDto toFunction(ParseContext ctx, SWIGTYPE_p_LLVMOpaqueValue nativeFunction) {
@@ -127,7 +129,8 @@ public class NativeBytecodeParser {
     private InstructionDto toInstruction(ParseContext ctx, SWIGTYPE_p_LLVMOpaqueValue nativeInstruction) {
         return new InstructionDto(
                 bitreader.LLVMGetInstructionOpcode(nativeInstruction).toString(),
-                getOperands(ctx, nativeInstruction)
+                getOperands(ctx, nativeInstruction),
+                ctx.getSourceRefId(sourceRangeFactory.getSourceRange(nativeInstruction))
         );
     }
 
@@ -140,11 +143,12 @@ public class NativeBytecodeParser {
         return operands;
     }
 
-    private static ValueDto.ValueDtoBuilder toValue(ParseContext ctx, SWIGTYPE_p_LLVMOpaqueValue nativeValue) {
+    private ValueDto.ValueDtoBuilder toValue(ParseContext ctx, SWIGTYPE_p_LLVMOpaqueValue nativeValue) {
         return ValueDto.builder()
                 .kind(bitreader.LLVMGetValueKind(nativeValue).toString())
                 .name(bitreader.LLVMGetValueName(nativeValue))
-                .typeId(ctx.getTypeId(bitreader.LLVMTypeOf(nativeValue)));
+                .typeId(ctx.getTypeId(bitreader.LLVMTypeOf(nativeValue)))
+                ;
     }
 
     private <E> int instanceIndexOf(Collection<E> collection, E item) {
@@ -164,6 +168,16 @@ public class NativeBytecodeParser {
         Map<SWIGTYPE_p_LLVMOpaqueValue, ValueRefDto> globalValueIds = new HashMap<>();
         Map<Integer, TypeDto> types = new TreeMap<>();
         Map<SWIGTYPE_p_LLVMOpaqueType, Integer> typeIds = new HashMap<>();
+        Map<SourceRefDto, Integer> sourceRefs = new LinkedHashMap<>();
+
+        @Override
+        public Integer getSourceRefId(SourceRefDto sourceRange) {
+            if (sourceRange == null) {
+                return null;
+            }
+
+            return sourceRefs.computeIfAbsent(sourceRange, sr -> sourceRefs.size());
+        }
 
         @Override
         public ValueRefDto getValueRef(SWIGTYPE_p_LLVMOpaqueValue nativeValue) {

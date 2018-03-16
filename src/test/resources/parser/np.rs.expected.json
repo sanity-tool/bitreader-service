@@ -398,13 +398,15 @@
         }, {
           "kind" : "Global",
           "index" : 8
-        } ]
+        } ],
+        "sourceRef" : 0
       }, {
         "kind" : "LLVMBr",
         "operands" : [ {
           "kind" : "Block",
           "index" : -1
-        } ]
+        } ],
+        "sourceRef" : 0
       } ]
     }, {
       "instructions" : [ {
@@ -412,7 +414,8 @@
         "operands" : [ {
           "kind" : "Global",
           "index" : 2
-        } ]
+        } ],
+        "sourceRef" : 0
       }, {
         "kind" : "LLVMStore",
         "operands" : [ {
@@ -421,13 +424,15 @@
         }, {
           "kind" : "Instruction",
           "index" : -1
-        } ]
+        } ],
+        "sourceRef" : 0
       }, {
         "kind" : "LLVMBr",
         "operands" : [ {
           "kind" : "Block",
           "index" : -1
-        } ]
+        } ],
+        "sourceRef" : 0
       } ]
     }, {
       "instructions" : [ {
@@ -435,7 +440,8 @@
         "operands" : [ {
           "kind" : "Instruction",
           "index" : -1
-        } ]
+        } ],
+        "sourceRef" : 1
       }, {
         "kind" : "LLVMCall",
         "operands" : [ {
@@ -444,17 +450,20 @@
         }, {
           "kind" : "Global",
           "index" : 4
-        } ]
+        } ],
+        "sourceRef" : 1
       }, {
         "kind" : "LLVMBr",
         "operands" : [ {
           "kind" : "Block",
           "index" : -1
-        } ]
+        } ],
+        "sourceRef" : 1
       } ]
     }, {
       "instructions" : [ {
-        "kind" : "LLVMRet"
+        "kind" : "LLVMRet",
+        "sourceRef" : 2
       } ]
     } ],
     "entryBlockIndex" : 0
@@ -606,5 +615,15 @@
   }, {
     "kind" : "LLVMMetadataAsValueValueKind",
     "typeId" : 8
+  } ],
+  "sourceRefs" : [ {
+    "file" : "parser/np.rs",
+    "line" : 4
+  }, {
+    "file" : "parser/np.rs",
+    "line" : 5
+  }, {
+    "file" : "parser/np.rs",
+    "line" : 6
   } ]
 }

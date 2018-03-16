@@ -1,15 +1,21 @@
 package ru.urururu.bitreaderservice;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.core.JsonGenerator;
+import com.fasterxml.jackson.databind.JsonSerializer;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
+import com.fasterxml.jackson.databind.SerializerProvider;
+import com.fasterxml.jackson.databind.module.SimpleModule;
 import junit.framework.TestSuite;
 import ru.urururu.bitreaderservice.cpp.Parser;
 import ru.urururu.bitreaderservice.dto.ModuleDto;
 
 import java.io.ByteArrayOutputStream;
+import java.io.IOException;
 import java.io.PrintStream;
 import java.nio.file.Path;
+import java.io.File;
 
 /**
  * @author <a href="mailto:dmitriy.g.matveev@gmail.com">Dmitry Matveev</a>
@@ -40,6 +46,15 @@ public class ParserTests extends TestHelper {
         mapper.enable(SerializationFeature.INDENT_OUTPUT);
         mapper.setSerializationInclusion(JsonInclude.Include.NON_NULL);
         mapper.setSerializationInclusion(JsonInclude.Include.NON_EMPTY);
+        SimpleModule relativeFilesModule = new SimpleModule("fileSerialization");
+        relativeFilesModule.addSerializer(File.class, new JsonSerializer<File>() {
+            @Override
+            public void serialize(File value, JsonGenerator gen, SerializerProvider serializers) throws IOException {
+                Path relative = TestHelper.TESTS_PATH.relativize(value.toPath());
+                gen.writeString(relative.toString());
+            }
+        });
+        mapper.registerModule(relativeFilesModule);
 
         mapper.writeValue(ps, testResult);
 

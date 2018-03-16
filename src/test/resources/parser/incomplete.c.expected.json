@@ -34,9 +34,11 @@
         }, {
           "kind" : "Global",
           "index" : 5
-        } ]
+        } ],
+        "sourceRef" : 0
       }, {
-        "kind" : "LLVMRet"
+        "kind" : "LLVMRet",
+        "sourceRef" : 1
       } ]
     } ],
     "entryBlockIndex" : 0,
@@ -92,5 +94,12 @@
     "kind" : "LLVMFunctionValueKind",
     "name" : "llvm.dbg.declare",
     "typeId" : 7
+  } ],
+  "sourceRefs" : [ {
+    "file" : "parser/incomplete.c",
+    "line" : 3
+  }, {
+    "file" : "parser/incomplete.c",
+    "line" : 4
   } ]
 }

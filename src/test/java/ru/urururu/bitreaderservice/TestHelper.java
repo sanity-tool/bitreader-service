@@ -30,7 +30,7 @@ abstract class TestHelper {
     static ApplicationContext context = new AnnotationConfigApplicationContext("ru.urururu.bitreaderservice.cpp");
 
     private static final String BASE = System.getProperty("TEST_RESOURCES_ROOT");
-    private static Path TESTS_PATH = Paths.get(BASE);
+    static Path TESTS_PATH = Paths.get(BASE);
     private static String FAILURES_DIR = System.getProperty("TEST_FAILURES_ROOT");
     private static String DEBUG_DIR = System.getProperty("TEST_DEBUG_ROOT");
     private static final BidiMap<Language, String> languageDirs = new DualHashBidiMap<>();
