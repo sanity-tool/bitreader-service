@@ -13,9 +13,11 @@
         }, {
           "kind" : "Global",
           "index" : 4
-        } ]
+        } ],
+        "sourceRef" : 0
       }, {
-        "kind" : "LLVMRet"
+        "kind" : "LLVMRet",
+        "sourceRef" : 1
       } ]
     } ],
     "entryBlockIndex" : 0
@@ -30,13 +32,15 @@
         "operands" : [ {
           "kind" : "Global",
           "index" : 2
-        } ]
+        } ],
+        "sourceRef" : 2
       }, {
         "kind" : "LLVMLoad",
         "operands" : [ {
           "kind" : "Global",
           "index" : 4
-        } ]
+        } ],
+        "sourceRef" : 2
       }, {
         "kind" : "LLVMStore",
         "operands" : [ {
@@ -45,9 +49,11 @@
         }, {
           "kind" : "Instruction",
           "index" : 1
-        } ]
+        } ],
+        "sourceRef" : 2
       }, {
-        "kind" : "LLVMRet"
+        "kind" : "LLVMRet",
+        "sourceRef" : 3
       } ]
     } ],
     "entryBlockIndex" : 0
@@ -101,5 +107,18 @@
     "kind" : "LLVMFunctionValueKind",
     "name" : "deref",
     "typeId" : 0
+  } ],
+  "sourceRefs" : [ {
+    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/unary.c",
+    "line" : 4
+  }, {
+    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/unary.c",
+    "line" : 5
+  }, {
+    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/unary.c",
+    "line" : 8
+  }, {
+    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/unary.c",
+    "line" : 9
   } ]
 }

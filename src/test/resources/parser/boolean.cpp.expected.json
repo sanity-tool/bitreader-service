@@ -10,13 +10,15 @@
         "operands" : [ {
           "kind" : "Global",
           "index" : 2
-        } ]
+        } ],
+        "sourceRef" : 0
       }, {
         "kind" : "LLVMTrunc",
         "operands" : [ {
           "kind" : "Instruction",
           "index" : 0
-        } ]
+        } ],
+        "sourceRef" : 0
       }, {
         "kind" : "LLVMBr",
         "operands" : [ {
@@ -28,7 +30,8 @@
         }, {
           "kind" : "Block",
           "index" : -1
-        } ]
+        } ],
+        "sourceRef" : 0
       } ]
     }, {
       "instructions" : [ {
@@ -36,13 +39,15 @@
         "operands" : [ {
           "kind" : "Global",
           "index" : 3
-        } ]
+        } ],
+        "sourceRef" : 0
       }, {
         "kind" : "LLVMTrunc",
         "operands" : [ {
           "kind" : "Instruction",
           "index" : 0
-        } ]
+        } ],
+        "sourceRef" : 0
       }, {
         "kind" : "LLVMBr",
         "operands" : [ {
@@ -65,7 +70,8 @@
         "operands" : [ {
           "kind" : "Instruction",
           "index" : 0
-        } ]
+        } ],
+        "sourceRef" : 0
       }, {
         "kind" : "LLVMStore",
         "operands" : [ {
@@ -74,19 +80,22 @@
         }, {
           "kind" : "Global",
           "index" : 5
-        } ]
+        } ],
+        "sourceRef" : 0
       }, {
         "kind" : "LLVMLoad",
         "operands" : [ {
           "kind" : "Global",
           "index" : 2
-        } ]
+        } ],
+        "sourceRef" : 1
       }, {
         "kind" : "LLVMTrunc",
         "operands" : [ {
           "kind" : "Instruction",
           "index" : 3
-        } ]
+        } ],
+        "sourceRef" : 1
       }, {
         "kind" : "LLVMBr",
         "operands" : [ {
@@ -98,7 +107,8 @@
         }, {
           "kind" : "Block",
           "index" : -1
-        } ]
+        } ],
+        "sourceRef" : 1
       } ]
     }, {
       "instructions" : [ {
@@ -106,19 +116,22 @@
         "operands" : [ {
           "kind" : "Global",
           "index" : 3
-        } ]
+        } ],
+        "sourceRef" : 1
       }, {
         "kind" : "LLVMTrunc",
         "operands" : [ {
           "kind" : "Instruction",
           "index" : 0
-        } ]
+        } ],
+        "sourceRef" : 1
       }, {
         "kind" : "LLVMBr",
         "operands" : [ {
           "kind" : "Block",
           "index" : -1
-        } ]
+        } ],
+        "sourceRef" : 1
       } ]
     }, {
       "instructions" : [ {
@@ -135,7 +148,8 @@
         "operands" : [ {
           "kind" : "Instruction",
           "index" : 0
-        } ]
+        } ],
+        "sourceRef" : 1
       }, {
         "kind" : "LLVMStore",
         "operands" : [ {
@@ -144,9 +158,11 @@
         }, {
           "kind" : "Global",
           "index" : 5
-        } ]
+        } ],
+        "sourceRef" : 1
       }, {
-        "kind" : "LLVMRet"
+        "kind" : "LLVMRet",
+        "sourceRef" : 2
       } ]
     } ],
     "entryBlockIndex" : 0
@@ -209,5 +225,15 @@
     "kind" : "LLVMConstantIntValueKind",
     "typeId" : 5,
     "intValue" : -1
+  } ],
+  "sourceRefs" : [ {
+    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/boolean.cpp",
+    "line" : 4
+  }, {
+    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/boolean.cpp",
+    "line" : 5
+  }, {
+    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/boolean.cpp",
+    "line" : 6
   } ]
 }

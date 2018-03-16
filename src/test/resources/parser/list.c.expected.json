@@ -10,7 +10,8 @@
         "operands" : [ {
           "kind" : "Global",
           "index" : 2
-        } ]
+        } ],
+        "sourceRef" : 0
       }, {
         "kind" : "LLVMGetElementPtr",
         "operands" : [ {
@@ -22,13 +23,15 @@
         }, {
           "kind" : "Global",
           "index" : 3
-        } ]
+        } ],
+        "sourceRef" : 0
       }, {
         "kind" : "LLVMLoad",
         "operands" : [ {
           "kind" : "Instruction",
           "index" : 1
-        } ]
+        } ],
+        "sourceRef" : 0
       }, {
         "kind" : "LLVMStore",
         "operands" : [ {
@@ -37,9 +40,11 @@
         }, {
           "kind" : "Global",
           "index" : 2
-        } ]
+        } ],
+        "sourceRef" : 0
       }, {
-        "kind" : "LLVMRet"
+        "kind" : "LLVMRet",
+        "sourceRef" : 1
       } ]
     } ],
     "entryBlockIndex" : 0
@@ -85,5 +90,12 @@
     "kind" : "LLVMConstantIntValueKind",
     "typeId" : 6,
     "intValue" : 0
+  } ],
+  "sourceRefs" : [ {
+    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/list.c",
+    "line" : 6
+  }, {
+    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/list.c",
+    "line" : 7
   } ]
 }

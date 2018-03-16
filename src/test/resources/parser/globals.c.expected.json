@@ -13,9 +13,11 @@
         }, {
           "kind" : "Global",
           "index" : 3
-        } ]
+        } ],
+        "sourceRef" : 0
       }, {
-        "kind" : "LLVMRet"
+        "kind" : "LLVMRet",
+        "sourceRef" : 1
       } ]
     } ],
     "entryBlockIndex" : 0
@@ -33,9 +35,11 @@
         }, {
           "kind" : "Global",
           "index" : 6
-        } ]
+        } ],
+        "sourceRef" : 2
       }, {
-        "kind" : "LLVMRet"
+        "kind" : "LLVMRet",
+        "sourceRef" : 3
       } ]
     } ],
     "entryBlockIndex" : 0
@@ -93,5 +97,18 @@
       "kind" : "Global",
       "index" : 5
     } ]
+  } ],
+  "sourceRefs" : [ {
+    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/globals.c",
+    "line" : 4
+  }, {
+    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/globals.c",
+    "line" : 5
+  }, {
+    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/globals.c",
+    "line" : 8
+  }, {
+    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/globals.c",
+    "line" : 9
   } ]
 }

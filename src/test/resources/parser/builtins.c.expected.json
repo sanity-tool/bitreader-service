@@ -10,13 +10,15 @@
         "operands" : [ {
           "kind" : "Global",
           "index" : 2
-        } ]
+        } ],
+        "sourceRef" : 0
       }, {
         "kind" : "LLVMLoad",
         "operands" : [ {
           "kind" : "Global",
           "index" : 3
-        } ]
+        } ],
+        "sourceRef" : 0
       }, {
         "kind" : "LLVMFRem",
         "operands" : [ {
@@ -25,7 +27,8 @@
         }, {
           "kind" : "Instruction",
           "index" : 1
-        } ]
+        } ],
+        "sourceRef" : 0
       }, {
         "kind" : "LLVMStore",
         "operands" : [ {
@@ -34,31 +37,36 @@
         }, {
           "kind" : "Global",
           "index" : 4
-        } ]
+        } ],
+        "sourceRef" : 0
       }, {
         "kind" : "LLVMLoad",
         "operands" : [ {
           "kind" : "Global",
           "index" : 5
-        } ]
+        } ],
+        "sourceRef" : 1
       }, {
         "kind" : "LLVMFPExt",
         "operands" : [ {
           "kind" : "Instruction",
           "index" : 4
-        } ]
+        } ],
+        "sourceRef" : 1
       }, {
         "kind" : "LLVMLoad",
         "operands" : [ {
           "kind" : "Global",
           "index" : 6
-        } ]
+        } ],
+        "sourceRef" : 1
       }, {
         "kind" : "LLVMFPExt",
         "operands" : [ {
           "kind" : "Instruction",
           "index" : 6
-        } ]
+        } ],
+        "sourceRef" : 1
       }, {
         "kind" : "LLVMFRem",
         "operands" : [ {
@@ -67,13 +75,15 @@
         }, {
           "kind" : "Instruction",
           "index" : 7
-        } ]
+        } ],
+        "sourceRef" : 1
       }, {
         "kind" : "LLVMFPTrunc",
         "operands" : [ {
           "kind" : "Instruction",
           "index" : 8
-        } ]
+        } ],
+        "sourceRef" : 1
       }, {
         "kind" : "LLVMStore",
         "operands" : [ {
@@ -82,19 +92,22 @@
         }, {
           "kind" : "Global",
           "index" : 7
-        } ]
+        } ],
+        "sourceRef" : 1
       }, {
         "kind" : "LLVMLoad",
         "operands" : [ {
           "kind" : "Global",
           "index" : 9
-        } ]
+        } ],
+        "sourceRef" : 2
       }, {
         "kind" : "LLVMLoad",
         "operands" : [ {
           "kind" : "Global",
           "index" : 10
-        } ]
+        } ],
+        "sourceRef" : 2
       }, {
         "kind" : "LLVMFRem",
         "operands" : [ {
@@ -103,7 +116,8 @@
         }, {
           "kind" : "Instruction",
           "index" : 12
-        } ]
+        } ],
+        "sourceRef" : 2
       }, {
         "kind" : "LLVMStore",
         "operands" : [ {
@@ -112,9 +126,11 @@
         }, {
           "kind" : "Global",
           "index" : 11
-        } ]
+        } ],
+        "sourceRef" : 2
       }, {
-        "kind" : "LLVMRet"
+        "kind" : "LLVMRet",
+        "sourceRef" : 3
       } ]
     } ],
     "entryBlockIndex" : 0
@@ -222,5 +238,18 @@
       "kind" : "Global",
       "index" : 8
     } ]
+  } ],
+  "sourceRefs" : [ {
+    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/builtins.c",
+    "line" : 6
+  }, {
+    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/builtins.c",
+    "line" : 7
+  }, {
+    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/builtins.c",
+    "line" : 8
+  }, {
+    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/builtins.c",
+    "line" : 9
   } ]
 }

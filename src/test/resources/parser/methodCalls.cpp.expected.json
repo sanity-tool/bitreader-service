@@ -34,13 +34,15 @@
         }, {
           "kind" : "Global",
           "index" : 5
-        } ]
+        } ],
+        "sourceRef" : 0
       }, {
         "kind" : "LLVMLoad",
         "operands" : [ {
           "kind" : "Instruction",
           "index" : 0
-        } ]
+        } ],
+        "sourceRef" : 1
       }, {
         "kind" : "LLVMCall",
         "operands" : [ {
@@ -49,9 +51,11 @@
         }, {
           "kind" : "Global",
           "index" : 6
-        } ]
+        } ],
+        "sourceRef" : 1
       }, {
-        "kind" : "LLVMRet"
+        "kind" : "LLVMRet",
+        "sourceRef" : 2
       } ]
     } ],
     "entryBlockIndex" : 0,
@@ -70,9 +74,11 @@
         "operands" : [ {
           "kind" : "Global",
           "index" : 8
-        } ]
+        } ],
+        "sourceRef" : 3
       }, {
-        "kind" : "LLVMRet"
+        "kind" : "LLVMRet",
+        "sourceRef" : 4
       } ]
     } ],
     "entryBlockIndex" : 0
@@ -111,25 +117,29 @@
         }, {
           "kind" : "Global",
           "index" : 5
-        } ]
+        } ],
+        "sourceRef" : 5
       }, {
         "kind" : "LLVMLoad",
         "operands" : [ {
           "kind" : "Instruction",
           "index" : 0
-        } ]
+        } ],
+        "sourceRef" : 6
       }, {
         "kind" : "LLVMBitCast",
         "operands" : [ {
           "kind" : "Instruction",
           "index" : 3
-        } ]
+        } ],
+        "sourceRef" : 6
       }, {
         "kind" : "LLVMLoad",
         "operands" : [ {
           "kind" : "Instruction",
           "index" : 4
-        } ]
+        } ],
+        "sourceRef" : 6
       }, {
         "kind" : "LLVMGetElementPtr",
         "operands" : [ {
@@ -138,13 +148,15 @@
         }, {
           "kind" : "Global",
           "index" : 12
-        } ]
+        } ],
+        "sourceRef" : 6
       }, {
         "kind" : "LLVMLoad",
         "operands" : [ {
           "kind" : "Instruction",
           "index" : 6
-        } ]
+        } ],
+        "sourceRef" : 6
       }, {
         "kind" : "LLVMCall",
         "operands" : [ {
@@ -153,9 +165,11 @@
         }, {
           "kind" : "Instruction",
           "index" : 7
-        } ]
+        } ],
+        "sourceRef" : 6
       }, {
-        "kind" : "LLVMRet"
+        "kind" : "LLVMRet",
+        "sourceRef" : 7
       } ]
     } ],
     "entryBlockIndex" : 0,
@@ -177,9 +191,11 @@
         }, {
           "kind" : "Global",
           "index" : 9
-        } ]
+        } ],
+        "sourceRef" : 8
       }, {
-        "kind" : "LLVMRet"
+        "kind" : "LLVMRet",
+        "sourceRef" : 9
       } ]
     } ],
     "entryBlockIndex" : 0
@@ -309,5 +325,36 @@
       "kind" : "Global",
       "index" : 15
     } ]
+  } ],
+  "sourceRefs" : [ {
+    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/methodCalls.cpp",
+    "line" : 7
+  }, {
+    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/methodCalls.cpp",
+    "line" : 8
+  }, {
+    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/methodCalls.cpp",
+    "line" : 9
+  }, {
+    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/methodCalls.cpp",
+    "line" : 12
+  }, {
+    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/methodCalls.cpp",
+    "line" : 13
+  }, {
+    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/methodCalls.cpp",
+    "line" : 15
+  }, {
+    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/methodCalls.cpp",
+    "line" : 16
+  }, {
+    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/methodCalls.cpp",
+    "line" : 17
+  }, {
+    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/methodCalls.cpp",
+    "line" : 25
+  }, {
+    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/methodCalls.cpp",
+    "line" : 26
   } ]
 }

@@ -13,7 +13,8 @@
         }, {
           "kind" : "Global",
           "index" : 3
-        } ]
+        } ],
+        "sourceRef" : 0
       }, {
         "kind" : "LLVMStore",
         "operands" : [ {
@@ -22,9 +23,11 @@
         }, {
           "kind" : "Global",
           "index" : 3
-        } ]
+        } ],
+        "sourceRef" : 1
       }, {
-        "kind" : "LLVMRet"
+        "kind" : "LLVMRet",
+        "sourceRef" : 2
       } ]
     } ],
     "entryBlockIndex" : 0
@@ -39,15 +42,18 @@
         "operands" : [ {
           "kind" : "Global",
           "index" : 3
-        } ]
+        } ],
+        "sourceRef" : 3
       }, {
         "kind" : "LLVMCall",
         "operands" : [ {
           "kind" : "Instruction",
           "index" : 0
-        } ]
+        } ],
+        "sourceRef" : 3
       }, {
-        "kind" : "LLVMRet"
+        "kind" : "LLVMRet",
+        "sourceRef" : 4
       } ]
     } ],
     "entryBlockIndex" : 0
@@ -93,5 +99,21 @@
     "kind" : "LLVMFunctionValueKind",
     "name" : "callFromPointer",
     "typeId" : 0
+  } ],
+  "sourceRefs" : [ {
+    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/functionPointers.c",
+    "line" : 6
+  }, {
+    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/functionPointers.c",
+    "line" : 7
+  }, {
+    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/functionPointers.c",
+    "line" : 8
+  }, {
+    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/functionPointers.c",
+    "line" : 11
+  }, {
+    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/functionPointers.c",
+    "line" : 12
   } ]
 }

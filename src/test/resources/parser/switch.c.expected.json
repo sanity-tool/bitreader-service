@@ -10,7 +10,8 @@
         "operands" : [ {
           "kind" : "Global",
           "index" : 2
-        } ]
+        } ],
+        "sourceRef" : 0
       }, {
         "kind" : "LLVMSwitch",
         "operands" : [ {
@@ -31,7 +32,8 @@
         }, {
           "kind" : "Block",
           "index" : -1
-        } ]
+        } ],
+        "sourceRef" : 0
       } ]
     }, {
       "instructions" : [ {
@@ -39,13 +41,15 @@
         "operands" : [ {
           "kind" : "Global",
           "index" : 5
-        } ]
+        } ],
+        "sourceRef" : 1
       }, {
         "kind" : "LLVMBr",
         "operands" : [ {
           "kind" : "Block",
           "index" : -1
-        } ]
+        } ],
+        "sourceRef" : 2
       } ]
     }, {
       "instructions" : [ {
@@ -53,13 +57,15 @@
         "operands" : [ {
           "kind" : "Global",
           "index" : 6
-        } ]
+        } ],
+        "sourceRef" : 3
       }, {
         "kind" : "LLVMBr",
         "operands" : [ {
           "kind" : "Block",
           "index" : -1
-        } ]
+        } ],
+        "sourceRef" : 4
       } ]
     }, {
       "instructions" : [ {
@@ -67,13 +73,15 @@
         "operands" : [ {
           "kind" : "Global",
           "index" : 7
-        } ]
+        } ],
+        "sourceRef" : 5
       }, {
         "kind" : "LLVMBr",
         "operands" : [ {
           "kind" : "Block",
           "index" : -1
-        } ]
+        } ],
+        "sourceRef" : 6
       } ]
     }, {
       "instructions" : [ {
@@ -81,9 +89,11 @@
         "operands" : [ {
           "kind" : "Global",
           "index" : 8
-        } ]
+        } ],
+        "sourceRef" : 7
       }, {
-        "kind" : "LLVMRet"
+        "kind" : "LLVMRet",
+        "sourceRef" : 8
       } ]
     } ],
     "entryBlockIndex" : 0
@@ -98,7 +108,8 @@
         "operands" : [ {
           "kind" : "Global",
           "index" : 2
-        } ]
+        } ],
+        "sourceRef" : 9
       }, {
         "kind" : "LLVMSwitch",
         "operands" : [ {
@@ -119,7 +130,8 @@
         }, {
           "kind" : "Block",
           "index" : -1
-        } ]
+        } ],
+        "sourceRef" : 9
       } ]
     }, {
       "instructions" : [ {
@@ -127,13 +139,15 @@
         "operands" : [ {
           "kind" : "Global",
           "index" : 5
-        } ]
+        } ],
+        "sourceRef" : 10
       }, {
         "kind" : "LLVMBr",
         "operands" : [ {
           "kind" : "Block",
           "index" : -1
-        } ]
+        } ],
+        "sourceRef" : 11
       } ]
     }, {
       "instructions" : [ {
@@ -141,13 +155,15 @@
         "operands" : [ {
           "kind" : "Global",
           "index" : 6
-        } ]
+        } ],
+        "sourceRef" : 12
       }, {
         "kind" : "LLVMBr",
         "operands" : [ {
           "kind" : "Block",
           "index" : -1
-        } ]
+        } ],
+        "sourceRef" : 13
       } ]
     }, {
       "instructions" : [ {
@@ -155,9 +171,11 @@
         "operands" : [ {
           "kind" : "Global",
           "index" : 8
-        } ]
+        } ],
+        "sourceRef" : 14
       }, {
-        "kind" : "LLVMRet"
+        "kind" : "LLVMRet",
+        "sourceRef" : 15
       } ]
     } ],
     "entryBlockIndex" : 0
@@ -172,7 +190,8 @@
         "operands" : [ {
           "kind" : "Global",
           "index" : 2
-        } ]
+        } ],
+        "sourceRef" : 16
       }, {
         "kind" : "LLVMSwitch",
         "operands" : [ {
@@ -193,7 +212,8 @@
         }, {
           "kind" : "Block",
           "index" : -1
-        } ]
+        } ],
+        "sourceRef" : 16
       } ]
     }, {
       "instructions" : [ {
@@ -201,13 +221,15 @@
         "operands" : [ {
           "kind" : "Global",
           "index" : 5
-        } ]
+        } ],
+        "sourceRef" : 17
       }, {
         "kind" : "LLVMBr",
         "operands" : [ {
           "kind" : "Block",
           "index" : -1
-        } ]
+        } ],
+        "sourceRef" : 17
       } ]
     }, {
       "instructions" : [ {
@@ -215,13 +237,15 @@
         "operands" : [ {
           "kind" : "Global",
           "index" : 6
-        } ]
+        } ],
+        "sourceRef" : 18
       }, {
         "kind" : "LLVMBr",
         "operands" : [ {
           "kind" : "Block",
           "index" : -1
-        } ]
+        } ],
+        "sourceRef" : 19
       } ]
     }, {
       "instructions" : [ {
@@ -229,9 +253,11 @@
         "operands" : [ {
           "kind" : "Global",
           "index" : 8
-        } ]
+        } ],
+        "sourceRef" : 20
       }, {
-        "kind" : "LLVMRet"
+        "kind" : "LLVMRet",
+        "sourceRef" : 21
       } ]
     } ],
     "entryBlockIndex" : 0
@@ -305,5 +331,72 @@
     "kind" : "LLVMFunctionValueKind",
     "name" : "testSwitchFallthrough",
     "typeId" : 0
+  } ],
+  "sourceRefs" : [ {
+    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/switch.c",
+    "line" : 4
+  }, {
+    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/switch.c",
+    "line" : 6
+  }, {
+    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/switch.c",
+    "line" : 7
+  }, {
+    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/switch.c",
+    "line" : 9
+  }, {
+    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/switch.c",
+    "line" : 10
+  }, {
+    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/switch.c",
+    "line" : 12
+  }, {
+    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/switch.c",
+    "line" : 13
+  }, {
+    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/switch.c",
+    "line" : 14
+  }, {
+    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/switch.c",
+    "line" : 15
+  }, {
+    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/switch.c",
+    "line" : 18
+  }, {
+    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/switch.c",
+    "line" : 20
+  }, {
+    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/switch.c",
+    "line" : 21
+  }, {
+    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/switch.c",
+    "line" : 23
+  }, {
+    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/switch.c",
+    "line" : 24
+  }, {
+    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/switch.c",
+    "line" : 26
+  }, {
+    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/switch.c",
+    "line" : 27
+  }, {
+    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/switch.c",
+    "line" : 30
+  }, {
+    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/switch.c",
+    "line" : 32
+  }, {
+    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/switch.c",
+    "line" : 34
+  }, {
+    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/switch.c",
+    "line" : 35
+  }, {
+    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/switch.c",
+    "line" : 36
+  }, {
+    "file" : "/Users/okutane/dev/bitreader-service/src/test/java/../resources/parser/switch.c",
+    "line" : 37
   } ]
 }
