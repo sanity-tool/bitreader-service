@@ -14,4 +14,5 @@ public class ModuleDto {
     private Collection<FunctionDto> functions;
     private Collection<TypeDto> types;
     private Collection<ValueDto> globals;
+    private Collection<SourceRefDto> sourceRefs;
 }

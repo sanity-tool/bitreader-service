@@ -13,4 +13,5 @@ import java.util.List;
 public class InstructionDto {
     private final String kind;
     private final List<ValueRefDto> operands;
+    private final Integer sourceRef;
 }
