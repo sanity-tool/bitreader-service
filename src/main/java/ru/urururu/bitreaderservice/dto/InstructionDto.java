@@ -12,6 +12,7 @@ import java.util.List;
 @AllArgsConstructor
 public class InstructionDto {
     private final String kind;
+    private int typeId;
     private final List<ValueRefDto> operands;
     private final Integer sourceRef;
 }
