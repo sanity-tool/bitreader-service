@@ -129,6 +129,7 @@ public class NativeBytecodeParser {
     private InstructionDto toInstruction(ParseContext ctx, SWIGTYPE_p_LLVMOpaqueValue nativeInstruction) {
         return new InstructionDto(
                 bitreader.LLVMGetInstructionOpcode(nativeInstruction).toString(),
+                ctx.getTypeId(bitreader.LLVMTypeOf(nativeInstruction)),
                 getOperands(ctx, nativeInstruction),
                 ctx.getSourceRefId(sourceRangeFactory.getSourceRange(nativeInstruction))
         );

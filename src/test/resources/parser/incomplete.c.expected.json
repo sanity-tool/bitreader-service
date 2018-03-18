@@ -7,12 +7,14 @@
     "blocks" : [ {
       "instructions" : [ {
         "kind" : "LLVMAlloca",
+        "typeId" : 5,
         "operands" : [ {
           "kind" : "Global",
           "index" : 1
         } ]
       }, {
         "kind" : "LLVMStore",
+        "typeId" : 2,
         "operands" : [ {
           "kind" : "Argument",
           "index" : 0
@@ -22,6 +24,7 @@
         } ]
       }, {
         "kind" : "LLVMCall",
+        "typeId" : 2,
         "operands" : [ {
           "kind" : "Global",
           "index" : 2
@@ -38,6 +41,7 @@
         "sourceRef" : 0
       }, {
         "kind" : "LLVMRet",
+        "typeId" : 2,
         "sourceRef" : 1
       } ]
     } ],
@@ -62,16 +66,19 @@
     "kind" : "LLVMStructTypeKind",
     "name" : "struct.Struct"
   }, {
+    "kind" : "LLVMPointerTypeKind",
+    "types" : [ 3 ]
+  }, {
     "kind" : "LLVMIntegerTypeKind",
     "len" : 32
   }, {
     "kind" : "LLVMMetadataTypeKind"
   }, {
     "kind" : "LLVMPointerTypeKind",
-    "types" : [ 8 ]
+    "types" : [ 9 ]
   }, {
     "kind" : "LLVMFunctionTypeKind",
-    "types" : [ 2, 6, 6, 6 ]
+    "types" : [ 2, 7, 7, 7 ]
   } ],
   "globals" : [ {
     "kind" : "LLVMFunctionValueKind",
@@ -79,21 +86,21 @@
     "typeId" : 0
   }, {
     "kind" : "LLVMConstantIntValueKind",
-    "typeId" : 5,
+    "typeId" : 6,
     "intValue" : 1
   }, {
     "kind" : "LLVMMetadataAsValueValueKind",
-    "typeId" : 6
+    "typeId" : 7
   }, {
     "kind" : "LLVMMetadataAsValueValueKind",
-    "typeId" : 6
+    "typeId" : 7
   }, {
     "kind" : "LLVMMetadataAsValueValueKind",
-    "typeId" : 6
+    "typeId" : 7
   }, {
     "kind" : "LLVMFunctionValueKind",
     "name" : "llvm.dbg.declare",
-    "typeId" : 7
+    "typeId" : 8
   } ],
   "sourceRefs" : [ {
     "file" : "parser/incomplete.c",

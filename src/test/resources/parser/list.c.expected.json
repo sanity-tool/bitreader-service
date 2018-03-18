@@ -7,6 +7,7 @@
     "blocks" : [ {
       "instructions" : [ {
         "kind" : "LLVMLoad",
+        "typeId" : 3,
         "operands" : [ {
           "kind" : "Global",
           "index" : 2
@@ -14,6 +15,7 @@
         "sourceRef" : 0
       }, {
         "kind" : "LLVMGetElementPtr",
+        "typeId" : 5,
         "operands" : [ {
           "kind" : "Instruction",
           "index" : 0
@@ -27,6 +29,7 @@
         "sourceRef" : 0
       }, {
         "kind" : "LLVMLoad",
+        "typeId" : 3,
         "operands" : [ {
           "kind" : "Instruction",
           "index" : 1
@@ -34,6 +37,7 @@
         "sourceRef" : 0
       }, {
         "kind" : "LLVMStore",
+        "typeId" : 2,
         "operands" : [ {
           "kind" : "Instruction",
           "index" : 2
@@ -44,6 +48,7 @@
         "sourceRef" : 0
       }, {
         "kind" : "LLVMRet",
+        "typeId" : 2,
         "sourceRef" : 1
       } ]
     } ],
@@ -61,12 +66,12 @@
     "kind" : "LLVMPointerTypeKind",
     "types" : [ 4 ]
   }, {
-    "kind" : "LLVMPointerTypeKind",
-    "types" : [ 5 ]
-  }, {
     "kind" : "LLVMStructTypeKind",
     "name" : "struct.List",
-    "types" : [ 4 ]
+    "types" : [ 3 ]
+  }, {
+    "kind" : "LLVMPointerTypeKind",
+    "types" : [ 3 ]
   }, {
     "kind" : "LLVMIntegerTypeKind",
     "len" : 32
@@ -77,11 +82,11 @@
     "typeId" : 0
   }, {
     "kind" : "LLVMConstantPointerNullValueKind",
-    "typeId" : 4
+    "typeId" : 3
   }, {
     "kind" : "LLVMGlobalVariableValueKind",
     "name" : "PLIST",
-    "typeId" : 3,
+    "typeId" : 5,
     "operands" : [ {
       "kind" : "Global",
       "index" : 1

@@ -7,6 +7,7 @@
     "blocks" : [ {
       "instructions" : [ {
         "kind" : "LLVMStore",
+        "typeId" : 2,
         "operands" : [ {
           "kind" : "Global",
           "index" : 1
@@ -17,6 +18,7 @@
         "sourceRef" : 0
       }, {
         "kind" : "LLVMStore",
+        "typeId" : 2,
         "operands" : [ {
           "kind" : "Global",
           "index" : 1
@@ -27,6 +29,7 @@
         "sourceRef" : 1
       }, {
         "kind" : "LLVMRet",
+        "typeId" : 2,
         "sourceRef" : 2
       } ]
     } ],
@@ -39,6 +42,7 @@
     "blocks" : [ {
       "instructions" : [ {
         "kind" : "LLVMLoad",
+        "typeId" : 3,
         "operands" : [ {
           "kind" : "Global",
           "index" : 3
@@ -46,6 +50,7 @@
         "sourceRef" : 3
       }, {
         "kind" : "LLVMCall",
+        "typeId" : 2,
         "operands" : [ {
           "kind" : "Instruction",
           "index" : 0
@@ -53,6 +58,7 @@
         "sourceRef" : 3
       }, {
         "kind" : "LLVMRet",
+        "typeId" : 2,
         "sourceRef" : 4
       } ]
     } ],

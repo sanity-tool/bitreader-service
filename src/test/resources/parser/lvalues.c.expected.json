@@ -7,12 +7,14 @@
     "blocks" : [ {
       "instructions" : [ {
         "kind" : "LLVMAlloca",
+        "typeId" : 3,
         "operands" : [ {
           "kind" : "Global",
           "index" : 1
         } ]
       }, {
         "kind" : "LLVMCall",
+        "typeId" : 2,
         "operands" : [ {
           "kind" : "Global",
           "index" : 2
@@ -29,6 +31,7 @@
         "sourceRef" : 0
       }, {
         "kind" : "LLVMStore",
+        "typeId" : 2,
         "operands" : [ {
           "kind" : "Global",
           "index" : 1
@@ -39,6 +42,7 @@
         "sourceRef" : 0
       }, {
         "kind" : "LLVMRet",
+        "typeId" : 2,
         "sourceRef" : 1
       } ]
     } ],
@@ -51,6 +55,7 @@
     "blocks" : [ {
       "instructions" : [ {
         "kind" : "LLVMStore",
+        "typeId" : 2,
         "operands" : [ {
           "kind" : "Global",
           "index" : 7
@@ -61,6 +66,7 @@
         "sourceRef" : 2
       }, {
         "kind" : "LLVMRet",
+        "typeId" : 2,
         "sourceRef" : 3
       } ]
     } ],
@@ -73,6 +79,7 @@
     "blocks" : [ {
       "instructions" : [ {
         "kind" : "LLVMStore",
+        "typeId" : 2,
         "operands" : [ {
           "kind" : "Global",
           "index" : 1
@@ -83,6 +90,7 @@
         "sourceRef" : 4
       }, {
         "kind" : "LLVMStore",
+        "typeId" : 2,
         "operands" : [ {
           "kind" : "Global",
           "index" : 7
@@ -93,6 +101,7 @@
         "sourceRef" : 5
       }, {
         "kind" : "LLVMRet",
+        "typeId" : 2,
         "sourceRef" : 6
       } ]
     } ],
@@ -105,6 +114,7 @@
     "blocks" : [ {
       "instructions" : [ {
         "kind" : "LLVMStore",
+        "typeId" : 2,
         "operands" : [ {
           "kind" : "Global",
           "index" : 1
@@ -115,6 +125,7 @@
         "sourceRef" : 7
       }, {
         "kind" : "LLVMRet",
+        "typeId" : 2,
         "sourceRef" : 8
       } ]
     } ],
@@ -127,6 +138,7 @@
     "blocks" : [ {
       "instructions" : [ {
         "kind" : "LLVMLoad",
+        "typeId" : 3,
         "operands" : [ {
           "kind" : "Global",
           "index" : 21
@@ -134,6 +146,7 @@
         "sourceRef" : 9
       }, {
         "kind" : "LLVMGetElementPtr",
+        "typeId" : 3,
         "operands" : [ {
           "kind" : "Instruction",
           "index" : 0
@@ -144,6 +157,7 @@
         "sourceRef" : 9
       }, {
         "kind" : "LLVMStore",
+        "typeId" : 2,
         "operands" : [ {
           "kind" : "Global",
           "index" : 1
@@ -154,6 +168,7 @@
         "sourceRef" : 9
       }, {
         "kind" : "LLVMLoad",
+        "typeId" : 3,
         "operands" : [ {
           "kind" : "Global",
           "index" : 21
@@ -161,6 +176,7 @@
         "sourceRef" : 10
       }, {
         "kind" : "LLVMGetElementPtr",
+        "typeId" : 3,
         "operands" : [ {
           "kind" : "Instruction",
           "index" : 3
@@ -171,6 +187,7 @@
         "sourceRef" : 10
       }, {
         "kind" : "LLVMStore",
+        "typeId" : 2,
         "operands" : [ {
           "kind" : "Global",
           "index" : 7
@@ -181,6 +198,7 @@
         "sourceRef" : 10
       }, {
         "kind" : "LLVMRet",
+        "typeId" : 2,
         "sourceRef" : 11
       } ]
     } ],
@@ -193,6 +211,7 @@
     "blocks" : [ {
       "instructions" : [ {
         "kind" : "LLVMLoad",
+        "typeId" : 3,
         "operands" : [ {
           "kind" : "Global",
           "index" : 21
@@ -200,6 +219,7 @@
         "sourceRef" : 12
       }, {
         "kind" : "LLVMStore",
+        "typeId" : 2,
         "operands" : [ {
           "kind" : "Global",
           "index" : 1
@@ -210,6 +230,7 @@
         "sourceRef" : 12
       }, {
         "kind" : "LLVMRet",
+        "typeId" : 2,
         "sourceRef" : 13
       } ]
     } ],
@@ -222,6 +243,7 @@
     "blocks" : [ {
       "instructions" : [ {
         "kind" : "LLVMStore",
+        "typeId" : 2,
         "operands" : [ {
           "kind" : "Global",
           "index" : 1
@@ -232,6 +254,7 @@
         "sourceRef" : 14
       }, {
         "kind" : "LLVMRet",
+        "typeId" : 2,
         "sourceRef" : 15
       } ]
     } ],
@@ -244,6 +267,7 @@
     "blocks" : [ {
       "instructions" : [ {
         "kind" : "LLVMLoad",
+        "typeId" : 12,
         "operands" : [ {
           "kind" : "Global",
           "index" : 29
@@ -251,6 +275,7 @@
         "sourceRef" : 16
       }, {
         "kind" : "LLVMGetElementPtr",
+        "typeId" : 3,
         "operands" : [ {
           "kind" : "Instruction",
           "index" : 0
@@ -264,6 +289,7 @@
         "sourceRef" : 16
       }, {
         "kind" : "LLVMStore",
+        "typeId" : 2,
         "operands" : [ {
           "kind" : "Global",
           "index" : 1
@@ -274,6 +300,7 @@
         "sourceRef" : 16
       }, {
         "kind" : "LLVMLoad",
+        "typeId" : 12,
         "operands" : [ {
           "kind" : "Global",
           "index" : 29
@@ -281,6 +308,7 @@
         "sourceRef" : 17
       }, {
         "kind" : "LLVMGetElementPtr",
+        "typeId" : 3,
         "operands" : [ {
           "kind" : "Instruction",
           "index" : 3
@@ -294,6 +322,7 @@
         "sourceRef" : 17
       }, {
         "kind" : "LLVMStore",
+        "typeId" : 2,
         "operands" : [ {
           "kind" : "Global",
           "index" : 7
@@ -304,6 +333,7 @@
         "sourceRef" : 17
       }, {
         "kind" : "LLVMRet",
+        "typeId" : 2,
         "sourceRef" : 18
       } ]
     } ],
@@ -318,39 +348,39 @@
   }, {
     "kind" : "LLVMVoidTypeKind"
   }, {
+    "kind" : "LLVMPointerTypeKind",
+    "types" : [ 4 ]
+  }, {
     "kind" : "LLVMIntegerTypeKind",
     "len" : 32
   }, {
     "kind" : "LLVMMetadataTypeKind"
   }, {
     "kind" : "LLVMPointerTypeKind",
-    "types" : [ 6 ]
+    "types" : [ 7 ]
   }, {
     "kind" : "LLVMFunctionTypeKind",
-    "types" : [ 2, 4, 4, 4 ]
-  }, {
-    "kind" : "LLVMPointerTypeKind",
-    "types" : [ 3 ]
+    "types" : [ 2, 5, 5, 5 ]
   }, {
     "kind" : "LLVMPointerTypeKind",
     "types" : [ 9 ]
   }, {
     "kind" : "LLVMArrayTypeKind",
     "len" : 10,
-    "types" : [ 3 ]
+    "types" : [ 4 ]
   }, {
     "kind" : "LLVMIntegerTypeKind",
     "len" : 64
   }, {
     "kind" : "LLVMPointerTypeKind",
-    "types" : [ 7 ]
+    "types" : [ 3 ]
   }, {
     "kind" : "LLVMPointerTypeKind",
     "types" : [ 13 ]
   }, {
     "kind" : "LLVMStructTypeKind",
     "name" : "struct.anon",
-    "types" : [ 3 ]
+    "types" : [ 4 ]
   }, {
     "kind" : "LLVMPointerTypeKind",
     "types" : [ 12 ]
@@ -361,33 +391,33 @@
     "typeId" : 0
   }, {
     "kind" : "LLVMConstantIntValueKind",
-    "typeId" : 3,
+    "typeId" : 4,
     "intValue" : 1
   }, {
     "kind" : "LLVMMetadataAsValueValueKind",
-    "typeId" : 4
+    "typeId" : 5
   }, {
     "kind" : "LLVMMetadataAsValueValueKind",
-    "typeId" : 4
+    "typeId" : 5
   }, {
     "kind" : "LLVMMetadataAsValueValueKind",
-    "typeId" : 4
+    "typeId" : 5
   }, {
     "kind" : "LLVMFunctionValueKind",
     "name" : "llvm.dbg.declare",
-    "typeId" : 5
+    "typeId" : 6
   }, {
     "kind" : "LLVMFunctionValueKind",
     "name" : "localStatic",
     "typeId" : 0
   }, {
     "kind" : "LLVMConstantIntValueKind",
-    "typeId" : 3,
+    "typeId" : 4,
     "intValue" : 2
   }, {
     "kind" : "LLVMGlobalVariableValueKind",
     "name" : "localStatic.a",
-    "typeId" : 7,
+    "typeId" : 3,
     "operands" : [ {
       "kind" : "Global",
       "index" : 1
@@ -413,7 +443,7 @@
     "intValue" : 0
   }, {
     "kind" : "LLVMConstantExprValueKind",
-    "typeId" : 7,
+    "typeId" : 3,
     "opcode" : "LLVMGetElementPtr",
     "operands" : [ {
       "kind" : "Global",
@@ -431,7 +461,7 @@
     "intValue" : 1
   }, {
     "kind" : "LLVMConstantExprValueKind",
-    "typeId" : 7,
+    "typeId" : 3,
     "opcode" : "LLVMGetElementPtr",
     "operands" : [ {
       "kind" : "Global",
@@ -449,11 +479,11 @@
     "typeId" : 0
   }, {
     "kind" : "LLVMConstantIntValueKind",
-    "typeId" : 3,
+    "typeId" : 4,
     "intValue" : 0
   }, {
     "kind" : "LLVMConstantExprValueKind",
-    "typeId" : 7,
+    "typeId" : 3,
     "opcode" : "LLVMGetElementPtr",
     "operands" : [ {
       "kind" : "Global",
@@ -471,7 +501,7 @@
     "typeId" : 0
   }, {
     "kind" : "LLVMConstantPointerNullValueKind",
-    "typeId" : 7
+    "typeId" : 3
   }, {
     "kind" : "LLVMGlobalVariableValueKind",
     "name" : "PTR",
@@ -501,7 +531,7 @@
     } ]
   }, {
     "kind" : "LLVMConstantExprValueKind",
-    "typeId" : 7,
+    "typeId" : 3,
     "opcode" : "LLVMGetElementPtr",
     "operands" : [ {
       "kind" : "Global",
