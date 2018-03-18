@@ -19,7 +19,8 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @EnableWebMvc
 public class BitreaderServiceApplication {
 	@Bean
-	public Docket api() { // todo remove todo
+	public Docket
+		api() { // todo remove todo
 		return new Docket(DocumentationType.SWAGGER_2).select()
 				.apis(RequestHandlerSelectors.withClassAnnotation(Api.class))
 				.paths(PathSelectors.any()).build().pathMapping("/")
