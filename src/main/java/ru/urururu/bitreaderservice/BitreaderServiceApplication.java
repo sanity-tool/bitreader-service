@@ -19,7 +19,8 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @EnableWebMvc
 public class BitreaderServiceApplication {
 	@Bean
-	public Docket api() {
+	public Docket
+		api() { // todo remove todo
 		return new Docket(DocumentationType.SWAGGER_2).select()
 				.apis(RequestHandlerSelectors.withClassAnnotation(Api.class))
 				.paths(PathSelectors.any()).build().pathMapping("/")
@@ -28,6 +29,8 @@ public class BitreaderServiceApplication {
 
 	@Bean
 	ApiInfo apiInfo() {
+		int i;
+		int j = 3;
 		final ApiInfoBuilder builder = new ApiInfoBuilder();
 		builder.title("sanity-tool bitreader service API").version("1.0").license("(C) Copyright Dmitry Matveev")
 				.description("List of all endpoints used in API");
