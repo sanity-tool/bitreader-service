@@ -11,6 +11,6 @@ import java.io.File;
 @Data
 @AllArgsConstructor
 public class SourceRefDto {
-    File file;
+    String file;
     int line;
 }

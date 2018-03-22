@@ -27,14 +27,16 @@
         "operands" : [ {
           "kind" : "Instruction",
           "index" : -1
-        } ]
+        } ],
+        "sourceRef" : 0
       }, {
         "kind" : "LLVMBr",
         "typeId" : 4,
         "operands" : [ {
           "kind" : "Block",
           "index" : -1
-        } ]
+        } ],
+        "sourceRef" : 0
       } ]
     }, {
       "instructions" : [ {
@@ -43,7 +45,8 @@
         "operands" : [ {
           "kind" : "Instruction",
           "index" : -1
-        } ]
+        } ],
+        "sourceRef" : 1
       } ]
     } ],
     "entryBlockIndex" : 0
@@ -68,7 +71,8 @@
         "operands" : [ {
           "kind" : "Global",
           "index" : 3
-        } ]
+        } ],
+        "sourceRef" : 2
       } ]
     } ],
     "entryBlockIndex" : 0
@@ -138,7 +142,8 @@
         }, {
           "kind" : "Global",
           "index" : 8
-        } ]
+        } ],
+        "sourceRef" : 3
       }, {
         "kind" : "LLVMCall",
         "typeId" : 4,
@@ -154,7 +159,8 @@
         }, {
           "kind" : "Global",
           "index" : 8
-        } ]
+        } ],
+        "sourceRef" : 4
       }, {
         "kind" : "LLVMCall",
         "typeId" : 4,
@@ -170,14 +176,16 @@
         }, {
           "kind" : "Global",
           "index" : 8
-        } ]
+        } ],
+        "sourceRef" : 5
       }, {
         "kind" : "LLVMBr",
         "typeId" : 4,
         "operands" : [ {
           "kind" : "Block",
           "index" : -1
-        } ]
+        } ],
+        "sourceRef" : 5
       } ]
     }, {
       "instructions" : [ {
@@ -189,14 +197,16 @@
         }, {
           "kind" : "Instruction",
           "index" : -1
-        } ]
+        } ],
+        "sourceRef" : 4
       }, {
         "kind" : "LLVMLoad",
         "typeId" : 3,
         "operands" : [ {
           "kind" : "Instruction",
           "index" : -1
-        } ]
+        } ],
+        "sourceRef" : 4
       }, {
         "kind" : "LLVMStore",
         "typeId" : 4,
@@ -206,7 +216,8 @@
         }, {
           "kind" : "Instruction",
           "index" : -1
-        } ]
+        } ],
+        "sourceRef" : 4
       }, {
         "kind" : "LLVMStore",
         "typeId" : 4,
@@ -216,14 +227,16 @@
         }, {
           "kind" : "Instruction",
           "index" : -1
-        } ]
+        } ],
+        "sourceRef" : 5
       }, {
         "kind" : "LLVMCall",
         "typeId" : 2,
         "operands" : [ {
           "kind" : "Global",
           "index" : 0
-        } ]
+        } ],
+        "sourceRef" : 5
       }, {
         "kind" : "LLVMStore",
         "typeId" : 4,
@@ -233,14 +246,16 @@
         }, {
           "kind" : "Instruction",
           "index" : -1
-        } ]
+        } ],
+        "sourceRef" : 5
       }, {
         "kind" : "LLVMBr",
         "typeId" : 4,
         "operands" : [ {
           "kind" : "Block",
           "index" : -1
-        } ]
+        } ],
+        "sourceRef" : 5
       } ]
     }, {
       "instructions" : [ {
@@ -249,21 +264,24 @@
         "operands" : [ {
           "kind" : "Instruction",
           "index" : -1
-        } ]
+        } ],
+        "sourceRef" : 6
       }, {
         "kind" : "LLVMBitCast",
         "typeId" : 11,
         "operands" : [ {
           "kind" : "Instruction",
           "index" : -1
-        } ]
+        } ],
+        "sourceRef" : 6
       }, {
         "kind" : "LLVMBitCast",
         "typeId" : 11,
         "operands" : [ {
           "kind" : "Instruction",
           "index" : 0
-        } ]
+        } ],
+        "sourceRef" : 6
       }, {
         "kind" : "LLVMCall",
         "typeId" : 4,
@@ -285,14 +303,16 @@
         }, {
           "kind" : "Global",
           "index" : 18
-        } ]
+        } ],
+        "sourceRef" : 6
       }, {
         "kind" : "LLVMBr",
         "typeId" : 4,
         "operands" : [ {
           "kind" : "Block",
           "index" : -1
-        } ]
+        } ],
+        "sourceRef" : 6
       } ]
     }, {
       "instructions" : [ {
@@ -301,14 +321,16 @@
         "operands" : [ {
           "kind" : "Instruction",
           "index" : -1
-        } ]
+        } ],
+        "sourceRef" : 4
       }, {
         "kind" : "LLVMResume",
         "typeId" : 4,
         "operands" : [ {
           "kind" : "Instruction",
           "index" : 0
-        } ]
+        } ],
+        "sourceRef" : 4
       } ]
     }, {
       "instructions" : [ {
@@ -320,21 +342,24 @@
         }, {
           "kind" : "Instruction",
           "index" : -1
-        } ]
+        } ],
+        "sourceRef" : 7
       }, {
         "kind" : "LLVMLoad",
         "typeId" : 2,
         "operands" : [ {
           "kind" : "Instruction",
           "index" : -1
-        } ]
+        } ],
+        "sourceRef" : 7
       }, {
         "kind" : "LLVMRet",
         "typeId" : 4,
         "operands" : [ {
           "kind" : "Instruction",
           "index" : 1
-        } ]
+        } ],
+        "sourceRef" : 8
       } ]
     }, {
       "instructions" : [ {
@@ -346,14 +371,16 @@
         }, {
           "kind" : "Instruction",
           "index" : -1
-        } ]
+        } ],
+        "sourceRef" : 8
       }, {
         "kind" : "LLVMBr",
         "typeId" : 4,
         "operands" : [ {
           "kind" : "Block",
           "index" : 3
-        } ]
+        } ],
+        "sourceRef" : 8
       } ]
     }, {
       "instructions" : [ {
@@ -362,14 +389,16 @@
         "operands" : [ {
           "kind" : "Instruction",
           "index" : -1
-        } ]
+        } ],
+        "sourceRef" : 8
       }, {
         "kind" : "LLVMTrunc",
         "typeId" : 18,
         "operands" : [ {
           "kind" : "Instruction",
           "index" : 0
-        } ]
+        } ],
+        "sourceRef" : 8
       }, {
         "kind" : "LLVMBr",
         "typeId" : 4,
@@ -382,7 +411,8 @@
         }, {
           "kind" : "Block",
           "index" : 5
-        } ]
+        } ],
+        "sourceRef" : 8
       } ]
     } ],
     "entryBlockIndex" : 0,
@@ -442,7 +472,7 @@
           "kind" : "Global",
           "index" : 8
         } ],
-        "sourceRef" : 0
+        "sourceRef" : 9
       }, {
         "kind" : "LLVMBr",
         "typeId" : 4,
@@ -450,7 +480,7 @@
           "kind" : "Block",
           "index" : -1
         } ],
-        "sourceRef" : 0
+        "sourceRef" : 9
       } ]
     }, {
       "instructions" : [ {
@@ -460,7 +490,7 @@
           "kind" : "Global",
           "index" : 2
         } ],
-        "sourceRef" : 0
+        "sourceRef" : 9
       }, {
         "kind" : "LLVMStore",
         "typeId" : 4,
@@ -471,7 +501,7 @@
           "kind" : "Instruction",
           "index" : -1
         } ],
-        "sourceRef" : 0
+        "sourceRef" : 9
       }, {
         "kind" : "LLVMBr",
         "typeId" : 4,
@@ -479,7 +509,7 @@
           "kind" : "Block",
           "index" : -1
         } ],
-        "sourceRef" : 0
+        "sourceRef" : 9
       } ]
     }, {
       "instructions" : [ {
@@ -489,7 +519,7 @@
           "kind" : "Instruction",
           "index" : -1
         } ],
-        "sourceRef" : 1
+        "sourceRef" : 10
       }, {
         "kind" : "LLVMCall",
         "typeId" : 2,
@@ -500,7 +530,7 @@
           "kind" : "Global",
           "index" : 4
         } ],
-        "sourceRef" : 1
+        "sourceRef" : 10
       }, {
         "kind" : "LLVMBr",
         "typeId" : 4,
@@ -508,13 +538,13 @@
           "kind" : "Block",
           "index" : -1
         } ],
-        "sourceRef" : 1
+        "sourceRef" : 10
       } ]
     }, {
       "instructions" : [ {
         "kind" : "LLVMRet",
         "typeId" : 4,
-        "sourceRef" : 2
+        "sourceRef" : 11
       } ]
     } ],
     "entryBlockIndex" : 0
@@ -682,6 +712,33 @@
     "typeId" : 14
   } ],
   "sourceRefs" : [ {
+    "file" : "<rustc-src>/src/libcore/mem.rs",
+    "line" : 428
+  }, {
+    "file" : "<rustc-src>/src/libcore/mem.rs",
+    "line" : 429
+  }, {
+    "file" : "<rustc-src>/src/libcore/ptr.rs",
+    "line" : 55
+  }, {
+    "file" : "<rustc-src>/src/libcore/ptr.rs",
+    "line" : 1
+  }, {
+    "file" : "<rustc-src>/src/libcore/ptr.rs",
+    "line" : 139
+  }, {
+    "file" : "<rustc-src>/src/libcore/ptr.rs",
+    "line" : 140
+  }, {
+    "file" : "<rustc-src>/src/libcore/ptr.rs",
+    "line" : 141
+  }, {
+    "file" : "<rustc-src>/src/libcore/ptr.rs",
+    "line" : 142
+  }, {
+    "file" : "<rustc-src>/src/libcore/ptr.rs",
+    "line" : 143
+  }, {
     "file" : "parser/np.rs",
     "line" : 4
   }, {

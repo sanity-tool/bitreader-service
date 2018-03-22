@@ -25,7 +25,7 @@ public class NativeSourceRangeFactory implements ParserListener {
 
     public SourceRefDto getSourceRange(SWIGTYPE_p_LLVMOpaqueValue instruction) {
         int line = bitreader.SAGetInstructionDebugLocLine(instruction);
-        if (versionByte == 3) {
+        if (Byte.valueOf((byte) 3).equals(versionByte)) {
             if (line != -1) {
                 String filename = bitreader.SAGetInstructionDebugLocScopeFile(instruction);
                 return getSourceRange(filename, line);
@@ -55,13 +55,8 @@ public class NativeSourceRangeFactory implements ParserListener {
         return null;
     }
 
-    protected SourceRefDto getSourceRange(String filename, int line) {
-        File file = new File(filename);
-        if (!file.exists()) {
-            return null;
-        }
-
-        return new SourceRefDto(file, line);
+    private SourceRefDto getSourceRange(String filename, int line) {
+        return new SourceRefDto(filename, line);
     }
 
     private SWIGTYPE_p_LLVMOpaqueValue getPair(SWIGTYPE_p_LLVMOpaqueValue node) {
