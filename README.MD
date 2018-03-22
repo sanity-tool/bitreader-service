@@ -6,3 +6,5 @@
 `curl --header "Content-Type:application/octet-stream" --trace-ascii debugdump.txt --data-binary @target/debug/parser/memory.cpp/result.bc http://localhost:8080/parse`
 ## Documentation:
 If you've made it running you can access real api docs at: `http://localhost:8080/v2/api-docs`
+## Testing:
+As usual `./mvnw clean test`, but if you're fixed something big you might want to regenerate tests by `./mvnw clean test -DAUTO_UPDATE_ON_DIFF=true`
