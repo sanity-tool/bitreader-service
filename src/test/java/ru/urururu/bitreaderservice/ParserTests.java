@@ -2,14 +2,13 @@ package ru.urururu.bitreaderservice;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.core.JsonGenerator;
-import com.fasterxml.jackson.databind.JsonSerializer;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.SerializationFeature;
-import com.fasterxml.jackson.databind.SerializerProvider;
+import com.fasterxml.jackson.databind.*;
 import com.fasterxml.jackson.databind.module.SimpleModule;
+import com.fasterxml.jackson.databind.ser.BeanSerializerModifier;
 import junit.framework.TestSuite;
 import ru.urururu.bitreaderservice.cpp.Parser;
 import ru.urururu.bitreaderservice.dto.ModuleDto;
+import ru.urururu.bitreaderservice.dto.SourceRefDto;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -47,18 +46,50 @@ public class ParserTests extends TestHelper {
         mapper.setSerializationInclusion(JsonInclude.Include.NON_NULL);
         mapper.setSerializationInclusion(JsonInclude.Include.NON_EMPTY);
         SimpleModule relativeFilesModule = new SimpleModule("fileSerialization");
-        relativeFilesModule.addSerializer(File.class, new JsonSerializer<File>() {
-            @Override
-            public void serialize(File value, JsonGenerator gen, SerializerProvider serializers) throws IOException {
-                Path relative = TestHelper.TESTS_PATH.relativize(value.toPath());
-                gen.writeString(relative.toString());
-            }
-        });
+        relativeFilesModule.setSerializerModifier(new SourceRefSerializerModifier());
         mapper.registerModule(relativeFilesModule);
 
         mapper.writeValue(ps, testResult);
 
         String actual = baos.toString();
         check(pathToExpected, actual);
+    }
+
+    public class SourceRefSerializer extends JsonSerializer<SourceRefDto> {
+        private final JsonSerializer<Object> defaultSerializer;
+
+        SourceRefSerializer(JsonSerializer<Object> defaultSerializer) {
+            this.defaultSerializer = defaultSerializer;
+        }
+
+        @Override
+        public void serialize(SourceRefDto value, JsonGenerator gen, SerializerProvider provider) throws IOException {
+            SourceRefDto relativeValue = new SourceRefDto(
+                    relativize(value.getFile()),
+                    value.getLine()
+            );
+
+            defaultSerializer.serialize(relativeValue, gen, provider);
+        }
+    }
+
+    private String relativize(String file) {
+        int i = file.indexOf("src/src");
+        if (i != -1) {
+            // workaround for rustc tests
+            return "<rustc-src>" + file.substring(i + 3); // taking substring inclusive to last "src"
+        }
+
+        return TestHelper.TESTS_PATH.relativize(new File(file).toPath()).toString();
+    }
+
+    public class SourceRefSerializerModifier extends BeanSerializerModifier {
+        @Override
+        public JsonSerializer<?> modifySerializer(SerializationConfig config, BeanDescription beanDesc, JsonSerializer<?> serializer) {
+            if (beanDesc.getBeanClass() == SourceRefDto.class) {
+                return new SourceRefSerializer((JsonSerializer<Object>) serializer);
+            }
+            return serializer;
+        }
     }
 }
