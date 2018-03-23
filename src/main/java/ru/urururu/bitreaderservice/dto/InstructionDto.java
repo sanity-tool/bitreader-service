@@ -15,4 +15,5 @@ public class InstructionDto {
     private int typeId;
     private final List<ValueRefDto> operands;
     private final Integer sourceRef;
+    private final String predicate;
 }

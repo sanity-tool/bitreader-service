@@ -127,11 +127,20 @@ public class NativeBytecodeParser {
     }
 
     private InstructionDto toInstruction(ParseContext ctx, SWIGTYPE_p_LLVMOpaqueValue nativeInstruction) {
+        LLVMOpcode opcode = bitreader.LLVMGetInstructionOpcode(nativeInstruction);
+        String predicate = null;
+        if (opcode == LLVMOpcode.LLVMFCmp) {
+            predicate = bitreader.GetFCmpPredicate(nativeInstruction).toString();
+        } else if (opcode == LLVMOpcode.LLVMICmp) {
+            predicate = bitreader.LLVMGetICmpPredicate(nativeInstruction).toString();
+        }
+
         return new InstructionDto(
-                bitreader.LLVMGetInstructionOpcode(nativeInstruction).toString(),
+                opcode.toString(),
                 ctx.getTypeId(bitreader.LLVMTypeOf(nativeInstruction)),
                 getOperands(ctx, nativeInstruction),
-                ctx.getSourceRefId(sourceRangeFactory.getSourceRange(nativeInstruction))
+                ctx.getSourceRefId(sourceRangeFactory.getSourceRange(nativeInstruction)),
+                predicate
         );
     }
 

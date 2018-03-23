@@ -23,7 +23,8 @@
           "kind" : "Global",
           "index" : 1
         } ],
-        "sourceRef" : 0
+        "sourceRef" : 0,
+        "predicate" : "LLVMIntNE"
       }, {
         "kind" : "LLVMBr",
         "typeId" : 2,
@@ -89,7 +90,8 @@
           "kind" : "Global",
           "index" : 1
         } ],
-        "sourceRef" : 4
+        "sourceRef" : 4,
+        "predicate" : "LLVMIntNE"
       }, {
         "kind" : "LLVMBr",
         "typeId" : 2,
@@ -172,7 +174,8 @@
           "kind" : "Global",
           "index" : 1
         } ],
-        "sourceRef" : 9
+        "sourceRef" : 9,
+        "predicate" : "LLVMIntNE"
       }, {
         "kind" : "LLVMBr",
         "typeId" : 2,

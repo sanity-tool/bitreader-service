@@ -680,7 +680,8 @@
           "kind" : "Instruction",
           "index" : 3
         } ],
-        "sourceRef" : 0
+        "sourceRef" : 0,
+        "predicate" : "LLVMIntSLT"
       }, {
         "kind" : "LLVMZExt",
         "typeId" : 5,
@@ -750,7 +751,8 @@
           "kind" : "Instruction",
           "index" : 11
         } ],
-        "sourceRef" : 0
+        "sourceRef" : 0,
+        "predicate" : "LLVMIntSGT"
       }, {
         "kind" : "LLVMZExt",
         "typeId" : 5,
@@ -820,7 +822,8 @@
           "kind" : "Instruction",
           "index" : 19
         } ],
-        "sourceRef" : 0
+        "sourceRef" : 0,
+        "predicate" : "LLVMIntSLE"
       }, {
         "kind" : "LLVMZExt",
         "typeId" : 5,
@@ -890,7 +893,8 @@
           "kind" : "Instruction",
           "index" : 27
         } ],
-        "sourceRef" : 0
+        "sourceRef" : 0,
+        "predicate" : "LLVMIntSGE"
       }, {
         "kind" : "LLVMZExt",
         "typeId" : 5,
@@ -960,7 +964,8 @@
           "kind" : "Instruction",
           "index" : 35
         } ],
-        "sourceRef" : 0
+        "sourceRef" : 0,
+        "predicate" : "LLVMIntEQ"
       }, {
         "kind" : "LLVMZExt",
         "typeId" : 5,
@@ -1030,7 +1035,8 @@
           "kind" : "Instruction",
           "index" : 43
         } ],
-        "sourceRef" : 0
+        "sourceRef" : 0,
+        "predicate" : "LLVMIntNE"
       }, {
         "kind" : "LLVMZExt",
         "typeId" : 5,
@@ -1097,7 +1103,8 @@
           "kind" : "Global",
           "index" : 7
         } ],
-        "sourceRef" : 0
+        "sourceRef" : 0,
+        "predicate" : "LLVMIntNE"
       }, {
         "kind" : "LLVMBr",
         "typeId" : 2,
@@ -1140,7 +1147,8 @@
           "kind" : "Global",
           "index" : 7
         } ],
-        "sourceRef" : 0
+        "sourceRef" : 0,
+        "predicate" : "LLVMIntNE"
       }, {
         "kind" : "LLVMBr",
         "typeId" : 2,
@@ -1213,7 +1221,8 @@
           "kind" : "Global",
           "index" : 7
         } ],
-        "sourceRef" : 0
+        "sourceRef" : 0,
+        "predicate" : "LLVMIntNE"
       }, {
         "kind" : "LLVMBr",
         "typeId" : 2,
@@ -1256,7 +1265,8 @@
           "kind" : "Global",
           "index" : 7
         } ],
-        "sourceRef" : 0
+        "sourceRef" : 0,
+        "predicate" : "LLVMIntNE"
       }, {
         "kind" : "LLVMBr",
         "typeId" : 2,
@@ -1992,7 +2002,8 @@
           "kind" : "Instruction",
           "index" : 3
         } ],
-        "sourceRef" : 1
+        "sourceRef" : 1,
+        "predicate" : "LLVMIntSLT"
       }, {
         "kind" : "LLVMZExt",
         "typeId" : 5,
@@ -2062,7 +2073,8 @@
           "kind" : "Instruction",
           "index" : 11
         } ],
-        "sourceRef" : 1
+        "sourceRef" : 1,
+        "predicate" : "LLVMIntSGT"
       }, {
         "kind" : "LLVMZExt",
         "typeId" : 5,
@@ -2132,7 +2144,8 @@
           "kind" : "Instruction",
           "index" : 19
         } ],
-        "sourceRef" : 1
+        "sourceRef" : 1,
+        "predicate" : "LLVMIntSLE"
       }, {
         "kind" : "LLVMZExt",
         "typeId" : 5,
@@ -2202,7 +2215,8 @@
           "kind" : "Instruction",
           "index" : 27
         } ],
-        "sourceRef" : 1
+        "sourceRef" : 1,
+        "predicate" : "LLVMIntSGE"
       }, {
         "kind" : "LLVMZExt",
         "typeId" : 5,
@@ -2272,7 +2286,8 @@
           "kind" : "Instruction",
           "index" : 35
         } ],
-        "sourceRef" : 1
+        "sourceRef" : 1,
+        "predicate" : "LLVMIntEQ"
       }, {
         "kind" : "LLVMZExt",
         "typeId" : 5,
@@ -2342,7 +2357,8 @@
           "kind" : "Instruction",
           "index" : 43
         } ],
-        "sourceRef" : 1
+        "sourceRef" : 1,
+        "predicate" : "LLVMIntNE"
       }, {
         "kind" : "LLVMZExt",
         "typeId" : 5,
@@ -2409,7 +2425,8 @@
           "kind" : "Global",
           "index" : 7
         } ],
-        "sourceRef" : 1
+        "sourceRef" : 1,
+        "predicate" : "LLVMIntNE"
       }, {
         "kind" : "LLVMBr",
         "typeId" : 2,
@@ -2452,7 +2469,8 @@
           "kind" : "Global",
           "index" : 7
         } ],
-        "sourceRef" : 1
+        "sourceRef" : 1,
+        "predicate" : "LLVMIntNE"
       }, {
         "kind" : "LLVMBr",
         "typeId" : 2,
@@ -2525,7 +2543,8 @@
           "kind" : "Global",
           "index" : 7
         } ],
-        "sourceRef" : 1
+        "sourceRef" : 1,
+        "predicate" : "LLVMIntNE"
       }, {
         "kind" : "LLVMBr",
         "typeId" : 2,
@@ -2568,7 +2587,8 @@
           "kind" : "Global",
           "index" : 7
         } ],
-        "sourceRef" : 1
+        "sourceRef" : 1,
+        "predicate" : "LLVMIntNE"
       }, {
         "kind" : "LLVMBr",
         "typeId" : 2,
@@ -3304,7 +3324,8 @@
           "kind" : "Instruction",
           "index" : 3
         } ],
-        "sourceRef" : 2
+        "sourceRef" : 2,
+        "predicate" : "LLVMIntSLT"
       }, {
         "kind" : "LLVMZExt",
         "typeId" : 5,
@@ -3374,7 +3395,8 @@
           "kind" : "Instruction",
           "index" : 11
         } ],
-        "sourceRef" : 2
+        "sourceRef" : 2,
+        "predicate" : "LLVMIntSGT"
       }, {
         "kind" : "LLVMZExt",
         "typeId" : 5,
@@ -3444,7 +3466,8 @@
           "kind" : "Instruction",
           "index" : 19
         } ],
-        "sourceRef" : 2
+        "sourceRef" : 2,
+        "predicate" : "LLVMIntSLE"
       }, {
         "kind" : "LLVMZExt",
         "typeId" : 5,
@@ -3514,7 +3537,8 @@
           "kind" : "Instruction",
           "index" : 27
         } ],
-        "sourceRef" : 2
+        "sourceRef" : 2,
+        "predicate" : "LLVMIntSGE"
       }, {
         "kind" : "LLVMZExt",
         "typeId" : 5,
@@ -3584,7 +3608,8 @@
           "kind" : "Instruction",
           "index" : 35
         } ],
-        "sourceRef" : 2
+        "sourceRef" : 2,
+        "predicate" : "LLVMIntEQ"
       }, {
         "kind" : "LLVMZExt",
         "typeId" : 5,
@@ -3654,7 +3679,8 @@
           "kind" : "Instruction",
           "index" : 43
         } ],
-        "sourceRef" : 2
+        "sourceRef" : 2,
+        "predicate" : "LLVMIntNE"
       }, {
         "kind" : "LLVMZExt",
         "typeId" : 5,
@@ -3721,7 +3747,8 @@
           "kind" : "Global",
           "index" : 7
         } ],
-        "sourceRef" : 2
+        "sourceRef" : 2,
+        "predicate" : "LLVMIntNE"
       }, {
         "kind" : "LLVMBr",
         "typeId" : 2,
@@ -3764,7 +3791,8 @@
           "kind" : "Global",
           "index" : 7
         } ],
-        "sourceRef" : 2
+        "sourceRef" : 2,
+        "predicate" : "LLVMIntNE"
       }, {
         "kind" : "LLVMBr",
         "typeId" : 2,
@@ -3837,7 +3865,8 @@
           "kind" : "Global",
           "index" : 7
         } ],
-        "sourceRef" : 2
+        "sourceRef" : 2,
+        "predicate" : "LLVMIntNE"
       }, {
         "kind" : "LLVMBr",
         "typeId" : 2,
@@ -3880,7 +3909,8 @@
           "kind" : "Global",
           "index" : 7
         } ],
-        "sourceRef" : 2
+        "sourceRef" : 2,
+        "predicate" : "LLVMIntNE"
       }, {
         "kind" : "LLVMBr",
         "typeId" : 2,
@@ -4616,7 +4646,8 @@
           "kind" : "Instruction",
           "index" : 3
         } ],
-        "sourceRef" : 3
+        "sourceRef" : 3,
+        "predicate" : "LLVMIntSLT"
       }, {
         "kind" : "LLVMZExt",
         "typeId" : 5,
@@ -4686,7 +4717,8 @@
           "kind" : "Instruction",
           "index" : 11
         } ],
-        "sourceRef" : 3
+        "sourceRef" : 3,
+        "predicate" : "LLVMIntSGT"
       }, {
         "kind" : "LLVMZExt",
         "typeId" : 5,
@@ -4756,7 +4788,8 @@
           "kind" : "Instruction",
           "index" : 19
         } ],
-        "sourceRef" : 3
+        "sourceRef" : 3,
+        "predicate" : "LLVMIntSLE"
       }, {
         "kind" : "LLVMZExt",
         "typeId" : 5,
@@ -4826,7 +4859,8 @@
           "kind" : "Instruction",
           "index" : 27
         } ],
-        "sourceRef" : 3
+        "sourceRef" : 3,
+        "predicate" : "LLVMIntSGE"
       }, {
         "kind" : "LLVMZExt",
         "typeId" : 5,
@@ -4896,7 +4930,8 @@
           "kind" : "Instruction",
           "index" : 35
         } ],
-        "sourceRef" : 3
+        "sourceRef" : 3,
+        "predicate" : "LLVMIntEQ"
       }, {
         "kind" : "LLVMZExt",
         "typeId" : 5,
@@ -4966,7 +5001,8 @@
           "kind" : "Instruction",
           "index" : 43
         } ],
-        "sourceRef" : 3
+        "sourceRef" : 3,
+        "predicate" : "LLVMIntNE"
       }, {
         "kind" : "LLVMZExt",
         "typeId" : 5,
@@ -5033,7 +5069,8 @@
           "kind" : "Global",
           "index" : 7
         } ],
-        "sourceRef" : 3
+        "sourceRef" : 3,
+        "predicate" : "LLVMIntNE"
       }, {
         "kind" : "LLVMBr",
         "typeId" : 2,
@@ -5076,7 +5113,8 @@
           "kind" : "Global",
           "index" : 7
         } ],
-        "sourceRef" : 3
+        "sourceRef" : 3,
+        "predicate" : "LLVMIntNE"
       }, {
         "kind" : "LLVMBr",
         "typeId" : 2,
@@ -5149,7 +5187,8 @@
           "kind" : "Global",
           "index" : 7
         } ],
-        "sourceRef" : 3
+        "sourceRef" : 3,
+        "predicate" : "LLVMIntNE"
       }, {
         "kind" : "LLVMBr",
         "typeId" : 2,
@@ -5192,7 +5231,8 @@
           "kind" : "Global",
           "index" : 7
         } ],
-        "sourceRef" : 3
+        "sourceRef" : 3,
+        "predicate" : "LLVMIntNE"
       }, {
         "kind" : "LLVMBr",
         "typeId" : 2,
@@ -5672,7 +5712,8 @@
           "kind" : "Instruction",
           "index" : 1
         } ],
-        "sourceRef" : 4
+        "sourceRef" : 4,
+        "predicate" : "LLVMIntSLT"
       }, {
         "kind" : "LLVMZExt",
         "typeId" : 5,
@@ -5718,7 +5759,8 @@
           "kind" : "Instruction",
           "index" : 6
         } ],
-        "sourceRef" : 4
+        "sourceRef" : 4,
+        "predicate" : "LLVMIntSGT"
       }, {
         "kind" : "LLVMZExt",
         "typeId" : 5,
@@ -5764,7 +5806,8 @@
           "kind" : "Instruction",
           "index" : 11
         } ],
-        "sourceRef" : 4
+        "sourceRef" : 4,
+        "predicate" : "LLVMIntSLE"
       }, {
         "kind" : "LLVMZExt",
         "typeId" : 5,
@@ -5810,7 +5853,8 @@
           "kind" : "Instruction",
           "index" : 16
         } ],
-        "sourceRef" : 4
+        "sourceRef" : 4,
+        "predicate" : "LLVMIntSGE"
       }, {
         "kind" : "LLVMZExt",
         "typeId" : 5,
@@ -5856,7 +5900,8 @@
           "kind" : "Instruction",
           "index" : 21
         } ],
-        "sourceRef" : 4
+        "sourceRef" : 4,
+        "predicate" : "LLVMIntEQ"
       }, {
         "kind" : "LLVMZExt",
         "typeId" : 5,
@@ -5902,7 +5947,8 @@
           "kind" : "Instruction",
           "index" : 26
         } ],
-        "sourceRef" : 4
+        "sourceRef" : 4,
+        "predicate" : "LLVMIntNE"
       }, {
         "kind" : "LLVMZExt",
         "typeId" : 5,
@@ -5953,7 +5999,8 @@
           "kind" : "Global",
           "index" : 7
         } ],
-        "sourceRef" : 4
+        "sourceRef" : 4,
+        "predicate" : "LLVMIntNE"
       }, {
         "kind" : "LLVMBr",
         "typeId" : 2,
@@ -5988,7 +6035,8 @@
           "kind" : "Global",
           "index" : 7
         } ],
-        "sourceRef" : 4
+        "sourceRef" : 4,
+        "predicate" : "LLVMIntNE"
       }, {
         "kind" : "LLVMBr",
         "typeId" : 2,
@@ -6045,7 +6093,8 @@
           "kind" : "Global",
           "index" : 7
         } ],
-        "sourceRef" : 4
+        "sourceRef" : 4,
+        "predicate" : "LLVMIntNE"
       }, {
         "kind" : "LLVMBr",
         "typeId" : 2,
@@ -6080,7 +6129,8 @@
           "kind" : "Global",
           "index" : 7
         } ],
-        "sourceRef" : 4
+        "sourceRef" : 4,
+        "predicate" : "LLVMIntNE"
       }, {
         "kind" : "LLVMBr",
         "typeId" : 2,
@@ -6552,7 +6602,8 @@
           "kind" : "Instruction",
           "index" : 1
         } ],
-        "sourceRef" : 5
+        "sourceRef" : 5,
+        "predicate" : "LLVMIntULT"
       }, {
         "kind" : "LLVMZExt",
         "typeId" : 5,
@@ -6598,7 +6649,8 @@
           "kind" : "Instruction",
           "index" : 6
         } ],
-        "sourceRef" : 5
+        "sourceRef" : 5,
+        "predicate" : "LLVMIntUGT"
       }, {
         "kind" : "LLVMZExt",
         "typeId" : 5,
@@ -6644,7 +6696,8 @@
           "kind" : "Instruction",
           "index" : 11
         } ],
-        "sourceRef" : 5
+        "sourceRef" : 5,
+        "predicate" : "LLVMIntULE"
       }, {
         "kind" : "LLVMZExt",
         "typeId" : 5,
@@ -6690,7 +6743,8 @@
           "kind" : "Instruction",
           "index" : 16
         } ],
-        "sourceRef" : 5
+        "sourceRef" : 5,
+        "predicate" : "LLVMIntUGE"
       }, {
         "kind" : "LLVMZExt",
         "typeId" : 5,
@@ -6736,7 +6790,8 @@
           "kind" : "Instruction",
           "index" : 21
         } ],
-        "sourceRef" : 5
+        "sourceRef" : 5,
+        "predicate" : "LLVMIntEQ"
       }, {
         "kind" : "LLVMZExt",
         "typeId" : 5,
@@ -6782,7 +6837,8 @@
           "kind" : "Instruction",
           "index" : 26
         } ],
-        "sourceRef" : 5
+        "sourceRef" : 5,
+        "predicate" : "LLVMIntNE"
       }, {
         "kind" : "LLVMZExt",
         "typeId" : 5,
@@ -6833,7 +6889,8 @@
           "kind" : "Global",
           "index" : 7
         } ],
-        "sourceRef" : 5
+        "sourceRef" : 5,
+        "predicate" : "LLVMIntNE"
       }, {
         "kind" : "LLVMBr",
         "typeId" : 2,
@@ -6868,7 +6925,8 @@
           "kind" : "Global",
           "index" : 7
         } ],
-        "sourceRef" : 5
+        "sourceRef" : 5,
+        "predicate" : "LLVMIntNE"
       }, {
         "kind" : "LLVMBr",
         "typeId" : 2,
@@ -6925,7 +6983,8 @@
           "kind" : "Global",
           "index" : 7
         } ],
-        "sourceRef" : 5
+        "sourceRef" : 5,
+        "predicate" : "LLVMIntNE"
       }, {
         "kind" : "LLVMBr",
         "typeId" : 2,
@@ -6960,7 +7019,8 @@
           "kind" : "Global",
           "index" : 7
         } ],
-        "sourceRef" : 5
+        "sourceRef" : 5,
+        "predicate" : "LLVMIntNE"
       }, {
         "kind" : "LLVMBr",
         "typeId" : 2,
@@ -7432,7 +7492,8 @@
           "kind" : "Instruction",
           "index" : 1
         } ],
-        "sourceRef" : 6
+        "sourceRef" : 6,
+        "predicate" : "LLVMIntSLT"
       }, {
         "kind" : "LLVMZExt",
         "typeId" : 5,
@@ -7486,7 +7547,8 @@
           "kind" : "Instruction",
           "index" : 7
         } ],
-        "sourceRef" : 6
+        "sourceRef" : 6,
+        "predicate" : "LLVMIntSGT"
       }, {
         "kind" : "LLVMZExt",
         "typeId" : 5,
@@ -7540,7 +7602,8 @@
           "kind" : "Instruction",
           "index" : 13
         } ],
-        "sourceRef" : 6
+        "sourceRef" : 6,
+        "predicate" : "LLVMIntSLE"
       }, {
         "kind" : "LLVMZExt",
         "typeId" : 5,
@@ -7594,7 +7657,8 @@
           "kind" : "Instruction",
           "index" : 19
         } ],
-        "sourceRef" : 6
+        "sourceRef" : 6,
+        "predicate" : "LLVMIntSGE"
       }, {
         "kind" : "LLVMZExt",
         "typeId" : 5,
@@ -7648,7 +7712,8 @@
           "kind" : "Instruction",
           "index" : 25
         } ],
-        "sourceRef" : 6
+        "sourceRef" : 6,
+        "predicate" : "LLVMIntEQ"
       }, {
         "kind" : "LLVMZExt",
         "typeId" : 5,
@@ -7702,7 +7767,8 @@
           "kind" : "Instruction",
           "index" : 31
         } ],
-        "sourceRef" : 6
+        "sourceRef" : 6,
+        "predicate" : "LLVMIntNE"
       }, {
         "kind" : "LLVMZExt",
         "typeId" : 5,
@@ -7761,7 +7827,8 @@
           "kind" : "Global",
           "index" : 42
         } ],
-        "sourceRef" : 6
+        "sourceRef" : 6,
+        "predicate" : "LLVMIntNE"
       }, {
         "kind" : "LLVMBr",
         "typeId" : 2,
@@ -7796,7 +7863,8 @@
           "kind" : "Global",
           "index" : 42
         } ],
-        "sourceRef" : 6
+        "sourceRef" : 6,
+        "predicate" : "LLVMIntNE"
       }, {
         "kind" : "LLVMBr",
         "typeId" : 2,
@@ -7861,7 +7929,8 @@
           "kind" : "Global",
           "index" : 42
         } ],
-        "sourceRef" : 6
+        "sourceRef" : 6,
+        "predicate" : "LLVMIntNE"
       }, {
         "kind" : "LLVMBr",
         "typeId" : 2,
@@ -7896,7 +7965,8 @@
           "kind" : "Global",
           "index" : 42
         } ],
-        "sourceRef" : 6
+        "sourceRef" : 6,
+        "predicate" : "LLVMIntNE"
       }, {
         "kind" : "LLVMBr",
         "typeId" : 2,
@@ -8376,7 +8446,8 @@
           "kind" : "Instruction",
           "index" : 1
         } ],
-        "sourceRef" : 7
+        "sourceRef" : 7,
+        "predicate" : "LLVMIntULT"
       }, {
         "kind" : "LLVMZExt",
         "typeId" : 5,
@@ -8430,7 +8501,8 @@
           "kind" : "Instruction",
           "index" : 7
         } ],
-        "sourceRef" : 7
+        "sourceRef" : 7,
+        "predicate" : "LLVMIntUGT"
       }, {
         "kind" : "LLVMZExt",
         "typeId" : 5,
@@ -8484,7 +8556,8 @@
           "kind" : "Instruction",
           "index" : 13
         } ],
-        "sourceRef" : 7
+        "sourceRef" : 7,
+        "predicate" : "LLVMIntULE"
       }, {
         "kind" : "LLVMZExt",
         "typeId" : 5,
@@ -8538,7 +8611,8 @@
           "kind" : "Instruction",
           "index" : 19
         } ],
-        "sourceRef" : 7
+        "sourceRef" : 7,
+        "predicate" : "LLVMIntUGE"
       }, {
         "kind" : "LLVMZExt",
         "typeId" : 5,
@@ -8592,7 +8666,8 @@
           "kind" : "Instruction",
           "index" : 25
         } ],
-        "sourceRef" : 7
+        "sourceRef" : 7,
+        "predicate" : "LLVMIntEQ"
       }, {
         "kind" : "LLVMZExt",
         "typeId" : 5,
@@ -8646,7 +8721,8 @@
           "kind" : "Instruction",
           "index" : 31
         } ],
-        "sourceRef" : 7
+        "sourceRef" : 7,
+        "predicate" : "LLVMIntNE"
       }, {
         "kind" : "LLVMZExt",
         "typeId" : 5,
@@ -8705,7 +8781,8 @@
           "kind" : "Global",
           "index" : 42
         } ],
-        "sourceRef" : 7
+        "sourceRef" : 7,
+        "predicate" : "LLVMIntNE"
       }, {
         "kind" : "LLVMBr",
         "typeId" : 2,
@@ -8740,7 +8817,8 @@
           "kind" : "Global",
           "index" : 42
         } ],
-        "sourceRef" : 7
+        "sourceRef" : 7,
+        "predicate" : "LLVMIntNE"
       }, {
         "kind" : "LLVMBr",
         "typeId" : 2,
@@ -8805,7 +8883,8 @@
           "kind" : "Global",
           "index" : 42
         } ],
-        "sourceRef" : 7
+        "sourceRef" : 7,
+        "predicate" : "LLVMIntNE"
       }, {
         "kind" : "LLVMBr",
         "typeId" : 2,
@@ -8840,7 +8919,8 @@
           "kind" : "Global",
           "index" : 42
         } ],
-        "sourceRef" : 7
+        "sourceRef" : 7,
+        "predicate" : "LLVMIntNE"
       }, {
         "kind" : "LLVMBr",
         "typeId" : 2,
@@ -9092,7 +9172,8 @@
           "kind" : "Instruction",
           "index" : 1
         } ],
-        "sourceRef" : 8
+        "sourceRef" : 8,
+        "predicate" : "LLVMRealOLT"
       }, {
         "kind" : "LLVMZExt",
         "typeId" : 5,
@@ -9146,7 +9227,8 @@
           "kind" : "Instruction",
           "index" : 7
         } ],
-        "sourceRef" : 8
+        "sourceRef" : 8,
+        "predicate" : "LLVMRealOGT"
       }, {
         "kind" : "LLVMZExt",
         "typeId" : 5,
@@ -9200,7 +9282,8 @@
           "kind" : "Instruction",
           "index" : 13
         } ],
-        "sourceRef" : 8
+        "sourceRef" : 8,
+        "predicate" : "LLVMRealOLE"
       }, {
         "kind" : "LLVMZExt",
         "typeId" : 5,
@@ -9254,7 +9337,8 @@
           "kind" : "Instruction",
           "index" : 19
         } ],
-        "sourceRef" : 8
+        "sourceRef" : 8,
+        "predicate" : "LLVMRealOGE"
       }, {
         "kind" : "LLVMZExt",
         "typeId" : 5,
@@ -9308,7 +9392,8 @@
           "kind" : "Instruction",
           "index" : 25
         } ],
-        "sourceRef" : 8
+        "sourceRef" : 8,
+        "predicate" : "LLVMRealOEQ"
       }, {
         "kind" : "LLVMZExt",
         "typeId" : 5,
@@ -9362,7 +9447,8 @@
           "kind" : "Instruction",
           "index" : 31
         } ],
-        "sourceRef" : 8
+        "sourceRef" : 8,
+        "predicate" : "LLVMRealUNE"
       }, {
         "kind" : "LLVMZExt",
         "typeId" : 5,
@@ -9421,7 +9507,8 @@
           "kind" : "Global",
           "index" : 55
         } ],
-        "sourceRef" : 8
+        "sourceRef" : 8,
+        "predicate" : "LLVMRealUNE"
       }, {
         "kind" : "LLVMBr",
         "typeId" : 2,
@@ -9456,7 +9543,8 @@
           "kind" : "Global",
           "index" : 55
         } ],
-        "sourceRef" : 8
+        "sourceRef" : 8,
+        "predicate" : "LLVMRealUNE"
       }, {
         "kind" : "LLVMBr",
         "typeId" : 2,
@@ -9521,7 +9609,8 @@
           "kind" : "Global",
           "index" : 55
         } ],
-        "sourceRef" : 8
+        "sourceRef" : 8,
+        "predicate" : "LLVMRealUNE"
       }, {
         "kind" : "LLVMBr",
         "typeId" : 2,
@@ -9556,7 +9645,8 @@
           "kind" : "Global",
           "index" : 55
         } ],
-        "sourceRef" : 8
+        "sourceRef" : 8,
+        "predicate" : "LLVMRealUNE"
       }, {
         "kind" : "LLVMBr",
         "typeId" : 2,
@@ -9808,7 +9898,8 @@
           "kind" : "Instruction",
           "index" : 1
         } ],
-        "sourceRef" : 9
+        "sourceRef" : 9,
+        "predicate" : "LLVMRealOLT"
       }, {
         "kind" : "LLVMZExt",
         "typeId" : 5,
@@ -9862,7 +9953,8 @@
           "kind" : "Instruction",
           "index" : 7
         } ],
-        "sourceRef" : 9
+        "sourceRef" : 9,
+        "predicate" : "LLVMRealOGT"
       }, {
         "kind" : "LLVMZExt",
         "typeId" : 5,
@@ -9916,7 +10008,8 @@
           "kind" : "Instruction",
           "index" : 13
         } ],
-        "sourceRef" : 9
+        "sourceRef" : 9,
+        "predicate" : "LLVMRealOLE"
       }, {
         "kind" : "LLVMZExt",
         "typeId" : 5,
@@ -9970,7 +10063,8 @@
           "kind" : "Instruction",
           "index" : 19
         } ],
-        "sourceRef" : 9
+        "sourceRef" : 9,
+        "predicate" : "LLVMRealOGE"
       }, {
         "kind" : "LLVMZExt",
         "typeId" : 5,
@@ -10024,7 +10118,8 @@
           "kind" : "Instruction",
           "index" : 25
         } ],
-        "sourceRef" : 9
+        "sourceRef" : 9,
+        "predicate" : "LLVMRealOEQ"
       }, {
         "kind" : "LLVMZExt",
         "typeId" : 5,
@@ -10078,7 +10173,8 @@
           "kind" : "Instruction",
           "index" : 31
         } ],
-        "sourceRef" : 9
+        "sourceRef" : 9,
+        "predicate" : "LLVMRealUNE"
       }, {
         "kind" : "LLVMZExt",
         "typeId" : 5,
@@ -10137,7 +10233,8 @@
           "kind" : "Global",
           "index" : 62
         } ],
-        "sourceRef" : 9
+        "sourceRef" : 9,
+        "predicate" : "LLVMRealUNE"
       }, {
         "kind" : "LLVMBr",
         "typeId" : 2,
@@ -10172,7 +10269,8 @@
           "kind" : "Global",
           "index" : 62
         } ],
-        "sourceRef" : 9
+        "sourceRef" : 9,
+        "predicate" : "LLVMRealUNE"
       }, {
         "kind" : "LLVMBr",
         "typeId" : 2,
@@ -10237,7 +10335,8 @@
           "kind" : "Global",
           "index" : 62
         } ],
-        "sourceRef" : 9
+        "sourceRef" : 9,
+        "predicate" : "LLVMRealUNE"
       }, {
         "kind" : "LLVMBr",
         "typeId" : 2,
@@ -10272,7 +10371,8 @@
           "kind" : "Global",
           "index" : 62
         } ],
-        "sourceRef" : 9
+        "sourceRef" : 9,
+        "predicate" : "LLVMRealUNE"
       }, {
         "kind" : "LLVMBr",
         "typeId" : 2,
@@ -10524,7 +10624,8 @@
           "kind" : "Instruction",
           "index" : 1
         } ],
-        "sourceRef" : 10
+        "sourceRef" : 10,
+        "predicate" : "LLVMRealOLT"
       }, {
         "kind" : "LLVMZExt",
         "typeId" : 5,
@@ -10578,7 +10679,8 @@
           "kind" : "Instruction",
           "index" : 7
         } ],
-        "sourceRef" : 10
+        "sourceRef" : 10,
+        "predicate" : "LLVMRealOGT"
       }, {
         "kind" : "LLVMZExt",
         "typeId" : 5,
@@ -10632,7 +10734,8 @@
           "kind" : "Instruction",
           "index" : 13
         } ],
-        "sourceRef" : 10
+        "sourceRef" : 10,
+        "predicate" : "LLVMRealOLE"
       }, {
         "kind" : "LLVMZExt",
         "typeId" : 5,
@@ -10686,7 +10789,8 @@
           "kind" : "Instruction",
           "index" : 19
         } ],
-        "sourceRef" : 10
+        "sourceRef" : 10,
+        "predicate" : "LLVMRealOGE"
       }, {
         "kind" : "LLVMZExt",
         "typeId" : 5,
@@ -10740,7 +10844,8 @@
           "kind" : "Instruction",
           "index" : 25
         } ],
-        "sourceRef" : 10
+        "sourceRef" : 10,
+        "predicate" : "LLVMRealOEQ"
       }, {
         "kind" : "LLVMZExt",
         "typeId" : 5,
@@ -10794,7 +10899,8 @@
           "kind" : "Instruction",
           "index" : 31
         } ],
-        "sourceRef" : 10
+        "sourceRef" : 10,
+        "predicate" : "LLVMRealUNE"
       }, {
         "kind" : "LLVMZExt",
         "typeId" : 5,
@@ -10853,7 +10959,8 @@
           "kind" : "Global",
           "index" : 69
         } ],
-        "sourceRef" : 10
+        "sourceRef" : 10,
+        "predicate" : "LLVMRealUNE"
       }, {
         "kind" : "LLVMBr",
         "typeId" : 2,
@@ -10888,7 +10995,8 @@
           "kind" : "Global",
           "index" : 69
         } ],
-        "sourceRef" : 10
+        "sourceRef" : 10,
+        "predicate" : "LLVMRealUNE"
       }, {
         "kind" : "LLVMBr",
         "typeId" : 2,
@@ -10953,7 +11061,8 @@
           "kind" : "Global",
           "index" : 69
         } ],
-        "sourceRef" : 10
+        "sourceRef" : 10,
+        "predicate" : "LLVMRealUNE"
       }, {
         "kind" : "LLVMBr",
         "typeId" : 2,
@@ -10988,7 +11097,8 @@
           "kind" : "Global",
           "index" : 69
         } ],
-        "sourceRef" : 10
+        "sourceRef" : 10,
+        "predicate" : "LLVMRealUNE"
       }, {
         "kind" : "LLVMBr",
         "typeId" : 2,
