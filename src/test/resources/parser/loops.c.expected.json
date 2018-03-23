@@ -21,7 +21,7 @@
         "typeId" : 2,
         "operands" : [ {
           "kind" : "Block",
-          "index" : -1
+          "index" : 1
         } ],
         "sourceRef" : 1
       } ]
@@ -54,10 +54,10 @@
           "index" : 1
         }, {
           "kind" : "Block",
-          "index" : -1
+          "index" : 3
         }, {
           "kind" : "Block",
-          "index" : -1
+          "index" : 2
         } ],
         "sourceRef" : 1
       } ]
@@ -139,7 +139,7 @@
         "typeId" : 2,
         "operands" : [ {
           "kind" : "Block",
-          "index" : -1
+          "index" : 1
         } ],
         "sourceRef" : 6
       } ]
@@ -187,7 +187,7 @@
         "typeId" : 2,
         "operands" : [ {
           "kind" : "Block",
-          "index" : -1
+          "index" : 2
         } ],
         "sourceRef" : 9
       } ]
@@ -242,7 +242,7 @@
           "index" : 3
         }, {
           "kind" : "Block",
-          "index" : -1
+          "index" : 3
         }, {
           "kind" : "Block",
           "index" : 1
@@ -279,7 +279,7 @@
         "typeId" : 2,
         "operands" : [ {
           "kind" : "Block",
-          "index" : -1
+          "index" : 1
         } ],
         "sourceRef" : 11
       } ]
@@ -312,10 +312,10 @@
           "index" : 1
         }, {
           "kind" : "Block",
-          "index" : -1
+          "index" : 4
         }, {
           "kind" : "Block",
-          "index" : -1
+          "index" : 2
         } ],
         "sourceRef" : 11
       } ]
@@ -333,7 +333,7 @@
         "typeId" : 2,
         "operands" : [ {
           "kind" : "Block",
-          "index" : -1
+          "index" : 3
         } ],
         "sourceRef" : 13
       } ]

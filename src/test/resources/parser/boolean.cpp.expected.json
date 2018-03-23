@@ -29,10 +29,10 @@
           "index" : 1
         }, {
           "kind" : "Block",
-          "index" : -1
+          "index" : 2
         }, {
           "kind" : "Block",
-          "index" : -1
+          "index" : 1
         } ],
         "sourceRef" : 0
       } ]
@@ -58,7 +58,7 @@
         "typeId" : 2,
         "operands" : [ {
           "kind" : "Block",
-          "index" : -1
+          "index" : 2
         } ]
       } ]
     }, {
@@ -115,10 +115,10 @@
           "index" : 4
         }, {
           "kind" : "Block",
-          "index" : -1
+          "index" : 3
         }, {
           "kind" : "Block",
-          "index" : -1
+          "index" : 4
         } ],
         "sourceRef" : 1
       } ]
@@ -144,7 +144,7 @@
         "typeId" : 2,
         "operands" : [ {
           "kind" : "Block",
-          "index" : -1
+          "index" : 4
         } ],
         "sourceRef" : 1
       } ]

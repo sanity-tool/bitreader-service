@@ -1,5 +1,6 @@
 package ru.urururu.bitreaderservice.cpp;
 
+import com.google.common.base.Preconditions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import ru.urururu.bitreaderservice.dto.*;
@@ -72,23 +73,27 @@ public class NativeBytecodeParser {
         Map<SWIGTYPE_p_LLVMOpaqueBasicBlock, BlockDto> blocks = new LinkedHashMap<>();
 
         SWIGTYPE_p_LLVMOpaqueBasicBlock nativeBlock = bitreader.LLVMGetFirstBasicBlock(nativeFunction);
+        while (nativeBlock != null) {
+            nativeBlocks.add(bitreader.LLVMBasicBlockAsValue(nativeBlock));
+            nativeBlock = bitreader.LLVMGetNextBasicBlock(nativeBlock);
+        }
 
         ParseContext functionCtx = new ParseContextDecorator(ctx) {
             @Override
             public ValueRefDto getValueRef(SWIGTYPE_p_LLVMOpaqueValue nativeValue) {
                 LLVMValueKind kind = bitreader.LLVMGetValueKind(nativeValue);
                 if (kind == LLVMValueKind.LLVMArgumentValueKind) {
-                    return new ValueRefDto(ValueRefDto.ValueRefKind.Argument, nativeParams.indexOf(nativeValue));
+                    return new ValueRefDto(ValueRefDto.ValueRefKind.Argument, Preconditions.checkElementIndex(nativeParams.indexOf(nativeValue), nativeParams.size()));
                 } else if (kind == LLVMValueKind.LLVMBasicBlockValueKind) {
-                    return new ValueRefDto(ValueRefDto.ValueRefKind.Block, nativeBlocks.indexOf(nativeValue));
+                    return new ValueRefDto(ValueRefDto.ValueRefKind.Block, Preconditions.checkElementIndex(nativeBlocks.indexOf(nativeValue), nativeBlocks.size()));
                 } else {
                     return super.getValueRef(nativeValue);
                 }
             }
         };
 
+        nativeBlock = bitreader.LLVMGetFirstBasicBlock(nativeFunction);
         while (nativeBlock != null) {
-            nativeBlocks.add(bitreader.LLVMBasicBlockAsValue(nativeBlock));
             blocks.put(nativeBlock, toBlock(functionCtx, nativeBlock));
 
             nativeBlock = bitreader.LLVMGetNextBasicBlock(nativeBlock);

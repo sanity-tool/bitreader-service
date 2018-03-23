@@ -33,10 +33,10 @@
           "index" : 1
         }, {
           "kind" : "Block",
-          "index" : -1
+          "index" : 2
         }, {
           "kind" : "Block",
-          "index" : -1
+          "index" : 1
         } ],
         "sourceRef" : 0
       } ]
@@ -54,7 +54,7 @@
         "typeId" : 2,
         "operands" : [ {
           "kind" : "Block",
-          "index" : -1
+          "index" : 2
         } ],
         "sourceRef" : 2
       } ]
@@ -100,10 +100,10 @@
           "index" : 1
         }, {
           "kind" : "Block",
-          "index" : -1
+          "index" : 2
         }, {
           "kind" : "Block",
-          "index" : -1
+          "index" : 1
         } ],
         "sourceRef" : 4
       } ]
@@ -121,7 +121,7 @@
         "typeId" : 2,
         "operands" : [ {
           "kind" : "Block",
-          "index" : -1
+          "index" : 3
         } ],
         "sourceRef" : 6
       } ]
@@ -139,7 +139,7 @@
         "typeId" : 2,
         "operands" : [ {
           "kind" : "Block",
-          "index" : -1
+          "index" : 3
         } ]
       } ]
     }, {
@@ -184,10 +184,10 @@
           "index" : 1
         }, {
           "kind" : "Block",
-          "index" : -1
+          "index" : 2
         }, {
           "kind" : "Block",
-          "index" : -1
+          "index" : 1
         } ],
         "sourceRef" : 9
       } ]
@@ -205,7 +205,7 @@
         "typeId" : 2,
         "operands" : [ {
           "kind" : "Block",
-          "index" : -1
+          "index" : 2
         } ],
         "sourceRef" : 11
       } ]
