@@ -75,6 +75,21 @@
           "kind" : "Instruction",
           "blockIndex" : 1,
           "index" : 1
+        } ],
+        "incomingValues" : [ {
+          "kind" : "Global",
+          "index" : 4
+        }, {
+          "kind" : "Instruction",
+          "blockIndex" : 1,
+          "index" : 1
+        } ],
+        "incomingBlocks" : [ {
+          "kind" : "Block",
+          "index" : 0
+        }, {
+          "kind" : "Block",
+          "index" : 1
         } ]
       }, {
         "kind" : "LLVMZExt",
@@ -168,6 +183,21 @@
           "kind" : "Instruction",
           "blockIndex" : 3,
           "index" : 1
+        } ],
+        "incomingValues" : [ {
+          "kind" : "Global",
+          "index" : 6
+        }, {
+          "kind" : "Instruction",
+          "blockIndex" : 3,
+          "index" : 1
+        } ],
+        "incomingBlocks" : [ {
+          "kind" : "Block",
+          "index" : 2
+        }, {
+          "kind" : "Block",
+          "index" : 3
         } ]
       }, {
         "kind" : "LLVMZExt",

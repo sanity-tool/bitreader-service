@@ -430,7 +430,23 @@
           "blockIndex" : 3,
           "index" : 0
         } ],
-        "sourceRef" : 8
+        "sourceRef" : 8,
+        "incomingValues" : [ {
+          "kind" : "Instruction",
+          "blockIndex" : 1,
+          "index" : 5
+        }, {
+          "kind" : "Instruction",
+          "blockIndex" : 3,
+          "index" : 0
+        } ],
+        "incomingBlocks" : [ {
+          "kind" : "Block",
+          "index" : 1
+        }, {
+          "kind" : "Block",
+          "index" : 3
+        } ]
       }, {
         "kind" : "LLVMInvoke",
         "typeId" : 2,
@@ -673,7 +689,23 @@
           "blockIndex" : 7,
           "index" : 1
         } ],
-        "sourceRef" : 8
+        "sourceRef" : 8,
+        "incomingValues" : [ {
+          "kind" : "Instruction",
+          "blockIndex" : 2,
+          "index" : 0
+        }, {
+          "kind" : "Instruction",
+          "blockIndex" : 7,
+          "index" : 1
+        } ],
+        "incomingBlocks" : [ {
+          "kind" : "Block",
+          "index" : 6
+        }, {
+          "kind" : "Block",
+          "index" : 8
+        } ]
       }, {
         "kind" : "LLVMGetElementPtr",
         "typeId" : 15,
@@ -1124,7 +1156,23 @@
           "blockIndex" : 5,
           "index" : 1
         } ],
-        "sourceRef" : 11
+        "sourceRef" : 11,
+        "incomingValues" : [ {
+          "kind" : "Instruction",
+          "blockIndex" : 4,
+          "index" : 4
+        }, {
+          "kind" : "Instruction",
+          "blockIndex" : 5,
+          "index" : 1
+        } ],
+        "incomingBlocks" : [ {
+          "kind" : "Block",
+          "index" : 4
+        }, {
+          "kind" : "Block",
+          "index" : 6
+        } ]
       }, {
         "kind" : "LLVMGetElementPtr",
         "typeId" : 15,
@@ -1386,7 +1434,23 @@
           "blockIndex" : 11,
           "index" : 1
         } ],
-        "sourceRef" : 11
+        "sourceRef" : 11,
+        "incomingValues" : [ {
+          "kind" : "Instruction",
+          "blockIndex" : 5,
+          "index" : 1
+        }, {
+          "kind" : "Instruction",
+          "blockIndex" : 11,
+          "index" : 1
+        } ],
+        "incomingBlocks" : [ {
+          "kind" : "Block",
+          "index" : 10
+        }, {
+          "kind" : "Block",
+          "index" : 12
+        } ]
       }, {
         "kind" : "LLVMGetElementPtr",
         "typeId" : 15,

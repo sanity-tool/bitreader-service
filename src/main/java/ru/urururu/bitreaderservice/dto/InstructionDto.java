@@ -1,6 +1,7 @@
 package ru.urururu.bitreaderservice.dto;
 
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 
 import java.util.List;
@@ -9,11 +10,13 @@ import java.util.List;
  * @author <a href="mailto:dmitriy.g.matveev@gmail.com">Dmitry Matveev</a>
  */
 @Data
-@AllArgsConstructor
+@Builder
 public class InstructionDto {
-    private final String kind;
+    private String kind;
     private int typeId;
-    private final List<ValueRefDto> operands;
-    private final Integer sourceRef;
-    private final String predicate;
+    private List<ValueRefDto> operands;
+    private Integer sourceRef;
+    private String predicate;
+    private List<ValueRefDto> incomingValues;
+    private List<ValueRefDto> incomingBlocks;
 }

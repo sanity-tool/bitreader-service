@@ -136,20 +136,35 @@ public class NativeBytecodeParser {
 
     private InstructionDto toInstruction(ParseContext ctx, SWIGTYPE_p_LLVMOpaqueValue nativeInstruction) {
         LLVMOpcode opcode = bitreader.LLVMGetInstructionOpcode(nativeInstruction);
-        String predicate = null;
+
+        InstructionDto.InstructionDtoBuilder builder = InstructionDto.builder()
+                .kind(opcode.toString())
+                .typeId(ctx.getTypeId(bitreader.LLVMTypeOf(nativeInstruction)))
+                .operands(getOperands(ctx, nativeInstruction))
+                .sourceRef(ctx.getSourceRefId(sourceRangeFactory.getSourceRange(nativeInstruction)));
+
         if (opcode == LLVMOpcode.LLVMFCmp) {
-            predicate = bitreader.GetFCmpPredicate(nativeInstruction).toString();
+            builder.predicate(bitreader.GetFCmpPredicate(nativeInstruction).toString());
         } else if (opcode == LLVMOpcode.LLVMICmp) {
-            predicate = bitreader.LLVMGetICmpPredicate(nativeInstruction).toString();
+            builder.predicate(bitreader.LLVMGetICmpPredicate(nativeInstruction).toString());
+        } else if (opcode == LLVMOpcode.LLVMPHI) {
+            List<ValueRefDto> incomingValues = new ArrayList<>();
+            List<ValueRefDto> incomingBlocks = new ArrayList<>();
+            long n = bitreader.LLVMCountIncoming(nativeInstruction);
+
+            for (long i = 0; i < n; i++) {
+                SWIGTYPE_p_LLVMOpaqueValue incomingNativeValue = bitreader.LLVMGetIncomingValue(nativeInstruction, i);
+                SWIGTYPE_p_LLVMOpaqueBasicBlock incomingNativeBlock = bitreader.LLVMGetIncomingBlock(nativeInstruction, i);
+
+                incomingValues.add(ctx.getValueRef(incomingNativeValue));
+                incomingBlocks.add(ctx.getValueRef(bitreader.LLVMBasicBlockAsValue(incomingNativeBlock)));
+            }
+
+            builder.incomingValues(incomingValues);
+            builder.incomingBlocks(incomingBlocks);
         }
 
-        return new InstructionDto(
-                opcode.toString(),
-                ctx.getTypeId(bitreader.LLVMTypeOf(nativeInstruction)),
-                getOperands(ctx, nativeInstruction),
-                ctx.getSourceRefId(sourceRangeFactory.getSourceRange(nativeInstruction)),
-                predicate
-        );
+        return builder.build();
     }
 
     private List<ValueRefDto> getOperands(ParseContext ctx, SWIGTYPE_p_LLVMOpaqueValue nativeValue) {
