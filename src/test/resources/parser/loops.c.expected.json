@@ -39,6 +39,7 @@
         "typeId" : 5,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 1,
           "index" : 0
         }, {
           "kind" : "Global",
@@ -51,6 +52,7 @@
         "typeId" : 2,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 1,
           "index" : 1
         }, {
           "kind" : "Block",
@@ -83,6 +85,7 @@
         "typeId" : 3,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 2,
           "index" : 1
         }, {
           "kind" : "Global",
@@ -94,6 +97,7 @@
         "typeId" : 2,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 2,
           "index" : 2
         }, {
           "kind" : "Global",
@@ -165,6 +169,7 @@
         "typeId" : 3,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 1,
           "index" : 1
         }, {
           "kind" : "Global",
@@ -176,6 +181,7 @@
         "typeId" : 2,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 1,
           "index" : 2
         }, {
           "kind" : "Global",
@@ -205,6 +211,7 @@
         "typeId" : 3,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 2,
           "index" : 0
         }, {
           "kind" : "Global",
@@ -216,6 +223,7 @@
         "typeId" : 2,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 2,
           "index" : 1
         }, {
           "kind" : "Global",
@@ -227,6 +235,7 @@
         "typeId" : 5,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 2,
           "index" : 0
         }, {
           "kind" : "Global",
@@ -239,6 +248,7 @@
         "typeId" : 2,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 2,
           "index" : 3
         }, {
           "kind" : "Block",
@@ -297,6 +307,7 @@
         "typeId" : 5,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 1,
           "index" : 0
         }, {
           "kind" : "Global",
@@ -309,6 +320,7 @@
         "typeId" : 2,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 1,
           "index" : 1
         }, {
           "kind" : "Block",
@@ -351,6 +363,7 @@
         "typeId" : 3,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 3,
           "index" : 0
         }, {
           "kind" : "Global",
@@ -362,6 +375,7 @@
         "typeId" : 2,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 3,
           "index" : 1
         }, {
           "kind" : "Global",

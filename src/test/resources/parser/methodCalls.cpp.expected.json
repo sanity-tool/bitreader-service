@@ -20,6 +20,7 @@
           "index" : 0
         }, {
           "kind" : "Instruction",
+          "blockIndex" : 0,
           "index" : 0
         } ]
       }, {
@@ -44,6 +45,7 @@
         "typeId" : 3,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 0,
           "index" : 0
         } ],
         "sourceRef" : 1
@@ -52,6 +54,7 @@
         "typeId" : 2,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 0,
           "index" : 3
         }, {
           "kind" : "Global",
@@ -111,6 +114,7 @@
           "index" : 0
         }, {
           "kind" : "Instruction",
+          "blockIndex" : 0,
           "index" : 0
         } ]
       }, {
@@ -135,6 +139,7 @@
         "typeId" : 3,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 0,
           "index" : 0
         } ],
         "sourceRef" : 6
@@ -143,6 +148,7 @@
         "typeId" : 15,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 0,
           "index" : 3
         } ],
         "sourceRef" : 6
@@ -151,6 +157,7 @@
         "typeId" : 16,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 0,
           "index" : 4
         } ],
         "sourceRef" : 6
@@ -159,6 +166,7 @@
         "typeId" : 16,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 0,
           "index" : 5
         }, {
           "kind" : "Global",
@@ -170,6 +178,7 @@
         "typeId" : 0,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 0,
           "index" : 6
         } ],
         "sourceRef" : 6
@@ -178,9 +187,11 @@
         "typeId" : 2,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 0,
           "index" : 3
         }, {
           "kind" : "Instruction",
+          "blockIndex" : 0,
           "index" : 7
         } ],
         "sourceRef" : 6

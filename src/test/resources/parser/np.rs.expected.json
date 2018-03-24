@@ -26,7 +26,8 @@
         "typeId" : 2,
         "operands" : [ {
           "kind" : "Instruction",
-          "index" : -1
+          "blockIndex" : 0,
+          "index" : 0
         } ],
         "sourceRef" : 0
       }, {
@@ -44,7 +45,8 @@
         "typeId" : 4,
         "operands" : [ {
           "kind" : "Instruction",
-          "index" : -1
+          "blockIndex" : 1,
+          "index" : 0
         } ],
         "sourceRef" : 1
       } ]
@@ -125,6 +127,7 @@
           "index" : 0
         }, {
           "kind" : "Instruction",
+          "blockIndex" : 0,
           "index" : 4
         } ]
       }, {
@@ -196,7 +199,8 @@
           "index" : 13
         }, {
           "kind" : "Instruction",
-          "index" : -1
+          "blockIndex" : 0,
+          "index" : 1
         } ],
         "sourceRef" : 4
       }, {
@@ -204,7 +208,8 @@
         "typeId" : 3,
         "operands" : [ {
           "kind" : "Instruction",
-          "index" : -1
+          "blockIndex" : 0,
+          "index" : 4
         } ],
         "sourceRef" : 4
       }, {
@@ -212,10 +217,12 @@
         "typeId" : 4,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 1,
           "index" : 1
         }, {
           "kind" : "Instruction",
-          "index" : -1
+          "blockIndex" : 0,
+          "index" : 3
         } ],
         "sourceRef" : 4
       }, {
@@ -226,7 +233,8 @@
           "index" : 14
         }, {
           "kind" : "Instruction",
-          "index" : -1
+          "blockIndex" : 0,
+          "index" : 1
         } ],
         "sourceRef" : 5
       }, {
@@ -242,10 +250,12 @@
         "typeId" : 4,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 1,
           "index" : 4
         }, {
           "kind" : "Instruction",
-          "index" : -1
+          "blockIndex" : 0,
+          "index" : 2
         } ],
         "sourceRef" : 5
       }, {
@@ -263,7 +273,8 @@
         "typeId" : 3,
         "operands" : [ {
           "kind" : "Instruction",
-          "index" : -1
+          "blockIndex" : 0,
+          "index" : 3
         } ],
         "sourceRef" : 6
       }, {
@@ -271,7 +282,8 @@
         "typeId" : 11,
         "operands" : [ {
           "kind" : "Instruction",
-          "index" : -1
+          "blockIndex" : 0,
+          "index" : 2
         } ],
         "sourceRef" : 6
       }, {
@@ -279,6 +291,7 @@
         "typeId" : 11,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 2,
           "index" : 0
         } ],
         "sourceRef" : 6
@@ -287,9 +300,11 @@
         "typeId" : 4,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 2,
           "index" : 1
         }, {
           "kind" : "Instruction",
+          "blockIndex" : 2,
           "index" : 2
         }, {
           "kind" : "Global",
@@ -320,7 +335,8 @@
         "typeId" : 10,
         "operands" : [ {
           "kind" : "Instruction",
-          "index" : -1
+          "blockIndex" : 0,
+          "index" : 0
         } ],
         "sourceRef" : 4
       }, {
@@ -328,6 +344,7 @@
         "typeId" : 4,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 3,
           "index" : 0
         } ],
         "sourceRef" : 4
@@ -341,7 +358,8 @@
           "index" : 13
         }, {
           "kind" : "Instruction",
-          "index" : -1
+          "blockIndex" : 0,
+          "index" : 1
         } ],
         "sourceRef" : 7
       }, {
@@ -349,7 +367,8 @@
         "typeId" : 2,
         "operands" : [ {
           "kind" : "Instruction",
-          "index" : -1
+          "blockIndex" : 0,
+          "index" : 2
         } ],
         "sourceRef" : 7
       }, {
@@ -357,6 +376,7 @@
         "typeId" : 4,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 4,
           "index" : 1
         } ],
         "sourceRef" : 8
@@ -370,7 +390,8 @@
           "index" : 13
         }, {
           "kind" : "Instruction",
-          "index" : -1
+          "blockIndex" : 0,
+          "index" : 1
         } ],
         "sourceRef" : 8
       }, {
@@ -388,7 +409,8 @@
         "typeId" : 12,
         "operands" : [ {
           "kind" : "Instruction",
-          "index" : -1
+          "blockIndex" : 0,
+          "index" : 1
         } ],
         "sourceRef" : 8
       }, {
@@ -396,6 +418,7 @@
         "typeId" : 18,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 6,
           "index" : 0
         } ],
         "sourceRef" : 8
@@ -404,6 +427,7 @@
         "typeId" : 4,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 6,
           "index" : 1
         }, {
           "kind" : "Block",
@@ -496,10 +520,12 @@
         "typeId" : 4,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 1,
           "index" : 0
         }, {
           "kind" : "Instruction",
-          "index" : -1
+          "blockIndex" : 0,
+          "index" : 0
         } ],
         "sourceRef" : 9
       }, {
@@ -517,7 +543,8 @@
         "typeId" : 3,
         "operands" : [ {
           "kind" : "Instruction",
-          "index" : -1
+          "blockIndex" : 0,
+          "index" : 0
         } ],
         "sourceRef" : 10
       }, {
@@ -525,6 +552,7 @@
         "typeId" : 2,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 2,
           "index" : 0
         }, {
           "kind" : "Global",

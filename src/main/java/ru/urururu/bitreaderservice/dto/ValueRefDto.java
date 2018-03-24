@@ -10,6 +10,7 @@ import lombok.Data;
 @AllArgsConstructor
 public class ValueRefDto {
     ValueRefKind kind;
+    Integer blockIndex;
     int index;
 
     public enum ValueRefKind {

@@ -18,6 +18,7 @@
         "typeId" : 5,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 0,
           "index" : 0
         }, {
           "kind" : "Global",
@@ -30,6 +31,7 @@
         "typeId" : 2,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 0,
           "index" : 1
         }, {
           "kind" : "Block",
@@ -85,6 +87,7 @@
         "typeId" : 5,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 0,
           "index" : 0
         }, {
           "kind" : "Global",
@@ -97,6 +100,7 @@
         "typeId" : 2,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 0,
           "index" : 1
         }, {
           "kind" : "Block",
@@ -169,6 +173,7 @@
         "typeId" : 5,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 0,
           "index" : 0
         }, {
           "kind" : "Global",
@@ -181,6 +186,7 @@
         "typeId" : 2,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 0,
           "index" : 1
         }, {
           "kind" : "Block",

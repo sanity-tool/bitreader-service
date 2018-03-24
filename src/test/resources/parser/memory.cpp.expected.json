@@ -21,6 +21,7 @@
         "typeId" : 8,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 0,
           "index" : 0
         } ],
         "sourceRef" : 0
@@ -29,6 +30,7 @@
         "typeId" : 2,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 0,
           "index" : 1
         }, {
           "kind" : "Global",
@@ -51,6 +53,7 @@
         "typeId" : 8,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 0,
           "index" : 3
         } ],
         "sourceRef" : 1
@@ -59,6 +62,7 @@
         "typeId" : 2,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 0,
           "index" : 4
         }, {
           "kind" : "Global",
@@ -81,6 +85,7 @@
         "typeId" : 8,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 0,
           "index" : 6
         } ],
         "sourceRef" : 2
@@ -92,6 +97,7 @@
           "index" : 8
         }, {
           "kind" : "Instruction",
+          "blockIndex" : 0,
           "index" : 7
         } ],
         "sourceRef" : 2
@@ -100,6 +106,7 @@
         "typeId" : 2,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 0,
           "index" : 7
         }, {
           "kind" : "Global",
@@ -132,6 +139,7 @@
         "typeId" : 11,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 0,
           "index" : 0
         }, {
           "kind" : "Global",
@@ -144,6 +152,7 @@
         "typeId" : 2,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 0,
           "index" : 1
         }, {
           "kind" : "Block",
@@ -160,7 +169,8 @@
         "typeId" : 3,
         "operands" : [ {
           "kind" : "Instruction",
-          "index" : -1
+          "blockIndex" : 0,
+          "index" : 0
         } ],
         "sourceRef" : 4
       }, {
@@ -168,6 +178,7 @@
         "typeId" : 2,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 1,
           "index" : 0
         }, {
           "kind" : "Global",
@@ -197,6 +208,7 @@
         "typeId" : 11,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 2,
           "index" : 0
         }, {
           "kind" : "Global",
@@ -209,6 +221,7 @@
         "typeId" : 2,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 2,
           "index" : 1
         }, {
           "kind" : "Block",
@@ -225,7 +238,8 @@
         "typeId" : 3,
         "operands" : [ {
           "kind" : "Instruction",
-          "index" : -1
+          "blockIndex" : 2,
+          "index" : 0
         } ],
         "sourceRef" : 5
       }, {
@@ -233,6 +247,7 @@
         "typeId" : 2,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 3,
           "index" : 0
         }, {
           "kind" : "Global",
@@ -292,6 +307,7 @@
         "typeId" : 15,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 0,
           "index" : 2
         } ],
         "sourceRef" : 7
@@ -300,6 +316,7 @@
         "typeId" : 2,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 0,
           "index" : 3
         }, {
           "kind" : "Global",
@@ -319,7 +336,8 @@
         "typeId" : 2,
         "operands" : [ {
           "kind" : "Instruction",
-          "index" : -1
+          "blockIndex" : 0,
+          "index" : 3
         }, {
           "kind" : "Global",
           "index" : 18
@@ -341,6 +359,7 @@
         "typeId" : 20,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 1,
           "index" : 1
         } ],
         "sourceRef" : 8
@@ -352,6 +371,7 @@
           "index" : 20
         }, {
           "kind" : "Instruction",
+          "blockIndex" : 1,
           "index" : 2
         } ],
         "sourceRef" : 8
@@ -360,6 +380,7 @@
         "typeId" : 3,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 1,
           "index" : 1
         }, {
           "kind" : "Global",
@@ -371,6 +392,7 @@
         "typeId" : 15,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 1,
           "index" : 4
         } ],
         "sourceRef" : 8
@@ -379,6 +401,7 @@
         "typeId" : 15,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 1,
           "index" : 5
         }, {
           "kind" : "Global",
@@ -400,10 +423,12 @@
         "typeId" : 15,
         "operands" : [ {
           "kind" : "Instruction",
-          "index" : -1
+          "blockIndex" : 1,
+          "index" : 5
         }, {
           "kind" : "Instruction",
-          "index" : -1
+          "blockIndex" : 3,
+          "index" : 0
         } ],
         "sourceRef" : 8
       }, {
@@ -411,6 +436,7 @@
         "typeId" : 2,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 2,
           "index" : 0
         }, {
           "kind" : "Global",
@@ -430,7 +456,8 @@
         "typeId" : 15,
         "operands" : [ {
           "kind" : "Instruction",
-          "index" : -1
+          "blockIndex" : 2,
+          "index" : 0
         }, {
           "kind" : "Global",
           "index" : 15
@@ -441,10 +468,12 @@
         "typeId" : 11,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 3,
           "index" : 0
         }, {
           "kind" : "Instruction",
-          "index" : -1
+          "blockIndex" : 1,
+          "index" : 6
         } ],
         "sourceRef" : 8,
         "predicate" : "LLVMIntEQ"
@@ -453,6 +482,7 @@
         "typeId" : 2,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 3,
           "index" : 1
         }, {
           "kind" : "Block",
@@ -469,7 +499,8 @@
         "typeId" : 2,
         "operands" : [ {
           "kind" : "Instruction",
-          "index" : -1
+          "blockIndex" : 1,
+          "index" : 5
         }, {
           "kind" : "Global",
           "index" : 22
@@ -490,6 +521,7 @@
         "typeId" : 3,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 5,
           "index" : 0
         } ],
         "sourceRef" : 9
@@ -498,10 +530,12 @@
         "typeId" : 2,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 5,
           "index" : 1
         }, {
           "kind" : "Instruction",
-          "index" : -1
+          "blockIndex" : 0,
+          "index" : 0
         } ],
         "sourceRef" : 9
       }, {
@@ -509,6 +543,7 @@
         "typeId" : 9,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 5,
           "index" : 0
         } ],
         "sourceRef" : 9
@@ -517,10 +552,12 @@
         "typeId" : 2,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 5,
           "index" : 3
         }, {
           "kind" : "Instruction",
-          "index" : -1
+          "blockIndex" : 0,
+          "index" : 1
         } ],
         "sourceRef" : 9
       }, {
@@ -528,7 +565,8 @@
         "typeId" : 2,
         "operands" : [ {
           "kind" : "Instruction",
-          "index" : -1
+          "blockIndex" : 0,
+          "index" : 2
         }, {
           "kind" : "Global",
           "index" : 11
@@ -553,6 +591,7 @@
         "typeId" : 3,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 6,
           "index" : 0
         } ],
         "sourceRef" : 9
@@ -561,10 +600,12 @@
         "typeId" : 2,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 6,
           "index" : 1
         }, {
           "kind" : "Instruction",
-          "index" : -1
+          "blockIndex" : 0,
+          "index" : 0
         } ],
         "sourceRef" : 9
       }, {
@@ -572,6 +613,7 @@
         "typeId" : 9,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 6,
           "index" : 0
         } ],
         "sourceRef" : 9
@@ -580,10 +622,12 @@
         "typeId" : 2,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 6,
           "index" : 3
         }, {
           "kind" : "Instruction",
-          "index" : -1
+          "blockIndex" : 0,
+          "index" : 1
         } ],
         "sourceRef" : 9
       }, {
@@ -591,10 +635,12 @@
         "typeId" : 11,
         "operands" : [ {
           "kind" : "Instruction",
-          "index" : -1
+          "blockIndex" : 1,
+          "index" : 5
         }, {
           "kind" : "Instruction",
-          "index" : -1
+          "blockIndex" : 2,
+          "index" : 0
         } ],
         "sourceRef" : 8,
         "predicate" : "LLVMIntEQ"
@@ -603,6 +649,7 @@
         "typeId" : 2,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 6,
           "index" : 5
         }, {
           "kind" : "Block",
@@ -619,10 +666,12 @@
         "typeId" : 15,
         "operands" : [ {
           "kind" : "Instruction",
-          "index" : -1
+          "blockIndex" : 2,
+          "index" : 0
         }, {
           "kind" : "Instruction",
-          "index" : -1
+          "blockIndex" : 7,
+          "index" : 1
         } ],
         "sourceRef" : 8
       }, {
@@ -630,6 +679,7 @@
         "typeId" : 15,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 7,
           "index" : 0
         }, {
           "kind" : "Global",
@@ -641,6 +691,7 @@
         "typeId" : 2,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 7,
           "index" : 1
         }, {
           "kind" : "Global",
@@ -660,10 +711,12 @@
         "typeId" : 11,
         "operands" : [ {
           "kind" : "Instruction",
-          "index" : -1
+          "blockIndex" : 7,
+          "index" : 1
         }, {
           "kind" : "Instruction",
-          "index" : -1
+          "blockIndex" : 1,
+          "index" : 5
         } ],
         "sourceRef" : 8,
         "predicate" : "LLVMIntEQ"
@@ -672,6 +725,7 @@
         "typeId" : 2,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 8,
           "index" : 0
         }, {
           "kind" : "Block",
@@ -688,7 +742,8 @@
         "typeId" : 2,
         "operands" : [ {
           "kind" : "Instruction",
-          "index" : -1
+          "blockIndex" : 1,
+          "index" : 1
         }, {
           "kind" : "Global",
           "index" : 12
@@ -709,7 +764,8 @@
         "typeId" : 3,
         "operands" : [ {
           "kind" : "Instruction",
-          "index" : -1
+          "blockIndex" : 0,
+          "index" : 0
         } ],
         "sourceRef" : 7
       }, {
@@ -717,7 +773,8 @@
         "typeId" : 9,
         "operands" : [ {
           "kind" : "Instruction",
-          "index" : -1
+          "blockIndex" : 0,
+          "index" : 1
         } ],
         "sourceRef" : 7
       }, {
@@ -728,6 +785,7 @@
           "index" : 25
         }, {
           "kind" : "Instruction",
+          "blockIndex" : 10,
           "index" : 0
         } ],
         "sourceRef" : 7
@@ -736,9 +794,11 @@
         "typeId" : 21,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 10,
           "index" : 2
         }, {
           "kind" : "Instruction",
+          "blockIndex" : 10,
           "index" : 1
         } ],
         "sourceRef" : 7
@@ -747,6 +807,7 @@
         "typeId" : 2,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 10,
           "index" : 3
         } ],
         "sourceRef" : 7
@@ -765,6 +826,7 @@
         "typeId" : 3,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 11,
           "index" : 0
         } ],
         "sourceRef" : 8
@@ -773,6 +835,7 @@
         "typeId" : 2,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 11,
           "index" : 1
         }, {
           "kind" : "Global",
@@ -852,6 +915,7 @@
         "typeId" : 11,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 0,
           "index" : 2
         }, {
           "kind" : "Global",
@@ -864,6 +928,7 @@
         "typeId" : 2,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 0,
           "index" : 3
         }, {
           "kind" : "Block",
@@ -880,7 +945,8 @@
         "typeId" : 2,
         "operands" : [ {
           "kind" : "Instruction",
-          "index" : -1
+          "blockIndex" : 0,
+          "index" : 2
         }, {
           "kind" : "Global",
           "index" : 24
@@ -899,7 +965,8 @@
         "typeId" : 3,
         "operands" : [ {
           "kind" : "Instruction",
-          "index" : -1
+          "blockIndex" : 0,
+          "index" : 2
         } ],
         "sourceRef" : 10
       }, {
@@ -907,6 +974,7 @@
         "typeId" : 2,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 2,
           "index" : 0
         }, {
           "kind" : "Global",
@@ -936,6 +1004,7 @@
         "typeId" : 11,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 3,
           "index" : 0
         }, {
           "kind" : "Global",
@@ -948,6 +1017,7 @@
         "typeId" : 2,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 3,
           "index" : 1
         }, {
           "kind" : "Block",
@@ -964,7 +1034,8 @@
         "typeId" : 3,
         "operands" : [ {
           "kind" : "Instruction",
-          "index" : -1
+          "blockIndex" : 3,
+          "index" : 0
         } ],
         "sourceRef" : 11
       }, {
@@ -972,6 +1043,7 @@
         "typeId" : 3,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 4,
           "index" : 0
         }, {
           "kind" : "Global",
@@ -983,6 +1055,7 @@
         "typeId" : 20,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 4,
           "index" : 1
         } ],
         "sourceRef" : 11
@@ -991,6 +1064,7 @@
         "typeId" : 5,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 4,
           "index" : 2
         } ],
         "sourceRef" : 11
@@ -999,9 +1073,11 @@
         "typeId" : 15,
         "operands" : [ {
           "kind" : "Instruction",
-          "index" : -1
+          "blockIndex" : 3,
+          "index" : 0
         }, {
           "kind" : "Instruction",
+          "blockIndex" : 4,
           "index" : 3
         } ],
         "sourceRef" : 11
@@ -1010,9 +1086,11 @@
         "typeId" : 11,
         "operands" : [ {
           "kind" : "Instruction",
-          "index" : -1
+          "blockIndex" : 3,
+          "index" : 0
         }, {
           "kind" : "Instruction",
+          "blockIndex" : 4,
           "index" : 4
         } ],
         "sourceRef" : 11,
@@ -1022,6 +1100,7 @@
         "typeId" : 2,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 4,
           "index" : 5
         }, {
           "kind" : "Block",
@@ -1038,10 +1117,12 @@
         "typeId" : 15,
         "operands" : [ {
           "kind" : "Instruction",
-          "index" : -1
+          "blockIndex" : 4,
+          "index" : 4
         }, {
           "kind" : "Instruction",
-          "index" : -1
+          "blockIndex" : 5,
+          "index" : 1
         } ],
         "sourceRef" : 11
       }, {
@@ -1049,6 +1130,7 @@
         "typeId" : 15,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 5,
           "index" : 0
         }, {
           "kind" : "Global",
@@ -1060,6 +1142,7 @@
         "typeId" : 2,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 5,
           "index" : 1
         }, {
           "kind" : "Global",
@@ -1079,10 +1162,12 @@
         "typeId" : 11,
         "operands" : [ {
           "kind" : "Instruction",
-          "index" : -1
+          "blockIndex" : 5,
+          "index" : 1
         }, {
           "kind" : "Instruction",
-          "index" : -1
+          "blockIndex" : 3,
+          "index" : 0
         } ],
         "sourceRef" : 11,
         "predicate" : "LLVMIntEQ"
@@ -1091,6 +1176,7 @@
         "typeId" : 2,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 6,
           "index" : 0
         }, {
           "kind" : "Block",
@@ -1107,7 +1193,8 @@
         "typeId" : 2,
         "operands" : [ {
           "kind" : "Instruction",
-          "index" : -1
+          "blockIndex" : 4,
+          "index" : 1
         }, {
           "kind" : "Global",
           "index" : 12
@@ -1138,6 +1225,7 @@
         "typeId" : 3,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 9,
           "index" : 0
         } ],
         "sourceRef" : 12
@@ -1146,10 +1234,12 @@
         "typeId" : 2,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 9,
           "index" : 1
         }, {
           "kind" : "Instruction",
-          "index" : -1
+          "blockIndex" : 0,
+          "index" : 0
         } ],
         "sourceRef" : 12
       }, {
@@ -1157,6 +1247,7 @@
         "typeId" : 9,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 9,
           "index" : 0
         } ],
         "sourceRef" : 12
@@ -1165,10 +1256,12 @@
         "typeId" : 2,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 9,
           "index" : 3
         }, {
           "kind" : "Instruction",
-          "index" : -1
+          "blockIndex" : 0,
+          "index" : 1
         } ],
         "sourceRef" : 12
       }, {
@@ -1176,7 +1269,8 @@
         "typeId" : 3,
         "operands" : [ {
           "kind" : "Instruction",
-          "index" : -1
+          "blockIndex" : 0,
+          "index" : 2
         } ],
         "sourceRef" : 10
       }, {
@@ -1184,6 +1278,7 @@
         "typeId" : 2,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 9,
           "index" : 5
         }, {
           "kind" : "Global",
@@ -1209,6 +1304,7 @@
         "typeId" : 3,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 10,
           "index" : 0
         } ],
         "sourceRef" : 12
@@ -1217,10 +1313,12 @@
         "typeId" : 2,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 10,
           "index" : 1
         }, {
           "kind" : "Instruction",
-          "index" : -1
+          "blockIndex" : 0,
+          "index" : 0
         } ],
         "sourceRef" : 12
       }, {
@@ -1228,6 +1326,7 @@
         "typeId" : 9,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 10,
           "index" : 0
         } ],
         "sourceRef" : 12
@@ -1236,10 +1335,12 @@
         "typeId" : 2,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 10,
           "index" : 3
         }, {
           "kind" : "Instruction",
-          "index" : -1
+          "blockIndex" : 0,
+          "index" : 1
         } ],
         "sourceRef" : 12
       }, {
@@ -1247,10 +1348,12 @@
         "typeId" : 11,
         "operands" : [ {
           "kind" : "Instruction",
-          "index" : -1
+          "blockIndex" : 3,
+          "index" : 0
         }, {
           "kind" : "Instruction",
-          "index" : -1
+          "blockIndex" : 5,
+          "index" : 1
         } ],
         "sourceRef" : 11,
         "predicate" : "LLVMIntEQ"
@@ -1259,6 +1362,7 @@
         "typeId" : 2,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 10,
           "index" : 5
         }, {
           "kind" : "Block",
@@ -1275,10 +1379,12 @@
         "typeId" : 15,
         "operands" : [ {
           "kind" : "Instruction",
-          "index" : -1
+          "blockIndex" : 5,
+          "index" : 1
         }, {
           "kind" : "Instruction",
-          "index" : -1
+          "blockIndex" : 11,
+          "index" : 1
         } ],
         "sourceRef" : 11
       }, {
@@ -1286,6 +1392,7 @@
         "typeId" : 15,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 11,
           "index" : 0
         }, {
           "kind" : "Global",
@@ -1297,6 +1404,7 @@
         "typeId" : 2,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 11,
           "index" : 1
         }, {
           "kind" : "Global",
@@ -1316,10 +1424,12 @@
         "typeId" : 11,
         "operands" : [ {
           "kind" : "Instruction",
-          "index" : -1
+          "blockIndex" : 11,
+          "index" : 1
         }, {
           "kind" : "Instruction",
-          "index" : -1
+          "blockIndex" : 3,
+          "index" : 0
         } ],
         "sourceRef" : 11,
         "predicate" : "LLVMIntEQ"
@@ -1328,6 +1438,7 @@
         "typeId" : 2,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 12,
           "index" : 0
         }, {
           "kind" : "Block",
@@ -1344,7 +1455,8 @@
         "typeId" : 2,
         "operands" : [ {
           "kind" : "Instruction",
-          "index" : -1
+          "blockIndex" : 4,
+          "index" : 1
         }, {
           "kind" : "Global",
           "index" : 12
@@ -1365,7 +1477,8 @@
         "typeId" : 3,
         "operands" : [ {
           "kind" : "Instruction",
-          "index" : -1
+          "blockIndex" : 0,
+          "index" : 0
         } ],
         "sourceRef" : 10
       }, {
@@ -1373,7 +1486,8 @@
         "typeId" : 9,
         "operands" : [ {
           "kind" : "Instruction",
-          "index" : -1
+          "blockIndex" : 0,
+          "index" : 1
         } ],
         "sourceRef" : 10
       }, {
@@ -1384,6 +1498,7 @@
           "index" : 25
         }, {
           "kind" : "Instruction",
+          "blockIndex" : 14,
           "index" : 0
         } ],
         "sourceRef" : 10
@@ -1392,9 +1507,11 @@
         "typeId" : 21,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 14,
           "index" : 2
         }, {
           "kind" : "Instruction",
+          "blockIndex" : 14,
           "index" : 1
         } ],
         "sourceRef" : 10
@@ -1403,6 +1520,7 @@
         "typeId" : 2,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 14,
           "index" : 3
         } ],
         "sourceRef" : 10
@@ -1421,6 +1539,7 @@
         "typeId" : 3,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 15,
           "index" : 0
         } ],
         "sourceRef" : 11
@@ -1429,6 +1548,7 @@
         "typeId" : 2,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 15,
           "index" : 1
         }, {
           "kind" : "Global",

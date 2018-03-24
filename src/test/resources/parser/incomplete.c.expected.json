@@ -20,6 +20,7 @@
           "index" : 0
         }, {
           "kind" : "Instruction",
+          "blockIndex" : 0,
           "index" : 0
         } ]
       }, {

@@ -26,9 +26,11 @@
         "typeId" : 3,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 0,
           "index" : 0
         }, {
           "kind" : "Instruction",
+          "blockIndex" : 0,
           "index" : 1
         } ],
         "sourceRef" : 0
@@ -37,6 +39,7 @@
         "typeId" : 2,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 0,
           "index" : 2
         }, {
           "kind" : "Global",
@@ -56,6 +59,7 @@
         "typeId" : 5,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 0,
           "index" : 4
         } ],
         "sourceRef" : 1
@@ -72,6 +76,7 @@
         "typeId" : 5,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 0,
           "index" : 6
         } ],
         "sourceRef" : 1
@@ -80,9 +85,11 @@
         "typeId" : 5,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 0,
           "index" : 5
         }, {
           "kind" : "Instruction",
+          "blockIndex" : 0,
           "index" : 7
         } ],
         "sourceRef" : 1
@@ -91,6 +98,7 @@
         "typeId" : 3,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 0,
           "index" : 8
         } ],
         "sourceRef" : 1
@@ -99,6 +107,7 @@
         "typeId" : 2,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 0,
           "index" : 9
         }, {
           "kind" : "Global",
@@ -126,9 +135,11 @@
         "typeId" : 6,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 0,
           "index" : 11
         }, {
           "kind" : "Instruction",
+          "blockIndex" : 0,
           "index" : 12
         } ],
         "sourceRef" : 2
@@ -137,6 +148,7 @@
         "typeId" : 2,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 0,
           "index" : 13
         }, {
           "kind" : "Global",

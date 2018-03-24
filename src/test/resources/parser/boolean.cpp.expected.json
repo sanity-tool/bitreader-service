@@ -18,6 +18,7 @@
         "typeId" : 5,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 0,
           "index" : 0
         } ],
         "sourceRef" : 0
@@ -26,6 +27,7 @@
         "typeId" : 2,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 0,
           "index" : 1
         }, {
           "kind" : "Block",
@@ -50,6 +52,7 @@
         "typeId" : 5,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 1,
           "index" : 0
         } ],
         "sourceRef" : 0
@@ -70,13 +73,15 @@
           "index" : 4
         }, {
           "kind" : "Instruction",
-          "index" : -1
+          "blockIndex" : 1,
+          "index" : 1
         } ]
       }, {
         "kind" : "LLVMZExt",
         "typeId" : 3,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 2,
           "index" : 0
         } ],
         "sourceRef" : 0
@@ -85,6 +90,7 @@
         "typeId" : 2,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 2,
           "index" : 1
         }, {
           "kind" : "Global",
@@ -104,6 +110,7 @@
         "typeId" : 5,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 2,
           "index" : 3
         } ],
         "sourceRef" : 1
@@ -112,6 +119,7 @@
         "typeId" : 2,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 2,
           "index" : 4
         }, {
           "kind" : "Block",
@@ -136,6 +144,7 @@
         "typeId" : 5,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 3,
           "index" : 0
         } ],
         "sourceRef" : 1
@@ -157,13 +166,15 @@
           "index" : 6
         }, {
           "kind" : "Instruction",
-          "index" : -1
+          "blockIndex" : 3,
+          "index" : 1
         } ]
       }, {
         "kind" : "LLVMZExt",
         "typeId" : 3,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 4,
           "index" : 0
         } ],
         "sourceRef" : 1
@@ -172,6 +183,7 @@
         "typeId" : 2,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 4,
           "index" : 1
         }, {
           "kind" : "Global",

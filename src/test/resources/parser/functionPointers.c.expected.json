@@ -53,6 +53,7 @@
         "typeId" : 2,
         "operands" : [ {
           "kind" : "Instruction",
+          "blockIndex" : 0,
           "index" : 0
         } ],
         "sourceRef" : 3

@@ -70,12 +70,26 @@ public class NativeBytecodeParser {
         }
 
         List<SWIGTYPE_p_LLVMOpaqueValue> nativeBlocks = new ArrayList<>();
+        Map<SWIGTYPE_p_LLVMOpaqueValue, ValueRefDto> nativeInstructions = new HashMap<>();
         Map<SWIGTYPE_p_LLVMOpaqueBasicBlock, BlockDto> blocks = new LinkedHashMap<>();
 
         SWIGTYPE_p_LLVMOpaqueBasicBlock nativeBlock = bitreader.LLVMGetFirstBasicBlock(nativeFunction);
+        int blockIndex = 0;
         while (nativeBlock != null) {
             nativeBlocks.add(bitreader.LLVMBasicBlockAsValue(nativeBlock));
+
+            SWIGTYPE_p_LLVMOpaqueValue nativeInstruction = bitreader.LLVMGetFirstInstruction(nativeBlock);
+            int instructionIndex = 0;
+            while (nativeInstruction != null) {
+                nativeInstructions.put(nativeInstruction, new ValueRefDto(ValueRefDto.ValueRefKind.Instruction,
+                        blockIndex, instructionIndex));
+
+                nativeInstruction = bitreader.LLVMGetNextInstruction(nativeInstruction);
+                instructionIndex++;
+            }
+
             nativeBlock = bitreader.LLVMGetNextBasicBlock(nativeBlock);
+            blockIndex++;
         }
 
         ParseContext functionCtx = new ParseContextDecorator(ctx) {
@@ -83,9 +97,13 @@ public class NativeBytecodeParser {
             public ValueRefDto getValueRef(SWIGTYPE_p_LLVMOpaqueValue nativeValue) {
                 LLVMValueKind kind = bitreader.LLVMGetValueKind(nativeValue);
                 if (kind == LLVMValueKind.LLVMArgumentValueKind) {
-                    return new ValueRefDto(ValueRefDto.ValueRefKind.Argument, Preconditions.checkElementIndex(nativeParams.indexOf(nativeValue), nativeParams.size()));
+                    return new ValueRefDto(ValueRefDto.ValueRefKind.Argument, null, Preconditions.checkElementIndex(nativeParams.indexOf(nativeValue), nativeParams.size()));
                 } else if (kind == LLVMValueKind.LLVMBasicBlockValueKind) {
-                    return new ValueRefDto(ValueRefDto.ValueRefKind.Block, Preconditions.checkElementIndex(nativeBlocks.indexOf(nativeValue), nativeBlocks.size()));
+                    return new ValueRefDto(ValueRefDto.ValueRefKind.Block, null, Preconditions.checkElementIndex(nativeBlocks.indexOf(nativeValue), nativeBlocks.size()));
+                } else if (kind == LLVMValueKind.LLVMInstructionValueKind) {
+                    return nativeInstructions.computeIfAbsent(nativeValue, v -> {
+                        throw new NoSuchElementException(bitreader.LLVMGetValueName(v));
+                    });
                 } else {
                     return super.getValueRef(nativeValue);
                 }
@@ -106,25 +124,10 @@ public class NativeBytecodeParser {
 
     private BlockDto toBlock(ParseContext ctx, SWIGTYPE_p_LLVMOpaqueBasicBlock nativeBlock) {
         Map<SWIGTYPE_p_LLVMOpaqueValue, InstructionDto> instructions = new LinkedHashMap<>();
-        List<SWIGTYPE_p_LLVMOpaqueValue> nativeInstructions = new ArrayList<>();
-
-        ParseContext blockCtx = new ParseContextDecorator(ctx) {
-            @Override
-            public ValueRefDto getValueRef(SWIGTYPE_p_LLVMOpaqueValue nativeValue) {
-                LLVMValueKind kind = bitreader.LLVMGetValueKind(nativeValue);
-
-                if (kind == LLVMValueKind.LLVMInstructionValueKind) {
-                    return new ValueRefDto(ValueRefDto.ValueRefKind.Instruction, nativeInstructions.indexOf(nativeValue));
-                }
-
-                return super.getValueRef(nativeValue);
-            }
-        };
 
         SWIGTYPE_p_LLVMOpaqueValue nativeInstruction = bitreader.LLVMGetFirstInstruction(nativeBlock);
         while (nativeInstruction != null) {
-            nativeInstructions.add(nativeInstruction);
-            instructions.put(nativeInstruction, toInstruction(blockCtx, nativeInstruction));
+            instructions.put(nativeInstruction, toInstruction(ctx, nativeInstruction));
 
             nativeInstruction = bitreader.LLVMGetNextInstruction(nativeInstruction);
         }
@@ -229,7 +232,7 @@ public class NativeBytecodeParser {
                 throw new IllegalArgumentException("Unsupported type: " + kind);
             }
 
-            valueRef = new ValueRefDto(ValueRefDto.ValueRefKind.Global, globalValues.size());
+            valueRef = new ValueRefDto(ValueRefDto.ValueRefKind.Global, null, globalValues.size());
             globalValues.add(value);
             globalValueIds.put(nativeValue, valueRef);
 
