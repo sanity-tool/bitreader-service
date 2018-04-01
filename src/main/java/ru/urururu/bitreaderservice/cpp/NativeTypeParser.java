@@ -27,6 +27,7 @@ public class NativeTypeParser {
         parsers.put(LLVMTypeKind.LLVMPointerTypeKind, this::createPointer);
         parsers.put(LLVMTypeKind.LLVMMetadataTypeKind, this::createPrimitive);
         parsers.put(LLVMTypeKind.LLVMLabelTypeKind, this::createPrimitive);
+        parsers.put(LLVMTypeKind.LLVMTokenTypeKind, this::createPrimitive);
     }
 
     private TypeDto createPrimitive(ParseContext ctx, SWIGTYPE_p_LLVMOpaqueType nativeType) {
