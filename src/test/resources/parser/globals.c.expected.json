@@ -2,23 +2,23 @@
   "functions" : [ {
     "ref" : {
       "kind" : "Global",
-      "index" : 0
+      "index" : 4
     },
     "blocks" : [ {
       "instructions" : [ {
         "kind" : "LLVMStore",
-        "typeId" : 2,
+        "typeId" : 5,
         "operands" : [ {
           "kind" : "Global",
-          "index" : 1
+          "index" : 5
         }, {
           "kind" : "Global",
-          "index" : 3
+          "index" : 1
         } ],
         "sourceRef" : 0
       }, {
         "kind" : "LLVMRet",
-        "typeId" : 2,
+        "typeId" : 5,
         "sourceRef" : 1
       } ]
     } ],
@@ -26,23 +26,23 @@
   }, {
     "ref" : {
       "kind" : "Global",
-      "index" : 4
+      "index" : 6
     },
     "blocks" : [ {
       "instructions" : [ {
         "kind" : "LLVMStore",
-        "typeId" : 2,
+        "typeId" : 5,
         "operands" : [ {
           "kind" : "Global",
-          "index" : 5
+          "index" : 2
         }, {
           "kind" : "Global",
-          "index" : 6
+          "index" : 3
         } ],
         "sourceRef" : 2
       }, {
         "kind" : "LLVMRet",
-        "typeId" : 2,
+        "typeId" : 5,
         "sourceRef" : 3
       } ]
     } ],
@@ -52,55 +52,55 @@
     "kind" : "LLVMPointerTypeKind",
     "types" : [ 1 ]
   }, {
-    "kind" : "LLVMFunctionTypeKind",
-    "types" : [ 2 ]
-  }, {
-    "kind" : "LLVMVoidTypeKind"
-  }, {
     "kind" : "LLVMIntegerTypeKind",
     "len" : 32
   }, {
     "kind" : "LLVMPointerTypeKind",
-    "types" : [ 3 ]
+    "types" : [ 0 ]
   }, {
     "kind" : "LLVMPointerTypeKind",
     "types" : [ 4 ]
+  }, {
+    "kind" : "LLVMFunctionTypeKind",
+    "types" : [ 5 ]
+  }, {
+    "kind" : "LLVMVoidTypeKind"
   } ],
   "globals" : [ {
-    "kind" : "LLVMFunctionValueKind",
-    "name" : "writeToGlobalInt",
-    "typeId" : 0
-  }, {
     "kind" : "LLVMConstantIntValueKind",
-    "typeId" : 3,
-    "intValue" : 1
-  }, {
-    "kind" : "LLVMConstantIntValueKind",
-    "typeId" : 3,
+    "typeId" : 1,
     "intValue" : 0
   }, {
     "kind" : "LLVMGlobalVariableValueKind",
     "name" : "I",
-    "typeId" : 4,
+    "typeId" : 0,
+    "operands" : [ {
+      "kind" : "Global",
+      "index" : 0
+    } ]
+  }, {
+    "kind" : "LLVMConstantPointerNullValueKind",
+    "typeId" : 0
+  }, {
+    "kind" : "LLVMGlobalVariableValueKind",
+    "name" : "I_P",
+    "typeId" : 2,
     "operands" : [ {
       "kind" : "Global",
       "index" : 2
     } ]
   }, {
     "kind" : "LLVMFunctionValueKind",
+    "name" : "writeToGlobalInt",
+    "typeId" : 3
+  }, {
+    "kind" : "LLVMConstantIntValueKind",
+    "typeId" : 1,
+    "intValue" : 1
+  }, {
+    "kind" : "LLVMFunctionValueKind",
     "name" : "writeToGlobalIntPointer",
-    "typeId" : 0
-  }, {
-    "kind" : "LLVMConstantPointerNullValueKind",
-    "typeId" : 4
-  }, {
-    "kind" : "LLVMGlobalVariableValueKind",
-    "name" : "I_P",
-    "typeId" : 5,
-    "operands" : [ {
-      "kind" : "Global",
-      "index" : 5
-    } ]
+    "typeId" : 3
   } ],
   "sourceRefs" : [ {
     "file" : "parser/globals.c",

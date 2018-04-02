@@ -2,34 +2,34 @@
   "functions" : [ {
     "ref" : {
       "kind" : "Global",
-      "index" : 0
+      "index" : 2
     },
     "blocks" : [ {
       "instructions" : [ {
         "kind" : "LLVMStore",
-        "typeId" : 2,
+        "typeId" : 3,
         "operands" : [ {
           "kind" : "Global",
-          "index" : 1
+          "index" : 3
         }, {
           "kind" : "Global",
-          "index" : 3
+          "index" : 1
         } ],
         "sourceRef" : 0
       }, {
         "kind" : "LLVMStore",
-        "typeId" : 2,
+        "typeId" : 3,
         "operands" : [ {
           "kind" : "Global",
-          "index" : 1
+          "index" : 3
         }, {
           "kind" : "Global",
-          "index" : 3
+          "index" : 1
         } ],
         "sourceRef" : 1
       }, {
         "kind" : "LLVMRet",
-        "typeId" : 2,
+        "typeId" : 3,
         "sourceRef" : 2
       } ]
     } ],
@@ -42,15 +42,15 @@
     "blocks" : [ {
       "instructions" : [ {
         "kind" : "LLVMLoad",
-        "typeId" : 3,
+        "typeId" : 1,
         "operands" : [ {
           "kind" : "Global",
-          "index" : 3
+          "index" : 1
         } ],
         "sourceRef" : 3
       }, {
         "kind" : "LLVMCall",
-        "typeId" : 2,
+        "typeId" : 3,
         "operands" : [ {
           "kind" : "Instruction",
           "blockIndex" : 0,
@@ -59,7 +59,7 @@
         "sourceRef" : 3
       }, {
         "kind" : "LLVMRet",
-        "typeId" : 2,
+        "typeId" : 3,
         "sourceRef" : 4
       } ]
     } ],
@@ -69,43 +69,43 @@
     "kind" : "LLVMPointerTypeKind",
     "types" : [ 1 ]
   }, {
-    "kind" : "LLVMFunctionTypeKind",
+    "kind" : "LLVMPointerTypeKind",
     "types" : [ 2 ]
+  }, {
+    "kind" : "LLVMFunctionTypeKind",
+    "types" : [ 3 ]
   }, {
     "kind" : "LLVMVoidTypeKind"
   }, {
     "kind" : "LLVMPointerTypeKind",
-    "types" : [ 4 ]
+    "types" : [ 5 ]
   }, {
     "kind" : "LLVMFunctionTypeKind",
-    "types" : [ 2 ]
-  }, {
-    "kind" : "LLVMPointerTypeKind",
     "types" : [ 3 ]
   } ],
   "globals" : [ {
-    "kind" : "LLVMFunctionValueKind",
-    "name" : "takeAddress",
-    "typeId" : 0
-  }, {
-    "kind" : "LLVMFunctionValueKind",
-    "name" : "function",
-    "typeId" : 3
-  }, {
     "kind" : "LLVMConstantPointerNullValueKind",
-    "typeId" : 3
+    "typeId" : 1
   }, {
     "kind" : "LLVMGlobalVariableValueKind",
     "name" : "FPTR",
-    "typeId" : 5,
+    "typeId" : 0,
     "operands" : [ {
       "kind" : "Global",
-      "index" : 2
+      "index" : 0
     } ]
   }, {
     "kind" : "LLVMFunctionValueKind",
+    "name" : "takeAddress",
+    "typeId" : 4
+  }, {
+    "kind" : "LLVMFunctionValueKind",
+    "name" : "function",
+    "typeId" : 1
+  }, {
+    "kind" : "LLVMFunctionValueKind",
     "name" : "callFromPointer",
-    "typeId" : 0
+    "typeId" : 4
   } ],
   "sourceRefs" : [ {
     "file" : "parser/functionPointers.c",

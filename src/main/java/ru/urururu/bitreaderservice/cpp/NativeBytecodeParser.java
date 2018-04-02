@@ -27,8 +27,8 @@ public class NativeBytecodeParser {
             return null;
         }
 
+        parserListeners.forEach(l -> l.onModuleStarted(m));
         try {
-            parserListeners.forEach(l -> l.onModuleStarted(m));
             return toModule(m);
         } finally {
             parserListeners.forEach(l -> l.onModuleFinished(m));
@@ -38,6 +38,12 @@ public class NativeBytecodeParser {
 
     private ModuleDto toModule(SWIGTYPE_p_LLVMOpaqueModule nativeModule) {
         ModuleParseContext ctx = new ModuleParseContext();
+
+        SWIGTYPE_p_LLVMOpaqueValue nativeGlobal = bitreader.LLVMGetFirstGlobal(nativeModule);
+        while (nativeGlobal != null) {
+            ctx.getValueRef(nativeGlobal);
+            nativeGlobal = bitreader.LLVMGetNextGlobal(nativeGlobal);
+        }
 
         Map<ValueRefDto, FunctionDto> functions = new LinkedHashMap<>();
 

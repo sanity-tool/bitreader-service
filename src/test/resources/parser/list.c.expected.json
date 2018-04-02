@@ -2,20 +2,20 @@
   "functions" : [ {
     "ref" : {
       "kind" : "Global",
-      "index" : 0
+      "index" : 2
     },
     "blocks" : [ {
       "instructions" : [ {
         "kind" : "LLVMLoad",
-        "typeId" : 3,
+        "typeId" : 1,
         "operands" : [ {
           "kind" : "Global",
-          "index" : 2
+          "index" : 1
         } ],
         "sourceRef" : 0
       }, {
         "kind" : "LLVMGetElementPtr",
-        "typeId" : 5,
+        "typeId" : 0,
         "operands" : [ {
           "kind" : "Instruction",
           "blockIndex" : 0,
@@ -30,7 +30,7 @@
         "sourceRef" : 0
       }, {
         "kind" : "LLVMLoad",
-        "typeId" : 3,
+        "typeId" : 1,
         "operands" : [ {
           "kind" : "Instruction",
           "blockIndex" : 0,
@@ -39,19 +39,19 @@
         "sourceRef" : 0
       }, {
         "kind" : "LLVMStore",
-        "typeId" : 2,
+        "typeId" : 5,
         "operands" : [ {
           "kind" : "Instruction",
           "blockIndex" : 0,
           "index" : 2
         }, {
           "kind" : "Global",
-          "index" : 2
+          "index" : 1
         } ],
         "sourceRef" : 0
       }, {
         "kind" : "LLVMRet",
-        "typeId" : 2,
+        "typeId" : 5,
         "sourceRef" : 1
       } ]
     } ],
@@ -61,39 +61,39 @@
     "kind" : "LLVMPointerTypeKind",
     "types" : [ 1 ]
   }, {
-    "kind" : "LLVMFunctionTypeKind",
+    "kind" : "LLVMPointerTypeKind",
     "types" : [ 2 ]
   }, {
-    "kind" : "LLVMVoidTypeKind"
+    "kind" : "LLVMStructTypeKind",
+    "name" : "struct.List",
+    "types" : [ 1 ]
   }, {
     "kind" : "LLVMPointerTypeKind",
     "types" : [ 4 ]
   }, {
-    "kind" : "LLVMStructTypeKind",
-    "name" : "struct.List",
-    "types" : [ 3 ]
+    "kind" : "LLVMFunctionTypeKind",
+    "types" : [ 5 ]
   }, {
-    "kind" : "LLVMPointerTypeKind",
-    "types" : [ 3 ]
+    "kind" : "LLVMVoidTypeKind"
   }, {
     "kind" : "LLVMIntegerTypeKind",
     "len" : 32
   } ],
   "globals" : [ {
-    "kind" : "LLVMFunctionValueKind",
-    "name" : "switchToNext",
-    "typeId" : 0
-  }, {
     "kind" : "LLVMConstantPointerNullValueKind",
-    "typeId" : 3
+    "typeId" : 1
   }, {
     "kind" : "LLVMGlobalVariableValueKind",
     "name" : "PLIST",
-    "typeId" : 5,
+    "typeId" : 0,
     "operands" : [ {
       "kind" : "Global",
-      "index" : 1
+      "index" : 0
     } ]
+  }, {
+    "kind" : "LLVMFunctionValueKind",
+    "name" : "switchToNext",
+    "typeId" : 3
   }, {
     "kind" : "LLVMConstantIntValueKind",
     "typeId" : 6,

@@ -2,28 +2,28 @@
   "functions" : [ {
     "ref" : {
       "kind" : "Global",
-      "index" : 0
+      "index" : 11
     },
     "blocks" : [ {
       "instructions" : [ {
         "kind" : "LLVMLoad",
-        "typeId" : 3,
+        "typeId" : 1,
+        "operands" : [ {
+          "kind" : "Global",
+          "index" : 1
+        } ],
+        "sourceRef" : 0
+      }, {
+        "kind" : "LLVMLoad",
+        "typeId" : 1,
         "operands" : [ {
           "kind" : "Global",
           "index" : 2
         } ],
         "sourceRef" : 0
       }, {
-        "kind" : "LLVMLoad",
-        "typeId" : 3,
-        "operands" : [ {
-          "kind" : "Global",
-          "index" : 3
-        } ],
-        "sourceRef" : 0
-      }, {
         "kind" : "LLVMFRem",
-        "typeId" : 3,
+        "typeId" : 1,
         "operands" : [ {
           "kind" : "Instruction",
           "blockIndex" : 0,
@@ -36,19 +36,36 @@
         "sourceRef" : 0
       }, {
         "kind" : "LLVMStore",
-        "typeId" : 2,
+        "typeId" : 6,
         "operands" : [ {
           "kind" : "Instruction",
           "blockIndex" : 0,
           "index" : 2
         }, {
           "kind" : "Global",
-          "index" : 4
+          "index" : 3
         } ],
         "sourceRef" : 0
       }, {
         "kind" : "LLVMLoad",
-        "typeId" : 3,
+        "typeId" : 1,
+        "operands" : [ {
+          "kind" : "Global",
+          "index" : 4
+        } ],
+        "sourceRef" : 1
+      }, {
+        "kind" : "LLVMFPExt",
+        "typeId" : 7,
+        "operands" : [ {
+          "kind" : "Instruction",
+          "blockIndex" : 0,
+          "index" : 4
+        } ],
+        "sourceRef" : 1
+      }, {
+        "kind" : "LLVMLoad",
+        "typeId" : 1,
         "operands" : [ {
           "kind" : "Global",
           "index" : 5
@@ -56,24 +73,7 @@
         "sourceRef" : 1
       }, {
         "kind" : "LLVMFPExt",
-        "typeId" : 5,
-        "operands" : [ {
-          "kind" : "Instruction",
-          "blockIndex" : 0,
-          "index" : 4
-        } ],
-        "sourceRef" : 1
-      }, {
-        "kind" : "LLVMLoad",
-        "typeId" : 3,
-        "operands" : [ {
-          "kind" : "Global",
-          "index" : 6
-        } ],
-        "sourceRef" : 1
-      }, {
-        "kind" : "LLVMFPExt",
-        "typeId" : 5,
+        "typeId" : 7,
         "operands" : [ {
           "kind" : "Instruction",
           "blockIndex" : 0,
@@ -82,7 +82,7 @@
         "sourceRef" : 1
       }, {
         "kind" : "LLVMFRem",
-        "typeId" : 5,
+        "typeId" : 7,
         "operands" : [ {
           "kind" : "Instruction",
           "blockIndex" : 0,
@@ -95,7 +95,7 @@
         "sourceRef" : 1
       }, {
         "kind" : "LLVMFPTrunc",
-        "typeId" : 3,
+        "typeId" : 1,
         "operands" : [ {
           "kind" : "Instruction",
           "blockIndex" : 0,
@@ -104,35 +104,35 @@
         "sourceRef" : 1
       }, {
         "kind" : "LLVMStore",
-        "typeId" : 2,
+        "typeId" : 6,
         "operands" : [ {
           "kind" : "Instruction",
           "blockIndex" : 0,
           "index" : 9
         }, {
           "kind" : "Global",
-          "index" : 7
+          "index" : 6
         } ],
         "sourceRef" : 1
       }, {
         "kind" : "LLVMLoad",
-        "typeId" : 6,
+        "typeId" : 3,
+        "operands" : [ {
+          "kind" : "Global",
+          "index" : 8
+        } ],
+        "sourceRef" : 2
+      }, {
+        "kind" : "LLVMLoad",
+        "typeId" : 3,
         "operands" : [ {
           "kind" : "Global",
           "index" : 9
         } ],
         "sourceRef" : 2
       }, {
-        "kind" : "LLVMLoad",
-        "typeId" : 6,
-        "operands" : [ {
-          "kind" : "Global",
-          "index" : 10
-        } ],
-        "sourceRef" : 2
-      }, {
         "kind" : "LLVMFRem",
-        "typeId" : 6,
+        "typeId" : 3,
         "operands" : [ {
           "kind" : "Instruction",
           "blockIndex" : 0,
@@ -145,19 +145,19 @@
         "sourceRef" : 2
       }, {
         "kind" : "LLVMStore",
-        "typeId" : 2,
+        "typeId" : 6,
         "operands" : [ {
           "kind" : "Instruction",
           "blockIndex" : 0,
           "index" : 13
         }, {
           "kind" : "Global",
-          "index" : 11
+          "index" : 10
         } ],
         "sourceRef" : 2
       }, {
         "kind" : "LLVMRet",
-        "typeId" : 2,
+        "typeId" : 6,
         "sourceRef" : 3
       } ]
     } ],
@@ -167,107 +167,107 @@
     "kind" : "LLVMPointerTypeKind",
     "types" : [ 1 ]
   }, {
-    "kind" : "LLVMFunctionTypeKind",
-    "types" : [ 2 ]
-  }, {
-    "kind" : "LLVMVoidTypeKind"
-  }, {
     "kind" : "LLVMFloatTypeKind"
   }, {
     "kind" : "LLVMPointerTypeKind",
     "types" : [ 3 ]
   }, {
-    "kind" : "LLVMDoubleTypeKind"
-  }, {
     "kind" : "LLVMX86_FP80TypeKind"
   }, {
     "kind" : "LLVMPointerTypeKind",
+    "types" : [ 5 ]
+  }, {
+    "kind" : "LLVMFunctionTypeKind",
     "types" : [ 6 ]
+  }, {
+    "kind" : "LLVMVoidTypeKind"
+  }, {
+    "kind" : "LLVMDoubleTypeKind"
   } ],
   "globals" : [ {
-    "kind" : "LLVMFunctionValueKind",
-    "name" : "testFloatBuiltinOps",
-    "typeId" : 0
+    "kind" : "LLVMConstantFPValueKind",
+    "typeId" : 1,
+    "fpValue" : 0.0
+  }, {
+    "kind" : "LLVMGlobalVariableValueKind",
+    "name" : "F0",
+    "typeId" : 0,
+    "operands" : [ {
+      "kind" : "Global",
+      "index" : 0
+    } ]
+  }, {
+    "kind" : "LLVMGlobalVariableValueKind",
+    "name" : "F1",
+    "typeId" : 0,
+    "operands" : [ {
+      "kind" : "Global",
+      "index" : 0
+    } ]
+  }, {
+    "kind" : "LLVMGlobalVariableValueKind",
+    "name" : "FR",
+    "typeId" : 0,
+    "operands" : [ {
+      "kind" : "Global",
+      "index" : 0
+    } ]
+  }, {
+    "kind" : "LLVMGlobalVariableValueKind",
+    "name" : "D0",
+    "typeId" : 0,
+    "operands" : [ {
+      "kind" : "Global",
+      "index" : 0
+    } ]
+  }, {
+    "kind" : "LLVMGlobalVariableValueKind",
+    "name" : "D1",
+    "typeId" : 0,
+    "operands" : [ {
+      "kind" : "Global",
+      "index" : 0
+    } ]
+  }, {
+    "kind" : "LLVMGlobalVariableValueKind",
+    "name" : "DR",
+    "typeId" : 0,
+    "operands" : [ {
+      "kind" : "Global",
+      "index" : 0
+    } ]
   }, {
     "kind" : "LLVMConstantFPValueKind",
     "typeId" : 3,
     "fpValue" : 0.0
   }, {
     "kind" : "LLVMGlobalVariableValueKind",
-    "name" : "F0",
-    "typeId" : 4,
-    "operands" : [ {
-      "kind" : "Global",
-      "index" : 1
-    } ]
-  }, {
-    "kind" : "LLVMGlobalVariableValueKind",
-    "name" : "F1",
-    "typeId" : 4,
-    "operands" : [ {
-      "kind" : "Global",
-      "index" : 1
-    } ]
-  }, {
-    "kind" : "LLVMGlobalVariableValueKind",
-    "name" : "FR",
-    "typeId" : 4,
-    "operands" : [ {
-      "kind" : "Global",
-      "index" : 1
-    } ]
-  }, {
-    "kind" : "LLVMGlobalVariableValueKind",
-    "name" : "D0",
-    "typeId" : 4,
-    "operands" : [ {
-      "kind" : "Global",
-      "index" : 1
-    } ]
-  }, {
-    "kind" : "LLVMGlobalVariableValueKind",
-    "name" : "D1",
-    "typeId" : 4,
-    "operands" : [ {
-      "kind" : "Global",
-      "index" : 1
-    } ]
-  }, {
-    "kind" : "LLVMGlobalVariableValueKind",
-    "name" : "DR",
-    "typeId" : 4,
-    "operands" : [ {
-      "kind" : "Global",
-      "index" : 1
-    } ]
-  }, {
-    "kind" : "LLVMConstantFPValueKind",
-    "typeId" : 6,
-    "fpValue" : 0.0
-  }, {
-    "kind" : "LLVMGlobalVariableValueKind",
     "name" : "LD0",
-    "typeId" : 7,
+    "typeId" : 2,
     "operands" : [ {
       "kind" : "Global",
-      "index" : 8
+      "index" : 7
     } ]
   }, {
     "kind" : "LLVMGlobalVariableValueKind",
     "name" : "LD1",
-    "typeId" : 7,
+    "typeId" : 2,
     "operands" : [ {
       "kind" : "Global",
-      "index" : 8
+      "index" : 7
     } ]
   }, {
     "kind" : "LLVMGlobalVariableValueKind",
     "name" : "LDR",
-    "typeId" : 7,
+    "typeId" : 2,
     "operands" : [ {
       "kind" : "Global",
-      "index" : 8
+      "index" : 7
     } ]
+  }, {
+    "kind" : "LLVMFunctionValueKind",
+    "name" : "testFloatBuiltinOps",
+    "typeId" : 4
   } ],
   "sourceRefs" : [ {
     "file" : "parser/builtins.c",

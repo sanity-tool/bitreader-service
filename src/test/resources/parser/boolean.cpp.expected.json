@@ -2,12 +2,12 @@
   "functions" : [ {
     "ref" : {
       "kind" : "Global",
-      "index" : 0
+      "index" : 4
     },
     "blocks" : [ {
       "instructions" : [ {
         "kind" : "LLVMLoad",
-        "typeId" : 3,
+        "typeId" : 1,
         "operands" : [ {
           "kind" : "Global",
           "index" : 2
@@ -24,7 +24,7 @@
         "sourceRef" : 0
       }, {
         "kind" : "LLVMBr",
-        "typeId" : 2,
+        "typeId" : 4,
         "operands" : [ {
           "kind" : "Instruction",
           "blockIndex" : 0,
@@ -41,7 +41,7 @@
     }, {
       "instructions" : [ {
         "kind" : "LLVMLoad",
-        "typeId" : 3,
+        "typeId" : 1,
         "operands" : [ {
           "kind" : "Global",
           "index" : 3
@@ -58,7 +58,7 @@
         "sourceRef" : 0
       }, {
         "kind" : "LLVMBr",
-        "typeId" : 2,
+        "typeId" : 4,
         "operands" : [ {
           "kind" : "Block",
           "index" : 2
@@ -70,7 +70,7 @@
         "typeId" : 5,
         "operands" : [ {
           "kind" : "Global",
-          "index" : 4
+          "index" : 5
         }, {
           "kind" : "Instruction",
           "blockIndex" : 1,
@@ -78,7 +78,7 @@
         } ],
         "incomingValues" : [ {
           "kind" : "Global",
-          "index" : 4
+          "index" : 5
         }, {
           "kind" : "Instruction",
           "blockIndex" : 1,
@@ -93,7 +93,7 @@
         } ]
       }, {
         "kind" : "LLVMZExt",
-        "typeId" : 3,
+        "typeId" : 1,
         "operands" : [ {
           "kind" : "Instruction",
           "blockIndex" : 2,
@@ -102,19 +102,19 @@
         "sourceRef" : 0
       }, {
         "kind" : "LLVMStore",
-        "typeId" : 2,
+        "typeId" : 4,
         "operands" : [ {
           "kind" : "Instruction",
           "blockIndex" : 2,
           "index" : 1
         }, {
           "kind" : "Global",
-          "index" : 5
+          "index" : 1
         } ],
         "sourceRef" : 0
       }, {
         "kind" : "LLVMLoad",
-        "typeId" : 3,
+        "typeId" : 1,
         "operands" : [ {
           "kind" : "Global",
           "index" : 2
@@ -131,7 +131,7 @@
         "sourceRef" : 1
       }, {
         "kind" : "LLVMBr",
-        "typeId" : 2,
+        "typeId" : 4,
         "operands" : [ {
           "kind" : "Instruction",
           "blockIndex" : 2,
@@ -148,7 +148,7 @@
     }, {
       "instructions" : [ {
         "kind" : "LLVMLoad",
-        "typeId" : 3,
+        "typeId" : 1,
         "operands" : [ {
           "kind" : "Global",
           "index" : 3
@@ -165,7 +165,7 @@
         "sourceRef" : 1
       }, {
         "kind" : "LLVMBr",
-        "typeId" : 2,
+        "typeId" : 4,
         "operands" : [ {
           "kind" : "Block",
           "index" : 4
@@ -201,7 +201,7 @@
         } ]
       }, {
         "kind" : "LLVMZExt",
-        "typeId" : 3,
+        "typeId" : 1,
         "operands" : [ {
           "kind" : "Instruction",
           "blockIndex" : 4,
@@ -210,19 +210,19 @@
         "sourceRef" : 1
       }, {
         "kind" : "LLVMStore",
-        "typeId" : 2,
+        "typeId" : 4,
         "operands" : [ {
           "kind" : "Instruction",
           "blockIndex" : 4,
           "index" : 1
         }, {
           "kind" : "Global",
-          "index" : 5
+          "index" : 1
         } ],
         "sourceRef" : 1
       }, {
         "kind" : "LLVMRet",
-        "typeId" : 2,
+        "typeId" : 4,
         "sourceRef" : 2
       } ]
     } ],
@@ -232,56 +232,56 @@
     "kind" : "LLVMPointerTypeKind",
     "types" : [ 1 ]
   }, {
-    "kind" : "LLVMFunctionTypeKind",
-    "types" : [ 2 ]
-  }, {
-    "kind" : "LLVMVoidTypeKind"
-  }, {
     "kind" : "LLVMIntegerTypeKind",
     "len" : 8
   }, {
     "kind" : "LLVMPointerTypeKind",
     "types" : [ 3 ]
   }, {
+    "kind" : "LLVMFunctionTypeKind",
+    "types" : [ 4 ]
+  }, {
+    "kind" : "LLVMVoidTypeKind"
+  }, {
     "kind" : "LLVMIntegerTypeKind",
     "len" : 1
   } ],
   "globals" : [ {
-    "kind" : "LLVMFunctionValueKind",
-    "name" : "_ZL15testBoolLogicalv",
-    "typeId" : 0
-  }, {
     "kind" : "LLVMConstantIntValueKind",
-    "typeId" : 3,
-    "intValue" : 0
-  }, {
-    "kind" : "LLVMGlobalVariableValueKind",
-    "name" : "_ZL2B0",
-    "typeId" : 4,
-    "operands" : [ {
-      "kind" : "Global",
-      "index" : 1
-    } ]
-  }, {
-    "kind" : "LLVMGlobalVariableValueKind",
-    "name" : "_ZL2B1",
-    "typeId" : 4,
-    "operands" : [ {
-      "kind" : "Global",
-      "index" : 1
-    } ]
-  }, {
-    "kind" : "LLVMConstantIntValueKind",
-    "typeId" : 5,
+    "typeId" : 1,
     "intValue" : 0
   }, {
     "kind" : "LLVMGlobalVariableValueKind",
     "name" : "_ZL2BR",
-    "typeId" : 4,
+    "typeId" : 0,
     "operands" : [ {
       "kind" : "Global",
-      "index" : 1
+      "index" : 0
     } ]
+  }, {
+    "kind" : "LLVMGlobalVariableValueKind",
+    "name" : "_ZL2B0",
+    "typeId" : 0,
+    "operands" : [ {
+      "kind" : "Global",
+      "index" : 0
+    } ]
+  }, {
+    "kind" : "LLVMGlobalVariableValueKind",
+    "name" : "_ZL2B1",
+    "typeId" : 0,
+    "operands" : [ {
+      "kind" : "Global",
+      "index" : 0
+    } ]
+  }, {
+    "kind" : "LLVMFunctionValueKind",
+    "name" : "_ZL15testBoolLogicalv",
+    "typeId" : 2
+  }, {
+    "kind" : "LLVMConstantIntValueKind",
+    "typeId" : 5,
+    "intValue" : 0
   }, {
     "kind" : "LLVMConstantIntValueKind",
     "typeId" : 5,

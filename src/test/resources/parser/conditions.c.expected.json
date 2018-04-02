@@ -2,33 +2,33 @@
   "functions" : [ {
     "ref" : {
       "kind" : "Global",
-      "index" : 0
+      "index" : 4
     },
     "blocks" : [ {
       "instructions" : [ {
         "kind" : "LLVMLoad",
-        "typeId" : 3,
+        "typeId" : 1,
         "operands" : [ {
           "kind" : "Global",
-          "index" : 2
+          "index" : 1
         } ],
         "sourceRef" : 0
       }, {
         "kind" : "LLVMICmp",
-        "typeId" : 5,
+        "typeId" : 6,
         "operands" : [ {
           "kind" : "Instruction",
           "blockIndex" : 0,
           "index" : 0
         }, {
           "kind" : "Global",
-          "index" : 1
+          "index" : 0
         } ],
         "sourceRef" : 0,
         "predicate" : "LLVMIntNE"
       }, {
         "kind" : "LLVMBr",
-        "typeId" : 2,
+        "typeId" : 5,
         "operands" : [ {
           "kind" : "Instruction",
           "blockIndex" : 0,
@@ -45,15 +45,15 @@
     }, {
       "instructions" : [ {
         "kind" : "LLVMCall",
-        "typeId" : 2,
+        "typeId" : 5,
         "operands" : [ {
           "kind" : "Global",
-          "index" : 3
+          "index" : 5
         } ],
         "sourceRef" : 1
       }, {
         "kind" : "LLVMBr",
-        "typeId" : 2,
+        "typeId" : 5,
         "operands" : [ {
           "kind" : "Block",
           "index" : 2
@@ -63,94 +63,8 @@
     }, {
       "instructions" : [ {
         "kind" : "LLVMRet",
-        "typeId" : 2,
-        "sourceRef" : 3
-      } ]
-    } ],
-    "entryBlockIndex" : 0
-  }, {
-    "ref" : {
-      "kind" : "Global",
-      "index" : 4
-    },
-    "blocks" : [ {
-      "instructions" : [ {
-        "kind" : "LLVMLoad",
-        "typeId" : 3,
-        "operands" : [ {
-          "kind" : "Global",
-          "index" : 2
-        } ],
-        "sourceRef" : 4
-      }, {
-        "kind" : "LLVMICmp",
         "typeId" : 5,
-        "operands" : [ {
-          "kind" : "Instruction",
-          "blockIndex" : 0,
-          "index" : 0
-        }, {
-          "kind" : "Global",
-          "index" : 1
-        } ],
-        "sourceRef" : 4,
-        "predicate" : "LLVMIntNE"
-      }, {
-        "kind" : "LLVMBr",
-        "typeId" : 2,
-        "operands" : [ {
-          "kind" : "Instruction",
-          "blockIndex" : 0,
-          "index" : 1
-        }, {
-          "kind" : "Block",
-          "index" : 2
-        }, {
-          "kind" : "Block",
-          "index" : 1
-        } ],
-        "sourceRef" : 4
-      } ]
-    }, {
-      "instructions" : [ {
-        "kind" : "LLVMCall",
-        "typeId" : 2,
-        "operands" : [ {
-          "kind" : "Global",
-          "index" : 3
-        } ],
-        "sourceRef" : 5
-      }, {
-        "kind" : "LLVMBr",
-        "typeId" : 2,
-        "operands" : [ {
-          "kind" : "Block",
-          "index" : 3
-        } ],
-        "sourceRef" : 6
-      } ]
-    }, {
-      "instructions" : [ {
-        "kind" : "LLVMCall",
-        "typeId" : 2,
-        "operands" : [ {
-          "kind" : "Global",
-          "index" : 5
-        } ],
-        "sourceRef" : 7
-      }, {
-        "kind" : "LLVMBr",
-        "typeId" : 2,
-        "operands" : [ {
-          "kind" : "Block",
-          "index" : 3
-        } ]
-      } ]
-    }, {
-      "instructions" : [ {
-        "kind" : "LLVMRet",
-        "typeId" : 2,
-        "sourceRef" : 8
+        "sourceRef" : 3
       } ]
     } ],
     "entryBlockIndex" : 0
@@ -162,28 +76,114 @@
     "blocks" : [ {
       "instructions" : [ {
         "kind" : "LLVMLoad",
-        "typeId" : 3,
+        "typeId" : 1,
         "operands" : [ {
           "kind" : "Global",
-          "index" : 2
+          "index" : 1
         } ],
-        "sourceRef" : 9
+        "sourceRef" : 4
       }, {
         "kind" : "LLVMICmp",
-        "typeId" : 5,
+        "typeId" : 6,
         "operands" : [ {
           "kind" : "Instruction",
           "blockIndex" : 0,
           "index" : 0
         }, {
           "kind" : "Global",
+          "index" : 0
+        } ],
+        "sourceRef" : 4,
+        "predicate" : "LLVMIntNE"
+      }, {
+        "kind" : "LLVMBr",
+        "typeId" : 5,
+        "operands" : [ {
+          "kind" : "Instruction",
+          "blockIndex" : 0,
           "index" : 1
+        }, {
+          "kind" : "Block",
+          "index" : 2
+        }, {
+          "kind" : "Block",
+          "index" : 1
+        } ],
+        "sourceRef" : 4
+      } ]
+    }, {
+      "instructions" : [ {
+        "kind" : "LLVMCall",
+        "typeId" : 5,
+        "operands" : [ {
+          "kind" : "Global",
+          "index" : 5
+        } ],
+        "sourceRef" : 5
+      }, {
+        "kind" : "LLVMBr",
+        "typeId" : 5,
+        "operands" : [ {
+          "kind" : "Block",
+          "index" : 3
+        } ],
+        "sourceRef" : 6
+      } ]
+    }, {
+      "instructions" : [ {
+        "kind" : "LLVMCall",
+        "typeId" : 5,
+        "operands" : [ {
+          "kind" : "Global",
+          "index" : 7
+        } ],
+        "sourceRef" : 7
+      }, {
+        "kind" : "LLVMBr",
+        "typeId" : 5,
+        "operands" : [ {
+          "kind" : "Block",
+          "index" : 3
+        } ]
+      } ]
+    }, {
+      "instructions" : [ {
+        "kind" : "LLVMRet",
+        "typeId" : 5,
+        "sourceRef" : 8
+      } ]
+    } ],
+    "entryBlockIndex" : 0
+  }, {
+    "ref" : {
+      "kind" : "Global",
+      "index" : 8
+    },
+    "blocks" : [ {
+      "instructions" : [ {
+        "kind" : "LLVMLoad",
+        "typeId" : 1,
+        "operands" : [ {
+          "kind" : "Global",
+          "index" : 1
+        } ],
+        "sourceRef" : 9
+      }, {
+        "kind" : "LLVMICmp",
+        "typeId" : 6,
+        "operands" : [ {
+          "kind" : "Instruction",
+          "blockIndex" : 0,
+          "index" : 0
+        }, {
+          "kind" : "Global",
+          "index" : 0
         } ],
         "sourceRef" : 9,
         "predicate" : "LLVMIntNE"
       }, {
         "kind" : "LLVMBr",
-        "typeId" : 2,
+        "typeId" : 5,
         "operands" : [ {
           "kind" : "Instruction",
           "blockIndex" : 0,
@@ -200,15 +200,15 @@
     }, {
       "instructions" : [ {
         "kind" : "LLVMCall",
-        "typeId" : 2,
+        "typeId" : 5,
         "operands" : [ {
           "kind" : "Global",
-          "index" : 3
+          "index" : 5
         } ],
         "sourceRef" : 10
       }, {
         "kind" : "LLVMBr",
-        "typeId" : 2,
+        "typeId" : 5,
         "operands" : [ {
           "kind" : "Block",
           "index" : 2
@@ -218,7 +218,7 @@
     }, {
       "instructions" : [ {
         "kind" : "LLVMRet",
-        "typeId" : 2,
+        "typeId" : 5,
         "sourceRef" : 12
       } ]
     } ],
@@ -228,58 +228,72 @@
     "kind" : "LLVMPointerTypeKind",
     "types" : [ 1 ]
   }, {
-    "kind" : "LLVMFunctionTypeKind",
-    "types" : [ 2 ]
-  }, {
-    "kind" : "LLVMVoidTypeKind"
-  }, {
     "kind" : "LLVMIntegerTypeKind",
     "len" : 32
   }, {
     "kind" : "LLVMPointerTypeKind",
-    "types" : [ 3 ]
+    "types" : [ 0 ]
+  }, {
+    "kind" : "LLVMPointerTypeKind",
+    "types" : [ 4 ]
+  }, {
+    "kind" : "LLVMFunctionTypeKind",
+    "types" : [ 5 ]
+  }, {
+    "kind" : "LLVMVoidTypeKind"
   }, {
     "kind" : "LLVMIntegerTypeKind",
     "len" : 1
   }, {
     "kind" : "LLVMPointerTypeKind",
-    "types" : [ 7 ]
+    "types" : [ 8 ]
   }, {
     "kind" : "LLVMFunctionTypeKind",
-    "types" : [ 2 ]
+    "types" : [ 5 ]
   } ],
   "globals" : [ {
-    "kind" : "LLVMFunctionValueKind",
-    "name" : "testImplicitIf",
-    "typeId" : 0
-  }, {
     "kind" : "LLVMConstantIntValueKind",
-    "typeId" : 3,
+    "typeId" : 1,
     "intValue" : 0
   }, {
     "kind" : "LLVMGlobalVariableValueKind",
     "name" : "I",
-    "typeId" : 4,
+    "typeId" : 0,
     "operands" : [ {
       "kind" : "Global",
-      "index" : 1
+      "index" : 0
+    } ]
+  }, {
+    "kind" : "LLVMConstantPointerNullValueKind",
+    "typeId" : 0
+  }, {
+    "kind" : "LLVMGlobalVariableValueKind",
+    "name" : "I_P",
+    "typeId" : 2,
+    "operands" : [ {
+      "kind" : "Global",
+      "index" : 2
     } ]
   }, {
     "kind" : "LLVMFunctionValueKind",
+    "name" : "testImplicitIf",
+    "typeId" : 3
+  }, {
+    "kind" : "LLVMFunctionValueKind",
     "name" : "foo",
-    "typeId" : 6
+    "typeId" : 7
   }, {
     "kind" : "LLVMFunctionValueKind",
     "name" : "testImplicitIfElse",
-    "typeId" : 0
+    "typeId" : 3
   }, {
     "kind" : "LLVMFunctionValueKind",
     "name" : "bar",
-    "typeId" : 6
+    "typeId" : 7
   }, {
     "kind" : "LLVMFunctionValueKind",
     "name" : "testExplicitIf",
-    "typeId" : 0
+    "typeId" : 3
   } ],
   "sourceRefs" : [ {
     "file" : "parser/conditions.c",
