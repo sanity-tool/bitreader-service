@@ -223,7 +223,7 @@ public class NativeBytecodeParser {
             final ValueDto value;
 
             LLVMValueKind kind = bitreader.LLVMGetValueKind(nativeValue);
-            if (kind == LLVMValueKind.LLVMFunctionValueKind || kind == LLVMValueKind.LLVMConstantPointerNullValueKind || kind == LLVMValueKind.LLVMUndefValueValueKind) {
+            if (kind == LLVMValueKind.LLVMFunctionValueKind || kind == LLVMValueKind.LLVMConstantPointerNullValueKind || kind == LLVMValueKind.LLVMUndefValueValueKind || kind == LLVMValueKind.LLVMConstantTokenNoneValueKind) {
                 value = toValue(this, nativeValue).build();
             } else if (kind == LLVMValueKind.LLVMGlobalVariableValueKind) {
                 ValueDto.ValueDtoBuilder builder = toValue(this, nativeValue);
