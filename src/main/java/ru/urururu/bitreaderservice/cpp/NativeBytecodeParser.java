@@ -229,9 +229,7 @@ public class NativeBytecodeParser {
             final ValueDto value;
 
             LLVMValueKind kind = bitreader.LLVMGetValueKind(nativeValue);
-            if (kind == LLVMValueKind.LLVMFunctionValueKind || kind == LLVMValueKind.LLVMConstantPointerNullValueKind || kind == LLVMValueKind.LLVMUndefValueValueKind || kind == LLVMValueKind.LLVMConstantTokenNoneValueKind) {
-                value = toValue(this, nativeValue).build();
-            } else if (kind == LLVMValueKind.LLVMGlobalVariableValueKind) {
+            if (kind == LLVMValueKind.LLVMGlobalVariableValueKind) {
                 ValueDto.ValueDtoBuilder builder = toValue(this, nativeValue);
                 SWIGTYPE_p_LLVMOpaqueValue nativeInitializer = bitreader.LLVMGetInitializer(nativeValue);
 
@@ -246,11 +244,8 @@ public class NativeBytecodeParser {
                 value = toValue(this, nativeValue).fpValue(bitreader.GetConstantFPDoubleValue(nativeValue)).build();
             } else if (kind == LLVMValueKind.LLVMConstantExprValueKind) {
                 value = toValue(this, nativeValue).opcode(bitreader.LLVMGetConstOpcode(nativeValue).toString()).operands(getOperands(this, nativeValue)).build(); // todo add expr info
-            } else if (kind == LLVMValueKind.LLVMMetadataAsValueValueKind || kind == LLVMValueKind.LLVMConstantAggregateZeroValueKind) {
-                // trivial support (not using in clients yet)
-                value = toValue(this, nativeValue).build();
             } else {
-                throw new IllegalArgumentException("Unsupported type: " + kind);
+                value = toValue(this, nativeValue).build();
             }
 
             valueRef = new ValueRefDto(ValueRefDto.ValueRefKind.Global, null, globalValues.size());
