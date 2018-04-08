@@ -11,9 +11,9 @@ pipeline {
         sh './mvnw install dockerfile:build'
       }
     }
-    stage('') {
+    stage('Publish') {
       steps {
-        archiveArtifacts 'target/surefire-reports/**/*.xml'
+        junit(allowEmptyResults: true, testResults: 'target/surefire-reports/**/*.xml')
       }
     }
   }
