@@ -34,7 +34,7 @@ matrix:
       env:
       - TESTED_LANGS="C Cpp IR"
       - CLANG_BIN=clang-4.0
-      
+
     - os: linux
       jdk: openjdk9
       addons: 
