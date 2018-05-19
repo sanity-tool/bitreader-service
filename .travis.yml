@@ -34,7 +34,15 @@ matrix:
       env:
       - TESTED_LANGS="C Cpp IR"
       - CLANG_BIN=clang-4.0
-
+      
+    - os: linux
+      jdk: openjdk9
+      addons: 
+        - *llvm40
+      env:
+      - TESTED_LANGS="C Cpp IR"
+      - CLANG_BIN=clang-4.0
+      
 language: java
 
 script: ./mvnw install dockerfile:build
