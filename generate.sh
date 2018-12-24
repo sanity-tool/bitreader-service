@@ -49,7 +49,7 @@ if [[ ! -d "$LLVM_HOME/build" ]]; then
         -DLLVM_TARGETS_TO_BUILD=X86 \
         ..
         
-    make -j2 LLVMCore LLVMAsmParser LLVMBitReader LLVMProfileData LLVMMC LLVMMCParser LLVMObject LLVMAnalysis LLVMIRReader LLVMTransformUtils
+    make -j2 LLVMCore LLVMAsmParser LLVMBitReader LLVMProfileData LLVMMC LLVMMCParser LLVMObject LLVMAnalysis LLVMIRReader LLVMTransformUtils LLVMDebugInfoMSF LLVMDebugInfoCodeView
     make -j2 llvm-config llvm-dis
 
     cd $OLD_DIR
