@@ -19,12 +19,36 @@ class Rust extends Tool {
 
     @Override
     public String[] createParameters(String filename, String objFile) {
-        return new String[]{executable, "--crate-type=lib", "-g", "-A", "dead_code", "--emit=llvm-bc", "-o", objFile, filename};
+        return new String[]{
+                executable,
+                "--crate-type=lib",
+                "-g",
+                "-C",
+                "link-dead-code",
+                "-A",
+                "dead_code",
+                "--emit=llvm-bc",
+                "-o",
+                objFile,
+                filename,
+        };
     }
 
     @Override
     public String[] createDebugParameters(String filename, String debugFile) {
-        return new String[]{executable, "--crate-type=lib", "-g", "-A", "dead_code", "--emit=llvm-ir", "-o", debugFile, filename};
+        return new String[]{
+                executable,
+                "--crate-type=lib",
+                "-g",
+                "-C",
+                "link-dead-code",
+                "-A",
+                "dead_code",
+                "--emit=llvm-ir",
+                "-o",
+                debugFile,
+                filename,
+        };
     }
 
     @Override
