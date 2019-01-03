@@ -15,8 +15,10 @@ import java.util.*;
 public class NativeBytecodeParser {
     @Autowired
     private List<ParserListener> parserListeners;
+
     @Autowired
     private NativeTypeParser typeParser;
+
     @Autowired
     private NativeSourceRangeFactory sourceRangeFactory;
 

@@ -1,0 +1,45 @@
+{
+  "functions" : [ {
+    "ref" : {
+      "kind" : "Global",
+      "index" : 0
+    },
+    "blocks" : [ {
+      "instructions" : [ {
+        "kind" : "LLVMRet",
+        "typeId" : 3,
+        "operands" : [ {
+          "kind" : "Global",
+          "index" : 1
+        } ],
+        "sourceRef" : 0
+      } ]
+    } ],
+    "entryBlockIndex" : 0
+  } ],
+  "types" : [ {
+    "kind" : "LLVMPointerTypeKind",
+    "types" : [ 1 ]
+  }, {
+    "kind" : "LLVMFunctionTypeKind",
+    "types" : [ 2 ]
+  }, {
+    "kind" : "LLVMIntegerTypeKind",
+    "len" : 32
+  }, {
+    "kind" : "LLVMVoidTypeKind"
+  } ],
+  "globals" : [ {
+    "kind" : "LLVMFunctionValueKind",
+    "name" : "_ZN12_GLOBAL__N_17trivialEv",
+    "typeId" : 0
+  }, {
+    "kind" : "LLVMConstantIntValueKind",
+    "typeId" : 2,
+    "intValue" : 1
+  } ],
+  "sourceRefs" : [ {
+    "file" : "parser/anonymousNamespace.cpp",
+    "line" : 4
+  } ]
+}
