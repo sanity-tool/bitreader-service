@@ -41,16 +41,7 @@ if [[ ! -d "$LLVM_HOME/build" ]]; then
 
     cd $LLVM_HOME
 
-    mkdir build && cd build
-    $CMAKE -G "Unix Makefiles" \
-        -DLLVM_CCACHE_BUILD=ON \
-        -DLLVM_CCACHE_SIZE=4G \
-        -DLLVM_CCACHE_DIR=$LLVM_CCACHE \
-        -DLLVM_TARGETS_TO_BUILD=X86 \
-        ..
-        
-    make -j2 LLVMCore LLVMAsmParser LLVMBitReader LLVMProfileData LLVMMC LLVMMCParser LLVMObject LLVMAnalysis LLVMIRReader LLVMTransformUtils
-    make -j2 llvm-config llvm-dis
+    ./build.sh
 
     cd $OLD_DIR
 fi
