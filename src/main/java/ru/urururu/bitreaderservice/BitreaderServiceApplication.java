@@ -35,6 +35,11 @@ public class BitreaderServiceApplication {
 	}
 
 	public static void main(String[] args) {
+		if (args.length > 0) {
+			SpringApplication.run(BitreaderConsoleApplication.class, args);
+			return;
+		}
+
 		SpringApplication.run(BitreaderServiceApplication.class, args);
 	}
 }
