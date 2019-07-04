@@ -36,7 +36,7 @@ matrix:
 
 language: java
 
-script: ./mvnw install dockerfile:build
+script: docker build -t sanitytool/bitreader-service .
 
 after_success:
   - bash check.sh
@@ -44,7 +44,7 @@ after_success:
 
 deploy:
   provider: script
-  script: docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PASSWORD"; ./mvnw dockerfile:push
+  script: docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PASSWORD"; docker push sanitytool/bitreader-service
   on:
     branch: master
 
