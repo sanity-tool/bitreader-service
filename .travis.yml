@@ -4,7 +4,6 @@ addons:
     sources: &common_sources
       - ubuntu-toolchain-r-test
     packages: &common_packages
-      - oracle-java8-installer
       - libstdc++6
       - libstdc++6-4.7-dev
       - gcc-4.9
