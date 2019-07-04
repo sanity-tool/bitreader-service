@@ -17,7 +17,7 @@ services:
 matrix:
   include:
     - os: linux
-      jdk: oraclejdk9
+      jdk: openjdk11
       addons: &llvm40
         apt:
           sources:
