@@ -191,20 +191,6 @@
 					</execution>
 				</executions>
 			</plugin>
-
-			<plugin>
-				<groupId>com.spotify</groupId>
-				<artifactId>dockerfile-maven-plugin</artifactId>
-				<version>1.3.6</version>
-				<configuration>
-					<repository>${docker.image.prefix}/${project.artifactId}</repository>
-					<buildArgs>
-						<JAR_FILE>target/${project.build.finalName}.jar</JAR_FILE>
-						<SHARED>target/native/shared</SHARED>
-						<DLL_NAME>${native.dllname}</DLL_NAME>
-					</buildArgs>
-				</configuration>
-			</plugin>
 		</plugins>
 	</build>
 
