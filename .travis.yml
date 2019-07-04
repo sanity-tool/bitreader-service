@@ -1,46 +1,15 @@
 sudo: false
-addons:
-  apt:
-    sources: &common_sources
-      - ubuntu-toolchain-r-test
-    packages: &common_packages
-      - libstdc++6
-      - libstdc++6-4.7-dev
-      - gcc-5
-      - g++-5
-      - swig
-      - ccache
 
 services:
   - docker
 
-matrix:
-  include:
-    - os: linux
-      jdk: openjdk11
-      addons: &llvm40
-        apt:
-          sources:
-            - *common_sources
-            - llvm-toolchain-trusty-4.0
-          packages:
-            - *common_packages
-            - clang-4.0
-            - libllvm4.0
-            - llvm-4.0
-            - llvm-4.0-dev
-            - llvm-4.0-runtime
-      env:
-      - TESTED_LANGS="C Cpp IR"
-      - CLANG_BIN=clang-4.0
-
-language: java
+language: minimal
 
 script: docker build -t sanitytool/bitreader-service .
 
-after_success:
-  - bash check.sh
-  - bash <(curl -s https://codecov.io/bash)
+#after_success:
+#  - bash check.sh
+#  - bash <(curl -s https://codecov.io/bash)
 
 deploy:
   provider: script
