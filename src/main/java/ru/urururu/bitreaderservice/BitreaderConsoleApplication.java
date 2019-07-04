@@ -7,13 +7,14 @@ import org.kohsuke.args4j.Option;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
 import ru.urururu.bitreaderservice.cpp.NativeBytecodeParser;
 import ru.urururu.bitreaderservice.dto.ModuleDto;
 
 import java.io.File;
 import java.nio.file.Files;
 
-@SpringBootApplication
+@ComponentScan(basePackageClasses = NativeBytecodeParser.class)
 public class BitreaderConsoleApplication implements CommandLineRunner {
     @Autowired
     NativeBytecodeParser parser;

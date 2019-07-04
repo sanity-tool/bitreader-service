@@ -2,6 +2,7 @@ package ru.urururu.bitreaderservice;
 
 import io.swagger.annotations.Api;
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.WebApplicationType;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
@@ -36,7 +37,10 @@ public class BitreaderServiceApplication {
 
 	public static void main(String[] args) {
 		if (args.length > 0) {
-			SpringApplication.run(BitreaderConsoleApplication.class, args);
+			SpringApplication application = new SpringApplication(BitreaderConsoleApplication.class);
+			application.setWebApplicationType(WebApplicationType.NONE);
+
+			application.run(args);
 			return;
 		}
 
