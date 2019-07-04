@@ -7,15 +7,11 @@ language: minimal
 
 script: docker build -t sanitytool/bitreader-service .
 
-#after_success:
-#  - bash check.sh
-#  - bash <(curl -s https://codecov.io/bash)
-
 deploy:
   provider: script
   script: docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PASSWORD"; docker push sanitytool/bitreader-service
-#  on:
-#    branch: master
+  on:
+    branch: master
 
 cache:
   directories:
