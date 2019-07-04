@@ -319,14 +319,14 @@
           "blockIndex" : 0,
           "index" : 3
         }, {
-          "kind" : "Global",
-          "index" : 19
-        }, {
           "kind" : "Block",
           "index" : 1
         }, {
           "kind" : "Block",
           "index" : 5
+        }, {
+          "kind" : "Global",
+          "index" : 19
         } ],
         "sourceRef" : 7
       } ]
@@ -455,14 +455,14 @@
           "blockIndex" : 2,
           "index" : 0
         }, {
-          "kind" : "Global",
-          "index" : 19
-        }, {
           "kind" : "Block",
           "index" : 3
         }, {
           "kind" : "Block",
           "index" : 6
+        }, {
+          "kind" : "Global",
+          "index" : 19
         } ],
         "sourceRef" : 8
       } ]
@@ -726,14 +726,14 @@
           "blockIndex" : 7,
           "index" : 1
         }, {
-          "kind" : "Global",
-          "index" : 24
-        }, {
           "kind" : "Block",
           "index" : 8
         }, {
           "kind" : "Block",
           "index" : 11
+        }, {
+          "kind" : "Global",
+          "index" : 24
         } ],
         "sourceRef" : 8
       } ]
@@ -980,14 +980,14 @@
           "blockIndex" : 0,
           "index" : 2
         }, {
-          "kind" : "Global",
-          "index" : 24
-        }, {
           "kind" : "Block",
           "index" : 2
         }, {
           "kind" : "Block",
           "index" : 9
+        }, {
+          "kind" : "Global",
+          "index" : 24
         } ],
         "sourceRef" : 10
       } ]
@@ -1193,14 +1193,14 @@
           "blockIndex" : 5,
           "index" : 1
         }, {
-          "kind" : "Global",
-          "index" : 24
-        }, {
           "kind" : "Block",
           "index" : 6
         }, {
           "kind" : "Block",
           "index" : 10
+        }, {
+          "kind" : "Global",
+          "index" : 24
         } ],
         "sourceRef" : 11
       } ]
@@ -1471,14 +1471,14 @@
           "blockIndex" : 11,
           "index" : 1
         }, {
-          "kind" : "Global",
-          "index" : 24
-        }, {
           "kind" : "Block",
           "index" : 12
         }, {
           "kind" : "Block",
           "index" : 15
+        }, {
+          "kind" : "Global",
+          "index" : 24
         } ],
         "sourceRef" : 11
       } ]

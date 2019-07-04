@@ -1,5 +1,8 @@
 %module bitreader
 
+%ignore LLVMConstGEP2;
+%ignore LLVMConstInBoundsGEP2;
+
 %apply (char *STRING, size_t LENGTH) { (const char data[], size_t len) }
 
 %{

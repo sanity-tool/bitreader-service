@@ -73,14 +73,23 @@ public class ParserTests extends TestHelper {
         }
     }
 
-    private String relativize(String file) {
-        int i = file.indexOf("src/src");
+    private String relativize(String filename) {
+        int i = filename.indexOf("src/src");
         if (i != -1) {
             // workaround for rustc tests
-            return "<rustc-src>" + file.substring(i + 3); // taking substring inclusive to last "src"
+            return "<rustc-src>" + filename.substring(i + 3); // taking substring inclusive to last "src"
+        }
+        if (filename.startsWith("libcore")) {
+            // workaround for rustc tests
+            return "<rustc-src>/src/" + filename;
         }
 
-        return TestHelper.TESTS_PATH.relativize(new File(file).toPath()).toString();
+        File file = new File(filename);
+        if (file.isAbsolute()) {
+            return TestHelper.TESTS_PATH.relativize(file.toPath()).toString();
+        }
+
+        return filename;
     }
 
     public class SourceRefSerializerModifier extends BeanSerializerModifier {

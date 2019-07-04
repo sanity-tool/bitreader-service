@@ -1,51 +1,15 @@
 sudo: false
-addons:
-  apt:
-    sources: &common_sources
-      - ubuntu-toolchain-r-test
-    packages: &common_packages
-      - oracle-java8-installer
-      - libstdc++6
-      - libstdc++6-4.7-dev
-      - gcc-4.9
-      - g++-4.9
-      - swig
-      - ccache
 
 services:
   - docker
 
-matrix:
-  include:
-    - os: linux
-      jdk: oraclejdk9
-      addons: &llvm40
-        apt:
-          sources:
-            - *common_sources
-            - llvm-toolchain-trusty-4.0
-          packages:
-            - *common_packages
-            - clang-4.0
-            - libllvm4.0
-            - llvm-4.0
-            - llvm-4.0-dev
-            - llvm-4.0-runtime
-      env:
-      - TESTED_LANGS="C Cpp IR"
-      - CLANG_BIN=clang-4.0
+language: minimal
 
-language: java
-
-script: ./mvnw install dockerfile:build
-
-after_success:
-  - bash check.sh
-  - bash <(curl -s https://codecov.io/bash)
+script: docker build -t sanitytool/bitreader-service .
 
 deploy:
   provider: script
-  script: docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PASSWORD"; ./mvnw dockerfile:push
+  script: docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PASSWORD"; docker push sanitytool/bitreader-service
   on:
     branch: master
 
