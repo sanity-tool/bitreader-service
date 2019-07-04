@@ -4,11 +4,10 @@ addons:
     sources: &common_sources
       - ubuntu-toolchain-r-test
     packages: &common_packages
-      - oracle-java8-installer
       - libstdc++6
       - libstdc++6-4.7-dev
-      - gcc-4.9
-      - g++-4.9
+      - gcc-5
+      - g++-5
       - swig
       - ccache
 
@@ -18,7 +17,7 @@ services:
 matrix:
   include:
     - os: linux
-      jdk: oraclejdk9
+      jdk: openjdk11
       addons: &llvm40
         apt:
           sources:
