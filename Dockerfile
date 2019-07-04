@@ -1,4 +1,4 @@
-FROM openjdk:9-jdk
+FROM openjdk:11-jdk
 VOLUME /tmp
 ARG JAR_FILE
 ARG SHARED
